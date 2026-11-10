@@ -6,7 +6,7 @@ A financial assistant can notice a duplicate charge and still fail the person us
 
 We built the Ombudly financial advocacy evals to measure more of that chain: finding a problem, taking the appropriate next step within the user's permissions, and checking what happened afterward.
 
-We are publishing a research preview with **54 synthetic households, 172 planted opportunities, five suites, and scoring evidence from 16 historical run groups**. The code, datasets, simulated counterparties, deterministic scorer and sanitized evidence are available in the [Ombudly eval repository](https://github.com/tcmartin/ombudly-evals). The [versioned release](https://github.com/tcmartin/ombudly-evals/releases/tag/v0.1.0-preview) makes it possible to inspect and rescore the same records.
+We are publishing a research preview with **54 synthetic households, 172 planted opportunities, five suites, and scoring evidence from 16 historical run groups**. The code, datasets, simulated counterparties, deterministic scorer and sanitized evidence are available in the [Ombudly eval repository](https://github.com/tcmartin/ombudly-evals). The [versioned release](https://github.com/tcmartin/ombudly-evals/releases/tag/v0.1.0-preview) makes it possible to inspect and rescore the same records. The [Hugging Face mirror](https://huggingface.co/datasets/trevdatastreams/ombudly-evals) provides the synthetic households and separately stored evaluator answer keys.
 
 ## What a household contains
 

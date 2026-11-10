@@ -8,7 +8,7 @@ A public research preview of five synthetic household evaluation suites original
 
 This release publishes the dataset, generators, simulator, deterministic scorer, and sanitized scoring evidence. It does **not** publish the private Ombudly application or offer a fully standalone live agent benchmark.
 
-Read the [research writeup](docs/RESEARCH-WRITEUP.md) for the motivation, findings and limitations.
+Read the [research writeup](docs/RESEARCH-WRITEUP.md) for the motivation, findings and limitations. Browse the [Hugging Face dataset mirror](https://huggingface.co/datasets/trevdatastreams/ombudly-evals), with separate household inputs and evaluator-only answer keys.
 
 ## Results at a glance
 
