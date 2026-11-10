@@ -1,0 +1,10 @@
+Title: Email: SkyJet flight cancelled, booking MKJMUM
+Kind: email
+
+From: alerts@skyjet.example
+To: hugo.brandt@example.test
+Date: 2026-09-19
+Subject: Your flight on 2026-09-20 has been cancelled
+
+We're sorry: flight SJ284 on 2026-09-20 (booking MKJMUM) was cancelled due to operational reasons.
+You may rebook at no charge or request a refund. Travel credit has been added to your account.

@@ -1,0 +1,9 @@
+Title: Email: CloudBox cancellation confirmed
+Kind: email
+
+From: support@cloudbox.example
+To: casey.nguyen@example.test
+Date: 2026-07-28
+Subject: Your CloudBox plan has been cancelled
+
+We've cancelled your CloudBox plan. You won't be charged again. Confirmation CB-77444.

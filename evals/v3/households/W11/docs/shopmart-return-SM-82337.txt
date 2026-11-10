@@ -1,0 +1,9 @@
+Title: Email: ShopMart return SM-82337
+Kind: email
+
+From: returns@shopmart.example
+To: kira.sato@example.test
+Date: 2026-08-20
+Subject: Return received for order SM-82337
+
+We received your return (tracking 1Z6082659046). Your refund of $80.23 will post in 5-7 business days.

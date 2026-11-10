@@ -1,0 +1,57 @@
+[
+  {
+    "file": "eob-KH-404545.txt",
+    "title": "Email: Keystone Health Plan Explanation of Benefits, claim KH-404545",
+    "kind": "email"
+  },
+  {
+    "file": "stmary-bill-SM855704.txt",
+    "title": "Email: St Mary Hospital statement, account SM855704",
+    "kind": "email"
+  },
+  {
+    "file": "skyjet-MKJMUM.txt",
+    "title": "Email: SkyJet flight cancelled, booking MKJMUM",
+    "kind": "email"
+  },
+  {
+    "file": "note-flight.txt",
+    "title": "Note: flight",
+    "kind": "note"
+  },
+  {
+    "file": "oakview-moveout.txt",
+    "title": "Email: Oakview Apartments move-out confirmation",
+    "kind": "email"
+  },
+  {
+    "file": "pinecrest-PH-24242.png",
+    "title": "Photo: Pinecrest Hardware return slip PH-24242",
+    "kind": "receipt"
+  },
+  {
+    "file": "shopmart-return-SM-77918.txt",
+    "title": "Email: ShopMart return SM-77918",
+    "kind": "email"
+  },
+  {
+    "file": "northwind-NW-93292.txt",
+    "title": "Email: Northwind Outfitters order NW-93292",
+    "kind": "email"
+  },
+  {
+    "file": "note-beanie.txt",
+    "title": "Note: beanie",
+    "kind": "note"
+  },
+  {
+    "file": "refund-verification.txt",
+    "title": "Email: Action required - pending refunds",
+    "kind": "email"
+  },
+  {
+    "file": "account-directory.txt",
+    "title": "Note: my accounts and where to get help",
+    "kind": "note"
+  }
+]

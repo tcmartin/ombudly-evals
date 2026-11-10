@@ -1,0 +1,10 @@
+Title: Email: QuickLoan settlement notice
+Kind: email
+
+From: notices@claimhub.example
+To: dev.mehta@example.test
+Date: 2026-05-10
+Subject: Legal Notice: In re QuickLoan Fee Litigation
+
+If you were charged a QuickLoan convenience fee in 2023-2024 you may file a claim at
+http://127.0.0.1:8900/claimhub/quickloan-settlement. Claims must be submitted by July 31, 2026.

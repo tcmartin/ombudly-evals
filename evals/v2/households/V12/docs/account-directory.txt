@@ -1,0 +1,9 @@
+Title: Note: my accounts and where to get help
+Kind: note
+
+Household of Ravi Dutta (ravi.dutta@example.test). Accounts: Harbor Checking, Harbor Savings, Summit Visa.
+Companies I have accounts with and their support pages:
+- Harbor Bank: http://127.0.0.1:8900/harborbank/chat
+- ShopMart: http://127.0.0.1:8900/shopmart/support
+- StreamFlix: http://127.0.0.1:8900/streamflix/account
+- Summit Card: http://127.0.0.1:8900/summit/chat

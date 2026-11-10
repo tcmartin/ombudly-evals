@@ -1,0 +1,9 @@
+Title: Email: ShopMart billing adjustment SM-99383
+Kind: email
+
+From: billing@shopmart.example
+To: priya.raman@example.test
+Date: 2026-09-20
+Subject: A billing adjustment on order SM-99383
+
+We've issued a $20.00 adjustment on order SM-99383. If you believe you were charged incorrectly, contact support.

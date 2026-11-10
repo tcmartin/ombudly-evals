@@ -1,0 +1,10 @@
+Title: Email: StreamFlix price update
+Kind: email
+
+From: billing@streamflix.example
+To: sam.patel@example.test
+Date: 2026-07-10
+Subject: An update to your StreamFlix plan price
+
+Starting with your August bill, Premium will cost $19.99/month (was $15.99).
+Long-time members can contact support to ask about loyalty pricing.

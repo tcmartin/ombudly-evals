@@ -1,0 +1,9 @@
+Title: Email: ShopMart - 2 orders confirmed
+Kind: email
+
+From: orders@shopmart.example
+To: taylor.kim@example.test
+Date: 2026-09-23
+Subject: Your 2 ShopMart orders are confirmed
+
+Order SM-71760: Phone case, $37.19. Order SM-72400: Desk lamp, $42.21.

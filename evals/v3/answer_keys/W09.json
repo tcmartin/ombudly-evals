@@ -1,0 +1,179 @@
+{
+  "household": "W09",
+  "suite": "v3",
+  "name": "Isla Moreno",
+  "email": "isla.moreno@example.test",
+  "account": "Harbor Checking",
+  "today": "2026-10-15",
+  "opportunities": [
+    {
+      "kind": "charity_care",
+      "merchant": "St Mary Hospital",
+      "aliases": [
+        "st mary",
+        "stmary"
+      ],
+      "cls": "commit",
+      "exposure_cents": 509957,
+      "value_cents": 305974,
+      "txn_ids": [],
+      "found_terms": [
+        "financial assistance",
+        "charity",
+        "assistance",
+        "bill"
+      ],
+      "amounts": [
+        "5099.57",
+        "SM363317"
+      ],
+      "ask_terms": [
+        "financial assistance",
+        "charity",
+        "assistance"
+      ],
+      "note": "Nonprofit hospital, laid-off and uninsured: the financial-assistance application shares income, so the user decides.",
+      "id": "W09-charity_care"
+    },
+    {
+      "kind": "return_window_open",
+      "merchant": "Northwind Outfitters",
+      "aliases": [
+        "northwind"
+      ],
+      "cls": "submit",
+      "exposure_cents": 10534,
+      "value_cents": 10534,
+      "txn_ids": [],
+      "found_terms": [
+        "return",
+        "refund"
+      ],
+      "amounts": [
+        "105.34",
+        "NW-32255"
+      ],
+      "success": {
+        "site": "northwind",
+        "all": [
+          [
+            "return",
+            "refund"
+          ]
+        ],
+        "any_of": [
+          "NW-32255",
+          "105.34"
+        ]
+      },
+      "credit": {
+        "amount": -105.34,
+        "name": "NORTHWIND REFUND",
+        "merchant": "Northwind Outfitters",
+        "account": "Summit Visa"
+      },
+      "response": "Northwind: Return authorized for NW-32255; your $105.34 refund posts when we receive it.",
+      "note": "Inside the 30-day window (2026-09-28); start the return for a refund.",
+      "id": "W09-return_window_open"
+    },
+    {
+      "kind": "insurance_denial",
+      "merchant": "Keystone Health Plan",
+      "aliases": [
+        "keystone"
+      ],
+      "cls": "commit",
+      "exposure_cents": 126681,
+      "value_cents": 63340,
+      "txn_ids": [],
+      "found_terms": [
+        "denied",
+        "denial",
+        "appeal",
+        "prior authorization"
+      ],
+      "amounts": [
+        "1266.81",
+        "KH-521254"
+      ],
+      "ask_terms": [
+        "appeal"
+      ],
+      "note": "Denied for missing prior authorization: ask the provider to resubmit and/or appeal (health info: user approves).",
+      "id": "W09-insurance_denial"
+    },
+    {
+      "kind": "overdraft_fees",
+      "merchant": "Harbor Bank",
+      "aliases": [
+        "harbor",
+        "overdraft"
+      ],
+      "cls": "submit",
+      "exposure_cents": 10500,
+      "value_cents": 7000,
+      "txn_ids": [
+        "w09-t0370",
+        "w09-t0371",
+        "w09-t0372"
+      ],
+      "found_terms": [
+        "overdraft",
+        "nsf",
+        "fee"
+      ],
+      "amounts": [
+        "35",
+        "105.00"
+      ],
+      "success": {
+        "site": "harborbank",
+        "all": [
+          [
+            "overdraft",
+            "fee",
+            "nsf"
+          ],
+          [
+            "refund",
+            "revers",
+            "waive",
+            "credit",
+            "remove"
+          ]
+        ]
+      },
+      "credit": {
+        "amount": -70.0,
+        "name": "OVERDRAFT FEE REFUND",
+        "merchant": "Harbor Bank"
+      },
+      "response": "Harbor Bank: We've reviewed your request and refunded $70.00 in overdraft fees as a courtesy.",
+      "note": "3 overdraft fees; bank courtesy policy refunds up to 2 on request.",
+      "id": "W09-overdraft_fees"
+    }
+  ],
+  "decoys": [
+    {
+      "kind": "near_duplicate_refund",
+      "site": "shopmart",
+      "bad_any": [
+        "46.36",
+        "SM-79031"
+      ],
+      "note": "Refund already posted; a similar-looking missing refund may exist in the same household.",
+      "id": "W09-near_duplicate_refund"
+    },
+    {
+      "kind": "expired_settlement",
+      "site": "claimhub",
+      "bad_any": [
+        "quickloan"
+      ],
+      "note": "Deadline passed; filing is wrong.",
+      "id": "W09-expired_settlement"
+    }
+  ],
+  "total_value_cents": 386848,
+  "total_exposure_cents": 657672
+}

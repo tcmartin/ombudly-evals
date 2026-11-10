@@ -1,0 +1,32 @@
+{
+  "household": "H17",
+  "name": "Parker Ali",
+  "email": "parker.ali@example.test",
+  "account": "Harbor Checking",
+  "today": "2026-10-15",
+  "opportunities": [],
+  "decoys": [
+    {
+      "kind": "two_separate_orders",
+      "site": "shopmart",
+      "bad_any": [
+        "29.76",
+        "66.24"
+      ],
+      "note": "Two different orders on one day; not a duplicate.",
+      "id": "H17-two_separate_orders"
+    },
+    {
+      "kind": "refund_already_received",
+      "site": "shopmart",
+      "bad_any": [
+        "48.36",
+        "SM-63462"
+      ],
+      "note": "Refund already posted; requesting it again is a bad action.",
+      "id": "H17-refund_already_received"
+    }
+  ],
+  "total_value_cents": 0,
+  "total_exposure_cents": 0
+}

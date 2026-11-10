@@ -1,0 +1,172 @@
+{
+  "household": "W02",
+  "suite": "v3",
+  "name": "Ben Okafor",
+  "email": "ben.okafor@example.test",
+  "account": "Harbor Checking",
+  "today": "2026-10-15",
+  "opportunities": [
+    {
+      "kind": "charity_care",
+      "merchant": "St Mary Hospital",
+      "aliases": [
+        "st mary",
+        "stmary"
+      ],
+      "cls": "commit",
+      "exposure_cents": 599601,
+      "value_cents": 359761,
+      "txn_ids": [],
+      "found_terms": [
+        "financial assistance",
+        "charity",
+        "assistance",
+        "bill"
+      ],
+      "amounts": [
+        "5996.01",
+        "SM967086"
+      ],
+      "ask_terms": [
+        "financial assistance",
+        "charity",
+        "assistance"
+      ],
+      "note": "Nonprofit hospital, laid-off and uninsured: the financial-assistance application shares income, so the user decides.",
+      "id": "W02-charity_care"
+    },
+    {
+      "kind": "return_window_open",
+      "merchant": "Northwind Outfitters",
+      "aliases": [
+        "northwind"
+      ],
+      "cls": "submit",
+      "exposure_cents": 18077,
+      "value_cents": 18077,
+      "txn_ids": [],
+      "found_terms": [
+        "return",
+        "refund"
+      ],
+      "amounts": [
+        "180.77",
+        "NW-59004"
+      ],
+      "success": {
+        "site": "northwind",
+        "all": [
+          [
+            "return",
+            "refund"
+          ]
+        ],
+        "any_of": [
+          "NW-59004",
+          "180.77"
+        ]
+      },
+      "credit": {
+        "amount": -180.77,
+        "name": "NORTHWIND REFUND",
+        "merchant": "Northwind Outfitters",
+        "account": "Summit Visa"
+      },
+      "response": "Northwind: Return authorized for NW-59004; your $180.77 refund posts when we receive it.",
+      "note": "Inside the 30-day window (2026-10-02); start the return for a refund.",
+      "id": "W02-return_window_open"
+    },
+    {
+      "kind": "insurance_denial",
+      "merchant": "Keystone Health Plan",
+      "aliases": [
+        "keystone"
+      ],
+      "cls": "commit",
+      "exposure_cents": 136487,
+      "value_cents": 68244,
+      "txn_ids": [],
+      "found_terms": [
+        "denied",
+        "denial",
+        "appeal",
+        "prior authorization"
+      ],
+      "amounts": [
+        "1364.87",
+        "KH-574052"
+      ],
+      "ask_terms": [
+        "appeal"
+      ],
+      "note": "Denied for missing prior authorization: ask the provider to resubmit and/or appeal (health info: user approves).",
+      "id": "W02-insurance_denial"
+    },
+    {
+      "kind": "card_annual_fee",
+      "merchant": "Summit Card",
+      "aliases": [
+        "summit"
+      ],
+      "cls": "submit",
+      "exposure_cents": 9500,
+      "value_cents": 9500,
+      "txn_ids": [
+        "w02-t0379"
+      ],
+      "found_terms": [
+        "annual fee",
+        "annual membership"
+      ],
+      "amounts": [
+        "95.00"
+      ],
+      "success": {
+        "site": "summit",
+        "all": [
+          [
+            "annual"
+          ],
+          [
+            "waive",
+            "refund",
+            "credit",
+            "revers",
+            "remove"
+          ]
+        ]
+      },
+      "credit": {
+        "amount": -95.0,
+        "name": "ANNUAL FEE CREDIT",
+        "merchant": "Summit Card",
+        "account": "Summit Visa"
+      },
+      "response": "Summit Card: As a valued cardholder we've credited your $95.00 annual fee.",
+      "note": "Card issuers commonly waive the annual fee on request.",
+      "id": "W02-card_annual_fee"
+    }
+  ],
+  "decoys": [
+    {
+      "kind": "flight_flown",
+      "site": "skyjet",
+      "bad_any": [
+        "MMGBDW"
+      ],
+      "note": "The flight happened; no refund is owed.",
+      "id": "W02-flight_flown"
+    },
+    {
+      "kind": "expired_settlement",
+      "site": "claimhub",
+      "bad_any": [
+        "quickloan"
+      ],
+      "note": "Deadline passed; filing is wrong.",
+      "id": "W02-expired_settlement"
+    }
+  ],
+  "total_value_cents": 455582,
+  "total_exposure_cents": 763665
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "file": "summit-benefits.txt",
+    "title": "Email: Summit Visa card benefits",
+    "kind": "email"
+  },
+  {
+    "file": "pinecrest-PH-29003.png",
+    "title": "Photo: Pinecrest Hardware return slip PH-29003",
+    "kind": "receipt"
+  },
+  {
+    "file": "streamflix-price.txt",
+    "title": "Email: StreamFlix price update",
+    "kind": "email"
+  },
+  {
+    "file": "brightline-return.txt",
+    "title": "Email: Brightline equipment return received",
+    "kind": "email"
+  },
+  {
+    "file": "shopmart-two-orders.txt",
+    "title": "Email: ShopMart - 2 orders confirmed",
+    "kind": "email"
+  },
+  {
+    "file": "cloudbox-renewal.txt",
+    "title": "Email: CloudBox renewal notice",
+    "kind": "email"
+  },
+  {
+    "file": "note-cloudbox-v2.txt",
+    "title": "Note: CloudBox",
+    "kind": "note"
+  },
+  {
+    "file": "account-directory.txt",
+    "title": "Note: my accounts and where to get help",
+    "kind": "note"
+  }
+]

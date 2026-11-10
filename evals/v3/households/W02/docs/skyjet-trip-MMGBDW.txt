@@ -1,0 +1,9 @@
+Title: Email: SkyJet trip receipt, booking MMGBDW
+Kind: email
+
+From: receipts@skyjet.example
+To: ben.okafor@example.test
+Date: 2026-06-02
+Subject: Thanks for flying SkyJet
+
+Booking MMGBDW: your trip on 2026-06-01 is complete. Fare paid $290.61. We hope to see you again.

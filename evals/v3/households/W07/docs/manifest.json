@@ -1,0 +1,37 @@
+[
+  {
+    "file": "eob-KH-592980.txt",
+    "title": "Email: Keystone Health Plan Explanation of Benefits, claim KH-592980",
+    "kind": "email"
+  },
+  {
+    "file": "cablenet-promo.txt",
+    "title": "Email: Cablenet promotional rate ending",
+    "kind": "email"
+  },
+  {
+    "file": "northwind-NW-41137.txt",
+    "title": "Email: Northwind Outfitters order NW-41137",
+    "kind": "email"
+  },
+  {
+    "file": "note-jacket.txt",
+    "title": "Note: jacket",
+    "kind": "note"
+  },
+  {
+    "file": "shopmart-return-SM-88078.txt",
+    "title": "Email: ShopMart return SM-88078",
+    "kind": "email"
+  },
+  {
+    "file": "skyjet-trip-YBDALP.txt",
+    "title": "Email: SkyJet trip receipt, booking YBDALP",
+    "kind": "email"
+  },
+  {
+    "file": "account-directory.txt",
+    "title": "Note: my accounts and where to get help",
+    "kind": "note"
+  }
+]

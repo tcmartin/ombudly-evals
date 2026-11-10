@@ -1,0 +1,695 @@
+{
+  "household": "W11",
+  "suite": "v3",
+  "tool_counts": {
+    "agent_message": 6,
+    "search_records": 7,
+    "list_approvals": 1,
+    "list_questions": 1,
+    "get_activity": 1,
+    "get_context": 1,
+    "list_playbooks": 1,
+    "list_opportunities": 8,
+    "vault_list": 1,
+    "read_source": 9,
+    "get_playbook": 5,
+    "search_transactions": 10,
+    "save_work": 6,
+    "ask_user": 1,
+    "browser_action": 22,
+    "propose_action": 4,
+    "record_result": 4,
+    "follow_up": 6,
+    "review_opportunity": 2,
+    "review_status": 1
+  },
+  "external": {
+    "agent": "codex",
+    "model": "gpt-6-luna"
+  },
+  "work": [
+    {
+      "id": "03c9aaa9-81f9-4e03-b48e-b9f8f987c67a",
+      "kind": "opportunity",
+      "title": "Missing ShopMart refund \u2014 order SM-82337",
+      "body": "Check ShopMart transactions for the $80.23 promise; contact support to trace/reissue if no matching inflow; follow up in 7 days.",
+      "status": "open",
+      "result_status": "submitted",
+      "fields": {
+        "playbook": "missing-refund",
+        "probability": 0.8,
+        "plan": "Check ShopMart transactions for the $80.23 promise; contact support to trace/reissue if no matching inflow; follow up in 7 days.",
+        "deadline": "2026-10-17",
+        "result": {
+          "status": "submitted",
+          "reported_value_cents": 0,
+          "verified_cents": 0,
+          "verification": "unverified",
+          "transaction_ids": [],
+          "at": "2026-10-17T23:07:30.210391+00:00"
+        }
+      }
+    },
+    {
+      "id": "5673ebbe-8217-43a3-ad17-566613c7afd9",
+      "kind": "opportunity",
+      "title": "Appeal Keystone denial for claim KH-550979",
+      "body": "Ask St Mary billing to check prior-authorization submission/resubmit claim; prepare appeal packet and request user approval before filing.",
+      "status": "open",
+      "result_status": "submitted",
+      "fields": {
+        "playbook": "insurance-appeal",
+        "probability": 0.4,
+        "deadline": "2027-01-07",
+        "plan": "Ask St Mary billing to check prior-authorization submission/resubmit claim; prepare appeal packet and request user approval before filing.",
+        "result": {
+          "status": "submitted",
+          "reported_value_cents": 0,
+          "verified_cents": 0,
+          "verification": "unverified",
+          "transaction_ids": [],
+          "at": "2026-10-17T23:08:11.513882+00:00"
+        }
+      }
+    },
+    {
+      "id": "67ebb5fb-42b9-4cb6-b718-e5e2b23a9767",
+      "kind": "opportunity",
+      "title": "SkyJet cancelled flight cash refund \u2014 KAVYAR",
+      "body": "Request cash refund for cancelled SJ966, booking KAVYAR; do not accept travel credit; follow up if not processed.",
+      "status": "open",
+      "result_status": "submitted",
+      "fields": {
+        "playbook": "travel-refund",
+        "probability": 0.9,
+        "plan": "Request cash refund for cancelled SJ966, booking KAVYAR; do not accept travel credit; follow up if not processed.",
+        "result": {
+          "status": "submitted",
+          "reported_value_cents": 0,
+          "verified_cents": 0,
+          "verification": "unverified",
+          "transaction_ids": [],
+          "at": "2026-10-17T23:07:42.014168+00:00"
+        }
+      }
+    },
+    {
+      "id": "be8cc1aa-b3d2-4b57-a402-0ad8dcd7963d",
+      "kind": "note",
+      "title": "QuickLoan settlement deadline passed",
+      "body": "Settlement notice deadline was July 31, 2026, which has passed. Notice required QuickLoan convenience fees charged in 2023\u20132024; no QuickLoan transaction was found in the uploaded transaction history, so eligibility is not evidenced. Do not submit a late claim.",
+      "status": "done",
+      "result_status": null,
+      "fields": {}
+    },
+    {
+      "id": "ee672b45-bf3d-4492-9c9c-4e6023e675d8",
+      "kind": "opportunity",
+      "title": "St Mary ER bill and financial assistance",
+      "body": "Request itemized bill and financial assistance application; ask user household size and annual income, then propose required application step.",
+      "status": "open",
+      "result_status": "submitted",
+      "fields": {
+        "playbook": "medical-bill",
+        "probability": 0.5,
+        "plan": "Request itemized bill and financial assistance application; ask user household size and annual income, then propose required application step.",
+        "result": {
+          "status": "submitted",
+          "reported_value_cents": 0,
+          "verified_cents": 0,
+          "verification": "unverified",
+          "transaction_ids": [],
+          "at": "2026-10-17T23:07:54.843782+00:00"
+        }
+      }
+    }
+  ],
+  "work_after_verify": [
+    {
+      "id": "03c9aaa9-81f9-4e03-b48e-b9f8f987c67a",
+      "kind": "opportunity",
+      "title": "Missing ShopMart refund \u2014 order SM-82337",
+      "body": "Check ShopMart transactions for the $80.23 promise; contact support to trace/reissue if no matching inflow; follow up in 7 days.",
+      "status": "open",
+      "result_status": "submitted",
+      "fields": {
+        "playbook": "missing-refund",
+        "probability": 0.8,
+        "plan": "Check ShopMart transactions for the $80.23 promise; contact support to trace/reissue if no matching inflow; follow up in 7 days.",
+        "deadline": "2026-10-17",
+        "result": {
+          "status": "submitted",
+          "reported_value_cents": 8023,
+          "verified_cents": 0,
+          "verification": "unverified",
+          "transaction_ids": [],
+          "at": "2026-10-17T23:09:22.863359+00:00"
+        }
+      }
+    },
+    {
+      "id": "5673ebbe-8217-43a3-ad17-566613c7afd9",
+      "kind": "opportunity",
+      "title": "Appeal Keystone denial for claim KH-550979",
+      "body": "Ask St Mary billing to check prior-authorization submission/resubmit claim; prepare appeal packet and request user approval before filing.",
+      "status": "open",
+      "result_status": "submitted",
+      "fields": {
+        "playbook": "insurance-appeal",
+        "probability": 0.4,
+        "deadline": "2027-01-07",
+        "plan": "Ask St Mary billing to check prior-authorization submission/resubmit claim; prepare appeal packet and request user approval before filing.",
+        "result": {
+          "status": "submitted",
+          "reported_value_cents": 0,
+          "verified_cents": 0,
+          "verification": "unverified",
+          "transaction_ids": [],
+          "at": "2026-10-17T23:08:11.513882+00:00"
+        }
+      }
+    },
+    {
+      "id": "67ebb5fb-42b9-4cb6-b718-e5e2b23a9767",
+      "kind": "opportunity",
+      "title": "SkyJet cancelled flight cash refund \u2014 KAVYAR",
+      "body": "Request cash refund for cancelled SJ966, booking KAVYAR; do not accept travel credit; follow up if not processed.",
+      "status": "open",
+      "result_status": "received",
+      "fields": {
+        "playbook": "travel-refund",
+        "probability": 0.9,
+        "plan": "Request cash refund for cancelled SJ966, booking KAVYAR; do not accept travel credit; follow up if not processed.",
+        "result": {
+          "status": "received",
+          "reported_value_cents": 39192,
+          "verified_cents": 39192,
+          "verification": "matched_bank_inflow",
+          "transaction_ids": [
+            "cb84ef4d-5d85-48c8-a634-40ccdfac50b1"
+          ],
+          "at": "2026-10-17T23:09:22.825561+00:00"
+        }
+      }
+    },
+    {
+      "id": "be8cc1aa-b3d2-4b57-a402-0ad8dcd7963d",
+      "kind": "note",
+      "title": "QuickLoan settlement deadline passed",
+      "body": "Settlement notice deadline was July 31, 2026, which has passed. Notice required QuickLoan convenience fees charged in 2023\u20132024; no QuickLoan transaction was found in the uploaded transaction history, so eligibility is not evidenced. Do not submit a late claim.",
+      "status": "done",
+      "result_status": null,
+      "fields": {}
+    },
+    {
+      "id": "ee672b45-bf3d-4492-9c9c-4e6023e675d8",
+      "kind": "opportunity",
+      "title": "St Mary ER bill and financial assistance",
+      "body": "Request itemized bill and financial assistance application; ask user household size and annual income, then propose required application step.",
+      "status": "open",
+      "result_status": "submitted",
+      "fields": {
+        "playbook": "medical-bill",
+        "probability": 0.5,
+        "plan": "Request itemized bill and financial assistance application; ask user household size and annual income, then propose required application step.",
+        "result": {
+          "status": "submitted",
+          "reported_value_cents": 0,
+          "verified_cents": 0,
+          "verification": "unverified",
+          "transaction_ids": [],
+          "at": "2026-10-17T23:07:54.843782+00:00"
+        }
+      }
+    }
+  ],
+  "approvals": [
+    {
+      "id": "983566c3-0244-4449-b2d0-56d143181d5c",
+      "route": "approver",
+      "action_class": "submit",
+      "counterparty": "St Mary Hospital",
+      "summary": "Ask St Mary billing to check prior authorization and resubmit Keystone claim KH-550979",
+      "message": "Patient account: KH-550979\nAmount in question: $1,593.12\nMessage: For claim KH-550979 (June 23, 2026), Keystone denied $1,593.12 because prior authorization was not on file. Please check whether it was submitted and resubmit the authorization and claim if appropriate. Let me know what documentation you need.",
+      "class_description": "send a message or submit a request, dispute or claim form"
+    },
+    {
+      "id": "40ba93a5-fd45-4cd4-ae61-5d3529ea5e5e",
+      "route": "approver",
+      "action_class": "submit",
+      "counterparty": "St Mary Hospital",
+      "summary": "Request an itemized ER bill, financial assistance application and temporary account hold",
+      "message": "Patient account: SM510362\nAmount in question: $6,720.51\nMessage: Please send me an itemized bill for my August 12, 2026 emergency visit and the financial assistance application and policy. I am currently uninsured and unable to pay this balance. Please place the account on hold while I review the itemization and apply for assistance.",
+      "class_description": "send a message or submit a request, dispute or claim form"
+    },
+    {
+      "id": "07ccfb2b-52c1-4568-9493-cdde0f08fd6a",
+      "route": "approver",
+      "action_class": "submit",
+      "counterparty": "SkyJet Airlines",
+      "summary": "Request cash refund for cancelled flight SJ966, booking KAVYAR",
+      "message": "Booking: KAVYAR\nReason: Flight cancelled by SkyJet\nDetails: Flight SJ966 on September 20, 2026 was cancelled by SkyJet. I did not accept alternate travel and drove instead. Please refund the $391.92 ticket payment to the original form of payment, not travel credit.",
+      "class_description": "send a message or submit a request, dispute or claim form"
+    },
+    {
+      "id": "15d4b723-6ddc-40db-884e-3a111343f57e",
+      "route": "approver",
+      "action_class": "submit",
+      "counterparty": "ShopMart",
+      "summary": "Submit refund-not-received support request for order SM-82337",
+      "message": "Order: SM-82337\nReason: Refund not received\nAmount: $80.23\nDetails: Your email on August 20 confirmed receipt of return tracking 1Z6082659046 for order SM-82337 and said a $80.23 refund would post in 5\u20137 business days. It has not arrived. Please trace the refund and reissue it.",
+      "class_description": "send a message or submit a request, dispute or claim form"
+    }
+  ],
+  "questions": [
+    {
+      "id": "86370ccb-9cf0-4b8c-a7a5-18e16ee36f35",
+      "question": "To pursue St Mary Hospital financial assistance for the $6,720.51 ER bill, I need two details.",
+      "why": "These are required to complete the hospital's financial assistance application; it may reduce or forgive some or all of the bill.",
+      "fields": [
+        {
+          "label": "People in your household"
+        },
+        {
+          "label": "Current annual household income (before taxes)"
+        }
+      ]
+    }
+  ],
+  "run": {
+    "status": "completed",
+    "answer": "## Review complete\n\nI submitted three approved support requests:\n\n- **ShopMart:** Refund request **SM-1001** for the missing **$80.23** refund on order SM-82337. A separate **$46.31** refund for order SM-76686 had already posted.\n- **SkyJet:** Cash refund request **SJ-1002** for **$391.92** after the cancellation of flight SJ966. The household note says the traveler drove instead and does not want travel credit.\n- **St Mary Hospital:** Billing message **SM-1003** requests an itemized bill, financial-assistance materials, and an account hold for the **$6,720.51** ER bill. Message **SM-1004** asks the provider to check and, if appropriate, resubmit the prior authorization and claim behind Keystone\u2019s **$1,593.12** denial.\n\nFollow-ups are scheduled for the companies. The uploaded transaction history is user-supplied, not independently verified.\n\n**I need two facts from you to continue the hospital assistance application:** household size and current annual household income before taxes. The form also requires a truth certification, so that step will need your approval. The Keystone appeal deadline is **January 7, 2027**; the provider\u2019s billing review is underway.\n\nThe QuickLoan settlement deadline passed on July 31, 2026, so I did not file a claim. No QuickLoan transactions appeared in the uploaded history. The recurring inventory shows Spotify at **$11.99/month** and Oakview rent at **$1,725/month**; I found no sign either is unwanted. No fee, duplicate-charge, or price-increase leads appeared.",
+    "committed_micros": 54163
+  },
+  "verify_run": {
+    "status": "completed",
+    "answer": "SkyJet\u2019s **$391.92 refund posted** on October 15. I recorded it as received and verified it against the bank transaction.\n\nShopMart asked for the return tracking number for the **$80.23 refund**. I replied with the number from the return email; the support form confirmed request **SM-1001**. A follow-up is set for October 20.\n\nThe St Mary billing and Keystone claim requests were already submitted, with follow-ups scheduled. The **$6,720.51 financial assistance application** is still waiting on two details: household size and current annual household income before taxes.\n\nThe QuickLoan claim deadline has passed, and no qualifying QuickLoan charges were found in the uploaded history, so I did not file. No other new fee, duplicate-charge, price-increase, credit, or medical leads appeared. Review status reports no remaining unread or unprocessed items.",
+    "committed_micros": 21429
+  },
+  "sim_log": [
+    {
+      "type": "view",
+      "path": "/shopmart/support"
+    },
+    {
+      "type": "action",
+      "site": "shopmart",
+      "path": "/shopmart/support",
+      "class": "submit",
+      "fields": {
+        "order": "SM-82337",
+        "reason": "Refund not received",
+        "amount": "80.23",
+        "details": "Your email on August 20 confirmed receipt of return tracking 1Z6082659046 for order SM-82337 and said a $80.23 refund would post in 5\u20137 business days. It has not arrived. Please trace the refund and reissue it."
+      }
+    },
+    {
+      "type": "view",
+      "path": "/skyjet/refunds"
+    },
+    {
+      "type": "action",
+      "site": "skyjet",
+      "path": "/skyjet/refunds",
+      "class": "submit",
+      "fields": {
+        "booking": "KAVYAR",
+        "reason": "Flight cancelled by SkyJet",
+        "message": "Flight SJ966 on September 20, 2026 was cancelled by SkyJet. I did not accept alternate travel and drove instead. Please refund the $391.92 ticket payment to the original form of payment, not travel credit."
+      }
+    },
+    {
+      "type": "view",
+      "path": "/stmary/billing"
+    },
+    {
+      "type": "action",
+      "site": "stmary",
+      "path": "/stmary/billing",
+      "class": "submit",
+      "fields": {
+        "account": "SM510362",
+        "amount": "6720.51",
+        "message": "Please send me an itemized bill for my August 12, 2026 emergency visit and the financial assistance application and policy. I am currently uninsured and unable to pay this balance. Please place the account on hold while I review the itemization and apply for assistance."
+      }
+    },
+    {
+      "type": "view",
+      "path": "/stmary/billing"
+    },
+    {
+      "type": "action",
+      "site": "stmary",
+      "path": "/stmary/billing",
+      "class": "submit",
+      "fields": {
+        "account": "KH-550979",
+        "amount": "1593.12",
+        "message": "For claim KH-550979 (June 23, 2026), Keystone denied $1,593.12 because prior authorization was not on file. Please check whether it was submitted and resubmit the authorization and claim if appropriate. Let me know what documentation you need."
+      }
+    },
+    {
+      "type": "view",
+      "path": "/stmary/assistance"
+    }
+  ],
+  "sim_log_verify": [
+    {
+      "type": "view",
+      "path": "/shopmart/support"
+    },
+    {
+      "type": "action",
+      "site": "shopmart",
+      "path": "/shopmart/support",
+      "class": "submit",
+      "fields": {
+        "order": "SM-82337",
+        "reason": "Refund not received",
+        "amount": "80.23",
+        "details": "Order SM-82337; return tracking number 1Z6082659046."
+      }
+    }
+  ],
+  "findings": {
+    "items": [
+      {
+        "id": "473bd4e6-e41c-4b55-afb2-7fda76e0ee83",
+        "account_id": "d125b98b-8d5c-43c5-b89b-f28354c2d646",
+        "account_name": "Harbor Checking",
+        "kind": "recurring_charge",
+        "title": "Recurring monthly charge: Spotify",
+        "assessment": "recurring_charge",
+        "review_status": "dismissed",
+        "data": {
+          "merchant": "Spotify",
+          "cadence": "monthly",
+          "typical_amount": "11.99",
+          "latest_amount": "11.99",
+          "last_charged_on": "2026-10-09",
+          "next_expected_on": "2026-11-08",
+          "annual_cost": "143.88",
+          "currency": "USD",
+          "summary": "Spotify: about $11.99 monthly, $143.88 a year. Last charged 2026-10-09.",
+          "transactions": [
+            {
+              "id": "00959e65-158c-4261-90a3-d8590817fd88",
+              "connection_id": "814cb005-bbcd-4900-84e5-e809fc38b8a4",
+              "account_id": "d125b98b-8d5c-43c5-b89b-f28354c2d646",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "ebd7797c-ce92-4fca-9588-2b80d0a22f67",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-05-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T23:06:10.122689+00:00"
+            },
+            {
+              "id": "445193ab-9de4-4039-9614-365ffe03c141",
+              "connection_id": "814cb005-bbcd-4900-84e5-e809fc38b8a4",
+              "account_id": "d125b98b-8d5c-43c5-b89b-f28354c2d646",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "ac48119e-6776-4d67-82c6-d3914a52dd37",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-06-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T23:06:10.177052+00:00"
+            },
+            {
+              "id": "2fb749c0-8d03-40f3-a888-6ad2ff9e62a9",
+              "connection_id": "814cb005-bbcd-4900-84e5-e809fc38b8a4",
+              "account_id": "d125b98b-8d5c-43c5-b89b-f28354c2d646",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "e634b15f-de01-4f30-8aef-c9d6326a7006",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-07-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T23:06:10.242098+00:00"
+            },
+            {
+              "id": "9be447db-93dd-4d3c-aa09-d4f3a3e32e5e",
+              "connection_id": "814cb005-bbcd-4900-84e5-e809fc38b8a4",
+              "account_id": "d125b98b-8d5c-43c5-b89b-f28354c2d646",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "98380d2b-de31-46a9-a1b2-dddf20bb149d",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-08-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T23:06:10.292151+00:00"
+            },
+            {
+              "id": "776a7e33-aab7-4852-9da6-8425543f1b8a",
+              "connection_id": "814cb005-bbcd-4900-84e5-e809fc38b8a4",
+              "account_id": "d125b98b-8d5c-43c5-b89b-f28354c2d646",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "38002b21-d453-4f8b-b157-9526ea5bd7e4",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-09-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T23:06:10.342811+00:00"
+            },
+            {
+              "id": "1cc23e09-9c4a-429b-8b55-b6279ffb5b87",
+              "connection_id": "814cb005-bbcd-4900-84e5-e809fc38b8a4",
+              "account_id": "d125b98b-8d5c-43c5-b89b-f28354c2d646",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "c7222deb-0711-47b1-935b-fabe7c03182c",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-10-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T23:06:10.393133+00:00"
+            }
+          ],
+          "limitations": "Inferred from charge timing and amounts. Not proof of a subscription; check whether it is still wanted or used."
+        },
+        "source_ids": [
+          "ebd7797c-ce92-4fca-9588-2b80d0a22f67",
+          "ac48119e-6776-4d67-82c6-d3914a52dd37",
+          "e634b15f-de01-4f30-8aef-c9d6326a7006",
+          "98380d2b-de31-46a9-a1b2-dddf20bb149d",
+          "38002b21-d453-4f8b-b157-9526ea5bd7e4",
+          "c7222deb-0711-47b1-935b-fabe7c03182c"
+        ],
+        "version": 2,
+        "work_id": null,
+        "detector_version": "discovery-2026-10-17-v4",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "814cb005-bbcd-4900-84e5-e809fc38b8a4",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-17T23:06:10.405745+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-17T23:06:11.914415+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      },
+      {
+        "id": "3d8c571b-e079-454d-bdc5-4f5df448ce46",
+        "account_id": "d125b98b-8d5c-43c5-b89b-f28354c2d646",
+        "account_name": "Harbor Checking",
+        "kind": "recurring_charge",
+        "title": "Recurring monthly charge: Oakview Apartments",
+        "assessment": "recurring_charge",
+        "review_status": "dismissed",
+        "data": {
+          "merchant": "Oakview Apartments",
+          "cadence": "monthly",
+          "typical_amount": "1725.00",
+          "latest_amount": "1725.00",
+          "last_charged_on": "2026-10-01",
+          "next_expected_on": "2026-10-31",
+          "annual_cost": "20700.00",
+          "currency": "USD",
+          "summary": "Oakview Apartments: about $1725.00 monthly, $20700.00 a year. Last charged 2026-10-01.",
+          "transactions": [
+            {
+              "id": "3f8660da-a9bd-47e6-a660-1052e1535a26",
+              "connection_id": "814cb005-bbcd-4900-84e5-e809fc38b8a4",
+              "account_id": "d125b98b-8d5c-43c5-b89b-f28354c2d646",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "aa1e7511-cdcd-44e3-8a0b-b8dddf39e293",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1725.00000000",
+              "date": "2026-05-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T23:06:10.094518+00:00"
+            },
+            {
+              "id": "1b3e3410-8c11-45b4-94ce-27456d321f6a",
+              "connection_id": "814cb005-bbcd-4900-84e5-e809fc38b8a4",
+              "account_id": "d125b98b-8d5c-43c5-b89b-f28354c2d646",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "fe3a204c-cb5e-4a29-bd41-e1a16b1f284f",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1725.00000000",
+              "date": "2026-06-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T23:06:10.156797+00:00"
+            },
+            {
+              "id": "c8367411-1db7-4751-ad62-8ead9cfb6e87",
+              "connection_id": "814cb005-bbcd-4900-84e5-e809fc38b8a4",
+              "account_id": "d125b98b-8d5c-43c5-b89b-f28354c2d646",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "22709354-17fc-4e9c-bebe-e818d6f2cc78",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1725.00000000",
+              "date": "2026-07-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T23:06:10.221436+00:00"
+            },
+            {
+              "id": "6aa7c6db-86c5-460b-b72e-2eae1103589e",
+              "connection_id": "814cb005-bbcd-4900-84e5-e809fc38b8a4",
+              "account_id": "d125b98b-8d5c-43c5-b89b-f28354c2d646",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "cb495d87-b3e5-4a0f-bf96-1a497d5f3a74",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1725.00000000",
+              "date": "2026-08-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T23:06:10.274409+00:00"
+            },
+            {
+              "id": "7f14a419-345d-417e-b0cb-f4bbaf1c411c",
+              "connection_id": "814cb005-bbcd-4900-84e5-e809fc38b8a4",
+              "account_id": "d125b98b-8d5c-43c5-b89b-f28354c2d646",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "e8c7d42d-2657-4807-a65d-ebc52c40fa5a",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1725.00000000",
+              "date": "2026-09-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T23:06:10.319000+00:00"
+            },
+            {
+              "id": "38e5dc98-4984-43a8-9774-6d07b9178ca3",
+              "connection_id": "814cb005-bbcd-4900-84e5-e809fc38b8a4",
+              "account_id": "d125b98b-8d5c-43c5-b89b-f28354c2d646",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "df9346b3-482a-4c86-9482-9ac64a597db2",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1725.00000000",
+              "date": "2026-10-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T23:06:10.374523+00:00"
+            }
+          ],
+          "limitations": "Inferred from charge timing and amounts. Not proof of a subscription; check whether it is still wanted or used."
+        },
+        "source_ids": [
+          "aa1e7511-cdcd-44e3-8a0b-b8dddf39e293",
+          "fe3a204c-cb5e-4a29-bd41-e1a16b1f284f",
+          "22709354-17fc-4e9c-bebe-e818d6f2cc78",
+          "cb495d87-b3e5-4a0f-bf96-1a497d5f3a74",
+          "e8c7d42d-2657-4807-a65d-ebc52c40fa5a",
+          "df9346b3-482a-4c86-9482-9ac64a597db2"
+        ],
+        "version": 2,
+        "work_id": null,
+        "detector_version": "discovery-2026-10-17-v4",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "814cb005-bbcd-4900-84e5-e809fc38b8a4",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-17T23:06:10.405745+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-17T23:06:11.907108+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      }
+    ]
+  },
+  "errors": []
+}

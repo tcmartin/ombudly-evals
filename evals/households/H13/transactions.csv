@@ -1,0 +1,126 @@
+transaction_id,account,date,amount,currency,name,merchant,status
+h13-t015,Harbor Checking,2026-04-01,1890.00,USD,OAKVIEW APTS RENT,Oakview Apartments,posted
+h13-t035,Harbor Checking,2026-04-01,95.70,USD,KROGER #0364,Kroger,posted
+h13-t036,Harbor Checking,2026-04-03,38.90,USD,SHELL OIL 8308,Shell,posted
+h13-t101,Harbor Checking,2026-04-03,14.99,USD,CLOUDBOX STORAGE,CloudBox,posted
+h13-t037,Harbor Checking,2026-04-04,19.16,USD,PANERA BREAD,Restaurant,posted
+h13-t001,Harbor Checking,2026-04-07,-3120.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+h13-t038,Harbor Checking,2026-04-08,84.77,USD,KROGER #0868,Kroger,posted
+h13-t028,Harbor Checking,2026-04-09,11.99,USD,SPOTIFY USA,Spotify,posted
+h13-t039,Harbor Checking,2026-04-11,40.16,USD,THAI BASIL,Restaurant,posted
+h13-t108,Harbor Checking,2026-04-12,15.99,USD,STREAMFLIX.COM,StreamFlix,posted
+h13-t040,Harbor Checking,2026-04-15,63.18,USD,KROGER #0251,Kroger,posted
+h13-t115,Harbor Checking,2026-04-15,34.99,USD,FITHUB GYM MEMBERSHIP,FitHub,posted
+h13-t041,Harbor Checking,2026-04-17,41.65,USD,SHELL OIL 7187,Shell,posted
+h13-t022,Harbor Checking,2026-04-18,116.37,USD,METRO POWER UTIL,Metro Power,posted
+h13-t042,Harbor Checking,2026-04-18,66.97,USD,CHIPOTLE,Restaurant,posted
+h13-t002,Harbor Checking,2026-04-21,-3120.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+h13-t043,Harbor Checking,2026-04-22,154.68,USD,KROGER #0752,Kroger,posted
+h13-t044,Harbor Checking,2026-04-25,58.97,USD,CHIPOTLE,Restaurant,posted
+h13-t045,Harbor Checking,2026-04-29,83.06,USD,KROGER #0784,Kroger,posted
+h13-t016,Harbor Checking,2026-05-01,1890.00,USD,OAKVIEW APTS RENT,Oakview Apartments,posted
+h13-t046,Harbor Checking,2026-05-02,81.62,USD,CHIPOTLE,Restaurant,posted
+h13-t102,Harbor Checking,2026-05-03,14.99,USD,CLOUDBOX STORAGE,CloudBox,posted
+h13-t003,Harbor Checking,2026-05-05,-3120.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+h13-t047,Harbor Checking,2026-05-06,88.15,USD,KROGER #0383,Kroger,posted
+h13-t048,Harbor Checking,2026-05-08,53.96,USD,SHELL OIL 8126,Shell,posted
+h13-t029,Harbor Checking,2026-05-09,11.99,USD,SPOTIFY USA,Spotify,posted
+h13-t049,Harbor Checking,2026-05-09,35.46,USD,THAI BASIL,Restaurant,posted
+h13-t109,Harbor Checking,2026-05-12,15.99,USD,STREAMFLIX.COM,StreamFlix,posted
+h13-t050,Harbor Checking,2026-05-13,88.13,USD,KROGER #0228,Kroger,posted
+h13-t116,Harbor Checking,2026-05-15,34.99,USD,FITHUB GYM MEMBERSHIP,FitHub,posted
+h13-t051,Harbor Checking,2026-05-16,54.53,USD,LUIGI'S PIZZA,Restaurant,posted
+h13-t023,Harbor Checking,2026-05-18,119.33,USD,METRO POWER UTIL,Metro Power,posted
+h13-t004,Harbor Checking,2026-05-19,-3120.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+h13-t052,Harbor Checking,2026-05-20,63.89,USD,KROGER #0645,Kroger,posted
+h13-t053,Harbor Checking,2026-05-22,33.91,USD,SHELL OIL 6471,Shell,posted
+h13-t054,Harbor Checking,2026-05-23,19.29,USD,THAI BASIL,Restaurant,posted
+h13-t055,Harbor Checking,2026-05-27,78.13,USD,KROGER #0748,Kroger,posted
+h13-t056,Harbor Checking,2026-05-29,50.45,USD,SHELL OIL 5914,Shell,posted
+h13-t017,Harbor Checking,2026-06-01,1890.00,USD,OAKVIEW APTS RENT,Oakview Apartments,posted
+h13-t005,Harbor Checking,2026-06-02,-3120.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+h13-t057,Harbor Checking,2026-06-03,163.41,USD,KROGER #0655,Kroger,posted
+h13-t103,Harbor Checking,2026-06-03,14.99,USD,CLOUDBOX STORAGE,CloudBox,posted
+h13-t058,Harbor Checking,2026-06-06,79.42,USD,THAI BASIL,Restaurant,posted
+h13-t030,Harbor Checking,2026-06-09,11.99,USD,SPOTIFY USA,Spotify,posted
+h13-t059,Harbor Checking,2026-06-10,75.20,USD,KROGER #0544,Kroger,posted
+h13-t060,Harbor Checking,2026-06-12,38.55,USD,SHELL OIL 7847,Shell,posted
+h13-t110,Harbor Checking,2026-06-12,15.99,USD,STREAMFLIX.COM,StreamFlix,posted
+h13-t117,Harbor Checking,2026-06-15,34.99,USD,FITHUB GYM MEMBERSHIP,FitHub,posted
+h13-t006,Harbor Checking,2026-06-16,-3120.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+h13-t061,Harbor Checking,2026-06-17,167.49,USD,KROGER #0132,Kroger,posted
+h13-t024,Harbor Checking,2026-06-18,127.84,USD,METRO POWER UTIL,Metro Power,posted
+h13-t062,Harbor Checking,2026-06-24,126.91,USD,KROGER #0902,Kroger,posted
+h13-t007,Harbor Checking,2026-06-30,-3120.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+h13-t018,Harbor Checking,2026-07-01,1890.00,USD,OAKVIEW APTS RENT,Oakview Apartments,posted
+h13-t063,Harbor Checking,2026-07-01,147.33,USD,KROGER #0203,Kroger,posted
+h13-t064,Harbor Checking,2026-07-03,41.39,USD,SHELL OIL 9709,Shell,posted
+h13-t104,Harbor Checking,2026-07-03,14.99,USD,CLOUDBOX STORAGE,CloudBox,posted
+h13-t065,Harbor Checking,2026-07-04,19.63,USD,THAI BASIL,Restaurant,posted
+h13-t066,Harbor Checking,2026-07-08,132.57,USD,KROGER #0564,Kroger,posted
+h13-t031,Harbor Checking,2026-07-09,11.99,USD,SPOTIFY USA,Spotify,posted
+h13-t111,Harbor Checking,2026-07-12,15.99,USD,STREAMFLIX.COM,StreamFlix,posted
+h13-t008,Harbor Checking,2026-07-14,-3120.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+h13-t067,Harbor Checking,2026-07-15,75.73,USD,KROGER #0138,Kroger,posted
+h13-t118,Harbor Checking,2026-07-15,34.99,USD,FITHUB GYM MEMBERSHIP,FitHub,posted
+h13-t068,Harbor Checking,2026-07-17,40.36,USD,SHELL OIL 1067,Shell,posted
+h13-t025,Harbor Checking,2026-07-18,117.11,USD,METRO POWER UTIL,Metro Power,posted
+h13-t069,Harbor Checking,2026-07-22,114.86,USD,KROGER #0812,Kroger,posted
+h13-t070,Harbor Checking,2026-07-24,48.37,USD,SHELL OIL 8355,Shell,posted
+h13-t071,Harbor Checking,2026-07-25,70.82,USD,PANERA BREAD,Restaurant,posted
+h13-t009,Harbor Checking,2026-07-28,-3120.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+h13-t072,Harbor Checking,2026-07-29,89.93,USD,KROGER #0343,Kroger,posted
+h13-t073,Harbor Checking,2026-07-31,30.88,USD,SHELL OIL 2720,Shell,posted
+h13-t019,Harbor Checking,2026-08-01,1890.00,USD,OAKVIEW APTS RENT,Oakview Apartments,posted
+h13-t105,Harbor Checking,2026-08-03,14.99,USD,CLOUDBOX STORAGE,CloudBox,posted
+h13-t074,Harbor Checking,2026-08-05,131.90,USD,KROGER #0443,Kroger,posted
+h13-t075,Harbor Checking,2026-08-07,50.87,USD,SHELL OIL 9371,Shell,posted
+h13-t076,Harbor Checking,2026-08-08,53.14,USD,LUIGI'S PIZZA,Restaurant,posted
+h13-t032,Harbor Checking,2026-08-09,11.99,USD,SPOTIFY USA,Spotify,posted
+h13-t010,Harbor Checking,2026-08-11,-3120.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+h13-t124,Harbor Checking,2026-08-11,12.00,USD,MONTHLY MAINTENANCE FEE,Harbor Bank,posted
+h13-t077,Harbor Checking,2026-08-12,80.74,USD,KROGER #0155,Kroger,posted
+h13-t112,Harbor Checking,2026-08-12,15.99,USD,STREAMFLIX.COM,StreamFlix,posted
+h13-t078,Harbor Checking,2026-08-14,58.27,USD,SHELL OIL 8998,Shell,posted
+h13-t125,Harbor Checking,2026-08-14,-12.00,USD,MAINTENANCE FEE REVERSAL,Harbor Bank,posted
+h13-t079,Harbor Checking,2026-08-15,48.35,USD,PANERA BREAD,Restaurant,posted
+h13-t119,Harbor Checking,2026-08-15,34.99,USD,FITHUB GYM MEMBERSHIP,FitHub,posted
+h13-t026,Harbor Checking,2026-08-18,106.87,USD,METRO POWER UTIL,Metro Power,posted
+h13-t080,Harbor Checking,2026-08-19,152.98,USD,KROGER #0455,Kroger,posted
+h13-t081,Harbor Checking,2026-08-21,33.13,USD,SHELL OIL 5303,Shell,posted
+h13-t082,Harbor Checking,2026-08-22,44.65,USD,THAI BASIL,Restaurant,posted
+h13-t011,Harbor Checking,2026-08-25,-3120.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+h13-t083,Harbor Checking,2026-08-26,166.33,USD,KROGER #0177,Kroger,posted
+h13-t084,Harbor Checking,2026-08-29,43.98,USD,PANERA BREAD,Restaurant,posted
+h13-t020,Harbor Checking,2026-09-01,1890.00,USD,OAKVIEW APTS RENT,Oakview Apartments,posted
+h13-t085,Harbor Checking,2026-09-02,139.99,USD,KROGER #0240,Kroger,posted
+h13-t106,Harbor Checking,2026-09-03,14.99,USD,CLOUDBOX STORAGE,CloudBox,posted
+h13-t086,Harbor Checking,2026-09-05,71.41,USD,PANERA BREAD,Restaurant,posted
+h13-t012,Harbor Checking,2026-09-08,-3120.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+h13-t122,Harbor Checking,2026-09-08,33.67,USD,SHOPMART.COM ORDER,ShopMart,posted
+h13-t123,Harbor Checking,2026-09-08,71.26,USD,SHOPMART.COM ORDER,ShopMart,posted
+h13-t033,Harbor Checking,2026-09-09,11.99,USD,SPOTIFY USA,Spotify,posted
+h13-t087,Harbor Checking,2026-09-09,123.74,USD,KROGER #0128,Kroger,posted
+h13-t088,Harbor Checking,2026-09-11,40.01,USD,SHELL OIL 7804,Shell,posted
+h13-t089,Harbor Checking,2026-09-12,43.19,USD,PANERA BREAD,Restaurant,posted
+h13-t113,Harbor Checking,2026-09-12,15.99,USD,STREAMFLIX.COM,StreamFlix,posted
+h13-t120,Harbor Checking,2026-09-15,34.99,USD,FITHUB GYM MEMBERSHIP,FitHub,posted
+h13-t090,Harbor Checking,2026-09-16,100.52,USD,KROGER #0707,Kroger,posted
+h13-t027,Harbor Checking,2026-09-18,64.15,USD,METRO POWER UTIL,Metro Power,posted
+h13-t091,Harbor Checking,2026-09-19,40.03,USD,LUIGI'S PIZZA,Restaurant,posted
+h13-t013,Harbor Checking,2026-09-22,-3120.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+h13-t092,Harbor Checking,2026-09-23,104.25,USD,KROGER #0375,Kroger,posted
+h13-t093,Harbor Checking,2026-09-26,23.68,USD,THAI BASIL,Restaurant,posted
+h13-t094,Harbor Checking,2026-09-30,80.52,USD,KROGER #0608,Kroger,posted
+h13-t021,Harbor Checking,2026-10-01,1890.00,USD,OAKVIEW APTS RENT,Oakview Apartments,posted
+h13-t107,Harbor Checking,2026-10-03,14.99,USD,CLOUDBOX STORAGE,CloudBox,posted
+h13-t014,Harbor Checking,2026-10-06,-3120.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+h13-t095,Harbor Checking,2026-10-07,120.77,USD,KROGER #0464,Kroger,posted
+h13-t034,Harbor Checking,2026-10-09,11.99,USD,SPOTIFY USA,Spotify,posted
+h13-t096,Harbor Checking,2026-10-09,36.10,USD,SHELL OIL 3983,Shell,posted
+h13-t097,Harbor Checking,2026-10-10,19.23,USD,THAI BASIL,Restaurant,posted
+h13-t114,Harbor Checking,2026-10-12,15.99,USD,STREAMFLIX.COM,StreamFlix,posted
+h13-t098,Harbor Checking,2026-10-14,164.57,USD,KROGER #0516,Kroger,posted
+h13-t121,Harbor Checking,2026-10-15,34.99,USD,FITHUB GYM MEMBERSHIP,FitHub,posted
+h13-t099,Harbor Checking,2026-10-16,45.20,USD,SHELL OIL 4665,Shell,posted
+h13-t100,Harbor Checking,2026-10-17,76.46,USD,LUIGI'S PIZZA,Restaurant,posted

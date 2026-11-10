@@ -1,0 +1,9 @@
+Title: Email: SkyJet trip receipt, booking NTASRJ
+Kind: email
+
+From: receipts@skyjet.example
+To: jonah.pike@example.test
+Date: 2026-06-02
+Subject: Thanks for flying SkyJet
+
+Booking NTASRJ: your trip on 2026-06-01 is complete. Fare paid $274.91. We hope to see you again.

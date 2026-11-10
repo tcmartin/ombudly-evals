@@ -1,0 +1,9 @@
+Title: Email: FitHub - we miss you
+Kind: email
+
+From: hello@fithub.example
+To: emerson.hall@example.test
+Date: 2026-09-20
+Subject: We miss you at FitHub!
+
+Your last check-in was April 13, 2026. Your membership ($49.99/month) is still active.

@@ -1,0 +1,17 @@
+[
+  {
+    "file": "notice-novastream-video-settlement.txt",
+    "title": "Email: Legal notice - NovaStream Video settlement",
+    "kind": "email"
+  },
+  {
+    "file": "scam-novastream-video-settlement.txt",
+    "title": "Email: You're owed $240 from the NovaStream Video settlement",
+    "kind": "email"
+  },
+  {
+    "file": "account-directory.txt",
+    "title": "Note: my accounts",
+    "kind": "note"
+  }
+]

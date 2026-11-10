@@ -1,0 +1,9 @@
+Title: Email: ShopMart return SM-79031
+Kind: email
+
+From: returns@shopmart.example
+To: isla.moreno@example.test
+Date: 2026-09-01
+Subject: Return received for order SM-79031
+
+Your refund of $46.36 for order SM-79031 will post in 5-7 business days.

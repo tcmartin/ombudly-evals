@@ -1,0 +1,32 @@
+[
+  {
+    "file": "brightline-return.txt",
+    "title": "Email: Brightline equipment return received",
+    "kind": "email"
+  },
+  {
+    "file": "shopmart-order-SM-93160.txt",
+    "title": "Email: ShopMart order SM-93160",
+    "kind": "email"
+  },
+  {
+    "file": "shopmart-adjustment-SM-93160.txt",
+    "title": "Email: ShopMart billing adjustment SM-93160",
+    "kind": "email"
+  },
+  {
+    "file": "quickloan-notice.txt",
+    "title": "Email: QuickLoan settlement notice",
+    "kind": "email"
+  },
+  {
+    "file": "shopmart-return-SM-75958.txt",
+    "title": "Email: ShopMart return SM-75958",
+    "kind": "email"
+  },
+  {
+    "file": "account-directory.txt",
+    "title": "Note: my accounts and where to get help",
+    "kind": "note"
+  }
+]

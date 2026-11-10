@@ -1,0 +1,9 @@
+Title: Email: ShopMart return SM-67570
+Kind: email
+
+From: returns@shopmart.example
+To: rowan.diaz@example.test
+Date: 2026-09-01
+Subject: We've received your return for order SM-67570
+
+Your refund of $42.24 for order SM-67570 has been processed (5-7 business days).

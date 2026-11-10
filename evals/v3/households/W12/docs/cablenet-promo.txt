@@ -1,0 +1,10 @@
+Title: Email: Cablenet promotional rate ending
+Kind: email
+
+From: offers@cablenet.example
+To: leo.haddad@example.test
+Date: 2026-07-10
+Subject: Your promotional rate is ending
+
+Your 12-month promotional rate of $39.99/month ends with your August bill; your new rate will be $89.99/month.
+New customers can get 300 Mbps for $39.99/month.

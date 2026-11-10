@@ -1,0 +1,15 @@
+Title: Email: Keystone Health Plan Explanation of Benefits, claim KH-404545
+Kind: email
+
+From: eob@keystonehealth.example
+To: hugo.brandt@example.test
+Date: 2026-07-27
+Subject: Your Explanation of Benefits for claim KH-404545
+
+THIS IS NOT A BILL.
+Patient: Hugo Brandt   Provider: St Mary Hospital   Date of service: 2026-07-09
+Claim KH-404545 status: Processed
+Amount billed: $1829.07
+Plan allowed amount: $1005.99
+Plan paid: $800.93
+Your responsibility (deductible/coinsurance): $205.06

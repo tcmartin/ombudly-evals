@@ -1,0 +1,982 @@
+{
+  "household": "W09",
+  "suite": "v3",
+  "tool_counts": {
+    "agent_message": 6,
+    "list_questions": 2,
+    "list_approvals": 2,
+    "search_records": 9,
+    "list_playbooks": 1,
+    "vault_list": 1,
+    "list_opportunities": 9,
+    "get_context": 1,
+    "read_source": 9,
+    "search_transactions": 8,
+    "get_playbook": 5,
+    "review_opportunity": 4,
+    "save_work": 18,
+    "ask_user": 3,
+    "browser_action": 18,
+    "get_permissions": 1,
+    "propose_action": 5,
+    "record_result": 3,
+    "follow_up": 5,
+    "review_status": 2
+  },
+  "external": {
+    "agent": "codex",
+    "model": "gpt-6-luna"
+  },
+  "work": [
+    {
+      "id": "2151a2b5-f8d7-4f2d-aed9-37b6704bccc4",
+      "kind": "opportunity",
+      "title": "Recurring monthly charge: Spotify",
+      "body": "Review of transaction pattern only; no source suggests the service is unwanted, so no cancellation/refund action is indicated.",
+      "status": "closed",
+      "result_status": null,
+      "fields": {
+        "plan": "No action absent evidence it is unwanted."
+      }
+    },
+    {
+      "id": "2f48647c-e16b-44ba-83c0-aa6f599dfd90",
+      "kind": "opportunity",
+      "title": "3 overdraft / NSF fees totaling $105.00",
+      "body": "Duplicate review record; active linked case 8e7fb689-1138-44bb-9e3d-e72aef4aa2dc submitted to Harbor Bank as reference HB-1002.",
+      "status": "closed",
+      "result_status": null,
+      "fields": {
+        "playbook": "fee-reversal",
+        "plan": "Closed duplicate; follow active fee reversal case 8e7fb689-1138-44bb-9e3d-e72aef4aa2dc."
+      }
+    },
+    {
+      "id": "6413e0f7-e0fb-4358-9fdd-0b5508a53b0c",
+      "kind": "opportunity",
+      "title": "St Mary Hospital charity care and itemized statement",
+      "body": "Duplicate review record; active linked case is 858d4776-886f-4cc5-9460-0f14bbbdc1a9. Billing request SM-1003 has been submitted; household size and income were requested for charity care application.",
+      "status": "closed",
+      "result_status": null,
+      "fields": {
+        "playbook": "medical-bill",
+        "plan": "Closed duplicate; follow active case 858d4776-886f-4cc5-9460-0f14bbbdc1a9."
+      }
+    },
+    {
+      "id": "858d4776-886f-4cc5-9460-0f14bbbdc1a9",
+      "kind": "opportunity",
+      "title": "St Mary Hospital charity care and itemized statement",
+      "body": "Self-pay ER visit 2026-08-10, account SM363317, billed $5,099.57. Billing message SM-1003 submitted asking for itemized statement, financial assistance application details, and hold while applying. Application needs household size and income; asked user.",
+      "status": "waiting",
+      "result_status": null,
+      "fields": {
+        "playbook": "medical-bill",
+        "probability": 0.6,
+        "plan": "Wait for billing response; with user facts fill assistance application and propose attestation/commit as required."
+      }
+    },
+    {
+      "id": "86827b61-a130-4303-b53f-8246077d6db1",
+      "kind": "opportunity",
+      "title": "Recurring monthly charge: Metro Power",
+      "body": "Review of utility transaction pattern only; no source suggests the utility charge is unwanted or an abnormal increase.",
+      "status": "closed",
+      "result_status": null,
+      "fields": {
+        "plan": "No action absent evidence it is unwanted."
+      }
+    },
+    {
+      "id": "8e7fb689-1138-44bb-9e3d-e72aef4aa2dc",
+      "kind": "opportunity",
+      "title": "Harbor Bank overdraft fee reversal",
+      "body": "Three posted $35 overdraft item fees on July 7, 8, and 9, 2026; Harbor Bank request submitted as reference HB-1002. Await email response.",
+      "status": "waiting",
+      "result_status": null,
+      "fields": {
+        "playbook": "fee-reversal",
+        "probability": 0.5,
+        "plan": "Wait for email response; verify any promised credit in transactions."
+      }
+    },
+    {
+      "id": "914fbd82-fcee-41a3-bdee-56906f0390ed",
+      "kind": "opportunity",
+      "title": "Recurring monthly charge: Oakview Apartments",
+      "body": "Review of transaction pattern only; rent is a household expense, no evidence suggests it is unwanted.",
+      "status": "closed",
+      "result_status": null,
+      "fields": {
+        "plan": "No action absent evidence it is unwanted."
+      }
+    },
+    {
+      "id": "c169f92f-2220-4f1a-a4a3-38c44ab37c03",
+      "kind": "opportunity",
+      "title": "Return Northwind jacket for refund",
+      "body": "User says jacket is too small and wants money back. Order NW-32255, $105.34, purchased 2026-09-28; return started as NW-R1001. Northwind says print label from email; user must ship jacket.",
+      "status": "waiting",
+      "result_status": null,
+      "fields": {
+        "playbook": "return-and-warranty",
+        "probability": 0.9,
+        "deadline": "2026-10-28",
+        "plan": "User prints label and ships jacket; monitor $105.34 refund."
+      }
+    },
+    {
+      "id": "df223c10-2c06-4f98-a7ef-2814f9e9fc05",
+      "kind": "opportunity",
+      "title": "Appeal Keystone denial KH-521254",
+      "body": "EOB dated 2026-07-01 denied St Mary claim for service 2026-06-13, $1,266.81, reason prior authorization not on file. Message SM-1004 sent to St Mary asking them to check authorization, correct paperwork, and resubmit if appropriate. Appeal deadline 2026-12-28; formal appeal needs user approval.",
+      "status": "waiting",
+      "result_status": null,
+      "fields": {
+        "playbook": "insurance-appeal",
+        "probability": 0.35,
+        "deadline": "2026-12-28",
+        "plan": "Await provider billing correction/rebill response; if still denied, prepare appeal packet and propose commit."
+      }
+    }
+  ],
+  "work_after_verify": [
+    {
+      "id": "2151a2b5-f8d7-4f2d-aed9-37b6704bccc4",
+      "kind": "opportunity",
+      "title": "Recurring monthly charge: Spotify",
+      "body": "Review of transaction pattern only; no source suggests the service is unwanted, so no cancellation/refund action is indicated.",
+      "status": "closed",
+      "result_status": null,
+      "fields": {
+        "plan": "No action absent evidence it is unwanted."
+      }
+    },
+    {
+      "id": "2f48647c-e16b-44ba-83c0-aa6f599dfd90",
+      "kind": "opportunity",
+      "title": "3 overdraft / NSF fees totaling $105.00",
+      "body": "Duplicate review record; active linked case 8e7fb689-1138-44bb-9e3d-e72aef4aa2dc submitted to Harbor Bank as reference HB-1002.",
+      "status": "closed",
+      "result_status": null,
+      "fields": {
+        "playbook": "fee-reversal",
+        "plan": "Closed duplicate; follow active fee reversal case 8e7fb689-1138-44bb-9e3d-e72aef4aa2dc."
+      }
+    },
+    {
+      "id": "6413e0f7-e0fb-4358-9fdd-0b5508a53b0c",
+      "kind": "opportunity",
+      "title": "St Mary Hospital charity care and itemized statement",
+      "body": "Duplicate review record; active linked case is 858d4776-886f-4cc5-9460-0f14bbbdc1a9. Billing request SM-1003 has been submitted; household size and income were requested for charity care application.",
+      "status": "closed",
+      "result_status": null,
+      "fields": {
+        "playbook": "medical-bill",
+        "plan": "Closed duplicate; follow active case 858d4776-886f-4cc5-9460-0f14bbbdc1a9."
+      }
+    },
+    {
+      "id": "858d4776-886f-4cc5-9460-0f14bbbdc1a9",
+      "kind": "opportunity",
+      "title": "St Mary Hospital charity care and itemized statement",
+      "body": "Self-pay ER visit 2026-08-10, account SM363317, billed $5,099.57. Billing message SM-1003 submitted asking for itemized statement, financial assistance application details, and hold while applying. Application needs household size and income; asked user.",
+      "status": "waiting",
+      "result_status": null,
+      "fields": {
+        "playbook": "medical-bill",
+        "probability": 0.6,
+        "plan": "Wait for billing response; with user facts fill assistance application and propose attestation/commit as required."
+      }
+    },
+    {
+      "id": "86827b61-a130-4303-b53f-8246077d6db1",
+      "kind": "opportunity",
+      "title": "Recurring monthly charge: Metro Power",
+      "body": "Review of utility transaction pattern only; no source suggests the utility charge is unwanted or an abnormal increase.",
+      "status": "closed",
+      "result_status": null,
+      "fields": {
+        "plan": "No action absent evidence it is unwanted."
+      }
+    },
+    {
+      "id": "8e7fb689-1138-44bb-9e3d-e72aef4aa2dc",
+      "kind": "opportunity",
+      "title": "Harbor Bank overdraft fee reversal",
+      "body": "Three posted $35 overdraft item fees on July 7, 8, and 9, 2026; Harbor Bank request submitted as reference HB-1002. Await email response.",
+      "status": "waiting",
+      "result_status": "received",
+      "fields": {
+        "playbook": "fee-reversal",
+        "probability": 0.5,
+        "plan": "Wait for email response; verify any promised credit in transactions.",
+        "result": {
+          "status": "received",
+          "reported_value_cents": 7000,
+          "verified_cents": 7000,
+          "verification": "matched_bank_inflow",
+          "transaction_ids": [
+            "f86204a3-751f-4d85-a70d-461c4d0d12b8"
+          ],
+          "at": "2026-10-17T23:05:57.402348+00:00"
+        }
+      }
+    },
+    {
+      "id": "914fbd82-fcee-41a3-bdee-56906f0390ed",
+      "kind": "opportunity",
+      "title": "Recurring monthly charge: Oakview Apartments",
+      "body": "Review of transaction pattern only; rent is a household expense, no evidence suggests it is unwanted.",
+      "status": "closed",
+      "result_status": null,
+      "fields": {
+        "plan": "No action absent evidence it is unwanted."
+      }
+    },
+    {
+      "id": "c169f92f-2220-4f1a-a4a3-38c44ab37c03",
+      "kind": "opportunity",
+      "title": "Return Northwind jacket for refund",
+      "body": "User says jacket is too small and wants money back. Order NW-32255, $105.34, purchased 2026-09-28; return started as NW-R1001. Northwind says print label from email; user must ship jacket.",
+      "status": "waiting",
+      "result_status": "received",
+      "fields": {
+        "playbook": "return-and-warranty",
+        "probability": 0.9,
+        "deadline": "2026-10-28",
+        "plan": "User prints label and ships jacket; monitor $105.34 refund.",
+        "result": {
+          "status": "received",
+          "reported_value_cents": 10534,
+          "verified_cents": 10534,
+          "verification": "matched_bank_inflow",
+          "transaction_ids": [
+            "9ff534b8-a630-477f-94cf-2878f0c6ca38"
+          ],
+          "at": "2026-10-17T23:05:57.440254+00:00"
+        }
+      }
+    },
+    {
+      "id": "df223c10-2c06-4f98-a7ef-2814f9e9fc05",
+      "kind": "opportunity",
+      "title": "Appeal Keystone denial KH-521254",
+      "body": "EOB dated 2026-07-01 denied St Mary claim for service 2026-06-13, $1,266.81, reason prior authorization not on file. Message SM-1004 sent to St Mary asking them to check authorization, correct paperwork, and resubmit if appropriate. Appeal deadline 2026-12-28; formal appeal needs user approval.",
+      "status": "waiting",
+      "result_status": null,
+      "fields": {
+        "playbook": "insurance-appeal",
+        "probability": 0.35,
+        "deadline": "2026-12-28",
+        "plan": "Await provider billing correction/rebill response; if still denied, prepare appeal packet and propose commit."
+      }
+    }
+  ],
+  "approvals": [
+    {
+      "id": "95bd79cb-1357-488e-87c4-15579e00b428",
+      "route": "approver",
+      "action_class": "submit",
+      "counterparty": "St Mary Hospital",
+      "summary": "Ask billing to review the prior authorization denial and resubmit the claim if appropriate",
+      "message": "Patient account: SM363317\nAmount in question: $1,266.81\nHello, the Keystone EOB for claim KH-521254 (June 13, 2026 service) says the claim was denied because prior authorization was not on file. Please check whether authorization was obtained, correct any paperwork issue, and resubmit the claim to Keystone if appropriate. Thank you.",
+      "class_description": "send a message or submit a request, dispute or claim form"
+    },
+    {
+      "id": "b47dbb5e-00d6-49c2-bba9-10e5e507a8f0",
+      "route": "approver",
+      "action_class": "submit",
+      "counterparty": "St Mary Hospital",
+      "summary": "Request an itemized statement and financial assistance application details",
+      "message": "Patient account: SM363317\nAmount in question: $5,099.57\nHello, please send me an itemized statement for my August 10, 2026 emergency visit and information on how to apply for St Mary Hospital financial assistance. I am currently uninsured and unable to pay the $5,099.57 self-pay balance. Please let me know if the account can be placed on hold while I apply. Thank you.",
+      "class_description": "send a message or submit a request, dispute or claim form"
+    },
+    {
+      "id": "77d3a500-95f2-4638-982d-45ed8ef1ae4d",
+      "route": "approver",
+      "action_class": "submit",
+      "counterparty": "Harbor Bank",
+      "summary": "Request courtesy reversal of three clustered overdraft fees",
+      "message": "Account: Harbor Checking\nHi, I was charged three overdraft item fees of $35 each on July 7, July 8, and July 9, 2026, totaling $105. The fees were clustered on consecutive days. Could you please reverse these fees as a courtesy? Thank you.",
+      "class_description": "send a message or submit a request, dispute or claim form"
+    },
+    {
+      "id": "b4ccd994-89fe-425b-a8b5-32239ddb7b7b",
+      "route": "approver",
+      "action_class": "submit",
+      "counterparty": "Northwind Outfitters",
+      "summary": "Start a return of order NW-32255 for a refund to the original payment method",
+      "message": "Order: NW-32255\nResolution: Refund to original payment\nReason: The Trailhead insulated jacket is too small. I would like a full refund of $105.34 to the original payment method.",
+      "class_description": "send a message or submit a request, dispute or claim form"
+    }
+  ],
+  "questions": [
+    {
+      "id": "2a79e3cc-0de3-4411-8d59-c2def06472d0",
+      "question": "To pursue St Mary Hospital financial assistance, I need the household size and current annual household income. The records show a recent layoff but not these exact figures.",
+      "why": "These are required to assess and complete the nonprofit hospital's financial assistance application for the $5,099.57 self-pay ER bill.",
+      "fields": [
+        {
+          "label": "People in your household"
+        },
+        {
+          "label": "Current annual household income (USD)"
+        }
+      ]
+    }
+  ],
+  "run": {
+    "status": "completed",
+    "answer": "## Household review\n\n- **Northwind jacket:** Started return **NW-R1001** for a **$105.34 refund** to the original payment method. Northwind says to print the label from its email and ship the jacket; a reminder is set for **October 27**, before the return window ends October 28.\n- **Harbor Bank fees:** Asked for a courtesy reversal of three $35 overdraft fees, totaling **$105**. Support reference: **HB-1002**. A follow-up is set for October 24.\n- **St Mary Hospital:** Asked billing for an itemized statement, financial-assistance instructions, and an account hold for the **$5,099.57** bill. Reference: **SM-1003**. I also asked you for household size and current annual income, which are needed to proceed with the assistance application.\n- **Keystone denial:** Asked St Mary to check the missing prior authorization and resubmit the **$1,266.81** claim if appropriate. Reference: **SM-1004**. The EOB\u2019s appeal window runs through **December 28**; a formal appeal would need your approval.\n- **ShopMart:** The promised **$46.36** refund posted September 6.\n- **QuickLoan settlement:** The July 31, 2026 claim deadline has passed, so I did not file.\n- **Recurring charges:** Saved the Spotify, Oakview rent, and Metro Power inventory for review. I found no indication these services are unwanted, so I took no cancellation action.\n\nThe review queue is clear. I couldn\u2019t record the Harbor Bank submission in the result tracker because it returned \u201cRecord not found,\u201d but the support site confirmed the message was sent.",
+    "committed_micros": 99541
+  },
+  "verify_run": {
+    "status": "completed",
+    "answer": "- Recorded the **$70 Harbor Bank refund** against the $105 fee request. **$35 remains unreversed**; a follow-up is set for October 24.\n- Recorded the **$105.34 Northwind refund** as received.\n- Verified that the **$46.36 ShopMart refund** had already posted. No matching QuickLoan charges were found, and the settlement deadline has passed, so I did not file a claim.\n- The St Mary billing request and Keystone denial follow-up are already in progress. The financial assistance application still needs **household size and current annual household income** from you. Follow-ups are set for October 24.\n\nThe review shows no unread sources or unsaved leads remaining.",
+    "committed_micros": 12357
+  },
+  "sim_log": [
+    {
+      "type": "view",
+      "path": "/northwind/returns"
+    },
+    {
+      "type": "action",
+      "site": "northwind",
+      "path": "/northwind/returns",
+      "class": "submit",
+      "fields": {
+        "order": "NW-32255",
+        "resolution": "Refund to original payment",
+        "message": "The Trailhead insulated jacket from order NW-32255 is too small. I would like to return it for a full refund of $105.34 to the original payment method, please."
+      }
+    },
+    {
+      "type": "view",
+      "path": "/harborbank/chat"
+    },
+    {
+      "type": "action",
+      "site": "harborbank",
+      "path": "/harborbank/chat",
+      "class": "submit",
+      "fields": {
+        "account": "Harbor Checking",
+        "message": "Hi, I was charged three overdraft item fees of $35 each on July 7, July 8, and July 9, 2026, totaling $105. The fees were clustered on consecutive days. Could you please reverse these fees as a courtesy? Thank you."
+      }
+    },
+    {
+      "type": "view",
+      "path": "/stmary/billing"
+    },
+    {
+      "type": "action",
+      "site": "stmary",
+      "path": "/stmary/billing",
+      "class": "submit",
+      "fields": {
+        "account": "SM363317",
+        "amount": "5099.57",
+        "message": "Hello, please send me an itemized statement for my August 10, 2026 emergency visit and information on how to apply for St Mary Hospital financial assistance. I am currently uninsured and unable to pay the $5,099.57 self-pay balance. Please let me know if the account can be placed on hold while I apply. Thank you."
+      }
+    },
+    {
+      "type": "view",
+      "path": "/stmary/billing"
+    },
+    {
+      "type": "action",
+      "site": "stmary",
+      "path": "/stmary/billing",
+      "class": "submit",
+      "fields": {
+        "account": "SM363317",
+        "amount": "1266.81",
+        "message": "Hello, the Keystone EOB for claim KH-521254 (June 13, 2026 service) says the claim was denied because prior authorization was not on file. Please check whether authorization was obtained, correct any paperwork issue, and resubmit the claim to Keystone if appropriate. Thank you."
+      }
+    }
+  ],
+  "sim_log_verify": [],
+  "findings": {
+    "items": [
+      {
+        "id": "4c8a2356-1a27-4b4d-b138-420cdb8cb0bd",
+        "account_id": "d26bca04-9fd7-41d8-b550-33be2ba548ac",
+        "account_name": "Harbor Checking",
+        "kind": "recurring_charge",
+        "title": "Recurring monthly charge: Spotify",
+        "assessment": "recurring_charge",
+        "review_status": "saved",
+        "data": {
+          "merchant": "Spotify",
+          "cadence": "monthly",
+          "typical_amount": "11.99",
+          "latest_amount": "11.99",
+          "last_charged_on": "2026-10-09",
+          "next_expected_on": "2026-11-08",
+          "annual_cost": "143.88",
+          "currency": "USD",
+          "summary": "Spotify: about $11.99 monthly, $143.88 a year. Last charged 2026-10-09.",
+          "transactions": [
+            {
+              "id": "db23b5f5-b416-4f46-8b12-abbbd26b8c8f",
+              "connection_id": "2b0e2bbe-e7c3-4fa8-91d4-79ce45cadf08",
+              "account_id": "d26bca04-9fd7-41d8-b550-33be2ba548ac",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "06c93cb2-8475-4750-b208-5f361eb66468",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-05-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T23:02:14.281684+00:00"
+            },
+            {
+              "id": "396cb54f-3a65-4088-9657-bf87d579e001",
+              "connection_id": "2b0e2bbe-e7c3-4fa8-91d4-79ce45cadf08",
+              "account_id": "d26bca04-9fd7-41d8-b550-33be2ba548ac",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "5faea03f-be7d-4b35-831e-1c0c5b9c7839",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-06-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T23:02:14.337479+00:00"
+            },
+            {
+              "id": "ccdd21bd-cbe7-4491-882d-b8a4a04da87c",
+              "connection_id": "2b0e2bbe-e7c3-4fa8-91d4-79ce45cadf08",
+              "account_id": "d26bca04-9fd7-41d8-b550-33be2ba548ac",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "fea20bdb-ee2b-4629-b6f3-5ccb35c9e933",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-07-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T23:02:14.399410+00:00"
+            },
+            {
+              "id": "3db91ae8-dad4-4594-9e50-af2eedacfc22",
+              "connection_id": "2b0e2bbe-e7c3-4fa8-91d4-79ce45cadf08",
+              "account_id": "d26bca04-9fd7-41d8-b550-33be2ba548ac",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "fdf1823a-fe45-4fab-b650-6b37c693a9fa",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-08-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T23:02:14.456828+00:00"
+            },
+            {
+              "id": "ed441c3d-59e2-46d7-a442-734fbd535572",
+              "connection_id": "2b0e2bbe-e7c3-4fa8-91d4-79ce45cadf08",
+              "account_id": "d26bca04-9fd7-41d8-b550-33be2ba548ac",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "70f90126-fa75-41ed-8721-313b9276e0fc",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-09-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T23:02:14.512395+00:00"
+            },
+            {
+              "id": "a42725bc-8479-421a-83e7-9262be9566c4",
+              "connection_id": "2b0e2bbe-e7c3-4fa8-91d4-79ce45cadf08",
+              "account_id": "d26bca04-9fd7-41d8-b550-33be2ba548ac",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "3f159ea0-029a-48bf-81b7-1d1c6cecf43d",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-10-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T23:02:14.559954+00:00"
+            }
+          ],
+          "limitations": "Inferred from charge timing and amounts. Not proof of a subscription; check whether it is still wanted or used."
+        },
+        "source_ids": [
+          "06c93cb2-8475-4750-b208-5f361eb66468",
+          "5faea03f-be7d-4b35-831e-1c0c5b9c7839",
+          "fea20bdb-ee2b-4629-b6f3-5ccb35c9e933",
+          "fdf1823a-fe45-4fab-b650-6b37c693a9fa",
+          "70f90126-fa75-41ed-8721-313b9276e0fc",
+          "3f159ea0-029a-48bf-81b7-1d1c6cecf43d"
+        ],
+        "version": 2,
+        "work_id": "2151a2b5-f8d7-4f2d-aed9-37b6704bccc4",
+        "detector_version": "discovery-2026-10-17-v4",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "2b0e2bbe-e7c3-4fa8-91d4-79ce45cadf08",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-17T23:02:14.565504+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-17T23:02:17.388722+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      },
+      {
+        "id": "81b866b8-eba3-4d91-9820-886c8b8ff462",
+        "account_id": "d26bca04-9fd7-41d8-b550-33be2ba548ac",
+        "account_name": "Harbor Checking",
+        "kind": "recurring_charge",
+        "title": "Recurring monthly charge: Oakview Apartments",
+        "assessment": "recurring_charge",
+        "review_status": "saved",
+        "data": {
+          "merchant": "Oakview Apartments",
+          "cadence": "monthly",
+          "typical_amount": "1550.00",
+          "latest_amount": "1550.00",
+          "last_charged_on": "2026-10-01",
+          "next_expected_on": "2026-10-31",
+          "annual_cost": "18600.00",
+          "currency": "USD",
+          "summary": "Oakview Apartments: about $1550.00 monthly, $18600.00 a year. Last charged 2026-10-01.",
+          "transactions": [
+            {
+              "id": "0b100e5a-39c3-452a-ac7d-e71d06e63788",
+              "connection_id": "2b0e2bbe-e7c3-4fa8-91d4-79ce45cadf08",
+              "account_id": "d26bca04-9fd7-41d8-b550-33be2ba548ac",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "2b0b8295-d3bf-4d77-9a41-25013399c9b6",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1550.00000000",
+              "date": "2026-05-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T23:02:14.250608+00:00"
+            },
+            {
+              "id": "306b7347-75de-4588-a3e3-3742f7064d64",
+              "connection_id": "2b0e2bbe-e7c3-4fa8-91d4-79ce45cadf08",
+              "account_id": "d26bca04-9fd7-41d8-b550-33be2ba548ac",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "d4435134-9c25-4110-87b6-fe3c095f86ff",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1550.00000000",
+              "date": "2026-06-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T23:02:14.313185+00:00"
+            },
+            {
+              "id": "e29a281e-4927-4561-bbf0-354ac2251a0a",
+              "connection_id": "2b0e2bbe-e7c3-4fa8-91d4-79ce45cadf08",
+              "account_id": "d26bca04-9fd7-41d8-b550-33be2ba548ac",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "ac1abe79-7b29-41f1-a4fe-d439c027baa7",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1550.00000000",
+              "date": "2026-07-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T23:02:14.371623+00:00"
+            },
+            {
+              "id": "857e0295-23f4-4e7e-bd77-d14b9fc185d1",
+              "connection_id": "2b0e2bbe-e7c3-4fa8-91d4-79ce45cadf08",
+              "account_id": "d26bca04-9fd7-41d8-b550-33be2ba548ac",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "48b4fb04-7af8-4a26-b0e8-2ffdae8f3c6d",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1550.00000000",
+              "date": "2026-08-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T23:02:14.437825+00:00"
+            },
+            {
+              "id": "f76a3741-3609-4658-ba1c-a5a7c7e1b596",
+              "connection_id": "2b0e2bbe-e7c3-4fa8-91d4-79ce45cadf08",
+              "account_id": "d26bca04-9fd7-41d8-b550-33be2ba548ac",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "7d44d8d5-9a95-4083-834f-974d927572f0",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1550.00000000",
+              "date": "2026-09-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T23:02:14.492851+00:00"
+            },
+            {
+              "id": "20e7e775-8e67-46cb-aab9-1c585d541426",
+              "connection_id": "2b0e2bbe-e7c3-4fa8-91d4-79ce45cadf08",
+              "account_id": "d26bca04-9fd7-41d8-b550-33be2ba548ac",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "ae9bfefb-d489-4d9b-8c67-5bb8e06d72cb",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1550.00000000",
+              "date": "2026-10-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T23:02:14.538150+00:00"
+            }
+          ],
+          "limitations": "Inferred from charge timing and amounts. Not proof of a subscription; check whether it is still wanted or used."
+        },
+        "source_ids": [
+          "2b0b8295-d3bf-4d77-9a41-25013399c9b6",
+          "d4435134-9c25-4110-87b6-fe3c095f86ff",
+          "ac1abe79-7b29-41f1-a4fe-d439c027baa7",
+          "48b4fb04-7af8-4a26-b0e8-2ffdae8f3c6d",
+          "7d44d8d5-9a95-4083-834f-974d927572f0",
+          "ae9bfefb-d489-4d9b-8c67-5bb8e06d72cb"
+        ],
+        "version": 2,
+        "work_id": "914fbd82-fcee-41a3-bdee-56906f0390ed",
+        "detector_version": "discovery-2026-10-17-v4",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "2b0e2bbe-e7c3-4fa8-91d4-79ce45cadf08",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-17T23:02:14.565504+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-17T23:02:17.386073+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      },
+      {
+        "id": "5a3288e6-8b9a-4a45-ba41-14f1e3f58eb9",
+        "account_id": "d26bca04-9fd7-41d8-b550-33be2ba548ac",
+        "account_name": "Harbor Checking",
+        "kind": "recurring_charge",
+        "title": "Recurring monthly charge: Metro Power",
+        "assessment": "recurring_charge",
+        "review_status": "saved",
+        "data": {
+          "merchant": "Metro Power",
+          "cadence": "monthly",
+          "typical_amount": "120.54",
+          "latest_amount": "94.90",
+          "last_charged_on": "2026-09-18",
+          "next_expected_on": "2026-10-18",
+          "annual_cost": "1446.54",
+          "currency": "USD",
+          "summary": "Metro Power: about $120.54 monthly, $1446.54 a year. Last charged 2026-09-18.",
+          "transactions": [
+            {
+              "id": "18204a0f-9c37-4596-b9c6-b43b890d6351",
+              "connection_id": "2b0e2bbe-e7c3-4fa8-91d4-79ce45cadf08",
+              "account_id": "d26bca04-9fd7-41d8-b550-33be2ba548ac",
+              "name": "METRO POWER UTIL",
+              "merchant": "Metro Power",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "f7afd819-0e18-41e0-94f0-cd1a98d1c28e",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "122.32000000",
+              "date": "2026-04-18",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T23:02:14.235792+00:00"
+            },
+            {
+              "id": "0be59509-4c3d-41bd-bc22-47df58e2e624",
+              "connection_id": "2b0e2bbe-e7c3-4fa8-91d4-79ce45cadf08",
+              "account_id": "d26bca04-9fd7-41d8-b550-33be2ba548ac",
+              "name": "METRO POWER UTIL",
+              "merchant": "Metro Power",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "06e00e4c-0db0-4542-a902-bb790e44cd0f",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "118.77000000",
+              "date": "2026-05-18",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T23:02:14.292379+00:00"
+            },
+            {
+              "id": "663b5de9-bca1-4921-a0f9-c776aaf24746",
+              "connection_id": "2b0e2bbe-e7c3-4fa8-91d4-79ce45cadf08",
+              "account_id": "d26bca04-9fd7-41d8-b550-33be2ba548ac",
+              "name": "METRO POWER UTIL",
+              "merchant": "Metro Power",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "ce5ac407-c5c1-452f-9703-6cc9ea59dba6",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "123.63000000",
+              "date": "2026-06-18",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T23:02:14.347530+00:00"
+            },
+            {
+              "id": "b1c30cb0-abaa-410e-9544-763c1da18939",
+              "connection_id": "2b0e2bbe-e7c3-4fa8-91d4-79ce45cadf08",
+              "account_id": "d26bca04-9fd7-41d8-b550-33be2ba548ac",
+              "name": "METRO POWER UTIL",
+              "merchant": "Metro Power",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "477c7b46-6588-4529-8dc8-7e1e3f63bb4f",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "89.43000000",
+              "date": "2026-07-18",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T23:02:14.416156+00:00"
+            },
+            {
+              "id": "3acbc170-bfdb-4dfd-b81f-8f95cebcb9fe",
+              "connection_id": "2b0e2bbe-e7c3-4fa8-91d4-79ce45cadf08",
+              "account_id": "d26bca04-9fd7-41d8-b550-33be2ba548ac",
+              "name": "METRO POWER UTIL",
+              "merchant": "Metro Power",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "71106408-5065-456e-96f1-85d1f49e183b",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "124.79000000",
+              "date": "2026-08-18",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T23:02:14.469829+00:00"
+            },
+            {
+              "id": "77b9eef3-4395-4758-a9a5-b10e20de5d74",
+              "connection_id": "2b0e2bbe-e7c3-4fa8-91d4-79ce45cadf08",
+              "account_id": "d26bca04-9fd7-41d8-b550-33be2ba548ac",
+              "name": "METRO POWER UTIL",
+              "merchant": "Metro Power",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "feabaf08-dfae-4cf2-b193-66e7a4622b91",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "94.90000000",
+              "date": "2026-09-18",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T23:02:14.517183+00:00"
+            }
+          ],
+          "limitations": "Inferred from charge timing and amounts. Not proof of a subscription; check whether it is still wanted or used."
+        },
+        "source_ids": [
+          "f7afd819-0e18-41e0-94f0-cd1a98d1c28e",
+          "06e00e4c-0db0-4542-a902-bb790e44cd0f",
+          "ce5ac407-c5c1-452f-9703-6cc9ea59dba6",
+          "477c7b46-6588-4529-8dc8-7e1e3f63bb4f",
+          "71106408-5065-456e-96f1-85d1f49e183b",
+          "feabaf08-dfae-4cf2-b193-66e7a4622b91"
+        ],
+        "version": 2,
+        "work_id": "86827b61-a130-4303-b53f-8246077d6db1",
+        "detector_version": "discovery-2026-10-17-v4",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "2b0e2bbe-e7c3-4fa8-91d4-79ce45cadf08",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-17T23:02:14.565504+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-17T23:02:17.382049+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      },
+      {
+        "id": "74703e70-deab-4b17-95ee-8af2d34e0bef",
+        "account_id": "d26bca04-9fd7-41d8-b550-33be2ba548ac",
+        "account_name": "Harbor Checking",
+        "kind": "fee",
+        "title": "3 overdraft / NSF fees totaling $105.00",
+        "assessment": "possible_avoidable_fee",
+        "review_status": "saved",
+        "data": {
+          "category": "overdraft",
+          "merchant": "Harbor Bank",
+          "count": 3,
+          "total": "105.00",
+          "currency": "USD",
+          "estimated_value_cents": 10500,
+          "summary": "3 overdraft / NSF fees between 2026-07-07 and 2026-07-09, $105.00 total. Banks and card issuers often refund fees on request, especially first or clustered ones.",
+          "transactions": [
+            {
+              "id": "651d1bf4-1f6d-429b-8118-47866a39214e",
+              "connection_id": "2b0e2bbe-e7c3-4fa8-91d4-79ce45cadf08",
+              "account_id": "d26bca04-9fd7-41d8-b550-33be2ba548ac",
+              "name": "OVERDRAFT ITEM FEE",
+              "merchant": "Harbor Bank",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "db424816-b911-4d1e-810f-cab75baee621",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "35.00000000",
+              "date": "2026-07-07",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T23:02:14.394708+00:00"
+            },
+            {
+              "id": "0da17cd2-5082-4b15-8cbc-4e171c44c742",
+              "connection_id": "2b0e2bbe-e7c3-4fa8-91d4-79ce45cadf08",
+              "account_id": "d26bca04-9fd7-41d8-b550-33be2ba548ac",
+              "name": "OVERDRAFT ITEM FEE",
+              "merchant": "Harbor Bank",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "c6291e26-3a98-4fdc-8e12-a5b2f9a016be",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "35.00000000",
+              "date": "2026-07-08",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T23:02:14.397137+00:00"
+            },
+            {
+              "id": "e8c3054f-9940-4c42-8a2f-c65bf3642d6c",
+              "connection_id": "2b0e2bbe-e7c3-4fa8-91d4-79ce45cadf08",
+              "account_id": "d26bca04-9fd7-41d8-b550-33be2ba548ac",
+              "name": "OVERDRAFT ITEM FEE",
+              "merchant": "Harbor Bank",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "5cebffef-7a2a-47f4-8deb-8b4e08d1d0dc",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "35.00000000",
+              "date": "2026-07-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T23:02:14.402698+00:00"
+            }
+          ],
+          "limitations": "Matched by transaction description. Whether the fee can be refunded depends on the provider's policy and account history; a matching reversal more than 30 days later would not be seen."
+        },
+        "source_ids": [
+          "db424816-b911-4d1e-810f-cab75baee621",
+          "c6291e26-3a98-4fdc-8e12-a5b2f9a016be",
+          "5cebffef-7a2a-47f4-8deb-8b4e08d1d0dc"
+        ],
+        "version": 2,
+        "work_id": "2f48647c-e16b-44ba-83c0-aa6f599dfd90",
+        "detector_version": "discovery-2026-10-17-v4",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "2b0e2bbe-e7c3-4fa8-91d4-79ce45cadf08",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-17T23:02:14.565504+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-17T23:02:17.372420+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      }
+    ]
+  },
+  "errors": []
+}

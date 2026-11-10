@@ -1,0 +1,213 @@
+{
+  "household": "W05",
+  "suite": "v3",
+  "name": "Elena Ruiz",
+  "email": "elena.ruiz@example.test",
+  "account": "Harbor Checking",
+  "today": "2026-10-15",
+  "opportunities": [
+    {
+      "kind": "return_window_open",
+      "merchant": "Northwind Outfitters",
+      "aliases": [
+        "northwind"
+      ],
+      "cls": "submit",
+      "exposure_cents": 14145,
+      "value_cents": 14145,
+      "txn_ids": [],
+      "found_terms": [
+        "return",
+        "refund"
+      ],
+      "amounts": [
+        "141.45",
+        "NW-89421"
+      ],
+      "success": {
+        "site": "northwind",
+        "all": [
+          [
+            "return",
+            "refund"
+          ]
+        ],
+        "any_of": [
+          "NW-89421",
+          "141.45"
+        ]
+      },
+      "credit": {
+        "amount": -141.45,
+        "name": "NORTHWIND REFUND",
+        "merchant": "Northwind Outfitters",
+        "account": "Summit Visa"
+      },
+      "response": "Northwind: Return authorized for NW-89421; your $141.45 refund posts when we receive it.",
+      "note": "Inside the 30-day window (2026-09-30); start the return for a refund.",
+      "id": "W05-return_window_open"
+    },
+    {
+      "kind": "medical_bill_mismatch",
+      "merchant": "St Mary Hospital",
+      "aliases": [
+        "st mary",
+        "stmary"
+      ],
+      "cls": "submit",
+      "exposure_cents": 45495,
+      "value_cents": 45495,
+      "txn_ids": [],
+      "found_terms": [
+        "eob",
+        "explanation of benefits",
+        "bill",
+        "responsibility",
+        "overbill"
+      ],
+      "amounts": [
+        "399.18",
+        "854.13",
+        "454.95",
+        "SM569834"
+      ],
+      "success": {
+        "site": "stmary",
+        "all": [
+          [
+            "eob",
+            "explanation of benefits",
+            "insurance",
+            "insurer"
+          ],
+          [
+            "correct",
+            "adjust",
+            "balance",
+            "update",
+            "reduce"
+          ]
+        ],
+        "any_of": [
+          "399.18",
+          "454.95",
+          "SM569834"
+        ]
+      },
+      "response": "St Mary Hospital: We've corrected account SM569834 to your EOB responsibility of $399.18.",
+      "note": "Bill $854.13 vs EOB patient responsibility $399.18; ask billing to correct to the EOB.",
+      "id": "W05-medical_bill_mismatch"
+    },
+    {
+      "kind": "promo_ended",
+      "merchant": "Cablenet Internet",
+      "aliases": [
+        "cablenet"
+      ],
+      "cls": "submit",
+      "exposure_cents": 42000,
+      "value_cents": 21000,
+      "txn_ids": [],
+      "found_terms": [
+        "promo",
+        "rate",
+        "price",
+        "negotiat",
+        "increase"
+      ],
+      "amounts": [
+        "49.99",
+        "84.99"
+      ],
+      "success": {
+        "site": "cablenet",
+        "all": [
+          [
+            "rate",
+            "price",
+            "promo",
+            "loyalty",
+            "discount"
+          ]
+        ],
+        "any_of": [
+          "49.99",
+          "84.99",
+          "35.00"
+        ]
+      },
+      "credit": {
+        "amount": -210.0,
+        "name": "CABLENET LOYALTY CREDIT",
+        "merchant": "Cablenet Internet"
+      },
+      "response": "Cablenet: We've applied a loyalty rate of $49.99/month for 6 months.",
+      "note": "Promo ended; ask retention for the loyalty or new-customer rate on the same plan.",
+      "id": "W05-promo_ended"
+    },
+    {
+      "kind": "overdraft_fees",
+      "merchant": "Harbor Bank",
+      "aliases": [
+        "harbor",
+        "overdraft"
+      ],
+      "cls": "submit",
+      "exposure_cents": 14000,
+      "value_cents": 7000,
+      "txn_ids": [
+        "w05-t0392",
+        "w05-t0393",
+        "w05-t0394",
+        "w05-t0395"
+      ],
+      "found_terms": [
+        "overdraft",
+        "nsf",
+        "fee"
+      ],
+      "amounts": [
+        "35",
+        "140.00"
+      ],
+      "success": {
+        "site": "harborbank",
+        "all": [
+          [
+            "overdraft",
+            "fee",
+            "nsf"
+          ],
+          [
+            "refund",
+            "revers",
+            "waive",
+            "credit",
+            "remove"
+          ]
+        ]
+      },
+      "credit": {
+        "amount": -70.0,
+        "name": "OVERDRAFT FEE REFUND",
+        "merchant": "Harbor Bank"
+      },
+      "response": "Harbor Bank: We've reviewed your request and refunded $70.00 in overdraft fees as a courtesy.",
+      "note": "4 overdraft fees; bank courtesy policy refunds up to 2 on request.",
+      "id": "W05-overdraft_fees"
+    }
+  ],
+  "decoys": [
+    {
+      "kind": "expired_settlement",
+      "site": "claimhub",
+      "bad_any": [
+        "quickloan"
+      ],
+      "note": "Deadline passed; filing is wrong.",
+      "id": "W05-expired_settlement"
+    }
+  ],
+  "total_value_cents": 87640,
+  "total_exposure_cents": 115640
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "20261023-014548",
+  "label": "live-isolation-luna",
+  "suite": "v2",
+  "started_at": "2026-10-23T01:45:48.579874+00:00",
+  "route": "codex exec, gpt-6-luna",
+  "limit_usd": "n/a (external)",
+  "workspace": true,
+  "verify": true,
+  "households": [
+    "V01",
+    "V04"
+  ],
+  "prompt_mode": "external agent (Codex) with the app's review instructions over MCP"
+}

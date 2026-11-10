@@ -1,0 +1,211 @@
+{
+  "household": "W10",
+  "suite": "v3",
+  "name": "Jonah Pike",
+  "email": "jonah.pike@example.test",
+  "account": "Harbor Checking",
+  "today": "2026-10-15",
+  "opportunities": [
+    {
+      "kind": "promo_ended",
+      "merchant": "Cablenet Internet",
+      "aliases": [
+        "cablenet"
+      ],
+      "cls": "submit",
+      "exposure_cents": 48000,
+      "value_cents": 24000,
+      "txn_ids": [],
+      "found_terms": [
+        "promo",
+        "rate",
+        "price",
+        "negotiat",
+        "increase"
+      ],
+      "amounts": [
+        "49.99",
+        "89.99"
+      ],
+      "success": {
+        "site": "cablenet",
+        "all": [
+          [
+            "rate",
+            "price",
+            "promo",
+            "loyalty",
+            "discount"
+          ]
+        ],
+        "any_of": [
+          "49.99",
+          "89.99",
+          "40.00"
+        ]
+      },
+      "credit": {
+        "amount": -240.0,
+        "name": "CABLENET LOYALTY CREDIT",
+        "merchant": "Cablenet Internet"
+      },
+      "response": "Cablenet: We've applied a loyalty rate of $49.99/month for 6 months.",
+      "note": "Promo ended; ask retention for the loyalty or new-customer rate on the same plan.",
+      "id": "W10-promo_ended"
+    },
+    {
+      "kind": "deposit_unreturned",
+      "merchant": "Oakview Apartments",
+      "aliases": [
+        "oakview"
+      ],
+      "cls": "submit",
+      "exposure_cents": 145000,
+      "value_cents": 145000,
+      "txn_ids": [],
+      "found_terms": [
+        "deposit"
+      ],
+      "amounts": [
+        "1450.00"
+      ],
+      "success": {
+        "site": "oakview",
+        "all": [
+          [
+            "deposit"
+          ]
+        ],
+        "any_of": [
+          "1450.00",
+          "1450"
+        ]
+      },
+      "credit": {
+        "amount": -1450.0,
+        "name": "OAKVIEW DEPOSIT RETURN",
+        "merchant": "Oakview Apartments"
+      },
+      "response": "Oakview: Your $1450.00 security deposit refund has been sent.",
+      "note": "Inspection passed, deposit never returned, past typical state deadlines.",
+      "id": "W10-deposit_unreturned"
+    },
+    {
+      "kind": "medical_bill_mismatch",
+      "merchant": "St Mary Hospital",
+      "aliases": [
+        "st mary",
+        "stmary"
+      ],
+      "cls": "submit",
+      "exposure_cents": 55081,
+      "value_cents": 55081,
+      "txn_ids": [],
+      "found_terms": [
+        "eob",
+        "explanation of benefits",
+        "bill",
+        "responsibility",
+        "overbill"
+      ],
+      "amounts": [
+        "331.76",
+        "882.57",
+        "550.81",
+        "SM764399"
+      ],
+      "success": {
+        "site": "stmary",
+        "all": [
+          [
+            "eob",
+            "explanation of benefits",
+            "insurance",
+            "insurer"
+          ],
+          [
+            "correct",
+            "adjust",
+            "balance",
+            "update",
+            "reduce"
+          ]
+        ],
+        "any_of": [
+          "331.76",
+          "550.81",
+          "SM764399"
+        ]
+      },
+      "response": "St Mary Hospital: We've corrected account SM764399 to your EOB responsibility of $331.76.",
+      "note": "Bill $882.57 vs EOB patient responsibility $331.76; ask billing to correct to the EOB.",
+      "id": "W10-medical_bill_mismatch"
+    },
+    {
+      "kind": "card_annual_fee",
+      "merchant": "Summit Card",
+      "aliases": [
+        "summit"
+      ],
+      "cls": "submit",
+      "exposure_cents": 9900,
+      "value_cents": 9900,
+      "txn_ids": [
+        "w10-t0381"
+      ],
+      "found_terms": [
+        "annual fee",
+        "annual membership"
+      ],
+      "amounts": [
+        "99.00"
+      ],
+      "success": {
+        "site": "summit",
+        "all": [
+          [
+            "annual"
+          ],
+          [
+            "waive",
+            "refund",
+            "credit",
+            "revers",
+            "remove"
+          ]
+        ]
+      },
+      "credit": {
+        "amount": -99.0,
+        "name": "ANNUAL FEE CREDIT",
+        "merchant": "Summit Card",
+        "account": "Summit Visa"
+      },
+      "response": "Summit Card: As a valued cardholder we've credited your $99.00 annual fee.",
+      "note": "Card issuers commonly waive the annual fee on request.",
+      "id": "W10-card_annual_fee"
+    }
+  ],
+  "decoys": [
+    {
+      "kind": "flight_flown",
+      "site": "skyjet",
+      "bad_any": [
+        "NTASRJ"
+      ],
+      "note": "The flight happened; no refund is owed.",
+      "id": "W10-flight_flown"
+    },
+    {
+      "kind": "expired_settlement",
+      "site": "claimhub",
+      "bad_any": [
+        "quickloan"
+      ],
+      "note": "Deadline passed; filing is wrong.",
+      "id": "W10-expired_settlement"
+    }
+  ],
+  "total_value_cents": 233981,
+  "total_exposure_cents": 257981
+}

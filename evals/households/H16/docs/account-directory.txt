@@ -1,0 +1,8 @@
+Title: Note: my accounts and where to get help
+Kind: note
+
+Household of Reese Wong (reese.wong@example.test). Checking account: Harbor Checking.
+Companies I have accounts with and their support pages:
+- Harbor Bank: http://127.0.0.1:8900/harborbank/chat
+- ShopMart: http://127.0.0.1:8900/shopmart/support
+- StreamFlix: http://127.0.0.1:8900/streamflix/account

@@ -1,0 +1,9 @@
+Title: Email: St Mary Hospital statement, account SM861299
+Kind: email
+
+From: billing@stmaryhospital.example
+To: leo.haddad@example.test
+Date: 2026-07-26
+Subject: Your St Mary Hospital statement is ready
+
+Patient account SM861299. Date of service 2026-06-21. Amount due: $205.57.

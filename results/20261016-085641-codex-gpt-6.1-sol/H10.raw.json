@@ -1,0 +1,731 @@
+{
+  "household": "H10",
+  "tool_counts": {
+    "agent_message": 3,
+    "get_context": 1,
+    "search_records": 5,
+    "workspace_get": 1,
+    "list_opportunities": 2,
+    "read_source": 4,
+    "search_transactions": 4,
+    "workspace_action": 10,
+    "save_work": 4,
+    "record_result": 3,
+    "follow_up": 2
+  },
+  "external": {
+    "agent": "codex",
+    "model": "gpt-6.1-sol"
+  },
+  "work": [
+    {
+      "id": "2c955918-b51e-495a-9149-12251e951cd4",
+      "kind": "note",
+      "title": "Household review October 16: sources and recurring inventory",
+      "body": "All 111 source records paginated; all four non-transaction documents read completely: account directory, CloudBox cancellation, ShopMart Sept 23 single order, ShopMart Sept 9 two orders. Each checked against merchant transactions. Sept 9 orders $31.89 and $76.53 match charges. Recurring inventory checked: Spotify $11.99/month unchanged, Oakview rent $1,450/month unchanged; no evidence either unwanted or eligible for refund. CloudBox $9.99/month after cancellation handled in refund opportunity. No fee, price-increase or tracked credit-promise leads; no trial/settlement/user non-use notices present. Coverage is uploaded checking history only, not a live bank feed. Both actionable refund opportunities submitted; no covered request left unsent.",
+      "status": "done",
+      "result_status": null,
+      "fields": {}
+    },
+    {
+      "id": "4f15beac-f739-4387-92f3-82aaf7194404",
+      "kind": "opportunity",
+      "title": "CloudBox: refund charges after confirmed cancellation",
+      "body": "Cancelled July 28, confirmation CB-77619. Charges Aug 3, Sep 3, Oct 3 $9.99 each; no credits in uploaded history. Request $29.97 refund and investigation of cancellation enforcement; no new cancellation authorized.",
+      "status": "open",
+      "result_status": "submitted",
+      "fields": {
+        "finding_id": "7e809c30-c3a4-4de6-b6b0-fbf51aed06cf"
+      }
+    },
+    {
+      "id": "54587edf-4fd4-4acc-a375-1a9cc4c2aef3",
+      "kind": "opportunity",
+      "title": "ShopMart: duplicate $86.48 for order SM-41321",
+      "body": "One order SM-41321 confirmed Sept 23 for $86.48; two posted charges same date, no credit. Sept 9 purchases separately match two confirmed orders. Request duplicate refund.",
+      "status": "open",
+      "result_status": "submitted",
+      "fields": {
+        "finding_id": "d018aa9e-0a9b-4795-a911-aebce939d93d"
+      }
+    },
+    {
+      "id": "756bd22b-0725-4283-8a80-db2acfb86b20",
+      "kind": "case",
+      "title": "Approval: cancel any still-active CloudBox plan",
+      "body": "CloudBox confirmed cancellation July 28 (CB-77619) but charged $9.99 monthly through October. Refund request CB-1001 submitted. Approval is needed only if a new cancellation action is required for an active plan; first verify the existing cancellation with support.",
+      "status": "waiting",
+      "result_status": null,
+      "fields": {
+        "approval_request": {
+          "action": "Cancel any still-active CloudBox paid plan if support confirms a new cancellation is needed",
+          "counterparty": "CloudBox",
+          "amount_usd": 9.99,
+          "reason": "Billing continues despite prior cancellation; avoid further monthly charges. Estimated annual avoided cost $119.88."
+        }
+      }
+    }
+  ],
+  "work_after_verify": [
+    {
+      "id": "2c955918-b51e-495a-9149-12251e951cd4",
+      "kind": "note",
+      "title": "Household review October 16: sources and recurring inventory",
+      "body": "All 111 source records paginated; all four non-transaction documents read completely: account directory, CloudBox cancellation, ShopMart Sept 23 single order, ShopMart Sept 9 two orders. Each checked against merchant transactions. Sept 9 orders $31.89 and $76.53 match charges. Recurring inventory checked: Spotify $11.99/month unchanged, Oakview rent $1,450/month unchanged; no evidence either unwanted or eligible for refund. CloudBox $9.99/month after cancellation handled in refund opportunity. No fee, price-increase or tracked credit-promise leads; no trial/settlement/user non-use notices present. Coverage is uploaded checking history only, not a live bank feed. Both actionable refund opportunities submitted; no covered request left unsent.",
+      "status": "done",
+      "result_status": null,
+      "fields": {}
+    },
+    {
+      "id": "46f07654-837e-45cc-88cb-b9fdac227e6b",
+      "kind": "note",
+      "title": "October 16 incremental review: both refunds received",
+      "body": "Continued existing work without duplicating requests. Paginated all 116 sources; only two new non-transaction documents, both read fully and matched to merchant transactions. ShopMart -$86.48 and CloudBox -$29.97 posted October 15; recorded received and resolved refund opportunities, cancelling obsolete refund reminders. Leads unchanged: duplicate already refunded; CloudBox recurring handled; Spotify $11.99 and rent $1450 unchanged and no evidence unwanted. No fee, price-increase or credit-promise leads. CloudBox future billing not confirmed; authorized status inquiry blocked by account-page NavigationFailed. Waiting approval case updated and retry scheduled. No other covered requests remain unsent. Coverage remains uploaded records, not live bank verification.",
+      "status": "done",
+      "result_status": null,
+      "fields": {}
+    },
+    {
+      "id": "4f15beac-f739-4387-92f3-82aaf7194404",
+      "kind": "opportunity",
+      "title": "CloudBox: refund charges after confirmed cancellation",
+      "body": "Previously submitted CB-1001; full $29.97 refund posted October 15, confirmed by company email. Refund resolved. Existing cancellation enforcement/future billing remains in separate waiting case; browser directory URL failed NavigationFailed October 16.",
+      "status": "done",
+      "result_status": "received",
+      "fields": {}
+    },
+    {
+      "id": "54587edf-4fd4-4acc-a375-1a9cc4c2aef3",
+      "kind": "opportunity",
+      "title": "ShopMart: duplicate $86.48 for order SM-41321",
+      "body": "Previously submitted SM-1002; full $86.48 refund posted October 15 and company reply confirms duplicate order SM-41321. Resolved; no duplicate request needed.",
+      "status": "done",
+      "result_status": "received",
+      "fields": {}
+    },
+    {
+      "id": "756bd22b-0725-4283-8a80-db2acfb86b20",
+      "kind": "case",
+      "title": "Approval: cancel any still-active CloudBox plan",
+      "body": "Full $29.97 refund received. Reply does not confirm future billing stopped. Attempt to inspect existing cancellation at account-directory CloudBox URL failed NavigationFailed October 16. Retry support status inquiry; no new cancellation performed. Approval only needed if a new cancellation is required.",
+      "status": "waiting",
+      "result_status": null,
+      "fields": {
+        "blocker": "CloudBox account page failed to load (NavigationFailed); cannot verify current billing status or submit status inquiry.",
+        "approval_request": {
+          "action": "Cancel any still-active CloudBox paid plan if support confirms a new cancellation is needed",
+          "counterparty": "CloudBox",
+          "amount_usd": 9.99,
+          "reason": "Charges continued after July 28 cancellation. Refund received, but future billing remains unconfirmed; estimated annual avoided cost $119.88."
+        }
+      }
+    }
+  ],
+  "run": {
+    "status": "completed",
+    "answer": "Submitted refund requests totaling **$116.45**:\n\n- **CloudBox: $29.97** for three charges after confirmed cancellation. Case CB-1001; follow-up October 23.\n- **ShopMart: $86.48** duplicate charge for order SM-41321. Request SM-1002; follow-up October 21.\n\nNo refunds have posted in the supplied history. Reviewed all available documents and recurring-charge leads.\n\nSaved an approval item for cancelling any still-active CloudBox plan ($9.99/month), if a new cancellation is needed. No service changes were made.",
+    "committed_micros": 254217
+  },
+  "verify_run": {
+    "status": "completed",
+    "answer": "Recorded $116.45 in refunds received in the uploaded transactions: ShopMart $86.48 and CloudBox $29.97. Closed both refund cases and cancelled their refund reminders. No new refund opportunities found.\n\nCloudBox\u2019s page failed to load, so future billing remains unconfirmed. Scheduled a retry for October 19. Saved an approval item for cancelling any still-active $9.99/month plan if needed; no service changes made.",
+    "committed_micros": 182138
+  },
+  "sim_log": [
+    {
+      "type": "view",
+      "path": "/cloudbox/account"
+    },
+    {
+      "type": "view",
+      "path": "/cloudbox/support"
+    },
+    {
+      "type": "action",
+      "site": "cloudbox",
+      "path": "/cloudbox/support",
+      "class": "submit",
+      "fields": {
+        "reason": "Charged after cancelling",
+        "message": "Drew Martin, drew.martin@example.test. Your July 28, 2026 cancellation confirmation CB-77619 states that my CloudBox plan was cancelled and I would not be charged again. Nevertheless, $9.99 posted on August 3, September 3, and October 3, 2026, totaling $29.97. No refund appears in my available transaction history. Please refund all three charges ($29.97) to the original payment method and investigate why billing continued despite the confirmed cancellation. Please confirm the existing cancellation status. This request does not authorize a new plan change or cancellation."
+      }
+    },
+    {
+      "type": "view",
+      "path": "/shopmart/support"
+    },
+    {
+      "type": "action",
+      "site": "shopmart",
+      "path": "/shopmart/support",
+      "class": "submit",
+      "fields": {
+        "order": "SM-41321",
+        "reason": "Duplicate charge",
+        "amount": "86.48",
+        "details": "Drew Martin (drew.martin@example.test). On 2026-09-23, two posted ShopMart charges of $86.48 each appear for order SM-41321. The order confirmation shows one wireless-headphones order totaling $86.48 and explicitly says it was my only order that day. No corresponding refund appears in the available transactions. Please refund the duplicate $86.48 charge to the original payment method."
+      }
+    }
+  ],
+  "findings": {
+    "items": [
+      {
+        "id": "8ff4642e-d4ed-4442-a204-0f84ad8f1f59",
+        "account_id": "82f7c5b0-a924-497d-bd61-2adc0d166458",
+        "account_name": "Harbor Checking",
+        "kind": "recurring_charge",
+        "title": "Recurring monthly charge: Spotify",
+        "assessment": "recurring_charge",
+        "review_status": "new",
+        "data": {
+          "merchant": "Spotify",
+          "cadence": "monthly",
+          "typical_amount": "11.99",
+          "latest_amount": "11.99",
+          "last_charged_on": "2026-10-09",
+          "next_expected_on": "2026-11-08",
+          "annual_cost": "143.88",
+          "currency": "USD",
+          "summary": "Spotify: about $11.99 monthly, $143.88 a year. Last charged 2026-10-09.",
+          "transactions": [
+            {
+              "id": "2137188b-5045-42b3-827d-bd1d8ce1d57b",
+              "connection_id": "52b615c5-018a-4b50-b573-9332fcffbc81",
+              "account_id": "82f7c5b0-a924-497d-bd61-2adc0d166458",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "330a0716-d47d-48c4-8515-08231fe845a9",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-05-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:06:24.828148+00:00"
+            },
+            {
+              "id": "be004e03-35f5-4443-905b-ce2a75f7f92c",
+              "connection_id": "52b615c5-018a-4b50-b573-9332fcffbc81",
+              "account_id": "82f7c5b0-a924-497d-bd61-2adc0d166458",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "1222800d-b284-4896-bbae-9e7bd7c4a972",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-06-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:06:24.863603+00:00"
+            },
+            {
+              "id": "38ea058e-4387-4def-a806-ab551c1989d9",
+              "connection_id": "52b615c5-018a-4b50-b573-9332fcffbc81",
+              "account_id": "82f7c5b0-a924-497d-bd61-2adc0d166458",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "61a926f0-06c0-4c3e-9906-5362a8bc3118",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-07-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:06:24.895742+00:00"
+            },
+            {
+              "id": "20b97a1f-6c11-4d17-acfe-37bd0b33c29b",
+              "connection_id": "52b615c5-018a-4b50-b573-9332fcffbc81",
+              "account_id": "82f7c5b0-a924-497d-bd61-2adc0d166458",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "7caff27c-b6de-4513-b2d9-65d5a46fe05e",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-08-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:06:24.941781+00:00"
+            },
+            {
+              "id": "61897b01-d958-48ef-b40e-820f62c932ad",
+              "connection_id": "52b615c5-018a-4b50-b573-9332fcffbc81",
+              "account_id": "82f7c5b0-a924-497d-bd61-2adc0d166458",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "edeb58d8-16f8-40ab-bff9-ac6860af719e",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-09-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:06:24.976731+00:00"
+            },
+            {
+              "id": "f9662a7f-54e8-4a28-9d72-92e07a5de7b6",
+              "connection_id": "52b615c5-018a-4b50-b573-9332fcffbc81",
+              "account_id": "82f7c5b0-a924-497d-bd61-2adc0d166458",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "6fe66e39-3969-4bea-99f1-59cedbb4c351",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-10-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:06:25.016132+00:00"
+            }
+          ],
+          "limitations": "Inferred from charge timing and amounts. Not proof of a subscription; check whether it is still wanted or used."
+        },
+        "source_ids": [
+          "330a0716-d47d-48c4-8515-08231fe845a9",
+          "1222800d-b284-4896-bbae-9e7bd7c4a972",
+          "61a926f0-06c0-4c3e-9906-5362a8bc3118",
+          "7caff27c-b6de-4513-b2d9-65d5a46fe05e",
+          "edeb58d8-16f8-40ab-bff9-ac6860af719e",
+          "6fe66e39-3969-4bea-99f1-59cedbb4c351"
+        ],
+        "version": 1,
+        "work_id": null,
+        "detector_version": "discovery-2026-10-16-v2",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "52b615c5-018a-4b50-b573-9332fcffbc81",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-16T09:06:25.023869+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-16T09:06:25.816463+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      },
+      {
+        "id": "7e809c30-c3a4-4de6-b6b0-fbf51aed06cf",
+        "account_id": "82f7c5b0-a924-497d-bd61-2adc0d166458",
+        "account_name": "Harbor Checking",
+        "kind": "recurring_charge",
+        "title": "Recurring monthly charge: CloudBox",
+        "assessment": "recurring_charge",
+        "review_status": "new",
+        "data": {
+          "merchant": "CloudBox",
+          "cadence": "monthly",
+          "typical_amount": "9.99",
+          "latest_amount": "9.99",
+          "last_charged_on": "2026-10-03",
+          "next_expected_on": "2026-11-02",
+          "annual_cost": "119.88",
+          "currency": "USD",
+          "summary": "CloudBox: about $9.99 monthly, $119.88 a year. Last charged 2026-10-03.",
+          "transactions": [
+            {
+              "id": "09e7d64c-3b08-4c54-a07d-92dfa4ed35ff",
+              "connection_id": "52b615c5-018a-4b50-b573-9332fcffbc81",
+              "account_id": "82f7c5b0-a924-497d-bd61-2adc0d166458",
+              "name": "CLOUDBOX STORAGE",
+              "merchant": "CloudBox",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "0bf8a1b1-82f9-4d9d-b39a-d94adae9ad28",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "9.99000000",
+              "date": "2026-05-03",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:06:24.821070+00:00"
+            },
+            {
+              "id": "3993700b-94a8-4c1d-a4b2-7aeef96bfe4f",
+              "connection_id": "52b615c5-018a-4b50-b573-9332fcffbc81",
+              "account_id": "82f7c5b0-a924-497d-bd61-2adc0d166458",
+              "name": "CLOUDBOX STORAGE",
+              "merchant": "CloudBox",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "ab5c7bb3-3240-4fa8-9c43-bb89dded5f1b",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "9.99000000",
+              "date": "2026-06-03",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:06:24.855130+00:00"
+            },
+            {
+              "id": "fd7d2a38-11ef-4c0f-bf08-7fb1d391455f",
+              "connection_id": "52b615c5-018a-4b50-b573-9332fcffbc81",
+              "account_id": "82f7c5b0-a924-497d-bd61-2adc0d166458",
+              "name": "CLOUDBOX STORAGE",
+              "merchant": "CloudBox",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "ba9791b8-a9ee-449b-884c-128c3233df7c",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "9.99000000",
+              "date": "2026-07-03",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:06:24.889072+00:00"
+            },
+            {
+              "id": "8d4a1135-8faf-40a1-a804-1afe95721706",
+              "connection_id": "52b615c5-018a-4b50-b573-9332fcffbc81",
+              "account_id": "82f7c5b0-a924-497d-bd61-2adc0d166458",
+              "name": "CLOUDBOX STORAGE",
+              "merchant": "CloudBox",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "a3313f7a-e1e0-4fa4-8eda-57d42d9af42f",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "9.99000000",
+              "date": "2026-08-03",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:06:24.934906+00:00"
+            },
+            {
+              "id": "551e16d3-39a9-4ad6-ac7c-a083980cbd20",
+              "connection_id": "52b615c5-018a-4b50-b573-9332fcffbc81",
+              "account_id": "82f7c5b0-a924-497d-bd61-2adc0d166458",
+              "name": "CLOUDBOX STORAGE",
+              "merchant": "CloudBox",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "07c3100a-478c-4737-a3d1-3829f5c6ee25",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "9.99000000",
+              "date": "2026-09-03",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:06:24.968390+00:00"
+            },
+            {
+              "id": "6bfb3735-f48d-4f44-8b42-346d9e04a7d2",
+              "connection_id": "52b615c5-018a-4b50-b573-9332fcffbc81",
+              "account_id": "82f7c5b0-a924-497d-bd61-2adc0d166458",
+              "name": "CLOUDBOX STORAGE",
+              "merchant": "CloudBox",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "68dd4b22-aeff-4bcd-9d0f-c968614925b4",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "9.99000000",
+              "date": "2026-10-03",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:06:25.009122+00:00"
+            }
+          ],
+          "limitations": "Inferred from charge timing and amounts. Not proof of a subscription; check whether it is still wanted or used."
+        },
+        "source_ids": [
+          "0bf8a1b1-82f9-4d9d-b39a-d94adae9ad28",
+          "ab5c7bb3-3240-4fa8-9c43-bb89dded5f1b",
+          "ba9791b8-a9ee-449b-884c-128c3233df7c",
+          "a3313f7a-e1e0-4fa4-8eda-57d42d9af42f",
+          "07c3100a-478c-4737-a3d1-3829f5c6ee25",
+          "68dd4b22-aeff-4bcd-9d0f-c968614925b4"
+        ],
+        "version": 1,
+        "work_id": null,
+        "detector_version": "discovery-2026-10-16-v2",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "52b615c5-018a-4b50-b573-9332fcffbc81",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-16T09:06:25.023869+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-16T09:06:25.814655+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      },
+      {
+        "id": "91ad08aa-1af5-409c-b278-ca149720f26c",
+        "account_id": "82f7c5b0-a924-497d-bd61-2adc0d166458",
+        "account_name": "Harbor Checking",
+        "kind": "recurring_charge",
+        "title": "Recurring monthly charge: Oakview Apartments",
+        "assessment": "recurring_charge",
+        "review_status": "new",
+        "data": {
+          "merchant": "Oakview Apartments",
+          "cadence": "monthly",
+          "typical_amount": "1450.00",
+          "latest_amount": "1450.00",
+          "last_charged_on": "2026-10-01",
+          "next_expected_on": "2026-10-31",
+          "annual_cost": "17400.00",
+          "currency": "USD",
+          "summary": "Oakview Apartments: about $1450.00 monthly, $17400.00 a year. Last charged 2026-10-01.",
+          "transactions": [
+            {
+              "id": "02ed6e00-88bd-49f2-9557-7708358debe1",
+              "connection_id": "52b615c5-018a-4b50-b573-9332fcffbc81",
+              "account_id": "82f7c5b0-a924-497d-bd61-2adc0d166458",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "9b5dd53d-d7fb-48d8-8d7f-c47869e98699",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1450.00000000",
+              "date": "2026-05-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:06:24.810669+00:00"
+            },
+            {
+              "id": "b9801f8c-f3f7-4679-8d1f-e78384d1dc40",
+              "connection_id": "52b615c5-018a-4b50-b573-9332fcffbc81",
+              "account_id": "82f7c5b0-a924-497d-bd61-2adc0d166458",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "8da58361-e48d-4d0f-9ca7-a58d1dd9694e",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1450.00000000",
+              "date": "2026-06-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:06:24.852985+00:00"
+            },
+            {
+              "id": "7ab3f110-02c0-4afd-b337-1702277da221",
+              "connection_id": "52b615c5-018a-4b50-b573-9332fcffbc81",
+              "account_id": "82f7c5b0-a924-497d-bd61-2adc0d166458",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "00209673-8b03-4c6a-97dc-c97e4cd0dbae",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1450.00000000",
+              "date": "2026-07-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:06:24.884331+00:00"
+            },
+            {
+              "id": "aa96fa32-e4c9-471c-a0f5-d9828b7f36f5",
+              "connection_id": "52b615c5-018a-4b50-b573-9332fcffbc81",
+              "account_id": "82f7c5b0-a924-497d-bd61-2adc0d166458",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "408f5c6c-5f6c-45f7-8773-d711a5bfe754",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1450.00000000",
+              "date": "2026-08-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:06:24.932496+00:00"
+            },
+            {
+              "id": "10248614-4a6c-46e4-834e-13b4989e2c91",
+              "connection_id": "52b615c5-018a-4b50-b573-9332fcffbc81",
+              "account_id": "82f7c5b0-a924-497d-bd61-2adc0d166458",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "88557ec5-525c-4faa-b6bf-85e042a16950",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1450.00000000",
+              "date": "2026-09-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:06:24.966339+00:00"
+            },
+            {
+              "id": "7450d0e2-bc61-41da-99c4-580c53147292",
+              "connection_id": "52b615c5-018a-4b50-b573-9332fcffbc81",
+              "account_id": "82f7c5b0-a924-497d-bd61-2adc0d166458",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "c082e5c6-7401-46da-9d34-601e87baf30a",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1450.00000000",
+              "date": "2026-10-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:06:25.004400+00:00"
+            }
+          ],
+          "limitations": "Inferred from charge timing and amounts. Not proof of a subscription; check whether it is still wanted or used."
+        },
+        "source_ids": [
+          "9b5dd53d-d7fb-48d8-8d7f-c47869e98699",
+          "8da58361-e48d-4d0f-9ca7-a58d1dd9694e",
+          "00209673-8b03-4c6a-97dc-c97e4cd0dbae",
+          "408f5c6c-5f6c-45f7-8773-d711a5bfe754",
+          "88557ec5-525c-4faa-b6bf-85e042a16950",
+          "c082e5c6-7401-46da-9d34-601e87baf30a"
+        ],
+        "version": 1,
+        "work_id": null,
+        "detector_version": "discovery-2026-10-16-v2",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "52b615c5-018a-4b50-b573-9332fcffbc81",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-16T09:06:25.023869+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-16T09:06:25.812877+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      },
+      {
+        "id": "d018aa9e-0a9b-4795-a911-aebce939d93d",
+        "account_id": "82f7c5b0-a924-497d-bd61-2adc0d166458",
+        "account_name": "Harbor Checking",
+        "kind": "duplicate_charge",
+        "title": "Possible duplicate charge: ShopMart $86.48",
+        "assessment": "possible_duplicate_charge",
+        "review_status": "new",
+        "data": {
+          "merchant": "ShopMart",
+          "amount": "86.48",
+          "currency": "USD",
+          "estimated_value_cents": 8648,
+          "summary": "Two charges of $86.48 at ShopMart on 2026-09-23 and 2026-09-23. Compare with the order confirmation before disputing.",
+          "transactions": [
+            {
+              "id": "eba834cc-5169-4000-aa5a-0df8b2476338",
+              "connection_id": "52b615c5-018a-4b50-b573-9332fcffbc81",
+              "account_id": "82f7c5b0-a924-497d-bd61-2adc0d166458",
+              "name": "SHOPMART.COM ORDER",
+              "merchant": "ShopMart",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "1bc233da-bad4-400e-87d7-b229d7ab5528",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "86.48000000",
+              "date": "2026-09-23",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:06:24.995611+00:00"
+            },
+            {
+              "id": "ef34ada0-523c-4a6a-b368-ae3540216404",
+              "connection_id": "52b615c5-018a-4b50-b573-9332fcffbc81",
+              "account_id": "82f7c5b0-a924-497d-bd61-2adc0d166458",
+              "name": "SHOPMART.COM ORDER",
+              "merchant": "ShopMart",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "0e6582f9-be59-482f-9472-6aeeca037411",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "86.48000000",
+              "date": "2026-09-23",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:06:24.997780+00:00"
+            }
+          ],
+          "limitations": "Two identical amounts can be two real purchases. Check receipts or order confirmations before asking for a refund."
+        },
+        "source_ids": [
+          "1bc233da-bad4-400e-87d7-b229d7ab5528",
+          "0e6582f9-be59-482f-9472-6aeeca037411"
+        ],
+        "version": 1,
+        "work_id": null,
+        "detector_version": "discovery-2026-10-16-v2",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "52b615c5-018a-4b50-b573-9332fcffbc81",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-16T09:06:25.023869+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-16T09:06:25.808678+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      }
+    ]
+  },
+  "errors": []
+}

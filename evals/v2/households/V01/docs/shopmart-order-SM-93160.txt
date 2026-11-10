@@ -1,0 +1,9 @@
+Title: Email: ShopMart order SM-93160
+Kind: email
+
+From: orders@shopmart.example
+To: nadia.flores@example.test
+Date: 2026-09-04
+Subject: Order SM-93160 confirmed
+
+Order SM-93160: 1 x Standing desk, $110.24. This is your only order today.

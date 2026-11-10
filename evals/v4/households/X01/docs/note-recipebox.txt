@@ -1,0 +1,4 @@
+Title: Note: RecipeBox
+Kind: note
+
+RecipeBox (the recipe app) is the one app I use every day. Keep it.

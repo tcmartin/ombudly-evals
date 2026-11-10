@@ -1,0 +1,16 @@
+Title: Email: Keystone Health Plan Explanation of Benefits, claim KH-550979
+Kind: email
+
+From: eob@keystonehealth.example
+To: kira.sato@example.test
+Date: 2026-07-11
+Subject: Your Explanation of Benefits for claim KH-550979
+
+THIS IS NOT A BILL.
+Patient: Kira Sato   Provider: St Mary Hospital   Date of service: 2026-06-23
+Claim KH-550979 status: DENIED
+Amount billed: $1593.12
+Plan allowed amount: $0.00
+Plan paid: $0.00
+Your responsibility (deductible/coinsurance): $1593.12
+Reason code PA-17: prior authorization not on file. You may appeal within 180 days of this notice.

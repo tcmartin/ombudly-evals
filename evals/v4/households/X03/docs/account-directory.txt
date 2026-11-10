@@ -1,0 +1,10 @@
+Title: Note: my accounts and contacts
+Kind: note
+
+Household of Priya Nair (priya.nair@home.{domain}). Accounts: Harbor Checking, Summit Visa. My email is connected to Ombudly.
+Companies and how to reach them:
+- Bluebird Catering: orders@bluebirdcatering.{domain}
+- CloudNote: billing@cloudnote.{domain}
+- FitPro: billing@fitpro.{domain}
+- Maple Court Rentals: office@maplecourtrentals.{domain}
+- Pinewood Books: support@pinewoodbooks.{domain}

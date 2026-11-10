@@ -1,0 +1,47 @@
+[
+  {
+    "file": "skyjet-KAVYAR.txt",
+    "title": "Email: SkyJet flight cancelled, booking KAVYAR",
+    "kind": "email"
+  },
+  {
+    "file": "note-flight.txt",
+    "title": "Note: flight",
+    "kind": "note"
+  },
+  {
+    "file": "eob-KH-550979.txt",
+    "title": "Email: Keystone Health Plan Explanation of Benefits, claim KH-550979",
+    "kind": "email"
+  },
+  {
+    "file": "stmary-er-SM510362.txt",
+    "title": "Email: St Mary Hospital statement, account SM510362",
+    "kind": "email"
+  },
+  {
+    "file": "note-job.txt",
+    "title": "Note: money is tight",
+    "kind": "note"
+  },
+  {
+    "file": "shopmart-return-SM-82337.txt",
+    "title": "Email: ShopMart return SM-82337",
+    "kind": "email"
+  },
+  {
+    "file": "quickloan-notice.txt",
+    "title": "Email: QuickLoan settlement notice",
+    "kind": "email"
+  },
+  {
+    "file": "shopmart-return-SM-76686.txt",
+    "title": "Email: ShopMart return SM-76686",
+    "kind": "email"
+  },
+  {
+    "file": "account-directory.txt",
+    "title": "Note: my accounts and where to get help",
+    "kind": "note"
+  }
+]

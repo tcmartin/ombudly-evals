@@ -1,0 +1,10 @@
+Title: Email: Oakview Apartments move-out confirmation
+Kind: email
+
+From: leasing@oakview.example
+To: jonah.pike@example.test
+Date: 2026-08-30
+Subject: Move-out inspection complete
+
+Thanks for living at Oakview. Your move-out inspection on 2026-08-30 found the unit in good condition.
+Your security deposit of $1450.00 will be returned to your forwarding address.

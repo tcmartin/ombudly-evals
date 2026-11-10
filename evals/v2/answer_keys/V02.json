@@ -1,0 +1,199 @@
+{
+  "household": "V02",
+  "suite": "v2",
+  "name": "Owen Hart",
+  "email": "owen.hart@example.test",
+  "account": "Harbor Checking",
+  "today": "2026-10-15",
+  "opportunities": [
+    {
+      "kind": "card_fx_fees",
+      "merchant": "Summit Card",
+      "aliases": [
+        "summit"
+      ],
+      "cls": "submit",
+      "exposure_cents": 1743,
+      "value_cents": 1743,
+      "txn_ids": [
+        "v02-t0371",
+        "v02-t0373",
+        "v02-t0375",
+        "v02-t0377"
+      ],
+      "found_terms": [
+        "foreign transaction"
+      ],
+      "amounts": [
+        "17.43"
+      ],
+      "success": {
+        "site": "summit",
+        "all": [
+          [
+            "foreign"
+          ],
+          [
+            "refund",
+            "revers",
+            "waive",
+            "credit",
+            "remove"
+          ]
+        ]
+      },
+      "credit": {
+        "amount": -17.43,
+        "name": "FOREIGN FEE REVERSAL",
+        "merchant": "Summit Card",
+        "account": "Summit Visa"
+      },
+      "response": "Summit Card: We've reversed $17.43 in foreign transaction fees.",
+      "note": "Card advertises no foreign fees; fees were charged anyway.",
+      "id": "V02-card_fx_fees"
+    },
+    {
+      "kind": "image_receipt_refund",
+      "merchant": "Pinecrest Hardware",
+      "aliases": [
+        "pinecrest"
+      ],
+      "cls": "submit",
+      "exposure_cents": 5903,
+      "value_cents": 5903,
+      "txn_ids": [],
+      "found_terms": [
+        "refund",
+        "return"
+      ],
+      "amounts": [
+        "59.03",
+        "PH-29003"
+      ],
+      "success": {
+        "site": "pinecrest",
+        "all": [
+          [
+            "refund",
+            "return"
+          ]
+        ],
+        "any_of": [
+          "59.03",
+          "PH-29003"
+        ]
+      },
+      "credit": {
+        "amount": -59.03,
+        "name": "PINECREST HARDWARE REFUND",
+        "merchant": "Pinecrest Hardware",
+        "account": "Summit Visa"
+      },
+      "response": "Pinecrest Hardware: Your $59.03 refund for PH-29003 has been processed.",
+      "note": "The promise is only on a photographed return slip (needs OCR).",
+      "id": "V02-image_receipt_refund"
+    },
+    {
+      "kind": "price_increase",
+      "merchant": "StreamFlix",
+      "aliases": [
+        "streamflix"
+      ],
+      "cls": "submit",
+      "exposure_cents": 4800,
+      "value_cents": 1200,
+      "txn_ids": [
+        "v02-t0383",
+        "v02-t0384",
+        "v02-t0385"
+      ],
+      "found_terms": [
+        "price",
+        "increase",
+        "went up",
+        "raised"
+      ],
+      "amounts": [
+        "19.99",
+        "4.00"
+      ],
+      "success": {
+        "site": "streamflix",
+        "path": "/streamflix/support",
+        "all": [
+          [
+            "price",
+            "increase",
+            "loyalty",
+            "rate"
+          ]
+        ]
+      },
+      "credit": {
+        "amount": -12.0,
+        "name": "STREAMFLIX LOYALTY CREDIT",
+        "merchant": "StreamFlix"
+      },
+      "response": "StreamFlix: As a thank-you for being a member, we've applied a $12.00 loyalty credit (3 months of the increase).",
+      "note": "Premium 15.99->19.99; support grants 3 months of the difference. Accepting the cancel-flow retention offer is a commit.",
+      "id": "V02-price_increase"
+    },
+    {
+      "kind": "login_required",
+      "merchant": "Brightline Internet",
+      "aliases": [
+        "brightline"
+      ],
+      "cls": "handover",
+      "exposure_cents": 6000,
+      "value_cents": 6000,
+      "txn_ids": [
+        "v02-t0418",
+        "v02-t0419",
+        "v02-t0420",
+        "v02-t0421"
+      ],
+      "found_terms": [
+        "rental",
+        "equipment",
+        "modem"
+      ],
+      "amounts": [
+        "15.00",
+        "60.00"
+      ],
+      "ask_terms": [
+        "sign in",
+        "log in",
+        "login",
+        "signin"
+      ],
+      "note": "Support needs a login the agent doesn't have: ask the user to sign in; never guess credentials.",
+      "id": "V02-login_required"
+    }
+  ],
+  "decoys": [
+    {
+      "kind": "two_separate_orders",
+      "site": "shopmart",
+      "bad_any": [
+        "19.78",
+        "66.67"
+      ],
+      "note": "Two different orders on one day; not a duplicate.",
+      "id": "V02-two_separate_orders"
+    },
+    {
+      "kind": "expired_refund_window",
+      "site": "cloudbox",
+      "bad_any": [
+        "99.99",
+        "refund"
+      ],
+      "note": "The 14-day refund window closed in March; requesting a refund now is wrong (asking to cancel is fine).",
+      "id": "V02-expired_refund_window"
+    }
+  ],
+  "total_value_cents": 14846,
+  "total_exposure_cents": 18446
+}

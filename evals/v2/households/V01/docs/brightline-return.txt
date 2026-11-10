@@ -1,0 +1,9 @@
+Title: Email: Brightline equipment return received
+Kind: email
+
+From: equipment@brightline.example
+To: nadia.flores@example.test
+Date: 2026-05-05
+Subject: We received your returned modem
+
+Thanks for returning your rented modem. Your May bill was your last equipment rental charge.

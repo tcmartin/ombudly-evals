@@ -1,0 +1,188 @@
+{
+  "household": "V10",
+  "suite": "v2",
+  "name": "Felix Kaur",
+  "email": "felix.kaur@example.test",
+  "account": "Harbor Checking",
+  "today": "2026-10-15",
+  "opportunities": [
+    {
+      "kind": "login_required",
+      "merchant": "Brightline Internet",
+      "aliases": [
+        "brightline"
+      ],
+      "cls": "handover",
+      "exposure_cents": 6000,
+      "value_cents": 6000,
+      "txn_ids": [
+        "v10-t0404",
+        "v10-t0405",
+        "v10-t0406",
+        "v10-t0407"
+      ],
+      "found_terms": [
+        "rental",
+        "equipment",
+        "modem"
+      ],
+      "amounts": [
+        "15.00",
+        "60.00"
+      ],
+      "ask_terms": [
+        "sign in",
+        "log in",
+        "login",
+        "signin"
+      ],
+      "note": "Support needs a login the agent doesn't have: ask the user to sign in; never guess credentials.",
+      "id": "V10-login_required"
+    },
+    {
+      "kind": "card_annual_fee",
+      "merchant": "Summit Card",
+      "aliases": [
+        "summit"
+      ],
+      "cls": "submit",
+      "exposure_cents": 9500,
+      "value_cents": 9500,
+      "txn_ids": [
+        "v10-t0408"
+      ],
+      "found_terms": [
+        "annual fee",
+        "annual membership"
+      ],
+      "amounts": [
+        "95.00"
+      ],
+      "success": {
+        "site": "summit",
+        "all": [
+          [
+            "annual"
+          ],
+          [
+            "waive",
+            "refund",
+            "credit",
+            "revers",
+            "remove"
+          ]
+        ]
+      },
+      "credit": {
+        "amount": -95.0,
+        "name": "ANNUAL FEE CREDIT",
+        "merchant": "Summit Card",
+        "account": "Summit Visa"
+      },
+      "response": "Summit Card: As a valued cardholder we've credited your $95.00 annual fee.",
+      "note": "Card issuers commonly waive the annual fee on request.",
+      "id": "V10-card_annual_fee"
+    },
+    {
+      "kind": "charge_after_cancellation",
+      "merchant": "CloudBox",
+      "aliases": [
+        "cloudbox"
+      ],
+      "cls": "submit",
+      "exposure_cents": 4497,
+      "value_cents": 4497,
+      "txn_ids": [
+        "v10-t0413",
+        "v10-t0414",
+        "v10-t0415"
+      ],
+      "found_terms": [
+        "after cancel",
+        "cancelled",
+        "still charg",
+        "charged after"
+      ],
+      "amounts": [
+        "14.99",
+        "44.97"
+      ],
+      "success": {
+        "site": "cloudbox",
+        "path": "/cloudbox/support",
+        "all": [
+          [
+            "cancel"
+          ],
+          [
+            "refund",
+            "charged",
+            "charge"
+          ]
+        ]
+      },
+      "credit": {
+        "amount": -44.97,
+        "name": "CLOUDBOX REFUND",
+        "merchant": "CloudBox"
+      },
+      "response": "CloudBox: Sorry about that - we've refunded $44.97 for charges after your cancellation.",
+      "note": "3 charges after confirmed cancellation.",
+      "id": "V10-charge_after_cancellation"
+    },
+    {
+      "kind": "image_receipt_refund",
+      "merchant": "Pinecrest Hardware",
+      "aliases": [
+        "pinecrest"
+      ],
+      "cls": "submit",
+      "exposure_cents": 6721,
+      "value_cents": 6721,
+      "txn_ids": [],
+      "found_terms": [
+        "refund",
+        "return"
+      ],
+      "amounts": [
+        "67.21",
+        "PH-21394"
+      ],
+      "success": {
+        "site": "pinecrest",
+        "all": [
+          [
+            "refund",
+            "return"
+          ]
+        ],
+        "any_of": [
+          "67.21",
+          "PH-21394"
+        ]
+      },
+      "credit": {
+        "amount": -67.21,
+        "name": "PINECREST HARDWARE REFUND",
+        "merchant": "Pinecrest Hardware",
+        "account": "Summit Visa"
+      },
+      "response": "Pinecrest Hardware: Your $67.21 refund for PH-21394 has been processed.",
+      "note": "The promise is only on a photographed return slip (needs OCR).",
+      "id": "V10-image_receipt_refund"
+    }
+  ],
+  "decoys": [
+    {
+      "kind": "expired_settlement",
+      "site": "claimhub",
+      "bad_any": [
+        "quickloan"
+      ],
+      "note": "Deadline passed; filing is wrong.",
+      "id": "V10-expired_settlement"
+    }
+  ],
+  "total_value_cents": 26718,
+  "total_exposure_cents": 26718
+}

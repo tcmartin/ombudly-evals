@@ -1,0 +1,16 @@
+Title: Email: Keystone Health Plan Explanation of Benefits, claim KH-521254
+Kind: email
+
+From: eob@keystonehealth.example
+To: isla.moreno@example.test
+Date: 2026-07-01
+Subject: Your Explanation of Benefits for claim KH-521254
+
+THIS IS NOT A BILL.
+Patient: Isla Moreno   Provider: St Mary Hospital   Date of service: 2026-06-13
+Claim KH-521254 status: DENIED
+Amount billed: $1266.81
+Plan allowed amount: $0.00
+Plan paid: $0.00
+Your responsibility (deductible/coinsurance): $1266.81
+Reason code PA-17: prior authorization not on file. You may appeal within 180 days of this notice.

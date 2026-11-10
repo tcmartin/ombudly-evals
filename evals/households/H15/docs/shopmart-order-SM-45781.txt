@@ -1,0 +1,10 @@
+Title: Email: ShopMart order SM-45781 confirmed
+Kind: email
+
+From: orders@shopmart.example
+To: hayden.cruz@example.test
+Date: 2026-08-21
+Subject: Your ShopMart order SM-45781 is confirmed
+
+Thanks for your order! Order SM-45781: 1 x Wireless headphones. Order total: $104.16.
+This is your only order today.

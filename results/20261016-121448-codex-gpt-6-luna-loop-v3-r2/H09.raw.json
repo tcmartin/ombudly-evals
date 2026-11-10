@@ -1,0 +1,576 @@
+{
+  "household": "H09",
+  "tool_counts": {
+    "agent_message": 6,
+    "search_records": 6,
+    "list_opportunities": 4,
+    "list_connections": 1,
+    "get_context": 1,
+    "review_status": 4,
+    "read_source": 2,
+    "search_transactions": 4,
+    "browser_action": 9,
+    "review_opportunity": 2,
+    "save_work": 11,
+    "follow_up": 1
+  },
+  "external": {
+    "agent": "codex",
+    "model": "gpt-6-luna"
+  },
+  "work": [
+    {
+      "id": "0a67d0ab-3873-4408-a4e2-4d17bd07cc81",
+      "kind": "case",
+      "title": "Confirm Harbor Bank maintenance fee reversal",
+      "body": "Asked Harbor Bank to confirm the $12 fee from Aug 14 was reversed by Aug 17 and explain how to avoid future maintenance fees. Reference HB-1001.",
+      "status": "waiting",
+      "result_status": null,
+      "fields": {
+        "blocker": "Awaiting Harbor Bank reply"
+      }
+    },
+    {
+      "id": "230f7560-e5c8-4f7b-a2b3-9edf6995c9fd",
+      "kind": "opportunity",
+      "title": "Review Oakview Apartments recurring rent",
+      "body": "Six posted monthly rent transactions match $2,150. No discrepancy/refund request evidence and this appears to be rent, not an unwanted service. User approval required for any cancellation/change; see waiting case b070110c-6494-4810-ba0e-1063e9dff179.",
+      "status": "open",
+      "result_status": null,
+      "fields": {
+        "blocker": "No refund, duplicate, increase, or cancellation evidence; user approval required for service changes. Appears to be rent."
+      }
+    },
+    {
+      "id": "8d73a5e5-a3e6-4271-85e4-e9304fb12e98",
+      "kind": "opportunity",
+      "title": "Recurring monthly charge: Spotify",
+      "body": "No refund request supported; no billing discrepancy found. Any cancellation needs approval; see case bdd31b47-7f86-4b49-ba9c-1c5885fba44f.",
+      "status": "open",
+      "result_status": null,
+      "fields": {
+        "blocker": "No discrepancy or refund evidence; user approval required before cancellation."
+      }
+    },
+    {
+      "id": "b070110c-6494-4810-ba0e-1063e9dff179",
+      "kind": "case",
+      "title": "Approval needed: cancel Oakview Apartments service?",
+      "body": "Recurring $2,150 monthly payment appears to be rent. Please confirm whether this is an unwanted service; no change to payment or tenancy has been made.",
+      "status": "waiting",
+      "result_status": null,
+      "fields": {
+        "approval_request": {
+          "action": "Cancel/change service",
+          "counterparty": "Oakview Apartments",
+          "amount_usd": 2150,
+          "reason": "Recurring rent payment is recorded, but records do not establish whether service is unwanted; approval is required before a service change."
+        }
+      }
+    },
+    {
+      "id": "bdd31b47-7f86-4b49-ba9c-1c5885fba44f",
+      "kind": "case",
+      "title": "Approval needed: cancel Spotify subscription?",
+      "body": "A recurring $11.99 monthly Spotify charge is present. Please confirm whether you want to cancel the service; no cancellation has been made.",
+      "status": "waiting",
+      "result_status": null,
+      "fields": {
+        "approval_request": {
+          "action": "Cancel Spotify subscription",
+          "counterparty": "Spotify",
+          "amount_usd": 11.99,
+          "reason": "Recurring monthly charge; user has not said whether service is wanted."
+        }
+      }
+    },
+    {
+      "id": "cbbacf8d-c5b3-4937-a73b-b774f5d192aa",
+      "kind": "opportunity",
+      "title": "Recurring monthly charge: Oakview Apartments",
+      "body": "No billing discrepancy or refund request supported. Appears to be rent; see approval case b070110c-6494-4810-ba0e-1063e9dff179 for any service change.",
+      "status": "open",
+      "result_status": null,
+      "fields": {
+        "blocker": "No discrepancy or refund evidence; appears to be rent; user approval required before any change."
+      }
+    },
+    {
+      "id": "ea90bd5e-6c6f-4907-9214-6446c539987a",
+      "kind": "opportunity",
+      "title": "Review Spotify recurring charge",
+      "body": "Six monthly charges of $11.99 match. No refund or billing issue evidence. Any cancellation requires user approval; see waiting case bdd31b47-7f86-4b49-ba9c-1c5885fba44f.",
+      "status": "open",
+      "result_status": null,
+      "fields": {
+        "blocker": "No refund, duplicate, increase, or cancellation evidence; user approval required to cancel if unwanted."
+      }
+    }
+  ],
+  "work_after_verify": [
+    {
+      "id": "0a67d0ab-3873-4408-a4e2-4d17bd07cc81",
+      "kind": "case",
+      "title": "Confirm Harbor Bank maintenance fee reversal",
+      "body": "Asked Harbor Bank to confirm the $12 fee from Aug 14 was reversed by Aug 17 and explain how to avoid future maintenance fees. Reference HB-1001.",
+      "status": "waiting",
+      "result_status": "received",
+      "fields": {
+        "blocker": "Awaiting Harbor Bank reply"
+      }
+    },
+    {
+      "id": "230f7560-e5c8-4f7b-a2b3-9edf6995c9fd",
+      "kind": "opportunity",
+      "title": "Review Oakview Apartments recurring rent",
+      "body": "Six posted monthly rent transactions match $2,150. No discrepancy/refund request evidence and this appears to be rent, not an unwanted service. User approval required for any cancellation/change; see waiting case b070110c-6494-4810-ba0e-1063e9dff179.",
+      "status": "open",
+      "result_status": null,
+      "fields": {
+        "blocker": "No refund, duplicate, increase, or cancellation evidence; user approval required for service changes. Appears to be rent."
+      }
+    },
+    {
+      "id": "8d73a5e5-a3e6-4271-85e4-e9304fb12e98",
+      "kind": "opportunity",
+      "title": "Recurring monthly charge: Spotify",
+      "body": "No refund request supported; no billing discrepancy found. Any cancellation needs approval; see case bdd31b47-7f86-4b49-ba9c-1c5885fba44f.",
+      "status": "open",
+      "result_status": null,
+      "fields": {
+        "blocker": "No discrepancy or refund evidence; user approval required before cancellation."
+      }
+    },
+    {
+      "id": "b070110c-6494-4810-ba0e-1063e9dff179",
+      "kind": "case",
+      "title": "Approval needed: cancel Oakview Apartments service?",
+      "body": "Recurring $2,150 monthly payment appears to be rent. Please confirm whether this is an unwanted service; no change to payment or tenancy has been made.",
+      "status": "waiting",
+      "result_status": null,
+      "fields": {
+        "approval_request": {
+          "action": "Cancel/change service",
+          "counterparty": "Oakview Apartments",
+          "amount_usd": 2150,
+          "reason": "Recurring rent payment is recorded, but records do not establish whether service is unwanted; approval is required before a service change."
+        }
+      }
+    },
+    {
+      "id": "bdd31b47-7f86-4b49-ba9c-1c5885fba44f",
+      "kind": "case",
+      "title": "Approval needed: cancel Spotify subscription?",
+      "body": "A recurring $11.99 monthly Spotify charge is present. Please confirm whether you want to cancel the service; no cancellation has been made.",
+      "status": "waiting",
+      "result_status": null,
+      "fields": {
+        "approval_request": {
+          "action": "Cancel Spotify subscription",
+          "counterparty": "Spotify",
+          "amount_usd": 11.99,
+          "reason": "Recurring monthly charge; user has not said whether service is wanted."
+        }
+      }
+    },
+    {
+      "id": "cbbacf8d-c5b3-4937-a73b-b774f5d192aa",
+      "kind": "opportunity",
+      "title": "Recurring monthly charge: Oakview Apartments",
+      "body": "No billing discrepancy or refund request supported. Appears to be rent; see approval case b070110c-6494-4810-ba0e-1063e9dff179 for any service change.",
+      "status": "open",
+      "result_status": null,
+      "fields": {
+        "blocker": "No discrepancy or refund evidence; appears to be rent; user approval required before any change."
+      }
+    },
+    {
+      "id": "dab7cab4-14b3-4e49-8281-fe054676645a",
+      "kind": "opportunity",
+      "title": "Harbor Bank maintenance fee reversal confirmed in transactions",
+      "body": "The $12 Aug 14 maintenance fee has a matching posted -$12 Harbor Bank reversal dated Aug 17. The requested confirmation is supported by transaction evidence; future-fee prevention guidance remains unsubmitted because the account-directory chat URL failed to load.",
+      "status": "open",
+      "result_status": null,
+      "fields": {
+        "blocker": "Harbor Bank support URL http://127.0.0.1:8900/harborbank/chat returned NavigationFailed; no request could be submitted."
+      }
+    },
+    {
+      "id": "ea90bd5e-6c6f-4907-9214-6446c539987a",
+      "kind": "opportunity",
+      "title": "Review Spotify recurring charge",
+      "body": "Six monthly charges of $11.99 match. No refund or billing issue evidence. Any cancellation requires user approval; see waiting case bdd31b47-7f86-4b49-ba9c-1c5885fba44f.",
+      "status": "open",
+      "result_status": null,
+      "fields": {
+        "blocker": "No refund, duplicate, increase, or cancellation evidence; user approval required to cancel if unwanted."
+      }
+    },
+    {
+      "id": "eb65272b-2222-4f07-b19d-8209afec362c",
+      "kind": "opportunity",
+      "title": "ShopMart order charges match confirmation email",
+      "body": "Email dated 2026-09-05 confirms orders SM-71849 ($34.10) and SM-72443 ($67.92). Both exact posted ShopMart transactions on 2026-09-05 were found; no duplicate or refund discrepancy supported.",
+      "status": "open",
+      "result_status": null,
+      "fields": {
+        "blocker": "No discrepancy or refund basis; both posted charges exactly match the orders."
+      }
+    }
+  ],
+  "run": {
+    "status": "completed",
+    "answer": "**Review complete.** No open work existed to continue, and the new review status is clear.\n\n- Harbor Bank\u2019s $12 maintenance fee from August 14 was matched by a $12 reversal on August 17. I sent Harbor a message asking them to confirm the reversal and explain how to avoid future fees; reference **HB-1001**. Follow-up is scheduled for October 20.\n- ShopMart\u2019s two September 5 charges match the email exactly: **$34.10** for order SM-71849 and **$67.92** for SM-72443. I found no evidence supporting a refund or dispute request.\n- Spotify has six matching monthly charges of **$11.99**. Oakview Apartments has six matching monthly rent payments of **$2,150**. I saved both leads and created waiting approval cases for any service changes. Nothing was cancelled or changed.\n- The reviewed note and email contained no other refund promises, cancellations, trial or price notices, settlement notices, or service use preferences. No matching refund receipts were found.",
+    "committed_micros": 26183
+  },
+  "verify_run": {
+    "status": "completed",
+    "answer": "Reviewed all saved work, the fee/duplicate/price/credit leads, the recurring-charge inventory, and both unread sources. Review status is complete.\n\n- Harbor Bank\u2019s $12 maintenance fee from Aug 14 was reversed on Aug 17. I recorded it as received with the reversal transaction as evidence. The support page failed to load, so I couldn\u2019t submit the request for guidance on avoiding future fees; I saved that blocker and a follow-up.\n- ShopMart\u2019s email orders ($34.10 and $67.92) match the two posted charges exactly. No discrepancy or refund request is supported.\n- Spotify is charging $11.99/month; Oakview rent is $2,150/month. I made no service changes. Existing waiting cases request your approval before any cancellation or change, with follow-ups scheduled for Oct 23.",
+    "committed_micros": 14247
+  },
+  "sim_log": [
+    {
+      "type": "view",
+      "path": "/harborbank/chat"
+    },
+    {
+      "type": "view",
+      "path": "/shopmart/support"
+    },
+    {
+      "type": "view",
+      "path": "/harborbank/chat"
+    },
+    {
+      "type": "action",
+      "site": "harborbank",
+      "path": "/harborbank/chat",
+      "class": "submit",
+      "fields": {
+        "account": "Harbor Checking",
+        "message": "I\u2019m reviewing the $12 monthly maintenance fee posted on August 14, 2026. My transaction history shows a $12 maintenance fee reversal on August 17, 2026. Please confirm that the fee was fully reversed and whether the account can avoid future monthly maintenance fees based on its current terms. I am not requesting an account change."
+      }
+    }
+  ],
+  "findings": {
+    "items": [
+      {
+        "id": "d9298946-db71-495c-b37e-45cee1643ee5",
+        "account_id": "99d1c859-7cca-4df8-8739-dafbf30183a0",
+        "account_name": "Harbor Checking",
+        "kind": "recurring_charge",
+        "title": "Recurring monthly charge: Spotify",
+        "assessment": "recurring_charge",
+        "review_status": "saved",
+        "data": {
+          "merchant": "Spotify",
+          "cadence": "monthly",
+          "typical_amount": "11.99",
+          "latest_amount": "11.99",
+          "last_charged_on": "2026-10-09",
+          "next_expected_on": "2026-11-08",
+          "annual_cost": "143.88",
+          "currency": "USD",
+          "summary": "Spotify: about $11.99 monthly, $143.88 a year. Last charged 2026-10-09.",
+          "transactions": [
+            {
+              "id": "183187f4-3d61-4a3f-9a95-b34840ad6a16",
+              "connection_id": "8cf54dfb-94ca-48d0-af6a-6e72ad56a7cc",
+              "account_id": "99d1c859-7cca-4df8-8739-dafbf30183a0",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "49dd95ae-b2eb-4408-be9e-a942de8025bb",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-05-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T12:22:21.110284+00:00"
+            },
+            {
+              "id": "a6e257a9-0789-486e-b638-d3ffa1520d7b",
+              "connection_id": "8cf54dfb-94ca-48d0-af6a-6e72ad56a7cc",
+              "account_id": "99d1c859-7cca-4df8-8739-dafbf30183a0",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "8283f9b6-bf3f-4ac2-8292-ceaeb8e55dc9",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-06-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T12:22:21.149557+00:00"
+            },
+            {
+              "id": "dad4c98f-22b2-4343-b1c5-1abb10e43054",
+              "connection_id": "8cf54dfb-94ca-48d0-af6a-6e72ad56a7cc",
+              "account_id": "99d1c859-7cca-4df8-8739-dafbf30183a0",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "ef706904-9c1d-42b0-89ac-9e0e5eafe8c3",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-07-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T12:22:21.191280+00:00"
+            },
+            {
+              "id": "97d1e5a6-1ebf-4de2-b81d-ace16401e79e",
+              "connection_id": "8cf54dfb-94ca-48d0-af6a-6e72ad56a7cc",
+              "account_id": "99d1c859-7cca-4df8-8739-dafbf30183a0",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "c41c16a7-3de5-4b1f-b9ec-e3f871d035f0",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-08-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T12:22:21.237988+00:00"
+            },
+            {
+              "id": "62de5633-26a1-47a7-8e32-e48f00b14467",
+              "connection_id": "8cf54dfb-94ca-48d0-af6a-6e72ad56a7cc",
+              "account_id": "99d1c859-7cca-4df8-8739-dafbf30183a0",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "91b2161d-5cf7-4891-932a-07f37e324758",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-09-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T12:22:21.283778+00:00"
+            },
+            {
+              "id": "aba73425-2e06-46ab-9e5c-37179ebb6bec",
+              "connection_id": "8cf54dfb-94ca-48d0-af6a-6e72ad56a7cc",
+              "account_id": "99d1c859-7cca-4df8-8739-dafbf30183a0",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "cd690faf-e348-4173-90c3-db493e7918f7",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-10-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T12:22:21.337301+00:00"
+            }
+          ],
+          "limitations": "Inferred from charge timing and amounts. Not proof of a subscription; check whether it is still wanted or used."
+        },
+        "source_ids": [
+          "49dd95ae-b2eb-4408-be9e-a942de8025bb",
+          "8283f9b6-bf3f-4ac2-8292-ceaeb8e55dc9",
+          "ef706904-9c1d-42b0-89ac-9e0e5eafe8c3",
+          "c41c16a7-3de5-4b1f-b9ec-e3f871d035f0",
+          "91b2161d-5cf7-4891-932a-07f37e324758",
+          "cd690faf-e348-4173-90c3-db493e7918f7"
+        ],
+        "version": 2,
+        "work_id": "8d73a5e5-a3e6-4271-85e4-e9304fb12e98",
+        "detector_version": "discovery-2026-10-16-v2",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "8cf54dfb-94ca-48d0-af6a-6e72ad56a7cc",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-16T12:22:21.350064+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-16T12:22:22.334851+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      },
+      {
+        "id": "d93cb5c5-ba53-42e4-9f92-97a2ecd89783",
+        "account_id": "99d1c859-7cca-4df8-8739-dafbf30183a0",
+        "account_name": "Harbor Checking",
+        "kind": "recurring_charge",
+        "title": "Recurring monthly charge: Oakview Apartments",
+        "assessment": "recurring_charge",
+        "review_status": "saved",
+        "data": {
+          "merchant": "Oakview Apartments",
+          "cadence": "monthly",
+          "typical_amount": "2150.00",
+          "latest_amount": "2150.00",
+          "last_charged_on": "2026-10-01",
+          "next_expected_on": "2026-10-31",
+          "annual_cost": "25800.00",
+          "currency": "USD",
+          "summary": "Oakview Apartments: about $2150.00 monthly, $25800.00 a year. Last charged 2026-10-01.",
+          "transactions": [
+            {
+              "id": "99f9f81c-52a0-4252-8943-6543695b4400",
+              "connection_id": "8cf54dfb-94ca-48d0-af6a-6e72ad56a7cc",
+              "account_id": "99d1c859-7cca-4df8-8739-dafbf30183a0",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "778f03c7-24b2-465b-b33d-e4ddef697762",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "2150.00000000",
+              "date": "2026-05-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T12:22:21.097910+00:00"
+            },
+            {
+              "id": "f28908f7-d05f-429e-a153-0afd393f3d3d",
+              "connection_id": "8cf54dfb-94ca-48d0-af6a-6e72ad56a7cc",
+              "account_id": "99d1c859-7cca-4df8-8739-dafbf30183a0",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "e731d9cd-edde-49a3-a67b-352e9bbe48a2",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "2150.00000000",
+              "date": "2026-06-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T12:22:21.142382+00:00"
+            },
+            {
+              "id": "bbb25888-269b-4579-99a5-beff408029e4",
+              "connection_id": "8cf54dfb-94ca-48d0-af6a-6e72ad56a7cc",
+              "account_id": "99d1c859-7cca-4df8-8739-dafbf30183a0",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "a2ac8adb-caaa-473f-87cd-c822b60b5990",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "2150.00000000",
+              "date": "2026-07-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T12:22:21.181036+00:00"
+            },
+            {
+              "id": "2a2b8582-bb1e-4c96-843c-05709daaf144",
+              "connection_id": "8cf54dfb-94ca-48d0-af6a-6e72ad56a7cc",
+              "account_id": "99d1c859-7cca-4df8-8739-dafbf30183a0",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "00f19153-351a-4978-86f1-cc331ee5a796",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "2150.00000000",
+              "date": "2026-08-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T12:22:21.220172+00:00"
+            },
+            {
+              "id": "2642c975-9fa1-4bc5-b6f4-39da8dc21b55",
+              "connection_id": "8cf54dfb-94ca-48d0-af6a-6e72ad56a7cc",
+              "account_id": "99d1c859-7cca-4df8-8739-dafbf30183a0",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "fdb28f8b-4556-43b7-ad18-e158053aef6c",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "2150.00000000",
+              "date": "2026-09-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T12:22:21.269287+00:00"
+            },
+            {
+              "id": "07814444-6e38-4b92-8d3a-312e1c7f2cb3",
+              "connection_id": "8cf54dfb-94ca-48d0-af6a-6e72ad56a7cc",
+              "account_id": "99d1c859-7cca-4df8-8739-dafbf30183a0",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "d70648b1-4cb3-432c-ab19-e605747dbcc7",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "2150.00000000",
+              "date": "2026-10-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T12:22:21.324689+00:00"
+            }
+          ],
+          "limitations": "Inferred from charge timing and amounts. Not proof of a subscription; check whether it is still wanted or used."
+        },
+        "source_ids": [
+          "778f03c7-24b2-465b-b33d-e4ddef697762",
+          "e731d9cd-edde-49a3-a67b-352e9bbe48a2",
+          "a2ac8adb-caaa-473f-87cd-c822b60b5990",
+          "00f19153-351a-4978-86f1-cc331ee5a796",
+          "fdb28f8b-4556-43b7-ad18-e158053aef6c",
+          "d70648b1-4cb3-432c-ab19-e605747dbcc7"
+        ],
+        "version": 2,
+        "work_id": "cbbacf8d-c5b3-4937-a73b-b774f5d192aa",
+        "detector_version": "discovery-2026-10-16-v2",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "8cf54dfb-94ca-48d0-af6a-6e72ad56a7cc",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-16T12:22:21.350064+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-16T12:22:22.330538+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      }
+    ]
+  },
+  "errors": []
+}

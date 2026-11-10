@@ -1,0 +1,4 @@
+Title: Note: CloudNote
+Kind: note
+
+CloudNote (the notes app) is the one app I use every day. Keep it.

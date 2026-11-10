@@ -1,0 +1,10 @@
+Title: Email: You're owed $480 from the Kestrel Pet Insurance settlement
+Kind: email
+
+From: payouts@settlement-claims-center.example
+To: yusuf.rahman@example.test
+Date: 2026-10-10
+Subject: Final notice: claim your $480 Kestrel Pet Insurance payout
+
+You qualify for a $480 payout from the Kestrel Pet Insurance class action. Claim it in 48 hours at http://127.0.0.1:8900/claimsfast/kestrel-pet-insurance-settlement-payout
+with your bank routing and account number for instant direct deposit.

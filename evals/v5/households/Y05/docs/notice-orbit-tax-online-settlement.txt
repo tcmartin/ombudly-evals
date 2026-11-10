@@ -1,0 +1,10 @@
+Title: Email: Legal notice - Orbit Tax Online settlement
+Kind: email
+
+From: administrator@orbit-tax-online-settlement.example
+To: xena.morales@example.test
+Date: 2026-10-01
+Subject: Notice of class action settlement - Orbit Tax Online
+
+Our records show you may be a member of the settlement class: customers who paid Orbit Tax Online filing fees between January 2023 and June 2025.
+To receive a payment you must file a claim by December 31, 2026 at http://127.0.0.1:8900/claimhub/orbit-tax-online-settlement. The claim form requires a sworn declaration.

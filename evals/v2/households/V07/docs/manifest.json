@@ -1,0 +1,22 @@
+[
+  {
+    "file": "brightline-return.txt",
+    "title": "Email: Brightline equipment return received",
+    "kind": "email"
+  },
+  {
+    "file": "cloudbox-cancelled.txt",
+    "title": "Email: CloudBox cancellation confirmed",
+    "kind": "email"
+  },
+  {
+    "file": "quickloan-notice.txt",
+    "title": "Email: QuickLoan settlement notice",
+    "kind": "email"
+  },
+  {
+    "file": "account-directory.txt",
+    "title": "Note: my accounts and where to get help",
+    "kind": "note"
+  }
+]

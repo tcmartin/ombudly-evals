@@ -1,0 +1,57 @@
+[
+  {
+    "file": "shopmart-return-SM-83437.txt",
+    "title": "Email: ShopMart return SM-83437",
+    "kind": "email"
+  },
+  {
+    "file": "shopmart-order-SM-99383.txt",
+    "title": "Email: ShopMart order SM-99383",
+    "kind": "email"
+  },
+  {
+    "file": "shopmart-adjustment-SM-99383.txt",
+    "title": "Email: ShopMart billing adjustment SM-99383",
+    "kind": "email"
+  },
+  {
+    "file": "fithub-miss-you.txt",
+    "title": "Email: FitHub - we miss you",
+    "kind": "email"
+  },
+  {
+    "file": "note-gym.txt",
+    "title": "Note: my own reminder",
+    "kind": "note"
+  },
+  {
+    "file": "shopmart-return-SM-57269.txt",
+    "title": "Email: ShopMart return SM-57269",
+    "kind": "email"
+  },
+  {
+    "file": "cloudbox-renewal.txt",
+    "title": "Email: CloudBox renewal notice",
+    "kind": "email"
+  },
+  {
+    "file": "note-cloudbox-v2.txt",
+    "title": "Note: CloudBox",
+    "kind": "note"
+  },
+  {
+    "file": "shopmart-return-SM-71288.txt",
+    "title": "Email: ShopMart return SM-71288",
+    "kind": "email"
+  },
+  {
+    "file": "refund-verification.txt",
+    "title": "Email: Action required - pending refunds",
+    "kind": "email"
+  },
+  {
+    "file": "account-directory.txt",
+    "title": "Note: my accounts and where to get help",
+    "kind": "note"
+  }
+]

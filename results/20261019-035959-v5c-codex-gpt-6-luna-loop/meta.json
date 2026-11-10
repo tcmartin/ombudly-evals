@@ -1,0 +1,19 @@
+{
+  "run_id": "20261019-035959",
+  "label": "v5c-codex-gpt-6-luna-loop",
+  "suite": "v5",
+  "started_at": "2026-10-19T03:59:59.428673+00:00",
+  "route": "codex exec, gpt-6-luna",
+  "limit_usd": "n/a (external)",
+  "workspace": true,
+  "verify": true,
+  "households": [
+    "Y01",
+    "Y02",
+    "Y03",
+    "Y04",
+    "Y05",
+    "Y06"
+  ],
+  "prompt_mode": "external agent (Codex) with the app's review instructions over MCP"
+}

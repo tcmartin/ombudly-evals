@@ -1,0 +1,15 @@
+Title: Email: Keystone Health Plan Explanation of Benefits, claim KH-458531
+Kind: email
+
+From: eob@keystonehealth.example
+To: ana.sousa@example.test
+Date: 2026-08-08
+Subject: Your Explanation of Benefits for claim KH-458531
+
+THIS IS NOT A BILL.
+Patient: Ana Sousa   Provider: St Mary Hospital   Date of service: 2026-07-21
+Claim KH-458531 status: Processed
+Amount billed: $2562.55
+Plan allowed amount: $1409.40
+Plan paid: $1122.10
+Your responsibility (deductible/coinsurance): $287.30

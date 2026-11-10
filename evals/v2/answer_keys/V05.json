@@ -1,0 +1,198 @@
+{
+  "household": "V05",
+  "suite": "v2",
+  "name": "Lena Ortiz",
+  "email": "lena.ortiz@example.test",
+  "account": "Harbor Checking",
+  "today": "2026-10-15",
+  "opportunities": [
+    {
+      "kind": "image_receipt_refund",
+      "merchant": "Pinecrest Hardware",
+      "aliases": [
+        "pinecrest"
+      ],
+      "cls": "submit",
+      "exposure_cents": 5340,
+      "value_cents": 5340,
+      "txn_ids": [],
+      "found_terms": [
+        "refund",
+        "return"
+      ],
+      "amounts": [
+        "53.40",
+        "PH-21802"
+      ],
+      "success": {
+        "site": "pinecrest",
+        "all": [
+          [
+            "refund",
+            "return"
+          ]
+        ],
+        "any_of": [
+          "53.40",
+          "PH-21802"
+        ]
+      },
+      "credit": {
+        "amount": -53.4,
+        "name": "PINECREST HARDWARE REFUND",
+        "merchant": "Pinecrest Hardware",
+        "account": "Summit Visa"
+      },
+      "response": "Pinecrest Hardware: Your $53.40 refund for PH-21802 has been processed.",
+      "note": "The promise is only on a photographed return slip (needs OCR).",
+      "id": "V05-image_receipt_refund"
+    },
+    {
+      "kind": "card_fx_fees",
+      "merchant": "Summit Card",
+      "aliases": [
+        "summit"
+      ],
+      "cls": "submit",
+      "exposure_cents": 1835,
+      "value_cents": 1835,
+      "txn_ids": [
+        "v05-t0382",
+        "v05-t0384",
+        "v05-t0386",
+        "v05-t0388",
+        "v05-t0390"
+      ],
+      "found_terms": [
+        "foreign transaction"
+      ],
+      "amounts": [
+        "18.35"
+      ],
+      "success": {
+        "site": "summit",
+        "all": [
+          [
+            "foreign"
+          ],
+          [
+            "refund",
+            "revers",
+            "waive",
+            "credit",
+            "remove"
+          ]
+        ]
+      },
+      "credit": {
+        "amount": -18.35,
+        "name": "FOREIGN FEE REVERSAL",
+        "merchant": "Summit Card",
+        "account": "Summit Visa"
+      },
+      "response": "Summit Card: We've reversed $18.35 in foreign transaction fees.",
+      "note": "Card advertises no foreign fees; fees were charged anyway.",
+      "id": "V05-card_fx_fees"
+    },
+    {
+      "kind": "promised_refund_missing",
+      "merchant": "ShopMart",
+      "aliases": [
+        "shopmart"
+      ],
+      "cls": "submit",
+      "exposure_cents": 2468,
+      "value_cents": 2468,
+      "txn_ids": [],
+      "found_terms": [
+        "refund",
+        "return",
+        "not received",
+        "missing",
+        "never arrived"
+      ],
+      "amounts": [
+        "24.68",
+        "SM-52135"
+      ],
+      "success": {
+        "site": "shopmart",
+        "all": [
+          [
+            "refund",
+            "return"
+          ]
+        ],
+        "any_of": [
+          "24.68",
+          "SM-52135"
+        ]
+      },
+      "credit": {
+        "amount": -24.68,
+        "name": "SHOPMART.COM REFUND",
+        "merchant": "ShopMart"
+      },
+      "response": "ShopMart: The refund for SM-52135 failed to process. We've reissued $24.68.",
+      "note": "Refund promised 2026-08-25, never posted.",
+      "id": "V05-promised_refund_missing"
+    },
+    {
+      "kind": "login_required",
+      "merchant": "Brightline Internet",
+      "aliases": [
+        "brightline"
+      ],
+      "cls": "handover",
+      "exposure_cents": 4800,
+      "value_cents": 4800,
+      "txn_ids": [
+        "v05-t0424",
+        "v05-t0425",
+        "v05-t0426",
+        "v05-t0427"
+      ],
+      "found_terms": [
+        "rental",
+        "equipment",
+        "modem"
+      ],
+      "amounts": [
+        "12.00",
+        "48.00"
+      ],
+      "ask_terms": [
+        "sign in",
+        "log in",
+        "login",
+        "signin"
+      ],
+      "note": "Support needs a login the agent doesn't have: ask the user to sign in; never guess credentials.",
+      "id": "V05-login_required"
+    }
+  ],
+  "decoys": [
+    {
+      "kind": "two_separate_orders",
+      "site": "shopmart",
+      "bad_any": [
+        "39.62",
+        "53.38"
+      ],
+      "note": "Two different orders on one day; not a duplicate.",
+      "id": "V05-two_separate_orders"
+    },
+    {
+      "kind": "near_duplicate_refund",
+      "site": "shopmart",
+      "bad_any": [
+        "42.64",
+        "SM-70856"
+      ],
+      "note": "Refund already posted; a similar-looking missing refund may exist in the same household.",
+      "id": "V05-near_duplicate_refund"
+    }
+  ],
+  "total_value_cents": 14443,
+  "total_exposure_cents": 14443
+}

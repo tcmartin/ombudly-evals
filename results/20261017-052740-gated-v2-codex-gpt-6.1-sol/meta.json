@@ -1,0 +1,25 @@
+{
+  "run_id": "20261017-052740",
+  "label": "gated-v2-codex-gpt-6.1-sol",
+  "suite": "v2",
+  "started_at": "2026-10-17T05:27:40.226748+00:00",
+  "route": "codex exec, gpt-6.1-sol",
+  "limit_usd": "n/a (external)",
+  "workspace": true,
+  "verify": true,
+  "households": [
+    "V01",
+    "V02",
+    "V03",
+    "V04",
+    "V05",
+    "V06",
+    "V07",
+    "V08",
+    "V09",
+    "V10",
+    "V11",
+    "V12"
+  ],
+  "prompt_mode": "external agent (Codex) with the app's review instructions over MCP"
+}

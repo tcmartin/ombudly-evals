@@ -1,0 +1,99 @@
+transaction_id,account,date,amount,currency,name,merchant,status
+x02-t0097,Summit Visa,2025-10-23,119.99,USD,PHOTOVAULT ANNUAL,PhotoVault,posted
+x02-t0098,Summit Visa,2025-10-27,39.99,USD,TRAILMAPS ANNUAL,TrailMaps,posted
+x02-t0001,Harbor Checking,2026-04-01,-2355.12,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+x02-t0002,Summit Visa,2026-04-02,36.16,USD,BLUE BOTTLE,Restaurant,posted
+x02-t0003,Summit Visa,2026-04-03,106.62,USD,SAFEWAY,Grocery,posted
+x02-t0004,Summit Visa,2026-04-04,139.38,USD,TRADER JOES,Grocery,posted
+x02-t0005,Summit Visa,2026-04-04,35.98,USD,PANERA BREAD,Restaurant,posted
+x02-t0006,Summit Visa,2026-04-10,27.29,USD,KROGER,Grocery,posted
+x02-t0007,Harbor Checking,2026-04-15,-1915.13,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+x02-t0008,Summit Visa,2026-04-19,116.59,USD,SAFEWAY,Grocery,posted
+x02-t0009,Summit Visa,2026-04-20,66.76,USD,SAFEWAY,Grocery,posted
+x02-t0010,Summit Visa,2026-04-21,79.92,USD,TRADER JOES,Grocery,posted
+x02-t0011,Summit Visa,2026-04-21,42.72,USD,PANERA BREAD,Restaurant,posted
+x02-t0012,Summit Visa,2026-04-22,41.79,USD,SAFEWAY,Grocery,posted
+x02-t0013,Summit Visa,2026-04-27,100.41,USD,KROGER,Grocery,posted
+x02-t0014,Summit Visa,2026-04-28,26.62,USD,KROGER,Grocery,posted
+x02-t0015,Summit Visa,2026-04-29,88.31,USD,SAFEWAY,Grocery,posted
+x02-t0016,Harbor Checking,2026-05-01,-2013.40,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+x02-t0017,Summit Visa,2026-05-03,78.31,USD,KROGER,Grocery,posted
+x02-t0018,Summit Visa,2026-05-06,77.99,USD,TRADER JOES,Grocery,posted
+x02-t0019,Summit Visa,2026-05-06,31.97,USD,CHIPOTLE,Restaurant,posted
+x02-t0020,Summit Visa,2026-05-07,30.03,USD,KROGER,Grocery,posted
+x02-t0021,Summit Visa,2026-05-09,32.47,USD,BLUE BOTTLE,Restaurant,posted
+x02-t0022,Summit Visa,2026-05-11,51.23,USD,KROGER,Grocery,posted
+x02-t0023,Harbor Checking,2026-05-15,-2010.71,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+x02-t0024,Summit Visa,2026-05-16,10.50,USD,BLUE BOTTLE,Restaurant,posted
+x02-t0025,Summit Visa,2026-05-17,13.55,USD,BLUE BOTTLE,Restaurant,posted
+x02-t0026,Summit Visa,2026-05-18,43.73,USD,TRADER JOES,Grocery,posted
+x02-t0027,Summit Visa,2026-05-18,36.59,USD,CHIPOTLE,Restaurant,posted
+x02-t0028,Summit Visa,2026-05-19,50.16,USD,SAFEWAY,Grocery,posted
+x02-t0029,Summit Visa,2026-05-20,125.37,USD,SAFEWAY,Grocery,posted
+x02-t0030,Summit Visa,2026-05-22,68.11,USD,KROGER,Grocery,posted
+x02-t0031,Summit Visa,2026-05-29,56.54,USD,KROGER,Grocery,posted
+x02-t0032,Harbor Checking,2026-06-01,-2115.32,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+x02-t0033,Summit Visa,2026-06-05,105.53,USD,TRADER JOES,Grocery,posted
+x02-t0034,Summit Visa,2026-06-07,64.90,USD,KROGER,Grocery,posted
+x02-t0035,Summit Visa,2026-06-13,44.73,USD,BLUE BOTTLE,Restaurant,posted
+x02-t0036,Summit Visa,2026-06-14,60.74,USD,SAFEWAY,Grocery,posted
+x02-t0037,Harbor Checking,2026-06-15,-2000.15,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+x02-t0038,Summit Visa,2026-06-16,34.79,USD,CHIPOTLE,Restaurant,posted
+x02-t0039,Summit Visa,2026-06-19,67.38,USD,SAFEWAY,Grocery,posted
+x02-t0040,Summit Visa,2026-06-22,26.87,USD,SAFEWAY,Grocery,posted
+x02-t0041,Summit Visa,2026-06-25,33.54,USD,CHIPOTLE,Restaurant,posted
+x02-t0042,Harbor Checking,2026-07-01,-1914.80,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+x02-t0043,Summit Visa,2026-07-03,30.87,USD,KROGER,Grocery,posted
+x02-t0044,Summit Visa,2026-07-07,33.45,USD,PANERA BREAD,Restaurant,posted
+x02-t0045,Summit Visa,2026-07-11,118.24,USD,KROGER,Grocery,posted
+x02-t0046,Summit Visa,2026-07-13,72.17,USD,SAFEWAY,Grocery,posted
+x02-t0047,Summit Visa,2026-07-14,135.91,USD,SAFEWAY,Grocery,posted
+x02-t0048,Harbor Checking,2026-07-15,-2004.10,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+x02-t0049,Summit Visa,2026-07-21,84.65,USD,KROGER,Grocery,posted
+x02-t0050,Summit Visa,2026-07-21,43.75,USD,BLUE BOTTLE,Restaurant,posted
+x02-t0051,Summit Visa,2026-07-25,18.41,USD,PANERA BREAD,Restaurant,posted
+x02-t0052,Summit Visa,2026-07-26,122.04,USD,TRADER JOES,Grocery,posted
+x02-t0053,Summit Visa,2026-07-28,33.07,USD,PANERA BREAD,Restaurant,posted
+x02-t0054,Summit Visa,2026-07-30,21.59,USD,SAFEWAY,Grocery,posted
+x02-t0055,Harbor Checking,2026-08-01,-1993.87,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+x02-t0056,Summit Visa,2026-08-04,56.79,USD,KROGER,Grocery,posted
+x02-t0057,Summit Visa,2026-08-07,126.68,USD,KROGER,Grocery,posted
+x02-t0058,Summit Visa,2026-08-09,85.54,USD,KROGER,Grocery,posted
+x02-t0059,Summit Visa,2026-08-09,20.86,USD,CHIPOTLE,Restaurant,posted
+x02-t0060,Summit Visa,2026-08-10,71.81,USD,TRADER JOES,Grocery,posted
+x02-t0061,Summit Visa,2026-08-12,49.44,USD,TRADER JOES,Grocery,posted
+x02-t0062,Summit Visa,2026-08-13,51.76,USD,SAFEWAY,Grocery,posted
+x02-t0063,Harbor Checking,2026-08-15,-2061.84,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+x02-t0064,Summit Visa,2026-08-16,19.21,USD,PANERA BREAD,Restaurant,posted
+x02-t0065,Summit Visa,2026-08-19,24.86,USD,SAFEWAY,Grocery,posted
+x02-t0066,Summit Visa,2026-08-21,118.98,USD,SAFEWAY,Grocery,posted
+x02-t0067,Summit Visa,2026-08-26,122.12,USD,KROGER,Grocery,posted
+x02-t0096,Summit Visa,2026-08-26,102.60,USD,TIDEWATER TICKETS,Tidewater Tickets,posted
+x02-t0068,Summit Visa,2026-08-27,115.66,USD,SAFEWAY,Grocery,posted
+x02-t0069,Summit Visa,2026-08-30,41.75,USD,PANERA BREAD,Restaurant,posted
+x02-t0070,Harbor Checking,2026-09-01,-2209.42,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+x02-t0071,Summit Visa,2026-09-02,118.70,USD,TRADER JOES,Grocery,posted
+x02-t0072,Summit Visa,2026-09-05,53.65,USD,TRADER JOES,Grocery,posted
+x02-t0073,Summit Visa,2026-09-05,14.44,USD,CHIPOTLE,Restaurant,posted
+x02-t0074,Summit Visa,2026-09-12,38.37,USD,CHIPOTLE,Restaurant,posted
+x02-t0075,Summit Visa,2026-09-13,86.75,USD,KROGER,Grocery,posted
+x02-t0076,Harbor Checking,2026-09-15,-2333.71,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+x02-t0077,Summit Visa,2026-09-16,82.12,USD,KROGER,Grocery,posted
+x02-t0078,Summit Visa,2026-09-17,113.65,USD,TRADER JOES,Grocery,posted
+x02-t0079,Summit Visa,2026-09-18,106.27,USD,SAFEWAY,Grocery,posted
+x02-t0080,Summit Visa,2026-09-19,80.32,USD,KROGER,Grocery,posted
+x02-t0081,Summit Visa,2026-09-20,32.49,USD,TRADER JOES,Grocery,posted
+x02-t0082,Summit Visa,2026-09-21,136.13,USD,KROGER,Grocery,posted
+x02-t0083,Summit Visa,2026-09-26,76.20,USD,KROGER,Grocery,posted
+x02-t0084,Summit Visa,2026-09-26,37.07,USD,CHIPOTLE,Restaurant,posted
+x02-t0085,Summit Visa,2026-09-27,98.30,USD,TRADER JOES,Grocery,posted
+x02-t0086,Harbor Checking,2026-10-01,-2346.09,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+x02-t0087,Summit Visa,2026-10-04,44.31,USD,CHIPOTLE,Restaurant,posted
+x02-t0094,Summit Visa,2026-10-05,100.38,USD,CORNER FLORIST,Corner Florist,posted
+x02-t0095,Summit Visa,2026-10-05,100.38,USD,CORNER FLORIST,Corner Florist,posted
+x02-t0088,Summit Visa,2026-10-07,18.81,USD,TRADER JOES,Grocery,posted
+x02-t0089,Summit Visa,2026-10-10,23.62,USD,KROGER,Grocery,posted
+x02-t0090,Summit Visa,2026-10-12,74.52,USD,KROGER,Grocery,posted
+x02-t0091,Harbor Checking,2026-10-15,-2093.60,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+x02-t0092,Summit Visa,2026-10-17,9.94,USD,PANERA BREAD,Restaurant,posted
+x02-t0093,Summit Visa,2026-10-18,32.73,USD,PANERA BREAD,Restaurant,posted

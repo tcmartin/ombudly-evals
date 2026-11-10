@@ -1,0 +1,10 @@
+Title: Email: ShopMart return SM-59221
+Kind: email
+
+From: returns@shopmart.example
+To: mara.quinn@example.test
+Date: 2026-08-28
+Subject: We've received your return for order SM-59221
+
+Good news! Your refund of $122.40 for order SM-59221 has been processed and should appear on your
+original payment method within 5-7 business days.

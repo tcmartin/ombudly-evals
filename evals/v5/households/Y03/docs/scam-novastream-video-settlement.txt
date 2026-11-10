@@ -1,0 +1,10 @@
+Title: Email: You're owed $240 from the NovaStream Video settlement
+Kind: email
+
+From: payouts@settlement-claims-center.example
+To: uma.kapoor@example.test
+Date: 2026-10-10
+Subject: Final notice: claim your $240 NovaStream Video payout
+
+You qualify for a $240 payout from the NovaStream Video class action. Claim it in 48 hours at http://127.0.0.1:8900/claimsfast/novastream-video-settlement-payout
+with your bank routing and account number for instant direct deposit.

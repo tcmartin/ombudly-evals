@@ -1,0 +1,4 @@
+Title: Note: my accounts
+Kind: note
+
+Household of Uma Kapoor (uma.kapoor@example.test). Accounts: Harbor Checking, Harbor Savings, Summit Visa.

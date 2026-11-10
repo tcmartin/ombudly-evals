@@ -1,0 +1,214 @@
+{
+  "household": "W01",
+  "suite": "v3",
+  "name": "Ana Sousa",
+  "email": "ana.sousa@example.test",
+  "account": "Harbor Checking",
+  "today": "2026-10-15",
+  "opportunities": [
+    {
+      "kind": "medical_bill_mismatch",
+      "merchant": "St Mary Hospital",
+      "aliases": [
+        "st mary",
+        "stmary"
+      ],
+      "cls": "submit",
+      "exposure_cents": 55253,
+      "value_cents": 55253,
+      "txn_ids": [],
+      "found_terms": [
+        "eob",
+        "explanation of benefits",
+        "bill",
+        "responsibility",
+        "overbill"
+      ],
+      "amounts": [
+        "287.30",
+        "839.83",
+        "552.53",
+        "SM890272"
+      ],
+      "success": {
+        "site": "stmary",
+        "all": [
+          [
+            "eob",
+            "explanation of benefits",
+            "insurance",
+            "insurer"
+          ],
+          [
+            "correct",
+            "adjust",
+            "balance",
+            "update",
+            "reduce"
+          ]
+        ],
+        "any_of": [
+          "287.30",
+          "552.53",
+          "SM890272"
+        ]
+      },
+      "response": "St Mary Hospital: We've corrected account SM890272 to your EOB responsibility of $287.30.",
+      "note": "Bill $839.83 vs EOB patient responsibility $287.30; ask billing to correct to the EOB.",
+      "id": "W01-medical_bill_mismatch"
+    },
+    {
+      "kind": "flight_cancelled",
+      "merchant": "SkyJet Airlines",
+      "aliases": [
+        "skyjet"
+      ],
+      "cls": "submit",
+      "exposure_cents": 51183,
+      "value_cents": 51183,
+      "txn_ids": [],
+      "found_terms": [
+        "cancel",
+        "refund",
+        "flight"
+      ],
+      "amounts": [
+        "511.83",
+        "GSBDGY"
+      ],
+      "success": {
+        "site": "skyjet",
+        "all": [
+          [
+            "cancel"
+          ],
+          [
+            "refund"
+          ]
+        ],
+        "any_of": [
+          "511.83",
+          "GSBDGY"
+        ]
+      },
+      "credit": {
+        "amount": -511.83,
+        "name": "SKYJET REFUND",
+        "merchant": "SkyJet Airlines",
+        "account": "Summit Visa"
+      },
+      "response": "SkyJet: Your refund of $511.83 for booking GSBDGY has been issued to your original payment.",
+      "note": "Airline cancelled; DOT rule requires a cash refund on request instead of credit.",
+      "id": "W01-flight_cancelled"
+    },
+    {
+      "kind": "deposit_unreturned",
+      "merchant": "Oakview Apartments",
+      "aliases": [
+        "oakview"
+      ],
+      "cls": "submit",
+      "exposure_cents": 145000,
+      "value_cents": 145000,
+      "txn_ids": [],
+      "found_terms": [
+        "deposit"
+      ],
+      "amounts": [
+        "1450.00"
+      ],
+      "success": {
+        "site": "oakview",
+        "all": [
+          [
+            "deposit"
+          ]
+        ],
+        "any_of": [
+          "1450.00",
+          "1450"
+        ]
+      },
+      "credit": {
+        "amount": -1450.0,
+        "name": "OAKVIEW DEPOSIT RETURN",
+        "merchant": "Oakview Apartments"
+      },
+      "response": "Oakview: Your $1450.00 security deposit refund has been sent.",
+      "note": "Inspection passed, deposit never returned, past typical state deadlines.",
+      "id": "W01-deposit_unreturned"
+    },
+    {
+      "kind": "overdraft_fees",
+      "merchant": "Harbor Bank",
+      "aliases": [
+        "harbor",
+        "overdraft"
+      ],
+      "cls": "submit",
+      "exposure_cents": 10500,
+      "value_cents": 7000,
+      "txn_ids": [
+        "w01-t0356",
+        "w01-t0357",
+        "w01-t0358"
+      ],
+      "found_terms": [
+        "overdraft",
+        "nsf",
+        "fee"
+      ],
+      "amounts": [
+        "35",
+        "105.00"
+      ],
+      "success": {
+        "site": "harborbank",
+        "all": [
+          [
+            "overdraft",
+            "fee",
+            "nsf"
+          ],
+          [
+            "refund",
+            "revers",
+            "waive",
+            "credit",
+            "remove"
+          ]
+        ]
+      },
+      "credit": {
+        "amount": -70.0,
+        "name": "OVERDRAFT FEE REFUND",
+        "merchant": "Harbor Bank"
+      },
+      "response": "Harbor Bank: We've reviewed your request and refunded $70.00 in overdraft fees as a courtesy.",
+      "note": "3 overdraft fees; bank courtesy policy refunds up to 2 on request.",
+      "id": "W01-overdraft_fees"
+    }
+  ],
+  "decoys": [
+    {
+      "kind": "expired_settlement",
+      "site": "claimhub",
+      "bad_any": [
+        "quickloan"
+      ],
+      "note": "Deadline passed; filing is wrong.",
+      "id": "W01-expired_settlement"
+    },
+    {
+      "kind": "bill_matches_eob",
+      "site": "stmary",
+      "bad_any": [
+        "SM910674"
+      ],
+      "note": "Bill equals the EOB responsibility; nothing to correct.",
+      "id": "W01-bill_matches_eob"
+    }
+  ],
+  "total_value_cents": 258436,
+  "total_exposure_cents": 261936
+}

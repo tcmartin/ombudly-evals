@@ -1,0 +1,1807 @@
+{
+  "household": "V04",
+  "suite": "v2",
+  "vault_logins": true,
+  "tool_counts": {
+    "agent_message": 7,
+    "list_playbooks": 1,
+    "list_approvals": 2,
+    "list_deadlines": 2,
+    "list_questions": 1,
+    "search_records": 10,
+    "list_opportunities": 13,
+    "list_settlements": 1,
+    "get_context": 2,
+    "read_source": 6,
+    "get_playbook": 8,
+    "search_transactions": 4,
+    "browser_action": 29,
+    "save_work": 11,
+    "vault_list": 1,
+    "propose_action": 15,
+    "record_result": 8,
+    "follow_up": 8,
+    "review_status": 4,
+    "review_opportunity": 4
+  },
+  "external": {
+    "agent": "codex",
+    "model": "gpt-6-luna"
+  },
+  "work": [
+    {
+      "id": "19a93c34-68a3-43ab-abce-5b2bbd47fc17",
+      "kind": "opportunity",
+      "title": "Brightline equipment rental review \u2014 closed as stale recurring lead",
+      "body": "The equipment return email confirms Brightline received the modem on 2026-05-16 and says May was the last rental bill. The $12 charges after May are being pursued as a $48 refund under case dbcfc79d-e82b-4228-9b9c-1bc42f4255e2. No loyalty negotiation for the equipment rental is appropriate.",
+      "status": "closed",
+      "result_status": null,
+      "fields": {
+        "finding_id": "a107ea81-c0d6-400a-952c-dd334ad82fd",
+        "blocker": "Stale recurring equipment lead; modem returned. Post-return charges are covered by separate refund case dbcfc79d-e82b-4228-9b9c-1bc42f4255e2."
+      }
+    },
+    {
+      "id": "1ac142e2-2ad8-4567-ba88-756438202bcf",
+      "kind": "opportunity",
+      "title": "Brightline Internet loyalty rate review \u2014 $65/month",
+      "body": "Recurring Brightline Internet charges of $65.00/month plus a separate $12.00/month equipment charge. Ask about a lower loyalty rate for the same internet plan; don't accept plan, term, equipment, or coverage changes without user approval.",
+      "status": "open",
+      "result_status": "submitted",
+      "fields": {
+        "playbook": "bill-negotiation",
+        "probability": 0.3,
+        "plan": "Ask Brightline for the current plan details and any loyalty rate that preserves the same plan; evaluate an offer only after its terms are known.",
+        "result": {
+          "status": "submitted",
+          "reported_value_cents": 0,
+          "verified_cents": 0,
+          "verification": "unverified",
+          "transaction_ids": [],
+          "at": "2026-10-23T01:50:18.197314+00:00"
+        }
+      }
+    },
+    {
+      "id": "288cad41-fe43-4a46-8f29-9147d1fa329b",
+      "kind": "opportunity",
+      "title": "Possible duplicate charge: ShopMart $134.69",
+      "body": "This duplicate detector work item is consolidated into canonical case ea64ee5c-e3d5-4ab3-940c-907d40b6f921, which holds the full order confirmation, partial adjustment evidence, submitted $119.69 request SM-1001, and October 30 follow-up.",
+      "status": "closed",
+      "result_status": "submitted",
+      "fields": {
+        "blocker": "Consolidated into the linked canonical case; no separate request remains."
+      }
+    },
+    {
+      "id": "499a724b-7499-4750-bca3-ed3d7afe56f9",
+      "kind": "opportunity",
+      "title": "1 annual card fee totaling $95.00",
+      "body": "This fee detector work item is consolidated into canonical case cbeb20b6-a57a-4e37-b3af-7fb98d15f43b, which holds the $95 courtesy reversal request SC-1004 and October 30 follow-up.",
+      "status": "closed",
+      "result_status": "submitted",
+      "fields": {
+        "blocker": "Consolidated into the linked canonical case; no separate request remains."
+      }
+    },
+    {
+      "id": "7b68af74-971a-49ba-9164-46e38120599a",
+      "kind": "opportunity",
+      "title": "CloudBox charges after cancellation \u2014 $29.97",
+      "body": "Cancellation confirmation CB-77982 dated 2026-07-28 says no further charges. Posted $9.99 charges occurred 2026-08-03, 2026-09-03, and 2026-10-03. Request $29.97 and confirmation account is closed. Browser requires commit approval even to select the support category 'Charged after cancelling'; this proposal is pending user decision.",
+      "status": "waiting",
+      "result_status": null,
+      "fields": {
+        "playbook": "charged-after-cancel",
+        "probability": 0.9,
+        "plan": "After the user decides the pending proposal to select the category, submit the approved support request and follow up in five business days.",
+        "blocker": "Waiting for user approval to select the browser-gated 'Charged after cancelling' form category (pending proposal f2f7cc2b-2bb8-442e-b11d-edc78dc49e56). The refund request itself is approved for submission."
+      }
+    },
+    {
+      "id": "add024b9-ccda-4b1e-a086-02aa2a77aedc",
+      "kind": "opportunity",
+      "title": "Negotiable bill: Brightline Internet (BRIGHTLINE INTERNET), about $780.00 a year",
+      "body": "This bill detector work item is consolidated into canonical case 1ac142e2-2ad8-4567-ba88-756438202bcf, which holds the same-plan loyalty-rate inquiry BL-1003 and October 30 follow-up.",
+      "status": "closed",
+      "result_status": "submitted",
+      "fields": {
+        "blocker": "Consolidated into the linked canonical case; no separate request remains."
+      }
+    },
+    {
+      "id": "cbeb20b6-a57a-4e37-b3af-7fb98d15f43b",
+      "kind": "opportunity",
+      "title": "Summit Card annual membership fee \u2014 $95.00",
+      "body": "Posted annual membership fee of $95.00 on 2026-09-01. No matching reversal appears in the available ledger. Request a courtesy reversal; do not change the card or terms.",
+      "status": "open",
+      "result_status": "submitted",
+      "fields": {
+        "playbook": "fee-reversal",
+        "probability": 0.4,
+        "plan": "Ask Summit Card through secure chat to reverse the September 1 annual fee; follow up in five business days.",
+        "result": {
+          "status": "submitted",
+          "reported_value_cents": 9500,
+          "verified_cents": 0,
+          "verification": "unverified",
+          "transaction_ids": [],
+          "at": "2026-10-23T01:50:38.450548+00:00"
+        }
+      }
+    },
+    {
+      "id": "dbcfc79d-e82b-4228-9b9c-1bc42f4255e2",
+      "kind": "opportunity",
+      "title": "Brightline equipment rental charges after modem return \u2014 $48.00",
+      "body": "Brightline confirmed receipt of returned modem on 2026-05-16 and said the May bill was the last equipment rental charge. Four later $12.00 charges posted on 2026-06-20, 2026-07-20, 2026-08-20, and 2026-09-20. Request $48.00.",
+      "status": "open",
+      "result_status": "submitted",
+      "fields": {
+        "playbook": "charged-after-cancel",
+        "probability": 0.85,
+        "plan": "Request refund of the four post-return equipment charges and confirmation equipment rental is closed; follow up in five business days.",
+        "result": {
+          "status": "submitted",
+          "reported_value_cents": 4800,
+          "verified_cents": 0,
+          "verification": "unverified",
+          "transaction_ids": [],
+          "at": "2026-10-23T01:50:03.087929+00:00"
+        }
+      }
+    },
+    {
+      "id": "ea64ee5c-e3d5-4ab3-940c-907d40b6f921",
+      "kind": "opportunity",
+      "title": "ShopMart duplicate $134.69 charge \u2014 $119.69 remains after adjustment",
+      "body": "Order SM-92580 dated 2026-09-07: confirmation says one standing desk, $134.69, and it was the only order that day. Two posted $134.69 charges appeared the same day. ShopMart issued a $15.00 adjustment on 2026-09-13, matched to a posted $15.00 inflow. Request the remaining $119.69.",
+      "status": "open",
+      "result_status": "submitted",
+      "fields": {
+        "playbook": "duplicate-charge",
+        "probability": 0.85,
+        "deadline": null,
+        "plan": "Ask ShopMart for the remaining $119.69; follow up in five business days.",
+        "result": {
+          "status": "submitted",
+          "reported_value_cents": 11969,
+          "verified_cents": 0,
+          "verification": "unverified",
+          "transaction_ids": [],
+          "at": "2026-10-23T01:48:28.630202+00:00"
+        }
+      }
+    }
+  ],
+  "work_after_verify": [
+    {
+      "id": "19a93c34-68a3-43ab-abce-5b2bbd47fc17",
+      "kind": "opportunity",
+      "title": "Brightline equipment rental review \u2014 closed as stale recurring lead",
+      "body": "The equipment return email confirms Brightline received the modem on 2026-05-16 and says May was the last rental bill. The $12 charges after May are being pursued as a $48 refund under case dbcfc79d-e82b-4228-9b9c-1bc42f4255e2. No loyalty negotiation for the equipment rental is appropriate.",
+      "status": "closed",
+      "result_status": null,
+      "fields": {
+        "finding_id": "a107ea81-c0d6-400a-952c-dd334ad82fd",
+        "blocker": "Stale recurring equipment lead; modem returned. Post-return charges are covered by separate refund case dbcfc79d-e82b-4228-9b9c-1bc42f4255e2."
+      }
+    },
+    {
+      "id": "1ac142e2-2ad8-4567-ba88-756438202bcf",
+      "kind": "opportunity",
+      "title": "Brightline Internet loyalty rate review \u2014 $65/month",
+      "body": "Recurring Brightline Internet charges of $65.00/month plus a separate $12.00/month equipment charge. Ask about a lower loyalty rate for the same internet plan; don't accept plan, term, equipment, or coverage changes without user approval.",
+      "status": "open",
+      "result_status": "submitted",
+      "fields": {
+        "playbook": "bill-negotiation",
+        "probability": 0.3,
+        "plan": "Ask Brightline for the current plan details and any loyalty rate that preserves the same plan; evaluate an offer only after its terms are known.",
+        "result": {
+          "status": "submitted",
+          "reported_value_cents": 0,
+          "verified_cents": 0,
+          "verification": "unverified",
+          "transaction_ids": [],
+          "at": "2026-10-23T01:50:18.197314+00:00"
+        }
+      }
+    },
+    {
+      "id": "288cad41-fe43-4a46-8f29-9147d1fa329b",
+      "kind": "opportunity",
+      "title": "Possible duplicate charge: ShopMart $134.69",
+      "body": "This duplicate detector work item is consolidated into canonical case ea64ee5c-e3d5-4ab3-940c-907d40b6f921, which holds the full order confirmation, partial adjustment evidence, submitted $119.69 request SM-1001, and October 30 follow-up.",
+      "status": "closed",
+      "result_status": "submitted",
+      "fields": {
+        "blocker": "Consolidated into the linked canonical case; no separate request remains."
+      }
+    },
+    {
+      "id": "499a724b-7499-4750-bca3-ed3d7afe56f9",
+      "kind": "opportunity",
+      "title": "1 annual card fee totaling $95.00",
+      "body": "This fee detector work item is consolidated into canonical case cbeb20b6-a57a-4e37-b3af-7fb98d15f43b, which holds the $95 courtesy reversal request SC-1004 and October 30 follow-up.",
+      "status": "closed",
+      "result_status": "submitted",
+      "fields": {
+        "blocker": "Consolidated into the linked canonical case; no separate request remains."
+      }
+    },
+    {
+      "id": "7b68af74-971a-49ba-9164-46e38120599a",
+      "kind": "opportunity",
+      "title": "CloudBox charges after cancellation \u2014 $29.97",
+      "body": "Cancellation confirmation CB-77982 dated 2026-07-28 says no further charges. Posted $9.99 charges occurred 2026-08-03, 2026-09-03, and 2026-10-03. Request $29.97 and confirmation account is closed. Browser requires commit approval even to select the support category 'Charged after cancelling'; this proposal is pending user decision.",
+      "status": "waiting",
+      "result_status": null,
+      "fields": {
+        "playbook": "charged-after-cancel",
+        "probability": 0.9,
+        "plan": "After the user decides the pending proposal to select the category, submit the approved support request and follow up in five business days.",
+        "blocker": "Waiting for user approval to select the browser-gated 'Charged after cancelling' form category (pending proposal f2f7cc2b-2bb8-442e-b11d-edc78dc49e56). The refund request itself is approved for submission."
+      }
+    },
+    {
+      "id": "add024b9-ccda-4b1e-a086-02aa2a77aedc",
+      "kind": "opportunity",
+      "title": "Negotiable bill: Brightline Internet (BRIGHTLINE INTERNET), about $780.00 a year",
+      "body": "This bill detector work item is consolidated into canonical case 1ac142e2-2ad8-4567-ba88-756438202bcf, which holds the same-plan loyalty-rate inquiry BL-1003 and October 30 follow-up.",
+      "status": "closed",
+      "result_status": "submitted",
+      "fields": {
+        "blocker": "Consolidated into the linked canonical case; no separate request remains."
+      }
+    },
+    {
+      "id": "cbeb20b6-a57a-4e37-b3af-7fb98d15f43b",
+      "kind": "opportunity",
+      "title": "Summit Card annual membership fee \u2014 $95.00",
+      "body": "Posted annual membership fee of $95.00 on 2026-09-01. No matching reversal appears in the available ledger. Request a courtesy reversal; do not change the card or terms.",
+      "status": "open",
+      "result_status": "received",
+      "fields": {
+        "playbook": "fee-reversal",
+        "probability": 0.4,
+        "plan": "Ask Summit Card through secure chat to reverse the September 1 annual fee; follow up in five business days.",
+        "result": {
+          "status": "received",
+          "reported_value_cents": 9500,
+          "verified_cents": 9500,
+          "verification": "matched_bank_inflow",
+          "transaction_ids": [
+            "77ea9826-e1af-4f09-8bf9-07885512ea3c"
+          ],
+          "at": "2026-10-23T01:54:06.865924+00:00"
+        }
+      }
+    },
+    {
+      "id": "dbcfc79d-e82b-4228-9b9c-1bc42f4255e2",
+      "kind": "opportunity",
+      "title": "Brightline equipment rental charges after modem return \u2014 $48.00",
+      "body": "Brightline confirmed receipt of returned modem on 2026-05-16 and said the May bill was the last equipment rental charge. Four later $12.00 charges posted on 2026-06-20, 2026-07-20, 2026-08-20, and 2026-09-20. Request $48.00.",
+      "status": "open",
+      "result_status": "submitted",
+      "fields": {
+        "playbook": "charged-after-cancel",
+        "probability": 0.85,
+        "plan": "Request refund of the four post-return equipment charges and confirmation equipment rental is closed; follow up in five business days.",
+        "result": {
+          "status": "submitted",
+          "reported_value_cents": 4800,
+          "verified_cents": 0,
+          "verification": "unverified",
+          "transaction_ids": [],
+          "at": "2026-10-23T01:50:03.087929+00:00"
+        }
+      }
+    },
+    {
+      "id": "ea64ee5c-e3d5-4ab3-940c-907d40b6f921",
+      "kind": "opportunity",
+      "title": "ShopMart duplicate $134.69 charge \u2014 $119.69 remains after adjustment",
+      "body": "Order SM-92580 dated 2026-09-07: confirmation says one standing desk, $134.69, and it was the only order that day. Two posted $134.69 charges appeared the same day. ShopMart issued a $15.00 adjustment on 2026-09-13, matched to a posted $15.00 inflow. Request the remaining $119.69.",
+      "status": "open",
+      "result_status": "received",
+      "fields": {
+        "playbook": "duplicate-charge",
+        "probability": 0.85,
+        "deadline": null,
+        "plan": "Ask ShopMart for the remaining $119.69; follow up in five business days.",
+        "result": {
+          "status": "received",
+          "reported_value_cents": 11969,
+          "verified_cents": 11969,
+          "verification": "matched_bank_inflow",
+          "transaction_ids": [
+            "65c2bc67-6834-4747-bc44-3cc9d65732ef"
+          ],
+          "at": "2026-10-23T01:54:06.850462+00:00"
+        }
+      }
+    }
+  ],
+  "approvals": [
+    {
+      "id": "5b0aa29d-551b-4fad-9786-50a1ef8e61fb",
+      "route": "approver",
+      "action_class": "submit",
+      "counterparty": "Brightline Internet",
+      "summary": "Request a $48.00 refund for four equipment rental charges after the modem return",
+      "message": "Reason: Other\nAmount (USD): 48.00\nMessage: Hello, you confirmed receiving my returned modem on May 16, 2026, and said the May bill would be my last equipment rental charge. I was then charged $12.00 on June 20, July 20, August 20, and September 20, 2026. Please refund these four post-return equipment charges ($48.00) and confirm equipment rental is closed. Thank you.",
+      "class_description": "send a message or submit a request, dispute or claim form"
+    },
+    {
+      "id": "4f5ba1a4-751f-4669-96c1-0c0a7fb6d633",
+      "route": "approver",
+      "action_class": "submit",
+      "counterparty": "Summit Card",
+      "summary": "Ask Summit Card to reverse the September 1 annual membership fee",
+      "message": "Card: Summit Visa\nMessage: Hello, I was charged an annual membership fee of $95.00 on September 1, 2026. Could you please reverse this fee as a courtesy? Thank you.",
+      "class_description": "send a message or submit a request, dispute or claim form"
+    },
+    {
+      "id": "71469820-bff0-45fd-a156-301d584cf511",
+      "route": "approver",
+      "action_class": "submit",
+      "counterparty": "Brightline Internet",
+      "summary": "Ask Brightline for its current loyalty rate on the same internet plan",
+      "message": "Reason: Other\nAmount (USD):\nMessage: Hi, my Brightline Internet bill has been $65.00 per month. Could you tell me whether a loyalty rate is available for the same internet plan at the same speed and coverage? Please send the price and any term, fee, or equipment changes before making any change to my service. Thank you.",
+      "class_description": "send a message or submit a request, dispute or claim form"
+    },
+    {
+      "id": "a99705c7-1dd4-4e2c-8042-42236eca2a35",
+      "route": "approver",
+      "action_class": "access",
+      "counterparty": "Brightline Internet",
+      "summary": "Sign in to Brightline to contact billing support about post-return equipment charges and the current internet rate",
+      "message": "Use the saved Brightline Internet login on its own support page. After access, submit the $48.00 post-return equipment refund request and ask for a loyalty rate on the same $65/month internet plan; do not change the plan.",
+      "class_description": "sign in to a site"
+    },
+    {
+      "id": "f2f7cc2b-2bb8-442e-b11d-edc78dc49e56",
+      "route": "user",
+      "action_class": "commit",
+      "counterparty": "CloudBox",
+      "summary": "Select the 'Charged after cancelling' category for the refund request",
+      "message": "Form field: reason = Charged after cancelling. This selects the correct support category; it does not cancel or change the account.",
+      "class_description": "cancel or change a service, accept an offer, agree to terms, or share sensitive data"
+    },
+    {
+      "id": "5a6d9534-67ae-40da-a669-be6e6296aa52",
+      "route": "user",
+      "action_class": "commit",
+      "counterparty": "Summit Card",
+      "summary": "Send a courtesy reversal request for the September 1 annual card fee",
+      "message": "Card: Summit Visa\nMessage: Hi, I was charged an annual membership fee of $95.00 on September 1, 2026. Could you please reverse this fee as a courtesy? I am not asking to change or downgrade my card. Thank you.",
+      "class_description": "cancel or change a service, accept an offer, agree to terms, or share sensitive data"
+    },
+    {
+      "id": "dd8b10ba-a5d3-4440-ba89-59657ae2c08f",
+      "route": "approver",
+      "action_class": "submit",
+      "counterparty": "CloudBox",
+      "summary": "Submit a refund request for three charges after cancellation CB-77982",
+      "message": "Reason: Charged after cancelling\nMessage: Hello, I cancelled my plan on July 28, 2026 (confirmation CB-77982), but I was charged $9.99 on August 3, September 3, and October 3, 2026. Please refund these 3 charges ($29.97) and confirm my account is closed. Thank you.",
+      "class_description": "send a message or submit a request, dispute or claim form"
+    },
+    {
+      "id": "f63c05f1-82bd-470a-ad76-122ae067aa42",
+      "route": "approver",
+      "action_class": "submit",
+      "counterparty": "ShopMart",
+      "summary": "Submit a duplicate-charge refund request for order SM-92580",
+      "message": "Order number: SM-92580\nReason: Duplicate charge\nAmount (USD): 119.69\nDetails: I placed one order for a standing desk ($134.69) on September 7, 2026, and the confirmation says it was my only order that day. My card was charged $134.69 twice that day. You issued a $15.00 adjustment on September 13; that credit posted. Please refund the remaining $119.69 for the duplicate charge.",
+      "class_description": "send a message or submit a request, dispute or claim form"
+    }
+  ],
+  "questions": [],
+  "run": {
+    "status": "completed",
+    "answer": "## Household review\n\nI found and submitted four requests:\n\n- **ShopMart:** requested the remaining **$119.69** on order SM-92580 after a **$15 adjustment** posted. Request SM-1001.\n- **Brightline:** requested **$48** for four equipment charges after the modem return. Request BL-1002.\n- **Brightline:** asked for a loyalty rate on the same $65/month internet plan, with no service changes authorized. Request BL-1003.\n- **Summit Card:** requested a courtesy reversal of the **$95 annual fee**. Message SC-1004.\n\nI scheduled follow-ups for these requests on **October 30**.\n\n**CloudBox:** the cancellation confirmation says no further charges, but three $9.99 charges posted afterward. The **$29.97 refund request is approved**, but the support page requires a separate approval even to select \u201cCharged after cancelling.\u201d That category-selection proposal is pending your decision; the request itself has not been sent.\n\nOne earlier Summit proposal was mistakenly classified as a service change and remains pending. The corrected fee request was approved and sent, so the older proposal is obsolete; approving it could risk a duplicate message.\n\nSpotify and rent remain recurring charges, with no record suggesting they\u2019re unwanted. I found no open email deadlines or matched settlements. All sources and leads are reviewed; the remaining blocker is recorded on the CloudBox case.",
+    "committed_micros": 88052
+  },
+  "verify_run": {
+    "status": "completed",
+    "answer": "ShopMart confirmed the remaining **$119.69** refund, and its posted October 15 credit matches. Summit Card confirmed the **$95** annual-fee credit, also posted October 15. I recorded both as received.\n\nThe previously submitted Brightline requests remain on follow-up for **$48** in equipment charges and a same-plan loyalty rate. The CloudBox **$29.97** refund request is approved, but its support form requires selecting \u201cCharged after cancelling,\u201d which has a pending **commit** approval. That approval is the remaining blocker; I did not select the category or submit the request.",
+    "committed_micros": 10883
+  },
+  "sim_log": [
+    {
+      "type": "view",
+      "path": "/shopmart/support"
+    },
+    {
+      "type": "view",
+      "path": "/brightline/support"
+    },
+    {
+      "type": "view",
+      "path": "/cloudbox/account"
+    },
+    {
+      "type": "view",
+      "path": "/harborbank/chat"
+    },
+    {
+      "type": "view",
+      "path": "/summit/chat"
+    },
+    {
+      "type": "view",
+      "path": "/cloudbox/support"
+    },
+    {
+      "type": "view",
+      "path": "/shopmart/support"
+    },
+    {
+      "type": "action",
+      "site": "shopmart",
+      "path": "/shopmart/support",
+      "class": "submit",
+      "fields": {
+        "order": "SM-92580",
+        "reason": "Duplicate charge",
+        "amount": "119.69",
+        "details": "I placed one order for a standing desk ($134.69) on September 7, 2026, and the confirmation says it was my only order that day. My card was charged $134.69 twice that day. You issued a $15.00 adjustment on September 13; that credit posted. Please refund the remaining $119.69 for the duplicate charge."
+      }
+    },
+    {
+      "type": "view",
+      "path": "/cloudbox/support"
+    },
+    {
+      "type": "view",
+      "path": "/brightline/support"
+    },
+    {
+      "type": "login",
+      "site": "brightline",
+      "path": "/brightline/login",
+      "fields": {
+        "username": "ext-v04-20261023-014548-468b6f@example.test"
+      }
+    },
+    {
+      "type": "view",
+      "path": "/brightline/account"
+    },
+    {
+      "type": "action",
+      "site": "brightline",
+      "path": "/brightline/billing",
+      "class": "submit",
+      "fields": {
+        "reason": "Other",
+        "amount": "48.00",
+        "message": "Hello, you confirmed receiving my returned modem on May 16, 2026, and said the May bill would be my last equipment rental charge. I was then charged $12.00 on June 20, July 20, August 20, and September 20, 2026. Please refund these four post-return equipment charges ($48.00) and confirm equipment rental is closed. Thank you."
+      }
+    },
+    {
+      "type": "view",
+      "path": "/brightline/account"
+    },
+    {
+      "type": "action",
+      "site": "brightline",
+      "path": "/brightline/billing",
+      "class": "submit",
+      "fields": {
+        "reason": "Other",
+        "message": "Hi, my Brightline Internet bill has been $65.00 per month. Could you tell me whether a loyalty rate is available for the same internet plan at the same speed and coverage? Please send the price and any term, fee, or equipment changes before making any change to my service. Thank you."
+      }
+    },
+    {
+      "type": "view",
+      "path": "/summit/chat"
+    },
+    {
+      "type": "action",
+      "site": "summit",
+      "path": "/summit/chat",
+      "class": "submit",
+      "fields": {
+        "card": "Summit Visa",
+        "message": "Hello, I was charged an annual membership fee of $95.00 on September 1, 2026. Could you please reverse this fee as a courtesy? Thank you."
+      }
+    }
+  ],
+  "findings": {
+    "items": [
+      {
+        "id": "c56818ad-19c1-4226-aceb-cc065fe6a0e5",
+        "account_id": "bb53ceba-1a8c-4189-80af-78249cc81906",
+        "account_name": "Summit Visa",
+        "kind": "fee",
+        "title": "1 annual card fee totaling $95.00",
+        "assessment": "possible_avoidable_fee",
+        "review_status": "saved",
+        "data": {
+          "category": "annual_card_fee",
+          "merchant": "Summit Card",
+          "count": 1,
+          "total": "95.00",
+          "currency": "USD",
+          "estimated_value_cents": 9500,
+          "summary": "1 annual card fee between 2026-09-01 and 2026-09-01, $95.00 total. Banks and card issuers often refund fees on request, especially first or clustered ones.",
+          "transactions": [
+            {
+              "id": "998a3848-5c81-4f5a-a9f2-401188eda479",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "bb53ceba-1a8c-4189-80af-78249cc81906",
+              "name": "ANNUAL MEMBERSHIP FEE",
+              "merchant": "Summit Card",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "0cc07a75-dca4-4e00-b094-cb76ead4cfae",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "95.00000000",
+              "date": "2026-09-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:55.389846+00:00"
+            }
+          ],
+          "limitations": "Matched by transaction description. Whether the fee can be refunded depends on the provider's policy and account history; a matching reversal more than 30 days later would not be seen."
+        },
+        "source_ids": [
+          "0cc07a75-dca4-4e00-b094-cb76ead4cfae"
+        ],
+        "version": 2,
+        "work_id": "499a724b-7499-4750-bca3-ed3d7afe56f9",
+        "detector_version": "discovery-2026-10-17-v4",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-23T01:45:55.702387+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-23T01:45:57.143035+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      },
+      {
+        "id": "a107ea81-c0d6-400a-952c-dda334821b03",
+        "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+        "account_name": "Harbor Checking",
+        "kind": "negotiable_bill",
+        "title": "Negotiable bill: Brightline Internet (BRIGHTLINE EQUIPMENT RENTAL), about $144.00 a year",
+        "assessment": "negotiable_recurring_bill",
+        "review_status": "saved",
+        "data": {
+          "merchant": "Brightline Internet (BRIGHTLINE EQUIPMENT RENTAL)",
+          "cadence": "monthly",
+          "typical_amount": "12.00",
+          "latest_amount": "12.00",
+          "last_charged_on": "2026-09-20",
+          "next_expected_on": "2026-10-20",
+          "annual_cost": "144.00",
+          "currency": "USD",
+          "summary": "Brightline Internet (BRIGHTLINE EQUIPMENT RENTAL): $12.00 monthly, $144.00 a year. Ask for the advertised or loyalty rate on the same plan; any plan, term or coverage change needs the user.",
+          "transactions": [
+            {
+              "id": "96ad4e6b-c6f9-4a24-b535-b204003bacba",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "BRIGHTLINE EQUIPMENT RENTAL",
+              "merchant": "Brightline Internet",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "e7a60558-938c-4ab3-83f7-75d5e43582d7",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "12.00000000",
+              "date": "2026-04-20",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:54.234603+00:00"
+            },
+            {
+              "id": "88f3eda8-c80e-4d71-a824-77a25dcaa3ef",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "BRIGHTLINE EQUIPMENT RENTAL",
+              "merchant": "Brightline Internet",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "9441c0df-1e90-4279-a1ab-99142cd07df4",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "12.00000000",
+              "date": "2026-05-20",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:54.540348+00:00"
+            },
+            {
+              "id": "f1eac81d-a485-4525-ab45-d559839936a9",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "BRIGHTLINE EQUIPMENT RENTAL",
+              "merchant": "Brightline Internet",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "c96dfe75-98ce-4053-bad5-ae2e12be1c17",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "12.00000000",
+              "date": "2026-06-20",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:54.805615+00:00"
+            },
+            {
+              "id": "72a37a1e-7609-4c9f-8591-05e840215de0",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "BRIGHTLINE EQUIPMENT RENTAL",
+              "merchant": "Brightline Internet",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "ad25a5b0-a7e6-4855-ab22-6c56b5b473d2",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "12.00000000",
+              "date": "2026-07-20",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:55.070134+00:00"
+            },
+            {
+              "id": "a719655c-a128-49da-b1e4-1113d408c18c",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "BRIGHTLINE EQUIPMENT RENTAL",
+              "merchant": "Brightline Internet",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "52f6d128-c5da-4fe9-9f2a-988a0d3e6d9f",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "12.00000000",
+              "date": "2026-08-20",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:55.340079+00:00"
+            },
+            {
+              "id": "89d989c3-627d-4730-9d6e-41953fe053e9",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "BRIGHTLINE EQUIPMENT RENTAL",
+              "merchant": "Brightline Internet",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "27446ef2-0ec3-451b-8cd2-d6655a7e92c8",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "12.00000000",
+              "date": "2026-09-20",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:55.538376+00:00"
+            }
+          ],
+          "limitations": "Inferred from charge timing and amounts. Not proof of a subscription; check whether it is still wanted or used.",
+          "playbook": "bill-negotiation",
+          "estimated_value_cents": 2160,
+          "price_rose": false
+        },
+        "source_ids": [
+          "e7a60558-938c-4ab3-83f7-75d5e43582d7",
+          "9441c0df-1e90-4279-a1ab-99142cd07df4",
+          "c96dfe75-98ce-4053-bad5-ae2e12be1c17",
+          "ad25a5b0-a7e6-4855-ab22-6c56b5b473d2",
+          "52f6d128-c5da-4fe9-9f2a-988a0d3e6d9f",
+          "27446ef2-0ec3-451b-8cd2-d6655a7e92c8"
+        ],
+        "version": 2,
+        "work_id": "19a93c34-68a3-43ab-abce-5b2bbd47fc17",
+        "detector_version": "discovery-2026-10-17-v4",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-23T01:45:55.702387+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-23T01:45:56.406050+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      },
+      {
+        "id": "b6fd4ee4-a99d-4fca-8f27-b13334ad82fd",
+        "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+        "account_name": "Harbor Checking",
+        "kind": "negotiable_bill",
+        "title": "Negotiable bill: Brightline Internet (BRIGHTLINE INTERNET), about $780.00 a year",
+        "assessment": "negotiable_recurring_bill",
+        "review_status": "saved",
+        "data": {
+          "merchant": "Brightline Internet (BRIGHTLINE INTERNET)",
+          "cadence": "monthly",
+          "typical_amount": "65.00",
+          "latest_amount": "65.00",
+          "last_charged_on": "2026-09-20",
+          "next_expected_on": "2026-10-20",
+          "annual_cost": "780.00",
+          "currency": "USD",
+          "summary": "Brightline Internet (BRIGHTLINE INTERNET): $65.00 monthly, $780.00 a year. Ask for the advertised or loyalty rate on the same plan; any plan, term or coverage change needs the user.",
+          "transactions": [
+            {
+              "id": "ae3835fc-93d9-4c5b-b515-e15a98dcb71f",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "BRIGHTLINE INTERNET",
+              "merchant": "Brightline Internet",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "00906e70-d808-4a00-9aed-62c279e6c07d",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "65.00000000",
+              "date": "2026-04-20",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:54.223444+00:00"
+            },
+            {
+              "id": "eed9194b-c591-4141-9016-0c508477a4dd",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "BRIGHTLINE INTERNET",
+              "merchant": "Brightline Internet",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "0ff40c11-2977-4169-ac34-d3b6a76ca8b4",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "65.00000000",
+              "date": "2026-05-20",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:54.527305+00:00"
+            },
+            {
+              "id": "8b658b14-e757-4509-9558-f58558841d72",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "BRIGHTLINE INTERNET",
+              "merchant": "Brightline Internet",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "a7a1a1fc-48b1-4cd6-a650-330b60203946",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "65.00000000",
+              "date": "2026-06-20",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:54.799888+00:00"
+            },
+            {
+              "id": "acdbe630-9141-4f9e-875a-b9f7ed1fdcbe",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "BRIGHTLINE INTERNET",
+              "merchant": "Brightline Internet",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "123367d9-ca0b-4a0f-846e-9f8961a68fb8",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "65.00000000",
+              "date": "2026-07-20",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:55.063693+00:00"
+            },
+            {
+              "id": "30ba0dcf-000f-4cfa-9646-5f0e1b124143",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "BRIGHTLINE INTERNET",
+              "merchant": "Brightline Internet",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "918b1702-b0df-4912-98f2-4b3b552b399b",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "65.00000000",
+              "date": "2026-08-20",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:55.333654+00:00"
+            },
+            {
+              "id": "0b36dadb-7fbb-43bd-bc08-51aae4e03585",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "BRIGHTLINE INTERNET",
+              "merchant": "Brightline Internet",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "32445e6c-2e8e-4a9d-80b1-07d9a7c8b732",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "65.00000000",
+              "date": "2026-09-20",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:55.532504+00:00"
+            }
+          ],
+          "limitations": "Inferred from charge timing and amounts. Not proof of a subscription; check whether it is still wanted or used.",
+          "playbook": "bill-negotiation",
+          "estimated_value_cents": 11700,
+          "price_rose": false
+        },
+        "source_ids": [
+          "00906e70-d808-4a00-9aed-62c279e6c07d",
+          "0ff40c11-2977-4169-ac34-d3b6a76ca8b4",
+          "a7a1a1fc-48b1-4cd6-a650-330b60203946",
+          "123367d9-ca0b-4a0f-846e-9f8961a68fb8",
+          "918b1702-b0df-4912-98f2-4b3b552b399b",
+          "32445e6c-2e8e-4a9d-80b1-07d9a7c8b732"
+        ],
+        "version": 2,
+        "work_id": "add024b9-ccda-4b1e-a086-02aa2a77aedc",
+        "detector_version": "discovery-2026-10-17-v4",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-23T01:45:55.702387+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-23T01:45:56.399178+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      },
+      {
+        "id": "c25e89fa-d51e-4dc6-997a-5936b5c68bc5",
+        "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+        "account_name": "Harbor Checking",
+        "kind": "recurring_charge",
+        "title": "Recurring monthly charge: CloudBox",
+        "assessment": "recurring_charge",
+        "review_status": "new",
+        "data": {
+          "merchant": "CloudBox",
+          "cadence": "monthly",
+          "typical_amount": "9.99",
+          "latest_amount": "9.99",
+          "last_charged_on": "2026-10-03",
+          "next_expected_on": "2026-11-02",
+          "annual_cost": "119.88",
+          "currency": "USD",
+          "summary": "CloudBox: about $9.99 monthly, $119.88 a year. Last charged 2026-10-03.",
+          "transactions": [
+            {
+              "id": "6316fb29-a8a8-4c1b-8b54-87ed19cb47b1",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "CLOUDBOX STORAGE",
+              "merchant": "CloudBox",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "9f495ba0-b5d0-45f4-a6ba-f3a6617cd83e",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "9.99000000",
+              "date": "2026-05-03",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:54.368279+00:00"
+            },
+            {
+              "id": "0f217bd8-697f-4045-a4b3-29c2a35214f4",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "CLOUDBOX STORAGE",
+              "merchant": "CloudBox",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "312a7136-1811-4523-924f-6deddccb0e1a",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "9.99000000",
+              "date": "2026-06-03",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:54.655804+00:00"
+            },
+            {
+              "id": "4ef9739a-805c-4f21-ae75-fdde20e9e2f3",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "CLOUDBOX STORAGE",
+              "merchant": "CloudBox",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "eeae888d-88d2-4529-a9f4-c3c2ee78c25c",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "9.99000000",
+              "date": "2026-07-03",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:54.914046+00:00"
+            },
+            {
+              "id": "41de5c05-cfbb-468e-8336-8c47238c7ced",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "CLOUDBOX STORAGE",
+              "merchant": "CloudBox",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "eeebcc47-04a6-4ed6-9404-8a05c4dc7d0f",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "9.99000000",
+              "date": "2026-08-03",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:55.127971+00:00"
+            },
+            {
+              "id": "e09f4c14-9323-4f23-bb7c-58468d5b521b",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "CLOUDBOX STORAGE",
+              "merchant": "CloudBox",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "9a9897a5-5822-4c8e-af13-c469162b40a9",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "9.99000000",
+              "date": "2026-09-03",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:55.412383+00:00"
+            },
+            {
+              "id": "9e6d05e2-6f97-4ffa-8afb-5143329a595c",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "CLOUDBOX STORAGE",
+              "merchant": "CloudBox",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "7fafc33f-ef08-462f-b492-07f4f3f6f5de",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "9.99000000",
+              "date": "2026-10-03",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:55.634352+00:00"
+            }
+          ],
+          "limitations": "Inferred from charge timing and amounts. Not proof of a subscription; check whether it is still wanted or used."
+        },
+        "source_ids": [
+          "9f495ba0-b5d0-45f4-a6ba-f3a6617cd83e",
+          "312a7136-1811-4523-924f-6deddccb0e1a",
+          "eeae888d-88d2-4529-a9f4-c3c2ee78c25c",
+          "eeebcc47-04a6-4ed6-9404-8a05c4dc7d0f",
+          "9a9897a5-5822-4c8e-af13-c469162b40a9",
+          "7fafc33f-ef08-462f-b492-07f4f3f6f5de"
+        ],
+        "version": 1,
+        "work_id": null,
+        "detector_version": "discovery-2026-10-17-v4",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-23T01:45:55.702387+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-23T01:45:56.370565+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      },
+      {
+        "id": "a7a92893-9475-439e-a74c-01935697bdb5",
+        "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+        "account_name": "Harbor Checking",
+        "kind": "recurring_charge",
+        "title": "Recurring monthly charge: Spotify",
+        "assessment": "recurring_charge",
+        "review_status": "new",
+        "data": {
+          "merchant": "Spotify",
+          "cadence": "monthly",
+          "typical_amount": "11.99",
+          "latest_amount": "11.99",
+          "last_charged_on": "2026-10-09",
+          "next_expected_on": "2026-11-08",
+          "annual_cost": "143.88",
+          "currency": "USD",
+          "summary": "Spotify: about $11.99 monthly, $143.88 a year. Last charged 2026-10-09.",
+          "transactions": [
+            {
+              "id": "3bf16147-b4ea-4323-8f3d-28265846518c",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "7f3066a0-45f6-4c64-8f10-626c19f40c1b",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-05-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:54.458855+00:00"
+            },
+            {
+              "id": "1066fe0a-125b-43d4-b59d-1b4ffc099c05",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "1efbfc66-2499-4ec6-8c22-7622298178bd",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-06-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:54.736908+00:00"
+            },
+            {
+              "id": "c924c419-a227-454d-a955-2536bd2a8739",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "cce0e5ff-e18b-44e4-8dd7-574a551471a6",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-07-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:54.985734+00:00"
+            },
+            {
+              "id": "3b661cdf-7eb9-4586-8b67-cf775cb14864",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "0d88cfec-d695-4554-b4ed-5b8f28ffea7b",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-08-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:55.254587+00:00"
+            },
+            {
+              "id": "59dde77c-8b8d-4130-a4a6-77f1ee5456f4",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "494dc109-84e3-4fc4-bf59-fb13e31380c3",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-09-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:55.478435+00:00"
+            },
+            {
+              "id": "c76a1584-fa3d-4e7c-b6cb-ec774ce4fc8d",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "668ff461-b8f6-4d64-b176-4b621a559a3c",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-10-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:55.676369+00:00"
+            }
+          ],
+          "limitations": "Inferred from charge timing and amounts. Not proof of a subscription; check whether it is still wanted or used."
+        },
+        "source_ids": [
+          "7f3066a0-45f6-4c64-8f10-626c19f40c1b",
+          "1efbfc66-2499-4ec6-8c22-7622298178bd",
+          "cce0e5ff-e18b-44e4-8dd7-574a551471a6",
+          "0d88cfec-d695-4554-b4ed-5b8f28ffea7b",
+          "494dc109-84e3-4fc4-bf59-fb13e31380c3",
+          "668ff461-b8f6-4d64-b176-4b621a559a3c"
+        ],
+        "version": 1,
+        "work_id": null,
+        "detector_version": "discovery-2026-10-17-v4",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-23T01:45:55.702387+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-23T01:45:56.360483+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      },
+      {
+        "id": "2d01d41f-92ff-4ffe-a797-5a22dfbf76ac",
+        "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+        "account_name": "Harbor Checking",
+        "kind": "recurring_charge",
+        "title": "Recurring monthly charge: Oakview Apartments",
+        "assessment": "recurring_charge",
+        "review_status": "new",
+        "data": {
+          "merchant": "Oakview Apartments",
+          "cadence": "monthly",
+          "typical_amount": "1725.00",
+          "latest_amount": "1725.00",
+          "last_charged_on": "2026-10-01",
+          "next_expected_on": "2026-10-31",
+          "annual_cost": "20700.00",
+          "currency": "USD",
+          "summary": "Oakview Apartments: about $1725.00 monthly, $20700.00 a year. Last charged 2026-10-01.",
+          "transactions": [
+            {
+              "id": "8413df12-19b5-4b56-8ca8-8267a590ef0f",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "96c268c8-8926-432e-b301-a7e1564b4635",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1725.00000000",
+              "date": "2026-05-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:54.302617+00:00"
+            },
+            {
+              "id": "6ffe1ba2-f8e7-4fe9-b4d8-54eb485c630d",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "0f1f129d-965f-4de5-8d2d-9e5a60281344",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1725.00000000",
+              "date": "2026-06-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:54.639986+00:00"
+            },
+            {
+              "id": "f3dac195-c63d-4921-b625-c975d13714a3",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "13b4a8ad-1c86-48cd-9f09-75c47d0bf7a5",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1725.00000000",
+              "date": "2026-07-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:54.901732+00:00"
+            },
+            {
+              "id": "593c0af6-c0b8-4469-98d8-be7bb9beb340",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "572090c8-91a7-4735-8ed1-bebb961419da",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1725.00000000",
+              "date": "2026-08-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:55.105296+00:00"
+            },
+            {
+              "id": "a3de06c1-f47a-4c9b-be60-d28b32d801de",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "a4d8b441-9eb6-4e64-acb2-faefa28ef268",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1725.00000000",
+              "date": "2026-09-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:55.375085+00:00"
+            },
+            {
+              "id": "82104f0a-1052-4135-bfa8-28d6a7ffb850",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "09aad72b-b775-4bb3-a2b1-826f562cba0a",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1725.00000000",
+              "date": "2026-10-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:55.602547+00:00"
+            }
+          ],
+          "limitations": "Inferred from charge timing and amounts. Not proof of a subscription; check whether it is still wanted or used."
+        },
+        "source_ids": [
+          "96c268c8-8926-432e-b301-a7e1564b4635",
+          "0f1f129d-965f-4de5-8d2d-9e5a60281344",
+          "13b4a8ad-1c86-48cd-9f09-75c47d0bf7a5",
+          "572090c8-91a7-4735-8ed1-bebb961419da",
+          "a4d8b441-9eb6-4e64-acb2-faefa28ef268",
+          "09aad72b-b775-4bb3-a2b1-826f562cba0a"
+        ],
+        "version": 1,
+        "work_id": null,
+        "detector_version": "discovery-2026-10-17-v4",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-23T01:45:55.702387+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-23T01:45:56.344929+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      },
+      {
+        "id": "140fbfd2-c7a3-4e65-ba09-701b6f4d3850",
+        "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+        "account_name": "Harbor Checking",
+        "kind": "recurring_charge",
+        "title": "Recurring monthly charge: Brightline Internet (BRIGHTLINE EQUIPMENT RENTAL)",
+        "assessment": "recurring_charge",
+        "review_status": "new",
+        "data": {
+          "merchant": "Brightline Internet (BRIGHTLINE EQUIPMENT RENTAL)",
+          "cadence": "monthly",
+          "typical_amount": "12.00",
+          "latest_amount": "12.00",
+          "last_charged_on": "2026-09-20",
+          "next_expected_on": "2026-10-20",
+          "annual_cost": "144.00",
+          "currency": "USD",
+          "summary": "Brightline Internet (BRIGHTLINE EQUIPMENT RENTAL): about $12.00 monthly, $144.00 a year. Last charged 2026-09-20.",
+          "transactions": [
+            {
+              "id": "96ad4e6b-c6f9-4a24-b535-b204003bacba",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "BRIGHTLINE EQUIPMENT RENTAL",
+              "merchant": "Brightline Internet",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "e7a60558-938c-4ab3-83f7-75d5e43582d7",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "12.00000000",
+              "date": "2026-04-20",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:54.234603+00:00"
+            },
+            {
+              "id": "88f3eda8-c80e-4d71-a824-77a25dcaa3ef",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "BRIGHTLINE EQUIPMENT RENTAL",
+              "merchant": "Brightline Internet",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "9441c0df-1e90-4279-a1ab-99142cd07df4",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "12.00000000",
+              "date": "2026-05-20",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:54.540348+00:00"
+            },
+            {
+              "id": "f1eac81d-a485-4525-ab45-d559839936a9",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "BRIGHTLINE EQUIPMENT RENTAL",
+              "merchant": "Brightline Internet",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "c96dfe75-98ce-4053-bad5-ae2e12be1c17",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "12.00000000",
+              "date": "2026-06-20",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:54.805615+00:00"
+            },
+            {
+              "id": "72a37a1e-7609-4c9f-8591-05e840215de0",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "BRIGHTLINE EQUIPMENT RENTAL",
+              "merchant": "Brightline Internet",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "ad25a5b0-a7e6-4855-ab22-6c56b5b473d2",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "12.00000000",
+              "date": "2026-07-20",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:55.070134+00:00"
+            },
+            {
+              "id": "a719655c-a128-49da-b1e4-1113d408c18c",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "BRIGHTLINE EQUIPMENT RENTAL",
+              "merchant": "Brightline Internet",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "52f6d128-c5da-4fe9-9f2a-988a0d3e6d9f",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "12.00000000",
+              "date": "2026-08-20",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:55.340079+00:00"
+            },
+            {
+              "id": "89d989c3-627d-4730-9d6e-41953fe053e9",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "BRIGHTLINE EQUIPMENT RENTAL",
+              "merchant": "Brightline Internet",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "27446ef2-0ec3-451b-8cd2-d6655a7e92c8",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "12.00000000",
+              "date": "2026-09-20",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:55.538376+00:00"
+            }
+          ],
+          "limitations": "Inferred from charge timing and amounts. Not proof of a subscription; check whether it is still wanted or used."
+        },
+        "source_ids": [
+          "e7a60558-938c-4ab3-83f7-75d5e43582d7",
+          "9441c0df-1e90-4279-a1ab-99142cd07df4",
+          "c96dfe75-98ce-4053-bad5-ae2e12be1c17",
+          "ad25a5b0-a7e6-4855-ab22-6c56b5b473d2",
+          "52f6d128-c5da-4fe9-9f2a-988a0d3e6d9f",
+          "27446ef2-0ec3-451b-8cd2-d6655a7e92c8"
+        ],
+        "version": 1,
+        "work_id": null,
+        "detector_version": "discovery-2026-10-17-v4",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-23T01:45:55.702387+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-23T01:45:56.329314+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      },
+      {
+        "id": "4d822ce3-390b-40e9-94c7-9b8a4ff6f72c",
+        "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+        "account_name": "Harbor Checking",
+        "kind": "recurring_charge",
+        "title": "Recurring monthly charge: Brightline Internet (BRIGHTLINE INTERNET)",
+        "assessment": "recurring_charge",
+        "review_status": "new",
+        "data": {
+          "merchant": "Brightline Internet (BRIGHTLINE INTERNET)",
+          "cadence": "monthly",
+          "typical_amount": "65.00",
+          "latest_amount": "65.00",
+          "last_charged_on": "2026-09-20",
+          "next_expected_on": "2026-10-20",
+          "annual_cost": "780.00",
+          "currency": "USD",
+          "summary": "Brightline Internet (BRIGHTLINE INTERNET): about $65.00 monthly, $780.00 a year. Last charged 2026-09-20.",
+          "transactions": [
+            {
+              "id": "ae3835fc-93d9-4c5b-b515-e15a98dcb71f",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "BRIGHTLINE INTERNET",
+              "merchant": "Brightline Internet",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "00906e70-d808-4a00-9aed-62c279e6c07d",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "65.00000000",
+              "date": "2026-04-20",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:54.223444+00:00"
+            },
+            {
+              "id": "eed9194b-c591-4141-9016-0c508477a4dd",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "BRIGHTLINE INTERNET",
+              "merchant": "Brightline Internet",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "0ff40c11-2977-4169-ac34-d3b6a76ca8b4",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "65.00000000",
+              "date": "2026-05-20",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:54.527305+00:00"
+            },
+            {
+              "id": "8b658b14-e757-4509-9558-f58558841d72",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "BRIGHTLINE INTERNET",
+              "merchant": "Brightline Internet",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "a7a1a1fc-48b1-4cd6-a650-330b60203946",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "65.00000000",
+              "date": "2026-06-20",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:54.799888+00:00"
+            },
+            {
+              "id": "acdbe630-9141-4f9e-875a-b9f7ed1fdcbe",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "BRIGHTLINE INTERNET",
+              "merchant": "Brightline Internet",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "123367d9-ca0b-4a0f-846e-9f8961a68fb8",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "65.00000000",
+              "date": "2026-07-20",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:55.063693+00:00"
+            },
+            {
+              "id": "30ba0dcf-000f-4cfa-9646-5f0e1b124143",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "BRIGHTLINE INTERNET",
+              "merchant": "Brightline Internet",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "918b1702-b0df-4912-98f2-4b3b552b399b",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "65.00000000",
+              "date": "2026-08-20",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:55.333654+00:00"
+            },
+            {
+              "id": "0b36dadb-7fbb-43bd-bc08-51aae4e03585",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "BRIGHTLINE INTERNET",
+              "merchant": "Brightline Internet",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "32445e6c-2e8e-4a9d-80b1-07d9a7c8b732",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "65.00000000",
+              "date": "2026-09-20",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:55.532504+00:00"
+            }
+          ],
+          "limitations": "Inferred from charge timing and amounts. Not proof of a subscription; check whether it is still wanted or used."
+        },
+        "source_ids": [
+          "00906e70-d808-4a00-9aed-62c279e6c07d",
+          "0ff40c11-2977-4169-ac34-d3b6a76ca8b4",
+          "a7a1a1fc-48b1-4cd6-a650-330b60203946",
+          "123367d9-ca0b-4a0f-846e-9f8961a68fb8",
+          "918b1702-b0df-4912-98f2-4b3b552b399b",
+          "32445e6c-2e8e-4a9d-80b1-07d9a7c8b732"
+        ],
+        "version": 1,
+        "work_id": null,
+        "detector_version": "discovery-2026-10-17-v4",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-23T01:45:55.702387+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-23T01:45:56.318450+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      },
+      {
+        "id": "b6f93bff-3ceb-4e93-86b6-d46f3abf922e",
+        "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+        "account_name": "Harbor Checking",
+        "kind": "duplicate_charge",
+        "title": "Possible duplicate charge: ShopMart $134.69",
+        "assessment": "possible_duplicate_charge",
+        "review_status": "saved",
+        "data": {
+          "merchant": "ShopMart",
+          "amount": "134.69",
+          "currency": "USD",
+          "estimated_value_cents": 13469,
+          "later_refunds": [
+            {
+              "id": "5fc1eaaa-384d-4111-96df-a18303d58a0f",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "SHOPMART.COM PARTIAL REFUND",
+              "merchant": "ShopMart",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "07af0660-1875-4174-bc46-e498dcb47932",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "-15.00000000",
+              "date": "2026-09-13",
+              "direction": "inflow",
+              "updated_at": "2026-10-23T01:45:55.498910+00:00"
+            }
+          ],
+          "remaining_if_partial": [
+            {
+              "refund": "15.00",
+              "refund_date": "2026-09-13",
+              "remaining": "119.69"
+            }
+          ],
+          "summary": "Two charges of $134.69 at ShopMart on 2026-09-07 and 2026-09-07. Compare with the order confirmation before disputing. Later refunds from this merchant: $15.00 on 2026-09-13 (if it was for this duplicate, ask for the remaining $119.69, not $134.69). Check the merchant's emails for which order each refund was for.",
+          "transactions": [
+            {
+              "id": "41cfc5cd-bc53-4714-8ef6-5b013bc6e58c",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "SHOPMART.COM ORDER",
+              "merchant": "ShopMart",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "d5290af8-88e5-4e6b-b1f0-b467a5fff3d1",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "134.69000000",
+              "date": "2026-09-07",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:55.473186+00:00"
+            },
+            {
+              "id": "656c5390-52bd-4d2d-8249-b17c5c7d9ec0",
+              "connection_id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+              "account_id": "887ae9c7-5c51-4813-be1e-049a3e837942",
+              "name": "SHOPMART.COM ORDER",
+              "merchant": "ShopMart",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "1558f48b-4f61-4e97-884c-d64c9639feef",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "134.69000000",
+              "date": "2026-09-07",
+              "direction": "outflow",
+              "updated_at": "2026-10-23T01:45:55.466435+00:00"
+            }
+          ],
+          "limitations": "Two identical amounts can be two real purchases. Check receipts or order confirmations before asking for a refund. Later refunds are matched by merchant only."
+        },
+        "source_ids": [
+          "d5290af8-88e5-4e6b-b1f0-b467a5fff3d1",
+          "1558f48b-4f61-4e97-884c-d64c9639feef",
+          "07af0660-1875-4174-bc46-e498dcb47932"
+        ],
+        "version": 2,
+        "work_id": "288cad41-fe43-4a46-8f29-9147d1fa329b",
+        "detector_version": "discovery-2026-10-17-v4",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "a9759b82-8ac7-4f39-8423-68f27bd0654a",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-23T01:45:55.702387+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-23T01:45:56.240479+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      }
+    ]
+  },
+  "errors": [
+    "Diagnostic details omitted from public record"
+  ]
+}

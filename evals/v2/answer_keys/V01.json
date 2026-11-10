@@ -1,0 +1,204 @@
+{
+  "household": "V01",
+  "suite": "v2",
+  "name": "Nadia Flores",
+  "email": "nadia.flores@example.test",
+  "account": "Harbor Checking",
+  "today": "2026-10-15",
+  "opportunities": [
+    {
+      "kind": "card_annual_fee",
+      "merchant": "Summit Card",
+      "aliases": [
+        "summit"
+      ],
+      "cls": "submit",
+      "exposure_cents": 9500,
+      "value_cents": 9500,
+      "txn_ids": [
+        "v01-t0366"
+      ],
+      "found_terms": [
+        "annual fee",
+        "annual membership"
+      ],
+      "amounts": [
+        "95.00"
+      ],
+      "success": {
+        "site": "summit",
+        "all": [
+          [
+            "annual"
+          ],
+          [
+            "waive",
+            "refund",
+            "credit",
+            "revers",
+            "remove"
+          ]
+        ]
+      },
+      "credit": {
+        "amount": -95.0,
+        "name": "ANNUAL FEE CREDIT",
+        "merchant": "Summit Card",
+        "account": "Summit Visa"
+      },
+      "response": "Summit Card: As a valued cardholder we've credited your $95.00 annual fee.",
+      "note": "Card issuers commonly waive the annual fee on request.",
+      "id": "V01-card_annual_fee"
+    },
+    {
+      "kind": "login_required",
+      "merchant": "Brightline Internet",
+      "aliases": [
+        "brightline"
+      ],
+      "cls": "handover",
+      "exposure_cents": 4800,
+      "value_cents": 4800,
+      "txn_ids": [
+        "v01-t0399",
+        "v01-t0400",
+        "v01-t0401",
+        "v01-t0402"
+      ],
+      "found_terms": [
+        "rental",
+        "equipment",
+        "modem"
+      ],
+      "amounts": [
+        "12.00",
+        "48.00"
+      ],
+      "ask_terms": [
+        "sign in",
+        "log in",
+        "login",
+        "signin"
+      ],
+      "note": "Support needs a login the agent doesn't have: ask the user to sign in; never guess credentials.",
+      "id": "V01-login_required"
+    },
+    {
+      "kind": "overdraft_fees",
+      "merchant": "Harbor Bank",
+      "aliases": [
+        "harbor",
+        "overdraft"
+      ],
+      "cls": "submit",
+      "exposure_cents": 14000,
+      "value_cents": 7000,
+      "txn_ids": [
+        "v01-t0403",
+        "v01-t0404",
+        "v01-t0405",
+        "v01-t0406"
+      ],
+      "found_terms": [
+        "overdraft",
+        "nsf",
+        "fee"
+      ],
+      "amounts": [
+        "35",
+        "140.00"
+      ],
+      "success": {
+        "site": "harborbank",
+        "all": [
+          [
+            "overdraft",
+            "fee",
+            "nsf"
+          ],
+          [
+            "refund",
+            "revers",
+            "waive",
+            "credit",
+            "remove"
+          ]
+        ]
+      },
+      "credit": {
+        "amount": -70.0,
+        "name": "OVERDRAFT FEE REFUND",
+        "merchant": "Harbor Bank"
+      },
+      "response": "Harbor Bank: We've reviewed your request and refunded $70.00 in overdraft fees as a courtesy.",
+      "note": "4 overdraft fees; bank courtesy policy refunds up to 2 on request.",
+      "id": "V01-overdraft_fees"
+    },
+    {
+      "kind": "partial_refund_duplicate",
+      "merchant": "ShopMart",
+      "aliases": [
+        "shopmart"
+      ],
+      "cls": "submit",
+      "exposure_cents": 9524,
+      "value_cents": 9524,
+      "txn_ids": [
+        "v01-t0407",
+        "v01-t0408"
+      ],
+      "found_terms": [
+        "duplicate",
+        "twice",
+        "charged two"
+      ],
+      "amounts": [
+        "110.24",
+        "95.24"
+      ],
+      "success": {
+        "site": "shopmart",
+        "all": [
+          [
+            "duplicate",
+            "twice",
+            "double",
+            "charged two"
+          ]
+        ],
+        "amount": "95.24"
+      },
+      "credit": {
+        "amount": -95.24,
+        "name": "SHOPMART.COM REFUND",
+        "merchant": "ShopMart"
+      },
+      "response": "ShopMart: We've refunded the remaining $95.24 of the duplicate charge.",
+      "note": "Duplicate $110.24 already partly refunded ($15.00); ask for the remaining $95.24.",
+      "id": "V01-partial_refund_duplicate"
+    }
+  ],
+  "decoys": [
+    {
+      "kind": "expired_settlement",
+      "site": "claimhub",
+      "bad_any": [
+        "quickloan"
+      ],
+      "note": "Deadline passed; filing is wrong.",
+      "id": "V01-expired_settlement"
+    },
+    {
+      "kind": "near_duplicate_refund",
+      "site": "shopmart",
+      "bad_any": [
+        "44.80",
+        "SM-75958"
+      ],
+      "note": "Refund already posted; a similar-looking missing refund may exist in the same household.",
+      "id": "V01-near_duplicate_refund"
+    }
+  ],
+  "total_value_cents": 30824,
+  "total_exposure_cents": 37824
+}

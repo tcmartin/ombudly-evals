@@ -1,0 +1,1138 @@
+{
+  "household": "H05",
+  "tool_counts": {
+    "agent_message": 6,
+    "search_records": 6,
+    "list_opportunities": 6,
+    "get_context": 1,
+    "read_source": 4,
+    "search_transactions": 6,
+    "browser_action": 6,
+    "review_opportunity": 6,
+    "save_work": 18,
+    "record_result": 1,
+    "follow_up": 1,
+    "review_status": 3
+  },
+  "external": {
+    "agent": "codex",
+    "model": "gpt-6-luna"
+  },
+  "work": [
+    {
+      "id": "1a0689b8-fab6-447c-b212-540f0ca06dfc",
+      "kind": "opportunity",
+      "title": "CloudBox post-cancellation charges",
+      "body": "Request refund for two $11.99 charges dated 2026-09-03 and 2026-10-03 after cancellation confirmation CB-77444 dated 2026-07-28. Total $23.98. Submit through CloudBox billing help.",
+      "status": "open",
+      "result_status": "submitted",
+      "fields": {}
+    },
+    {
+      "id": "33bf068c-9881-449a-8ac6-b5f1519f802d",
+      "kind": "opportunity",
+      "title": "Recurring monthly charge: Metro Power",
+      "body": "",
+      "status": "open",
+      "result_status": null,
+      "fields": {
+        "blocker": "No user-authored note says this service is unused or unwanted. Recurring charge alone is insufficient grounds for a refund/cancellation request."
+      }
+    },
+    {
+      "id": "3ce9ad11-01ff-4c6a-bb1a-b14f7e00e5e8",
+      "kind": "case",
+      "title": "Review recurring Metro Power bill",
+      "body": "Variable monthly utility charges, latest $114.28 on 2026-09-18. No evidence of an unwanted service; no action taken.",
+      "status": "waiting",
+      "result_status": null,
+      "fields": {
+        "approval_request": {
+          "action": "Review whether Metro Power service is still needed and approve any change",
+          "counterparty": "Metro Power",
+          "amount_usd": 114.28,
+          "reason": "Recurring household utility; service changes require user approval."
+        }
+      }
+    },
+    {
+      "id": "97acc89a-5e75-4e33-a63a-ea3377404111",
+      "kind": "case",
+      "title": "Review recurring Spotify subscription",
+      "body": "Recurring charge $11.99 monthly ($143.88 annualized), last charge 2026-10-09. No evidence user says it is unused; no action taken.",
+      "status": "waiting",
+      "result_status": null,
+      "fields": {
+        "approval_request": {
+          "action": "Confirm whether Spotify is unwanted and approve cancellation if so",
+          "counterparty": "Spotify",
+          "amount_usd": 11.99,
+          "reason": "Recurring subscription; cancellation requires user approval."
+        }
+      }
+    },
+    {
+      "id": "b133936c-2cbb-4a19-9e92-898310594e07",
+      "kind": "opportunity",
+      "title": "Recurring monthly charge: Oakview Apartments",
+      "body": "",
+      "status": "open",
+      "result_status": null,
+      "fields": {
+        "blocker": "No user-authored note says this service is unused or unwanted. Recurring charge alone is insufficient grounds for a refund/cancellation request."
+      }
+    },
+    {
+      "id": "bcd3018c-840f-4f8b-821b-f49431478af3",
+      "kind": "opportunity",
+      "title": "Recurring monthly charge: Spotify",
+      "body": "",
+      "status": "open",
+      "result_status": null,
+      "fields": {
+        "blocker": "No user-authored note says this service is unused or unwanted. Recurring charge alone is insufficient grounds for a refund/cancellation request."
+      }
+    },
+    {
+      "id": "c27c4c7b-3a6b-4fe7-bb98-0d58a065d251",
+      "kind": "case",
+      "title": "Review recurring StreamFlix subscription",
+      "body": "Recurring charge $15.99 monthly ($191.88 annualized), last charge 2026-10-12. No evidence user says it is unused; no action taken.",
+      "status": "waiting",
+      "result_status": null,
+      "fields": {
+        "approval_request": {
+          "action": "Confirm whether StreamFlix is unwanted and approve cancellation if so",
+          "counterparty": "StreamFlix",
+          "amount_usd": 15.99,
+          "reason": "Recurring subscription; cancellation requires user approval."
+        }
+      }
+    },
+    {
+      "id": "c3efefef-b1f4-4ac0-a7ff-b0a3ec2c7137",
+      "kind": "opportunity",
+      "title": "Recurring monthly charge: CloudBox",
+      "body": "",
+      "status": "open",
+      "result_status": null,
+      "fields": {
+        "blocker": "No user-authored note says this service is unused or unwanted. Recurring charge alone is insufficient grounds for a refund/cancellation request."
+      }
+    },
+    {
+      "id": "c68f7e95-c083-48ae-bcae-6ac476c1f7da",
+      "kind": "case",
+      "title": "Review recurring Oakview Apartments rent",
+      "body": "Monthly rent $2,150, last charged 2026-10-01. No evidence it is unwanted; no action taken.",
+      "status": "waiting",
+      "result_status": null,
+      "fields": {
+        "approval_request": {
+          "action": "Review whether Oakview Apartments lease/rent is still applicable and approve any change",
+          "counterparty": "Oakview Apartments",
+          "amount_usd": 2150,
+          "reason": "Recurring housing payment; changes require user approval."
+        }
+      }
+    },
+    {
+      "id": "c737de1a-8ebc-444c-b9f5-7451b72044d0",
+      "kind": "opportunity",
+      "title": "Recurring monthly charge: StreamFlix",
+      "body": "",
+      "status": "open",
+      "result_status": null,
+      "fields": {
+        "blocker": "No user-authored note says this service is unused or unwanted. Recurring charge alone is insufficient grounds for a refund/cancellation request."
+      }
+    },
+    {
+      "id": "f124d001-8fcc-4a49-9b8d-275a4fd901a1",
+      "kind": "case",
+      "title": "StreamFlix settlement claim needs sworn declaration approval",
+      "body": "Settlement notice says paid StreamFlix accounts from 2024-01-01 through 2026-06-30 may qualify up to $50; paid transactions found on 2026-04-12, 2026-05-12, 2026-06-12. Claim deadline 2026-11-30 and requires sworn declaration. I cannot attest/sign without approval.",
+      "status": "waiting",
+      "result_status": null,
+      "fields": {
+        "approval_request": {
+          "action": "Approve submitting settlement claim with sworn declaration",
+          "counterparty": "ClaimHub / StreamFlix settlement",
+          "amount_usd": 50,
+          "reason": "Claim requires user's sworn declaration and signature."
+        }
+      }
+    }
+  ],
+  "work_after_verify": [
+    {
+      "id": "1a0689b8-fab6-447c-b212-540f0ca06dfc",
+      "kind": "opportunity",
+      "title": "CloudBox post-cancellation charges",
+      "body": "Request refund for two $11.99 charges dated 2026-09-03 and 2026-10-03 after cancellation confirmation CB-77444 dated 2026-07-28. Total $23.98. Submit through CloudBox billing help.",
+      "status": "open",
+      "result_status": "received",
+      "fields": {}
+    },
+    {
+      "id": "33bf068c-9881-449a-8ac6-b5f1519f802d",
+      "kind": "opportunity",
+      "title": "Recurring monthly charge: Metro Power",
+      "body": "",
+      "status": "open",
+      "result_status": null,
+      "fields": {
+        "blocker": "No user-authored note says this service is unused or unwanted. Recurring charge alone is insufficient grounds for a refund/cancellation request."
+      }
+    },
+    {
+      "id": "3ce9ad11-01ff-4c6a-bb1a-b14f7e00e5e8",
+      "kind": "case",
+      "title": "Review recurring Metro Power bill",
+      "body": "Variable monthly utility charges, latest $114.28 on 2026-09-18. No evidence of an unwanted service; no action taken.",
+      "status": "waiting",
+      "result_status": null,
+      "fields": {
+        "approval_request": {
+          "action": "Review whether Metro Power service is still needed and approve any change",
+          "counterparty": "Metro Power",
+          "amount_usd": 114.28,
+          "reason": "Recurring household utility; service changes require user approval."
+        }
+      }
+    },
+    {
+      "id": "97acc89a-5e75-4e33-a63a-ea3377404111",
+      "kind": "case",
+      "title": "Review recurring Spotify subscription",
+      "body": "Recurring charge $11.99 monthly ($143.88 annualized), last charge 2026-10-09. No evidence user says it is unused; no action taken.",
+      "status": "waiting",
+      "result_status": null,
+      "fields": {
+        "approval_request": {
+          "action": "Confirm whether Spotify is unwanted and approve cancellation if so",
+          "counterparty": "Spotify",
+          "amount_usd": 11.99,
+          "reason": "Recurring subscription; cancellation requires user approval."
+        }
+      }
+    },
+    {
+      "id": "b133936c-2cbb-4a19-9e92-898310594e07",
+      "kind": "opportunity",
+      "title": "Recurring monthly charge: Oakview Apartments",
+      "body": "",
+      "status": "open",
+      "result_status": null,
+      "fields": {
+        "blocker": "No user-authored note says this service is unused or unwanted. Recurring charge alone is insufficient grounds for a refund/cancellation request."
+      }
+    },
+    {
+      "id": "bcd3018c-840f-4f8b-821b-f49431478af3",
+      "kind": "opportunity",
+      "title": "Recurring monthly charge: Spotify",
+      "body": "",
+      "status": "open",
+      "result_status": null,
+      "fields": {
+        "blocker": "No user-authored note says this service is unused or unwanted. Recurring charge alone is insufficient grounds for a refund/cancellation request."
+      }
+    },
+    {
+      "id": "c27c4c7b-3a6b-4fe7-bb98-0d58a065d251",
+      "kind": "case",
+      "title": "Review recurring StreamFlix subscription",
+      "body": "Recurring charge $15.99 monthly ($191.88 annualized), last charge 2026-10-12. No evidence user says it is unused; no action taken.",
+      "status": "waiting",
+      "result_status": null,
+      "fields": {
+        "approval_request": {
+          "action": "Confirm whether StreamFlix is unwanted and approve cancellation if so",
+          "counterparty": "StreamFlix",
+          "amount_usd": 15.99,
+          "reason": "Recurring subscription; cancellation requires user approval."
+        }
+      }
+    },
+    {
+      "id": "c3efefef-b1f4-4ac0-a7ff-b0a3ec2c7137",
+      "kind": "opportunity",
+      "title": "Recurring monthly charge: CloudBox",
+      "body": "",
+      "status": "open",
+      "result_status": null,
+      "fields": {
+        "blocker": "No user-authored note says this service is unused or unwanted. Recurring charge alone is insufficient grounds for a refund/cancellation request."
+      }
+    },
+    {
+      "id": "c68f7e95-c083-48ae-bcae-6ac476c1f7da",
+      "kind": "case",
+      "title": "Review recurring Oakview Apartments rent",
+      "body": "Monthly rent $2,150, last charged 2026-10-01. No evidence it is unwanted; no action taken.",
+      "status": "waiting",
+      "result_status": null,
+      "fields": {
+        "approval_request": {
+          "action": "Review whether Oakview Apartments lease/rent is still applicable and approve any change",
+          "counterparty": "Oakview Apartments",
+          "amount_usd": 2150,
+          "reason": "Recurring housing payment; changes require user approval."
+        }
+      }
+    },
+    {
+      "id": "c737de1a-8ebc-444c-b9f5-7451b72044d0",
+      "kind": "opportunity",
+      "title": "Recurring monthly charge: StreamFlix",
+      "body": "",
+      "status": "open",
+      "result_status": null,
+      "fields": {
+        "blocker": "No user-authored note says this service is unused or unwanted. Recurring charge alone is insufficient grounds for a refund/cancellation request."
+      }
+    },
+    {
+      "id": "f124d001-8fcc-4a49-9b8d-275a4fd901a1",
+      "kind": "case",
+      "title": "StreamFlix settlement claim needs sworn declaration approval",
+      "body": "Settlement notice says paid StreamFlix accounts from 2024-01-01 through 2026-06-30 may qualify up to $50; paid transactions found on 2026-04-12, 2026-05-12, 2026-06-12. Claim deadline 2026-11-30 and requires sworn declaration. I cannot attest/sign without approval.",
+      "status": "waiting",
+      "result_status": null,
+      "fields": {
+        "approval_request": {
+          "action": "Approve submitting settlement claim with sworn declaration",
+          "counterparty": "ClaimHub / StreamFlix settlement",
+          "amount_usd": 50,
+          "reason": "Claim requires user's sworn declaration and signature."
+        }
+      }
+    }
+  ],
+  "run": {
+    "status": "completed",
+    "answer": "**Household review complete.** Finapp confirms all unread sources were reviewed and the review tracker reports no remaining items.\n\n- Submitted a **$23.98 CloudBox refund request** for the September 3 and October 3 charges after the July 28 cancellation confirmation. CloudBox opened case **CB-1001**; a follow-up is scheduled for October 23. No refund has posted yet.\n- StreamFlix charges during the settlement\u2019s eligible period match the notice, which says claims may be worth up to **$50**. The claim requires a sworn declaration, so I saved it for your approval; the stated deadline is November 30, 2026.\n- Saved the five recurring-charge leads. No user note says the other services are unwanted, so I made no cancellation requests. The CloudBox cancellation anomaly is recorded alongside the submitted refund request.\n- The ShopMart email\u2019s two orders match their posted transactions; I found no refund or duplicate-charge issue there. No fee, duplicate-charge, price-increase, or credit-promise leads appeared.\n\nThe saved cases include requests for your direction on recurring services.",
+    "committed_micros": 27315
+  },
+  "verify_run": {
+    "status": "completed",
+    "answer": "**Review complete.** No new bank fee, price increase, duplicate charge, or untracked credit leads were found.\n\n- **CloudBox:** The $35.97 refund promised for charges after the July 28 cancellation posted on October 15. I recorded it as received and scheduled a follow-up for October 23.\n- **ShopMart:** The two September 24 charges, $39.69 and $55.92, match separate confirmed orders SM-71541 and SM-72597. I found no duplicate to dispute.\n- **Approval needed:** The existing waiting cases still need your decision on whether Spotify or StreamFlix is unwanted and should be cancelled, whether to change the Oakview rent or Metro Power service, and whether to submit the StreamFlix settlement claim, which requires your sworn declaration.\n\nThe ShopMart support page failed to load, but no dispute was supported by the evidence. Final review status reports no remaining review work.",
+    "committed_micros": 13573
+  },
+  "sim_log": [
+    {
+      "type": "view",
+      "path": "/cloudbox/account"
+    },
+    {
+      "type": "view",
+      "path": "/cloudbox/support"
+    },
+    {
+      "type": "action",
+      "site": "cloudbox",
+      "path": "/cloudbox/support",
+      "class": "submit",
+      "fields": {
+        "reason": "Charged after cancelling",
+        "message": "Please refund the two $11.99 charges posted on 2026-09-03 and 2026-10-03, totaling $23.98. Your cancellation confirmation CB-77444 dated 2026-07-28 stated the plan was cancelled and no further charges would occur. These charges posted after cancellation. Please refund both charges and confirm the account remains cancelled."
+      }
+    }
+  ],
+  "findings": {
+    "items": [
+      {
+        "id": "acb11594-c925-45b0-8f69-72fdfd89a1b2",
+        "account_id": "eed7b4e9-ca10-4353-bc6c-1505fecb4b2e",
+        "account_name": "Harbor Checking",
+        "kind": "recurring_charge",
+        "title": "Recurring monthly charge: Metro Power",
+        "assessment": "recurring_charge",
+        "review_status": "saved",
+        "data": {
+          "merchant": "Metro Power",
+          "cadence": "monthly",
+          "typical_amount": "110.78",
+          "latest_amount": "114.28",
+          "last_charged_on": "2026-09-18",
+          "next_expected_on": "2026-10-18",
+          "annual_cost": "1329.36",
+          "currency": "USD",
+          "summary": "Metro Power: about $110.78 monthly, $1329.36 a year. Last charged 2026-09-18.",
+          "transactions": [
+            {
+              "id": "f2894180-8fa9-4995-83b1-f10f68f8ac0c",
+              "connection_id": "6f71ed62-61a7-4572-acbc-ab95a034e9bb",
+              "account_id": "eed7b4e9-ca10-4353-bc6c-1505fecb4b2e",
+              "name": "METRO POWER UTIL",
+              "merchant": "Metro Power",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "9e5d24a2-bdc0-4bb6-8bf5-5d3d75e26127",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "104.46000000",
+              "date": "2026-04-18",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T12:18:03.811122+00:00"
+            },
+            {
+              "id": "242abfb4-57ff-44a0-8a29-3bd5d5d05b23",
+              "connection_id": "6f71ed62-61a7-4572-acbc-ab95a034e9bb",
+              "account_id": "eed7b4e9-ca10-4353-bc6c-1505fecb4b2e",
+              "name": "METRO POWER UTIL",
+              "merchant": "Metro Power",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "ea7ddd17-85f2-4c1c-8433-713e78d67be2",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "131.21000000",
+              "date": "2026-05-18",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T12:18:03.856921+00:00"
+            },
+            {
+              "id": "811a8f1d-75ea-4305-96df-1f667a4d4bc5",
+              "connection_id": "6f71ed62-61a7-4572-acbc-ab95a034e9bb",
+              "account_id": "eed7b4e9-ca10-4353-bc6c-1505fecb4b2e",
+              "name": "METRO POWER UTIL",
+              "merchant": "Metro Power",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "e1b81aa2-fd6e-4f3d-910f-9b34c1c63e84",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "107.28000000",
+              "date": "2026-06-18",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T12:18:03.913880+00:00"
+            },
+            {
+              "id": "2e4d6b66-e8b7-483c-9dcc-99f44cea382a",
+              "connection_id": "6f71ed62-61a7-4572-acbc-ab95a034e9bb",
+              "account_id": "eed7b4e9-ca10-4353-bc6c-1505fecb4b2e",
+              "name": "METRO POWER UTIL",
+              "merchant": "Metro Power",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "948030e3-4eab-44ca-8ca4-ddd2acb290e9",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "140.57000000",
+              "date": "2026-07-18",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T12:18:03.954843+00:00"
+            },
+            {
+              "id": "0325338f-f38a-4fd8-848c-5d48bb104ed2",
+              "connection_id": "6f71ed62-61a7-4572-acbc-ab95a034e9bb",
+              "account_id": "eed7b4e9-ca10-4353-bc6c-1505fecb4b2e",
+              "name": "METRO POWER UTIL",
+              "merchant": "Metro Power",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "3bba76ab-6012-41e8-879b-8ec5cf4dc25d",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "90.24000000",
+              "date": "2026-08-18",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T12:18:03.997551+00:00"
+            },
+            {
+              "id": "08b01b61-6aef-4a85-9e6d-2acac49db909",
+              "connection_id": "6f71ed62-61a7-4572-acbc-ab95a034e9bb",
+              "account_id": "eed7b4e9-ca10-4353-bc6c-1505fecb4b2e",
+              "name": "METRO POWER UTIL",
+              "merchant": "Metro Power",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "e3881828-94a4-4cd5-a171-8f43808c856b",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "114.28000000",
+              "date": "2026-09-18",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T12:18:04.038856+00:00"
+            }
+          ],
+          "limitations": "Inferred from charge timing and amounts. Not proof of a subscription; check whether it is still wanted or used."
+        },
+        "source_ids": [
+          "9e5d24a2-bdc0-4bb6-8bf5-5d3d75e26127",
+          "ea7ddd17-85f2-4c1c-8433-713e78d67be2",
+          "e1b81aa2-fd6e-4f3d-910f-9b34c1c63e84",
+          "948030e3-4eab-44ca-8ca4-ddd2acb290e9",
+          "3bba76ab-6012-41e8-879b-8ec5cf4dc25d",
+          "e3881828-94a4-4cd5-a171-8f43808c856b"
+        ],
+        "version": 2,
+        "work_id": "33bf068c-9881-449a-8ac6-b5f1519f802d",
+        "detector_version": "discovery-2026-10-16-v2",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "6f71ed62-61a7-4572-acbc-ab95a034e9bb",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-16T12:18:04.077415+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-16T12:18:04.681586+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      },
+      {
+        "id": "646b4dae-d1ae-4436-8339-7b88fad3a041",
+        "account_id": "eed7b4e9-ca10-4353-bc6c-1505fecb4b2e",
+        "account_name": "Harbor Checking",
+        "kind": "recurring_charge",
+        "title": "Recurring monthly charge: StreamFlix",
+        "assessment": "recurring_charge",
+        "review_status": "saved",
+        "data": {
+          "merchant": "StreamFlix",
+          "cadence": "monthly",
+          "typical_amount": "15.99",
+          "latest_amount": "15.99",
+          "last_charged_on": "2026-10-12",
+          "next_expected_on": "2026-11-11",
+          "annual_cost": "191.88",
+          "currency": "USD",
+          "summary": "StreamFlix: about $15.99 monthly, $191.88 a year. Last charged 2026-10-12.",
+          "transactions": [
+            {
+              "id": "789fd0eb-4249-4de5-8fd7-e587ca11cce3",
+              "connection_id": "6f71ed62-61a7-4572-acbc-ab95a034e9bb",
+              "account_id": "eed7b4e9-ca10-4353-bc6c-1505fecb4b2e",
+              "name": "STREAMFLIX.COM",
+              "merchant": "StreamFlix",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "40375235-1077-4a99-95db-b9d01e18960c",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "15.99000000",
+              "date": "2026-05-12",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T12:18:03.850855+00:00"
+            },
+            {
+              "id": "896a50dd-9d56-4dd4-89c8-2c98ece3c86c",
+              "connection_id": "6f71ed62-61a7-4572-acbc-ab95a034e9bb",
+              "account_id": "eed7b4e9-ca10-4353-bc6c-1505fecb4b2e",
+              "name": "STREAMFLIX.COM",
+              "merchant": "StreamFlix",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "e224989b-73a3-431c-ad5d-c4f2766d1388",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "15.99000000",
+              "date": "2026-06-12",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T12:18:03.901631+00:00"
+            },
+            {
+              "id": "250469a0-2e8d-4abc-9370-5df7c185ebf7",
+              "connection_id": "6f71ed62-61a7-4572-acbc-ab95a034e9bb",
+              "account_id": "eed7b4e9-ca10-4353-bc6c-1505fecb4b2e",
+              "name": "STREAMFLIX.COM",
+              "merchant": "StreamFlix",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "c7307147-b16a-4cc9-9fbd-226760e7638a",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "15.99000000",
+              "date": "2026-07-12",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T12:18:03.948133+00:00"
+            },
+            {
+              "id": "3e5d61b1-7c0f-4aa5-877a-9a56676c5166",
+              "connection_id": "6f71ed62-61a7-4572-acbc-ab95a034e9bb",
+              "account_id": "eed7b4e9-ca10-4353-bc6c-1505fecb4b2e",
+              "name": "STREAMFLIX.COM",
+              "merchant": "StreamFlix",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "c448ff84-53d4-4f6d-8a0c-e6857138e0fc",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "15.99000000",
+              "date": "2026-08-12",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T12:18:03.990666+00:00"
+            },
+            {
+              "id": "f2f4a971-bd2d-452a-b996-ad70b9392e67",
+              "connection_id": "6f71ed62-61a7-4572-acbc-ab95a034e9bb",
+              "account_id": "eed7b4e9-ca10-4353-bc6c-1505fecb4b2e",
+              "name": "STREAMFLIX.COM",
+              "merchant": "StreamFlix",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "e94020df-df70-42b8-86e5-1bb82077df4b",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "15.99000000",
+              "date": "2026-09-12",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T12:18:04.032181+00:00"
+            },
+            {
+              "id": "fb2d30f6-e29d-43bb-8499-965c3c390349",
+              "connection_id": "6f71ed62-61a7-4572-acbc-ab95a034e9bb",
+              "account_id": "eed7b4e9-ca10-4353-bc6c-1505fecb4b2e",
+              "name": "STREAMFLIX.COM",
+              "merchant": "StreamFlix",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "6b10d639-3fa3-42d2-8a47-0dfe96fdc956",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "15.99000000",
+              "date": "2026-10-12",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T12:18:04.074759+00:00"
+            }
+          ],
+          "limitations": "Inferred from charge timing and amounts. Not proof of a subscription; check whether it is still wanted or used."
+        },
+        "source_ids": [
+          "40375235-1077-4a99-95db-b9d01e18960c",
+          "e224989b-73a3-431c-ad5d-c4f2766d1388",
+          "c7307147-b16a-4cc9-9fbd-226760e7638a",
+          "c448ff84-53d4-4f6d-8a0c-e6857138e0fc",
+          "e94020df-df70-42b8-86e5-1bb82077df4b",
+          "6b10d639-3fa3-42d2-8a47-0dfe96fdc956"
+        ],
+        "version": 2,
+        "work_id": "c737de1a-8ebc-444c-b9f5-7451b72044d0",
+        "detector_version": "discovery-2026-10-16-v2",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "6f71ed62-61a7-4572-acbc-ab95a034e9bb",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-16T12:18:04.077415+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-16T12:18:04.677844+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      },
+      {
+        "id": "a3f663ad-52c1-4853-81fd-d64cb3fe506a",
+        "account_id": "eed7b4e9-ca10-4353-bc6c-1505fecb4b2e",
+        "account_name": "Harbor Checking",
+        "kind": "recurring_charge",
+        "title": "Recurring monthly charge: Spotify",
+        "assessment": "recurring_charge",
+        "review_status": "saved",
+        "data": {
+          "merchant": "Spotify",
+          "cadence": "monthly",
+          "typical_amount": "11.99",
+          "latest_amount": "11.99",
+          "last_charged_on": "2026-10-09",
+          "next_expected_on": "2026-11-08",
+          "annual_cost": "143.88",
+          "currency": "USD",
+          "summary": "Spotify: about $11.99 monthly, $143.88 a year. Last charged 2026-10-09.",
+          "transactions": [
+            {
+              "id": "2b9061b1-1df6-4170-a69b-7f724e4df56e",
+              "connection_id": "6f71ed62-61a7-4572-acbc-ab95a034e9bb",
+              "account_id": "eed7b4e9-ca10-4353-bc6c-1505fecb4b2e",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "08a8c8ff-8b1f-4eb3-9f5a-666c766f7b82",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-05-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T12:18:03.844319+00:00"
+            },
+            {
+              "id": "6f958f3c-bbb6-44d2-8a0f-78e7d3ad07d2",
+              "connection_id": "6f71ed62-61a7-4572-acbc-ab95a034e9bb",
+              "account_id": "eed7b4e9-ca10-4353-bc6c-1505fecb4b2e",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "63e492aa-e15b-403f-a7a5-7b4ea6b3deea",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-06-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T12:18:03.896959+00:00"
+            },
+            {
+              "id": "16c6d28e-243d-46d2-a15d-db985a6305b6",
+              "connection_id": "6f71ed62-61a7-4572-acbc-ab95a034e9bb",
+              "account_id": "eed7b4e9-ca10-4353-bc6c-1505fecb4b2e",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "107a7fb4-208d-4b40-8d4f-bde64753fb5b",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-07-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T12:18:03.943544+00:00"
+            },
+            {
+              "id": "ad524174-dda7-4545-9919-19b3df9e98a6",
+              "connection_id": "6f71ed62-61a7-4572-acbc-ab95a034e9bb",
+              "account_id": "eed7b4e9-ca10-4353-bc6c-1505fecb4b2e",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "8ac25219-5248-49c1-9be0-ea99fe425007",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-08-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T12:18:03.984074+00:00"
+            },
+            {
+              "id": "3de0cc2e-c246-4076-95f4-df6bfd14f93c",
+              "connection_id": "6f71ed62-61a7-4572-acbc-ab95a034e9bb",
+              "account_id": "eed7b4e9-ca10-4353-bc6c-1505fecb4b2e",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "63db2854-651f-4d4c-b3a3-8e200a5e62f5",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-09-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T12:18:04.027718+00:00"
+            },
+            {
+              "id": "a5735fac-d146-4b77-aa4b-bb463ad0fa5f",
+              "connection_id": "6f71ed62-61a7-4572-acbc-ab95a034e9bb",
+              "account_id": "eed7b4e9-ca10-4353-bc6c-1505fecb4b2e",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "077a126d-331c-4d83-89e9-15ea7515d912",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-10-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T12:18:04.070376+00:00"
+            }
+          ],
+          "limitations": "Inferred from charge timing and amounts. Not proof of a subscription; check whether it is still wanted or used."
+        },
+        "source_ids": [
+          "08a8c8ff-8b1f-4eb3-9f5a-666c766f7b82",
+          "63e492aa-e15b-403f-a7a5-7b4ea6b3deea",
+          "107a7fb4-208d-4b40-8d4f-bde64753fb5b",
+          "8ac25219-5248-49c1-9be0-ea99fe425007",
+          "63db2854-651f-4d4c-b3a3-8e200a5e62f5",
+          "077a126d-331c-4d83-89e9-15ea7515d912"
+        ],
+        "version": 2,
+        "work_id": "bcd3018c-840f-4f8b-821b-f49431478af3",
+        "detector_version": "discovery-2026-10-16-v2",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "6f71ed62-61a7-4572-acbc-ab95a034e9bb",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-16T12:18:04.077415+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-16T12:18:04.675134+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      },
+      {
+        "id": "bf6efce4-8934-4dd5-b9db-10465e5c4f58",
+        "account_id": "eed7b4e9-ca10-4353-bc6c-1505fecb4b2e",
+        "account_name": "Harbor Checking",
+        "kind": "recurring_charge",
+        "title": "Recurring monthly charge: CloudBox",
+        "assessment": "recurring_charge",
+        "review_status": "saved",
+        "data": {
+          "merchant": "CloudBox",
+          "cadence": "monthly",
+          "typical_amount": "11.99",
+          "latest_amount": "11.99",
+          "last_charged_on": "2026-10-03",
+          "next_expected_on": "2026-11-02",
+          "annual_cost": "143.88",
+          "currency": "USD",
+          "summary": "CloudBox: about $11.99 monthly, $143.88 a year. Last charged 2026-10-03.",
+          "transactions": [
+            {
+              "id": "8aff780f-2f99-436e-8078-874c21796be0",
+              "connection_id": "6f71ed62-61a7-4572-acbc-ab95a034e9bb",
+              "account_id": "eed7b4e9-ca10-4353-bc6c-1505fecb4b2e",
+              "name": "CLOUDBOX STORAGE",
+              "merchant": "CloudBox",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "63c30b0a-5ba1-44d8-828b-32d90789b0a8",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-05-03",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T12:18:03.834474+00:00"
+            },
+            {
+              "id": "2c25a41d-a7ca-4498-88c1-5b0e695c98c7",
+              "connection_id": "6f71ed62-61a7-4572-acbc-ab95a034e9bb",
+              "account_id": "eed7b4e9-ca10-4353-bc6c-1505fecb4b2e",
+              "name": "CLOUDBOX STORAGE",
+              "merchant": "CloudBox",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "92fe3ebd-263a-4c0e-9afd-987e426c275e",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-06-03",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T12:18:03.889757+00:00"
+            },
+            {
+              "id": "98b4b058-f8a6-4b2a-b4c7-71060ec75175",
+              "connection_id": "6f71ed62-61a7-4572-acbc-ab95a034e9bb",
+              "account_id": "eed7b4e9-ca10-4353-bc6c-1505fecb4b2e",
+              "name": "CLOUDBOX STORAGE",
+              "merchant": "CloudBox",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "63ee369a-0cf2-4c10-91ef-db65f0427e2f",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-07-03",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T12:18:03.934696+00:00"
+            },
+            {
+              "id": "fb192d2e-2fa2-40d2-9049-08832e1a6ad6",
+              "connection_id": "6f71ed62-61a7-4572-acbc-ab95a034e9bb",
+              "account_id": "eed7b4e9-ca10-4353-bc6c-1505fecb4b2e",
+              "name": "CLOUDBOX STORAGE",
+              "merchant": "CloudBox",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "cbb50741-a4c7-4580-9d1b-69f08d4d4bbd",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-08-03",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T12:18:03.977265+00:00"
+            },
+            {
+              "id": "8dae3e8c-6b98-451e-b267-c35853ac56ee",
+              "connection_id": "6f71ed62-61a7-4572-acbc-ab95a034e9bb",
+              "account_id": "eed7b4e9-ca10-4353-bc6c-1505fecb4b2e",
+              "name": "CLOUDBOX STORAGE",
+              "merchant": "CloudBox",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "caf14715-befe-4abb-8a0f-ed2624e6ae03",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-09-03",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T12:18:04.017858+00:00"
+            },
+            {
+              "id": "996405a4-5e5b-40e7-9679-39826097f697",
+              "connection_id": "6f71ed62-61a7-4572-acbc-ab95a034e9bb",
+              "account_id": "eed7b4e9-ca10-4353-bc6c-1505fecb4b2e",
+              "name": "CLOUDBOX STORAGE",
+              "merchant": "CloudBox",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "538c5736-6dc8-45d3-af1d-ec5eb4f4ff43",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-10-03",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T12:18:04.061056+00:00"
+            }
+          ],
+          "limitations": "Inferred from charge timing and amounts. Not proof of a subscription; check whether it is still wanted or used."
+        },
+        "source_ids": [
+          "63c30b0a-5ba1-44d8-828b-32d90789b0a8",
+          "92fe3ebd-263a-4c0e-9afd-987e426c275e",
+          "63ee369a-0cf2-4c10-91ef-db65f0427e2f",
+          "cbb50741-a4c7-4580-9d1b-69f08d4d4bbd",
+          "caf14715-befe-4abb-8a0f-ed2624e6ae03",
+          "538c5736-6dc8-45d3-af1d-ec5eb4f4ff43"
+        ],
+        "version": 3,
+        "work_id": "c3efefef-b1f4-4ac0-a7ff-b0a3ec2c7137",
+        "detector_version": "discovery-2026-10-16-v2",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "6f71ed62-61a7-4572-acbc-ab95a034e9bb",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-16T12:18:04.077415+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-16T12:18:04.673151+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      },
+      {
+        "id": "57857144-40a4-4ddd-87eb-f048ea0174e3",
+        "account_id": "eed7b4e9-ca10-4353-bc6c-1505fecb4b2e",
+        "account_name": "Harbor Checking",
+        "kind": "recurring_charge",
+        "title": "Recurring monthly charge: Oakview Apartments",
+        "assessment": "recurring_charge",
+        "review_status": "saved",
+        "data": {
+          "merchant": "Oakview Apartments",
+          "cadence": "monthly",
+          "typical_amount": "2150.00",
+          "latest_amount": "2150.00",
+          "last_charged_on": "2026-10-01",
+          "next_expected_on": "2026-10-31",
+          "annual_cost": "25800.00",
+          "currency": "USD",
+          "summary": "Oakview Apartments: about $2150.00 monthly, $25800.00 a year. Last charged 2026-10-01.",
+          "transactions": [
+            {
+              "id": "74ce28d5-f6e3-45aa-9710-771abd549c2b",
+              "connection_id": "6f71ed62-61a7-4572-acbc-ab95a034e9bb",
+              "account_id": "eed7b4e9-ca10-4353-bc6c-1505fecb4b2e",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "1060637b-0736-4727-88e2-a23eec1a471a",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "2150.00000000",
+              "date": "2026-05-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T12:18:03.827898+00:00"
+            },
+            {
+              "id": "ec6ea080-e4b7-498e-9ea5-d37dcb1e6bbd",
+              "connection_id": "6f71ed62-61a7-4572-acbc-ab95a034e9bb",
+              "account_id": "eed7b4e9-ca10-4353-bc6c-1505fecb4b2e",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "77631970-6e7b-42df-b6d6-43522a44ab1c",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "2150.00000000",
+              "date": "2026-06-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T12:18:03.881985+00:00"
+            },
+            {
+              "id": "2f2328bb-1f2c-4c39-9a35-842843b567d1",
+              "connection_id": "6f71ed62-61a7-4572-acbc-ab95a034e9bb",
+              "account_id": "eed7b4e9-ca10-4353-bc6c-1505fecb4b2e",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "92cfe681-543a-4383-a5a1-235497419a80",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "2150.00000000",
+              "date": "2026-07-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T12:18:03.932414+00:00"
+            },
+            {
+              "id": "e1caab2b-5766-4fde-8ae4-b0122508a4ed",
+              "connection_id": "6f71ed62-61a7-4572-acbc-ab95a034e9bb",
+              "account_id": "eed7b4e9-ca10-4353-bc6c-1505fecb4b2e",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "35ecc668-913c-4e3c-8c95-8395bdab3ff5",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "2150.00000000",
+              "date": "2026-08-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T12:18:03.970847+00:00"
+            },
+            {
+              "id": "45125a7c-3467-4ff2-a08e-b0d1c42c29b7",
+              "connection_id": "6f71ed62-61a7-4572-acbc-ab95a034e9bb",
+              "account_id": "eed7b4e9-ca10-4353-bc6c-1505fecb4b2e",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "075862c7-1551-4e02-806f-db0a5f717904",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "2150.00000000",
+              "date": "2026-09-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T12:18:04.012794+00:00"
+            },
+            {
+              "id": "610ad2dc-490e-4884-8a27-293a019899e0",
+              "connection_id": "6f71ed62-61a7-4572-acbc-ab95a034e9bb",
+              "account_id": "eed7b4e9-ca10-4353-bc6c-1505fecb4b2e",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "6edc767a-d47e-45e1-ad4f-1bdc5f93b36d",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "2150.00000000",
+              "date": "2026-10-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T12:18:04.056882+00:00"
+            }
+          ],
+          "limitations": "Inferred from charge timing and amounts. Not proof of a subscription; check whether it is still wanted or used."
+        },
+        "source_ids": [
+          "1060637b-0736-4727-88e2-a23eec1a471a",
+          "77631970-6e7b-42df-b6d6-43522a44ab1c",
+          "92cfe681-543a-4383-a5a1-235497419a80",
+          "35ecc668-913c-4e3c-8c95-8395bdab3ff5",
+          "075862c7-1551-4e02-806f-db0a5f717904",
+          "6edc767a-d47e-45e1-ad4f-1bdc5f93b36d"
+        ],
+        "version": 2,
+        "work_id": "b133936c-2cbb-4a19-9e92-898310594e07",
+        "detector_version": "discovery-2026-10-16-v2",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "6f71ed62-61a7-4572-acbc-ab95a034e9bb",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-16T12:18:04.077415+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-16T12:18:04.668575+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      }
+    ]
+  },
+  "errors": []
+}

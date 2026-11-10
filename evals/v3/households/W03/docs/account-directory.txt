@@ -1,0 +1,13 @@
+Title: Note: my accounts and where to get help
+Kind: note
+
+Household of Chloe Varga (chloe.varga@example.test). Accounts: Harbor Checking, Harbor Savings, Summit Visa.
+Companies I have accounts with and their support pages:
+- Cablenet Internet: http://127.0.0.1:8900/cablenet/support
+- Harbor Bank: http://127.0.0.1:8900/harborbank/chat
+- Keystone Health Plan: http://127.0.0.1:8900/keystone/members
+- Oakview Apartments: http://127.0.0.1:8900/oakview/portal
+- ShopMart: http://127.0.0.1:8900/shopmart/support
+- SkyJet Airlines: http://127.0.0.1:8900/skyjet/refunds
+- St Mary Hospital: http://127.0.0.1:8900/stmary/billing
+- Summit Card: http://127.0.0.1:8900/summit/chat

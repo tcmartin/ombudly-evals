@@ -1,0 +1,114 @@
+{
+  "household": "H10",
+  "name": "Drew Martin",
+  "email": "drew.martin@example.test",
+  "account": "Harbor Checking",
+  "today": "2026-10-15",
+  "opportunities": [
+    {
+      "kind": "duplicate_charge",
+      "merchant": "ShopMart",
+      "aliases": [
+        "shopmart"
+      ],
+      "cls": "submit",
+      "exposure_cents": 8648,
+      "value_cents": 8648,
+      "txn_ids": [
+        "h10-t096",
+        "h10-t097"
+      ],
+      "found_terms": [
+        "duplicate",
+        "twice",
+        "double",
+        "charged two"
+      ],
+      "amounts": [
+        "86.48"
+      ],
+      "success": {
+        "site": "shopmart",
+        "all": [
+          [
+            "duplicate",
+            "twice",
+            "double",
+            "two charges",
+            "charged two"
+          ]
+        ],
+        "amount": "86.48"
+      },
+      "credit": {
+        "amount": -86.48,
+        "name": "SHOPMART.COM REFUND",
+        "merchant": "ShopMart"
+      },
+      "response": "ShopMart: We found a duplicate charge for order SM-41321 and refunded $86.48.",
+      "note": "Order SM-41321 charged twice on 2026-09-23.",
+      "id": "H10-duplicate_charge"
+    },
+    {
+      "kind": "charge_after_cancellation",
+      "merchant": "CloudBox",
+      "aliases": [
+        "cloudbox"
+      ],
+      "cls": "submit",
+      "exposure_cents": 2997,
+      "value_cents": 2997,
+      "txn_ids": [
+        "h10-t102",
+        "h10-t103",
+        "h10-t104"
+      ],
+      "found_terms": [
+        "after cancel",
+        "cancelled",
+        "still charg",
+        "charged after"
+      ],
+      "amounts": [
+        "9.99",
+        "29.97"
+      ],
+      "success": {
+        "site": "cloudbox",
+        "path": "/cloudbox/support",
+        "all": [
+          [
+            "cancel"
+          ],
+          [
+            "refund",
+            "charged",
+            "charge"
+          ]
+        ]
+      },
+      "credit": {
+        "amount": -29.97,
+        "name": "CLOUDBOX REFUND",
+        "merchant": "CloudBox"
+      },
+      "response": "CloudBox: Sorry about that - we've refunded $29.97 for charges after your cancellation.",
+      "note": "3 charges after confirmed cancellation.",
+      "id": "H10-charge_after_cancellation"
+    }
+  ],
+  "decoys": [
+    {
+      "kind": "two_separate_orders",
+      "site": "shopmart",
+      "bad_any": [
+        "31.89",
+        "76.53"
+      ],
+      "note": "Two different orders on one day; not a duplicate.",
+      "id": "H10-two_separate_orders"
+    }
+  ],
+  "total_value_cents": 11645,
+  "total_exposure_cents": 11645
+}

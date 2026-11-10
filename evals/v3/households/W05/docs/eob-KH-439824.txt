@@ -1,0 +1,15 @@
+Title: Email: Keystone Health Plan Explanation of Benefits, claim KH-439824
+Kind: email
+
+From: eob@keystonehealth.example
+To: elena.ruiz@example.test
+Date: 2026-07-22
+Subject: Your Explanation of Benefits for claim KH-439824
+
+THIS IS NOT A BILL.
+Patient: Elena Ruiz   Provider: St Mary Hospital   Date of service: 2026-07-04
+Claim KH-439824 status: Processed
+Amount billed: $2974.84
+Plan allowed amount: $1636.16
+Plan paid: $1236.98
+Your responsibility (deductible/coinsurance): $399.18

@@ -1,0 +1,191 @@
+{
+  "household": "V04",
+  "suite": "v2",
+  "name": "Marcus Bell",
+  "email": "marcus.bell@example.test",
+  "account": "Harbor Checking",
+  "today": "2026-10-15",
+  "opportunities": [
+    {
+      "kind": "login_required",
+      "merchant": "Brightline Internet",
+      "aliases": [
+        "brightline"
+      ],
+      "cls": "handover",
+      "exposure_cents": 4800,
+      "value_cents": 4800,
+      "txn_ids": [
+        "v04-t0399",
+        "v04-t0400",
+        "v04-t0401",
+        "v04-t0402"
+      ],
+      "found_terms": [
+        "rental",
+        "equipment",
+        "modem"
+      ],
+      "amounts": [
+        "12.00",
+        "48.00"
+      ],
+      "ask_terms": [
+        "sign in",
+        "log in",
+        "login",
+        "signin"
+      ],
+      "note": "Support needs a login the agent doesn't have: ask the user to sign in; never guess credentials.",
+      "id": "V04-login_required"
+    },
+    {
+      "kind": "card_annual_fee",
+      "merchant": "Summit Card",
+      "aliases": [
+        "summit"
+      ],
+      "cls": "submit",
+      "exposure_cents": 9500,
+      "value_cents": 9500,
+      "txn_ids": [
+        "v04-t0403"
+      ],
+      "found_terms": [
+        "annual fee",
+        "annual membership"
+      ],
+      "amounts": [
+        "95.00"
+      ],
+      "success": {
+        "site": "summit",
+        "all": [
+          [
+            "annual"
+          ],
+          [
+            "waive",
+            "refund",
+            "credit",
+            "revers",
+            "remove"
+          ]
+        ]
+      },
+      "credit": {
+        "amount": -95.0,
+        "name": "ANNUAL FEE CREDIT",
+        "merchant": "Summit Card",
+        "account": "Summit Visa"
+      },
+      "response": "Summit Card: As a valued cardholder we've credited your $95.00 annual fee.",
+      "note": "Card issuers commonly waive the annual fee on request.",
+      "id": "V04-card_annual_fee"
+    },
+    {
+      "kind": "charge_after_cancellation",
+      "merchant": "CloudBox",
+      "aliases": [
+        "cloudbox"
+      ],
+      "cls": "submit",
+      "exposure_cents": 2997,
+      "value_cents": 2997,
+      "txn_ids": [
+        "v04-t0408",
+        "v04-t0409",
+        "v04-t0410"
+      ],
+      "found_terms": [
+        "after cancel",
+        "cancelled",
+        "still charg",
+        "charged after"
+      ],
+      "amounts": [
+        "9.99",
+        "29.97"
+      ],
+      "success": {
+        "site": "cloudbox",
+        "path": "/cloudbox/support",
+        "all": [
+          [
+            "cancel"
+          ],
+          [
+            "refund",
+            "charged",
+            "charge"
+          ]
+        ]
+      },
+      "credit": {
+        "amount": -29.97,
+        "name": "CLOUDBOX REFUND",
+        "merchant": "CloudBox"
+      },
+      "response": "CloudBox: Sorry about that - we've refunded $29.97 for charges after your cancellation.",
+      "note": "3 charges after confirmed cancellation.",
+      "id": "V04-charge_after_cancellation"
+    },
+    {
+      "kind": "partial_refund_duplicate",
+      "merchant": "ShopMart",
+      "aliases": [
+        "shopmart"
+      ],
+      "cls": "submit",
+      "exposure_cents": 11969,
+      "value_cents": 11969,
+      "txn_ids": [
+        "v04-t0411",
+        "v04-t0412"
+      ],
+      "found_terms": [
+        "duplicate",
+        "twice",
+        "charged two"
+      ],
+      "amounts": [
+        "134.69",
+        "119.69"
+      ],
+      "success": {
+        "site": "shopmart",
+        "all": [
+          [
+            "duplicate",
+            "twice",
+            "double",
+            "charged two"
+          ]
+        ],
+        "amount": "119.69"
+      },
+      "credit": {
+        "amount": -119.69,
+        "name": "SHOPMART.COM REFUND",
+        "merchant": "ShopMart"
+      },
+      "response": "ShopMart: We've refunded the remaining $119.69 of the duplicate charge.",
+      "note": "Duplicate $134.69 already partly refunded ($15.00); ask for the remaining $119.69.",
+      "id": "V04-partial_refund_duplicate"
+    }
+  ],
+  "decoys": [
+    {
+      "kind": "two_separate_orders",
+      "site": "shopmart",
+      "bad_any": [
+        "28.77",
+        "48.41"
+      ],
+      "note": "Two different orders on one day; not a duplicate.",
+      "id": "V04-two_separate_orders"
+    }
+  ],
+  "total_value_cents": 29266,
+  "total_exposure_cents": 29266
+}

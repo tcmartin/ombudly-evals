@@ -1,0 +1,1060 @@
+{
+  "household": "H11",
+  "tool_counts": {
+    "agent_message": 3,
+    "get_context": 1,
+    "search_records": 5,
+    "workspace_get": 1,
+    "list_opportunities": 2,
+    "read_source": 5,
+    "search_transactions": 8,
+    "workspace_action": 16,
+    "save_work": 10,
+    "record_result": 3,
+    "follow_up": 3
+  },
+  "external": {
+    "agent": "codex",
+    "model": "gpt-6-astra"
+  },
+  "work": [
+    {
+      "id": "30fea6e5-7eac-4954-a294-243f355a02b7",
+      "kind": "note",
+      "title": "Household review 2026-10-16: sources and recurring inventory",
+      "body": "Reviewed all 5 non-transaction sources across all 122 source records; no prior work. All 6 detector leads checked against merchant transaction searches. Actionable opportunities saved separately: ShopMart duplicate SM-41589 $126.96, missing refund SM-54039 $44.62, StreamFlix loyalty inquiry. All three submitted (SM-1001, SM-1002, SF-1003) with follow-ups. September 21 ShopMart orders SM-71966 $37.07 and SM-72193 $55.20 match separate transactions; no dispute. Recurring inventory: rent $1450/month, Spotify $11.99/month, Metro Power variable (latest $82.38; six-charge average $106.30), StreamFlix $17.99/month since August. No evidence that any service is unused/unwanted; no cancellation proposed. No cancellation, trial, settlement, or other credit notices present. No fee leads. No posted refunds found; none recorded received. Coverage is user-uploaded Harbor Checking history, not live complete banking coverage. All emails/notes reviewed as evidence only.",
+      "status": "done",
+      "result_status": null,
+      "fields": {
+        "reviewed_source_ids": [
+          "00d517be-6e84-4e97-93f7-fe568aa7006e",
+          "5373a42d-5236-4514-835a-1eff4ff0932e",
+          "54a06148-0935-4968-947b-5509f3298c27",
+          "c2335c0b-d1d7-4724-a5de-23a56c10b63b",
+          "facef78a-7534-4cbe-9828-3d9ce2266c37"
+        ],
+        "covered_requests_all_submitted": true
+      }
+    },
+    {
+      "id": "395a1c89-b323-442e-a1a4-31fcdafa2229",
+      "kind": "opportunity",
+      "title": "ShopMart duplicate charge SM-41589",
+      "body": "Two posted $126.96 charges on 2026-09-16; confirmation says only one order. Request one charge refunded.",
+      "status": "waiting",
+      "result_status": "submitted",
+      "fields": {
+        "finding_ids": [
+          "72ec6a51-7d7f-4b03-9622-6abf1d5a7841"
+        ],
+        "submission_receipt": "SM-1001"
+      }
+    },
+    {
+      "id": "5862ff77-f739-4397-91dd-f1d127ae5608",
+      "kind": "opportunity",
+      "title": "StreamFlix loyalty pricing request",
+      "body": "Price rose $13.99 to $17.99 on August 12, with September 12 and October 12 also $17.99. Ask for loyalty pricing terms only. Estimate $48 annual potential if old price restored; not realized savings. No acceptance or plan change authorized.",
+      "status": "waiting",
+      "result_status": "submitted",
+      "fields": {
+        "finding_ids": [
+          "5fa62f38-4254-4a05-83f1-d4a7d1a0230c",
+          "f3279ba1-9b1e-4985-90f7-289cbeafa864"
+        ],
+        "submission_receipt": "SF-1003"
+      }
+    },
+    {
+      "id": "b672eab9-1420-4890-8182-5dea26243b92",
+      "kind": "opportunity",
+      "title": "ShopMart missing refund SM-54039",
+      "body": "Refund promised 2026-08-25 within 5-7 business days. No ShopMart inflow in supplied history since promise; request trace and completion. Uploaded history only.",
+      "status": "waiting",
+      "result_status": "submitted",
+      "fields": {
+        "finding_ids": [],
+        "submission_receipt": "SM-1002"
+      }
+    }
+  ],
+  "work_after_verify": [
+    {
+      "id": "30fea6e5-7eac-4954-a294-243f355a02b7",
+      "kind": "note",
+      "title": "Household review 2026-10-16: sources and recurring inventory",
+      "body": "Reviewed all 5 non-transaction sources across all 122 source records; no prior work. All 6 detector leads checked against merchant transaction searches. Actionable opportunities saved separately: ShopMart duplicate SM-41589 $126.96, missing refund SM-54039 $44.62, StreamFlix loyalty inquiry. All three submitted (SM-1001, SM-1002, SF-1003) with follow-ups. September 21 ShopMart orders SM-71966 $37.07 and SM-72193 $55.20 match separate transactions; no dispute. Recurring inventory: rent $1450/month, Spotify $11.99/month, Metro Power variable (latest $82.38; six-charge average $106.30), StreamFlix $17.99/month since August. No evidence that any service is unused/unwanted; no cancellation proposed. No cancellation, trial, settlement, or other credit notices present. No fee leads. No posted refunds found; none recorded received. Coverage is user-uploaded Harbor Checking history, not live complete banking coverage. All emails/notes reviewed as evidence only.",
+      "status": "done",
+      "result_status": null,
+      "fields": {
+        "reviewed_source_ids": [
+          "00d517be-6e84-4e97-93f7-fe568aa7006e",
+          "5373a42d-5236-4514-835a-1eff4ff0932e",
+          "54a06148-0935-4968-947b-5509f3298c27",
+          "c2335c0b-d1d7-4724-a5de-23a56c10b63b",
+          "facef78a-7534-4cbe-9828-3d9ce2266c37"
+        ],
+        "covered_requests_all_submitted": true
+      }
+    },
+    {
+      "id": "395a1c89-b323-442e-a1a4-31fcdafa2229",
+      "kind": "opportunity",
+      "title": "ShopMart duplicate charge SM-41589",
+      "body": "Two posted $126.96 charges on 2026-09-16; confirmation says only one order. Request one charge refunded.\nResolved: matching posted credit on 2026-10-15 supported by new company reply. Refund received in full.",
+      "status": "done",
+      "result_status": "received",
+      "fields": {
+        "finding_ids": [
+          "72ec6a51-7d7f-4b03-9622-6abf1d5a7841"
+        ],
+        "submission_receipt": "SM-1001",
+        "received_cents": 12696
+      }
+    },
+    {
+      "id": "52114432-fe74-483c-9dcb-8ca4fabd4432",
+      "kind": "note",
+      "title": "New activity review: all three credits received",
+      "body": "Paginated all 129 source records; the only unreviewed documents were three company replies, all read fully and checked against merchant transactions. Reviewed all six detector leads and four recurring merchants against transactions and previous document review. No new actionable opportunity, unused service, cancellation, trial, or settlement evidence. Existing requests SM-1001, SM-1002, SF-1003 were already submitted and were not duplicated. Recorded received: ShopMart $126.96 and $44.62; StreamFlix $12, total $183.58, posted October 15 in uploaded history. Closed completed work and cancelled obsolete follow-ups. StreamFlix credit is one-time, with no ongoing reduced rate established. No company response pending, unsent covered request, or approval-required action. Coverage remains uploaded records only.",
+      "status": "done",
+      "result_status": null,
+      "fields": {
+        "reviewed_source_ids": [
+          "b867ad40-48bf-4c1b-868e-599929ca9405",
+          "cb49138a-f19f-4f3b-929e-1ab86a2d2fe8",
+          "bfc8335b-6664-47ef-88fa-8996beedbbef"
+        ],
+        "covered_requests_all_resolved": true
+      }
+    },
+    {
+      "id": "5862ff77-f739-4397-91dd-f1d127ae5608",
+      "kind": "opportunity",
+      "title": "StreamFlix loyalty pricing request",
+      "body": "Price rose $13.99 to $17.99 on August 12, with September 12 and October 12 also $17.99. Ask for loyalty pricing terms only. Estimate $48 annual potential if old price restored; not realized savings. No acceptance or plan change authorized.\nResolved: matching posted credit on 2026-10-15 supported by new company reply. $12 one-time loyalty credit; ongoing price remains unconfirmed. Prior $48 annual potential is not realized savings.",
+      "status": "done",
+      "result_status": "received",
+      "fields": {
+        "finding_ids": [
+          "5fa62f38-4254-4a05-83f1-d4a7d1a0230c",
+          "f3279ba1-9b1e-4985-90f7-289cbeafa864"
+        ],
+        "submission_receipt": "SF-1003",
+        "received_cents": 1200
+      }
+    },
+    {
+      "id": "b672eab9-1420-4890-8182-5dea26243b92",
+      "kind": "opportunity",
+      "title": "ShopMart missing refund SM-54039",
+      "body": "Refund promised 2026-08-25 within 5-7 business days. No ShopMart inflow in supplied history since promise; request trace and completion. Uploaded history only.\nResolved: matching posted credit on 2026-10-15 supported by new company reply. Refund received in full.",
+      "status": "done",
+      "result_status": "received",
+      "fields": {
+        "finding_ids": [],
+        "submission_receipt": "SM-1002",
+        "received_cents": 4462
+      }
+    }
+  ],
+  "run": {
+    "status": "completed",
+    "answer": "Reviewed all available notes, emails, leads, and recurring bills.\n\nSubmitted:\n- ShopMart: $126.96 duplicate-charge refund (SM-1001).\n- ShopMart: $44.62 missing-refund request (SM-1002).\n- StreamFlix: loyalty-pricing inquiry after its $4/month increase (SF-1003).\n\nTotal refunds requested: **$171.58**. None received in the uploaded transactions yet. Follow-ups scheduled for October 21.\n\nNothing needed from you now. Any service change or offer acceptance will require your approval.",
+    "committed_micros": 1904212
+  },
+  "verify_run": {
+    "status": "completed",
+    "answer": "Found $183.58 in posted credits in your uploaded transactions:\n\n- ShopMart duplicate charge: $126.96\n- ShopMart missing refund: $44.62\n- StreamFlix loyalty credit: $12.00\n\nRecorded all three as received, closed the existing cases, and cancelled their follow-ups. No duplicate requests were sent.\n\nStreamFlix\u2019s credit is one-time; a lower ongoing price wasn\u2019t confirmed. No new actionable issues or user approvals are pending.",
+    "committed_micros": 1154310
+  },
+  "sim_log": [
+    {
+      "type": "view",
+      "path": "/shopmart/support"
+    },
+    {
+      "type": "action",
+      "site": "shopmart",
+      "path": "/shopmart/support",
+      "class": "submit",
+      "fields": {
+        "order": "SM-41589",
+        "reason": "Duplicate charge",
+        "amount": "126.96",
+        "details": "Quinn Foster, quinn.foster@example.test. Order SM-41589 for one wireless headphones purchase totaled $126.96 on 2026-09-16. The confirmation states this was the only order that day, but two posted charges of $126.96 appear on 2026-09-16. Please refund the duplicate $126.96 charge and provide confirmation."
+      }
+    },
+    {
+      "type": "view",
+      "path": "/shopmart/support"
+    },
+    {
+      "type": "action",
+      "site": "shopmart",
+      "path": "/shopmart/support",
+      "class": "submit",
+      "fields": {
+        "order": "SM-54039",
+        "reason": "Refund not received",
+        "amount": "44.62",
+        "details": "Order SM-54039: $44.62 charged 2026-08-13. Your 2026-08-25 email promised a $44.62 refund within 5-7 business days. No ShopMart credit appears in supplied transactions since then. Please trace and complete the missing refund. Quinn Foster, quinn.foster@example.test."
+      }
+    },
+    {
+      "type": "view",
+      "path": "/streamflix/account"
+    },
+    {
+      "type": "view",
+      "path": "/streamflix/support"
+    },
+    {
+      "type": "action",
+      "site": "streamflix",
+      "path": "/streamflix/support",
+      "class": "submit",
+      "fields": {
+        "reason": "Price increase",
+        "message": "Quinn Foster (quinn.foster@example.test): Premium rose from $13.99 to $17.99/month; $17.99 posted Aug 12, Sep 12, Oct 12, 2026. Your July 10 notice mentions loyalty pricing. Please provide loyalty offers and terms, ideally $13.99. Do not apply changes or accept offers; user approval is required."
+      }
+    }
+  ],
+  "findings": {
+    "items": [
+      {
+        "id": "b60b4712-186c-409e-8c21-45813523d675",
+        "account_id": "1028c00f-deb8-49db-9df8-0578baa23345",
+        "account_name": "Harbor Checking",
+        "kind": "recurring_charge",
+        "title": "Recurring monthly charge: Metro Power",
+        "assessment": "recurring_charge",
+        "review_status": "new",
+        "data": {
+          "merchant": "Metro Power",
+          "cadence": "monthly",
+          "typical_amount": "104.42",
+          "latest_amount": "82.38",
+          "last_charged_on": "2026-09-18",
+          "next_expected_on": "2026-10-18",
+          "annual_cost": "1253.10",
+          "currency": "USD",
+          "summary": "Metro Power: about $104.42 monthly, $1253.10 a year. Last charged 2026-09-18.",
+          "transactions": [
+            {
+              "id": "8792f012-6da0-4fda-b9d3-cef8967d63d5",
+              "connection_id": "331d5a51-ac52-41b7-ba9b-399e623ff629",
+              "account_id": "1028c00f-deb8-49db-9df8-0578baa23345",
+              "name": "METRO POWER UTIL",
+              "merchant": "Metro Power",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "0c862453-affe-4e97-be32-0698adf667cc",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "94.72000000",
+              "date": "2026-04-18",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T08:44:18.984789+00:00"
+            },
+            {
+              "id": "fdcabdd1-62b6-43ce-b7b0-38b2ad511553",
+              "connection_id": "331d5a51-ac52-41b7-ba9b-399e623ff629",
+              "account_id": "1028c00f-deb8-49db-9df8-0578baa23345",
+              "name": "METRO POWER UTIL",
+              "merchant": "Metro Power",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "19a8fc11-b34c-4ba4-a888-7ef1e69b4f09",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "114.13000000",
+              "date": "2026-05-18",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T08:44:19.023074+00:00"
+            },
+            {
+              "id": "5ea0edc2-0956-41c4-9db0-cd1e216e8187",
+              "connection_id": "331d5a51-ac52-41b7-ba9b-399e623ff629",
+              "account_id": "1028c00f-deb8-49db-9df8-0578baa23345",
+              "name": "METRO POWER UTIL",
+              "merchant": "Metro Power",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "7a1cdeb2-11b8-4ef8-b1c8-30b77c263a0d",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "93.49000000",
+              "date": "2026-06-18",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T08:44:19.058979+00:00"
+            },
+            {
+              "id": "03275f43-30c5-4fa1-aad5-b247890817b0",
+              "connection_id": "331d5a51-ac52-41b7-ba9b-399e623ff629",
+              "account_id": "1028c00f-deb8-49db-9df8-0578baa23345",
+              "name": "METRO POWER UTIL",
+              "merchant": "Metro Power",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "63335075-d683-48e5-bf8a-3dccab186a6e",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "115.91000000",
+              "date": "2026-07-18",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T08:44:19.093867+00:00"
+            },
+            {
+              "id": "c0dbbefc-a162-411d-946a-c7bd9a6d874e",
+              "connection_id": "331d5a51-ac52-41b7-ba9b-399e623ff629",
+              "account_id": "1028c00f-deb8-49db-9df8-0578baa23345",
+              "name": "METRO POWER UTIL",
+              "merchant": "Metro Power",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "72657307-b6bc-4196-9655-6e435dda911f",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "137.19000000",
+              "date": "2026-08-18",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T08:44:19.131517+00:00"
+            },
+            {
+              "id": "089f80a1-de60-407b-8c3b-14e254f8593a",
+              "connection_id": "331d5a51-ac52-41b7-ba9b-399e623ff629",
+              "account_id": "1028c00f-deb8-49db-9df8-0578baa23345",
+              "name": "METRO POWER UTIL",
+              "merchant": "Metro Power",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "a2d0fb20-e4cb-4bbf-9e57-922ef2f95476",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "82.38000000",
+              "date": "2026-09-18",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T08:44:19.182836+00:00"
+            }
+          ],
+          "limitations": "Inferred from charge timing and amounts. Not proof of a subscription; check whether it is still wanted or used."
+        },
+        "source_ids": [
+          "0c862453-affe-4e97-be32-0698adf667cc",
+          "19a8fc11-b34c-4ba4-a888-7ef1e69b4f09",
+          "7a1cdeb2-11b8-4ef8-b1c8-30b77c263a0d",
+          "63335075-d683-48e5-bf8a-3dccab186a6e",
+          "72657307-b6bc-4196-9655-6e435dda911f",
+          "a2d0fb20-e4cb-4bbf-9e57-922ef2f95476"
+        ],
+        "version": 1,
+        "work_id": null,
+        "detector_version": "discovery-2026-10-16-v2",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "331d5a51-ac52-41b7-ba9b-399e623ff629",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-16T08:44:19.225065+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-16T08:44:19.560792+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      },
+      {
+        "id": "f3279ba1-9b1e-4985-90f7-289cbeafa864",
+        "account_id": "1028c00f-deb8-49db-9df8-0578baa23345",
+        "account_name": "Harbor Checking",
+        "kind": "recurring_charge",
+        "title": "Recurring monthly charge: StreamFlix",
+        "assessment": "recurring_charge",
+        "review_status": "new",
+        "data": {
+          "merchant": "StreamFlix",
+          "cadence": "monthly",
+          "typical_amount": "15.99",
+          "latest_amount": "17.99",
+          "last_charged_on": "2026-10-12",
+          "next_expected_on": "2026-11-11",
+          "annual_cost": "191.88",
+          "currency": "USD",
+          "summary": "StreamFlix: about $15.99 monthly, $191.88 a year. Last charged 2026-10-12.",
+          "transactions": [
+            {
+              "id": "eb2d9929-5ce5-4dcd-be17-63122251b074",
+              "connection_id": "331d5a51-ac52-41b7-ba9b-399e623ff629",
+              "account_id": "1028c00f-deb8-49db-9df8-0578baa23345",
+              "name": "STREAMFLIX.COM",
+              "merchant": "StreamFlix",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "31df0734-679b-4da6-a91c-9fa3ac222187",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "13.99000000",
+              "date": "2026-05-12",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T08:44:19.012557+00:00"
+            },
+            {
+              "id": "57e5e5c0-7a22-4bc6-9bda-34f62bb7f498",
+              "connection_id": "331d5a51-ac52-41b7-ba9b-399e623ff629",
+              "account_id": "1028c00f-deb8-49db-9df8-0578baa23345",
+              "name": "STREAMFLIX.COM",
+              "merchant": "StreamFlix",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "37727287-1f75-4f7e-aa0a-819d7f540a8e",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "13.99000000",
+              "date": "2026-06-12",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T08:44:19.052899+00:00"
+            },
+            {
+              "id": "f31a7b18-eb28-4521-91e1-1e95447d6037",
+              "connection_id": "331d5a51-ac52-41b7-ba9b-399e623ff629",
+              "account_id": "1028c00f-deb8-49db-9df8-0578baa23345",
+              "name": "STREAMFLIX.COM",
+              "merchant": "StreamFlix",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "45cb7ddc-a18f-4935-bc8e-7ad4c334eacc",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "13.99000000",
+              "date": "2026-07-12",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T08:44:19.087490+00:00"
+            },
+            {
+              "id": "9df6238e-2594-457f-9815-14f1d2f815dd",
+              "connection_id": "331d5a51-ac52-41b7-ba9b-399e623ff629",
+              "account_id": "1028c00f-deb8-49db-9df8-0578baa23345",
+              "name": "STREAMFLIX.COM",
+              "merchant": "StreamFlix",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "b0fff3d1-90f9-46a3-84f0-02c1f72a475f",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "17.99000000",
+              "date": "2026-08-12",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T08:44:19.121312+00:00"
+            },
+            {
+              "id": "a461288b-34cc-4f31-aadc-97679933471d",
+              "connection_id": "331d5a51-ac52-41b7-ba9b-399e623ff629",
+              "account_id": "1028c00f-deb8-49db-9df8-0578baa23345",
+              "name": "STREAMFLIX.COM",
+              "merchant": "StreamFlix",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "6bc418f4-8f4b-4759-851e-f04be0d9ca2e",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "17.99000000",
+              "date": "2026-09-12",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T08:44:19.171183+00:00"
+            },
+            {
+              "id": "c47d9b2b-fc7c-404e-847e-63bf4beec9f4",
+              "connection_id": "331d5a51-ac52-41b7-ba9b-399e623ff629",
+              "account_id": "1028c00f-deb8-49db-9df8-0578baa23345",
+              "name": "STREAMFLIX.COM",
+              "merchant": "StreamFlix",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "a3cc1452-7cb3-4ae0-a3d1-15610e036f77",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "17.99000000",
+              "date": "2026-10-12",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T08:44:19.219229+00:00"
+            }
+          ],
+          "limitations": "Inferred from charge timing and amounts. Not proof of a subscription; check whether it is still wanted or used."
+        },
+        "source_ids": [
+          "31df0734-679b-4da6-a91c-9fa3ac222187",
+          "37727287-1f75-4f7e-aa0a-819d7f540a8e",
+          "45cb7ddc-a18f-4935-bc8e-7ad4c334eacc",
+          "b0fff3d1-90f9-46a3-84f0-02c1f72a475f",
+          "6bc418f4-8f4b-4759-851e-f04be0d9ca2e",
+          "a3cc1452-7cb3-4ae0-a3d1-15610e036f77"
+        ],
+        "version": 1,
+        "work_id": null,
+        "detector_version": "discovery-2026-10-16-v2",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "331d5a51-ac52-41b7-ba9b-399e623ff629",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-16T08:44:19.225065+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-16T08:44:19.558981+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      },
+      {
+        "id": "a8fc91ce-df9b-406a-b7dc-ce022fa9250b",
+        "account_id": "1028c00f-deb8-49db-9df8-0578baa23345",
+        "account_name": "Harbor Checking",
+        "kind": "recurring_charge",
+        "title": "Recurring monthly charge: Spotify",
+        "assessment": "recurring_charge",
+        "review_status": "new",
+        "data": {
+          "merchant": "Spotify",
+          "cadence": "monthly",
+          "typical_amount": "11.99",
+          "latest_amount": "11.99",
+          "last_charged_on": "2026-10-09",
+          "next_expected_on": "2026-11-08",
+          "annual_cost": "143.88",
+          "currency": "USD",
+          "summary": "Spotify: about $11.99 monthly, $143.88 a year. Last charged 2026-10-09.",
+          "transactions": [
+            {
+              "id": "77586674-b3e4-4fae-94b8-7bebcc4cedd1",
+              "connection_id": "331d5a51-ac52-41b7-ba9b-399e623ff629",
+              "account_id": "1028c00f-deb8-49db-9df8-0578baa23345",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "75f14f27-eb63-490c-b620-79b317f315fb",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-05-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T08:44:19.007917+00:00"
+            },
+            {
+              "id": "3525c7ef-394d-4bb9-b348-3e3f29414fe6",
+              "connection_id": "331d5a51-ac52-41b7-ba9b-399e623ff629",
+              "account_id": "1028c00f-deb8-49db-9df8-0578baa23345",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "a8608e20-0c51-4dd0-a7e5-53bf84d68227",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-06-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T08:44:19.044466+00:00"
+            },
+            {
+              "id": "c4639db0-2edf-47d9-b66d-96ea8aca0efe",
+              "connection_id": "331d5a51-ac52-41b7-ba9b-399e623ff629",
+              "account_id": "1028c00f-deb8-49db-9df8-0578baa23345",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "1b570cad-677f-448d-918f-1dd626ff413f",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-07-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T08:44:19.081230+00:00"
+            },
+            {
+              "id": "0a43f79b-f045-4f1b-aca6-3adf17fa0b7d",
+              "connection_id": "331d5a51-ac52-41b7-ba9b-399e623ff629",
+              "account_id": "1028c00f-deb8-49db-9df8-0578baa23345",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "4e3a33f3-4ade-4f5f-ad1b-d85e0f39b3da",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-08-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T08:44:19.116354+00:00"
+            },
+            {
+              "id": "08419428-eb83-4070-a5fc-5a135ae83f32",
+              "connection_id": "331d5a51-ac52-41b7-ba9b-399e623ff629",
+              "account_id": "1028c00f-deb8-49db-9df8-0578baa23345",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "3ac8c361-02ad-4991-b28c-02947bc7d191",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-09-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T08:44:19.161060+00:00"
+            },
+            {
+              "id": "1bb7058a-d32a-47d4-8c6d-6cfc490da0d5",
+              "connection_id": "331d5a51-ac52-41b7-ba9b-399e623ff629",
+              "account_id": "1028c00f-deb8-49db-9df8-0578baa23345",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "5616d631-9e41-40a3-a13c-147542de3b88",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-10-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T08:44:19.211443+00:00"
+            }
+          ],
+          "limitations": "Inferred from charge timing and amounts. Not proof of a subscription; check whether it is still wanted or used."
+        },
+        "source_ids": [
+          "75f14f27-eb63-490c-b620-79b317f315fb",
+          "a8608e20-0c51-4dd0-a7e5-53bf84d68227",
+          "1b570cad-677f-448d-918f-1dd626ff413f",
+          "4e3a33f3-4ade-4f5f-ad1b-d85e0f39b3da",
+          "3ac8c361-02ad-4991-b28c-02947bc7d191",
+          "5616d631-9e41-40a3-a13c-147542de3b88"
+        ],
+        "version": 1,
+        "work_id": null,
+        "detector_version": "discovery-2026-10-16-v2",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "331d5a51-ac52-41b7-ba9b-399e623ff629",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-16T08:44:19.225065+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-16T08:44:19.557288+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      },
+      {
+        "id": "aaf3a2f6-7301-4bf7-bb74-58faeb1db07c",
+        "account_id": "1028c00f-deb8-49db-9df8-0578baa23345",
+        "account_name": "Harbor Checking",
+        "kind": "recurring_charge",
+        "title": "Recurring monthly charge: Oakview Apartments",
+        "assessment": "recurring_charge",
+        "review_status": "new",
+        "data": {
+          "merchant": "Oakview Apartments",
+          "cadence": "monthly",
+          "typical_amount": "1450.00",
+          "latest_amount": "1450.00",
+          "last_charged_on": "2026-10-01",
+          "next_expected_on": "2026-10-31",
+          "annual_cost": "17400.00",
+          "currency": "USD",
+          "summary": "Oakview Apartments: about $1450.00 monthly, $17400.00 a year. Last charged 2026-10-01.",
+          "transactions": [
+            {
+              "id": "0bf54617-7ded-4013-a276-1bedef5369d8",
+              "connection_id": "331d5a51-ac52-41b7-ba9b-399e623ff629",
+              "account_id": "1028c00f-deb8-49db-9df8-0578baa23345",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "42a24e77-4f3d-4673-b088-626fb68eaa4f",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1450.00000000",
+              "date": "2026-05-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T08:44:18.999443+00:00"
+            },
+            {
+              "id": "9ef6c0b2-39ab-4eaf-954f-316f2009c63a",
+              "connection_id": "331d5a51-ac52-41b7-ba9b-399e623ff629",
+              "account_id": "1028c00f-deb8-49db-9df8-0578baa23345",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "74cfcbc7-1af2-430a-942b-5647349ca97d",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1450.00000000",
+              "date": "2026-06-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T08:44:19.038257+00:00"
+            },
+            {
+              "id": "3eb0c9c6-7baa-4be7-83f5-6fb63fdb1d5d",
+              "connection_id": "331d5a51-ac52-41b7-ba9b-399e623ff629",
+              "account_id": "1028c00f-deb8-49db-9df8-0578baa23345",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "308ee00c-71cd-4303-ab07-20c0a57d5555",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1450.00000000",
+              "date": "2026-07-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T08:44:19.070376+00:00"
+            },
+            {
+              "id": "f2402eac-5776-4b82-89da-467dbbf56cd6",
+              "connection_id": "331d5a51-ac52-41b7-ba9b-399e623ff629",
+              "account_id": "1028c00f-deb8-49db-9df8-0578baa23345",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "29bd3f7a-fd2f-4c0e-9098-6f55aa254120",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1450.00000000",
+              "date": "2026-08-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T08:44:19.106750+00:00"
+            },
+            {
+              "id": "2acf8502-11a5-4d7b-a190-738281726b76",
+              "connection_id": "331d5a51-ac52-41b7-ba9b-399e623ff629",
+              "account_id": "1028c00f-deb8-49db-9df8-0578baa23345",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "090b9d94-ad3c-48b2-bd8c-3a0b9b55d867",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1450.00000000",
+              "date": "2026-09-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T08:44:19.149886+00:00"
+            },
+            {
+              "id": "d2d6451c-6bdb-4dea-97cd-4c55006f3a81",
+              "connection_id": "331d5a51-ac52-41b7-ba9b-399e623ff629",
+              "account_id": "1028c00f-deb8-49db-9df8-0578baa23345",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "c6fde7d9-5c70-47ae-9593-601b3865ca29",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1450.00000000",
+              "date": "2026-10-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T08:44:19.199846+00:00"
+            }
+          ],
+          "limitations": "Inferred from charge timing and amounts. Not proof of a subscription; check whether it is still wanted or used."
+        },
+        "source_ids": [
+          "42a24e77-4f3d-4673-b088-626fb68eaa4f",
+          "74cfcbc7-1af2-430a-942b-5647349ca97d",
+          "308ee00c-71cd-4303-ab07-20c0a57d5555",
+          "29bd3f7a-fd2f-4c0e-9098-6f55aa254120",
+          "090b9d94-ad3c-48b2-bd8c-3a0b9b55d867",
+          "c6fde7d9-5c70-47ae-9593-601b3865ca29"
+        ],
+        "version": 1,
+        "work_id": null,
+        "detector_version": "discovery-2026-10-16-v2",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "331d5a51-ac52-41b7-ba9b-399e623ff629",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-16T08:44:19.225065+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-16T08:44:19.555558+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      },
+      {
+        "id": "72ec6a51-7d7f-4b03-9622-6abf1d5a7841",
+        "account_id": "1028c00f-deb8-49db-9df8-0578baa23345",
+        "account_name": "Harbor Checking",
+        "kind": "duplicate_charge",
+        "title": "Possible duplicate charge: ShopMart $126.96",
+        "assessment": "possible_duplicate_charge",
+        "review_status": "new",
+        "data": {
+          "merchant": "ShopMart",
+          "amount": "126.96",
+          "currency": "USD",
+          "estimated_value_cents": 12696,
+          "summary": "Two charges of $126.96 at ShopMart on 2026-09-16 and 2026-09-16. Compare with the order confirmation before disputing.",
+          "transactions": [
+            {
+              "id": "0879e2e9-4a28-444d-886c-9daba9fa3c46",
+              "connection_id": "331d5a51-ac52-41b7-ba9b-399e623ff629",
+              "account_id": "1028c00f-deb8-49db-9df8-0578baa23345",
+              "name": "SHOPMART.COM ORDER",
+              "merchant": "ShopMart",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "5f507fff-cf1f-41c3-acd9-9cc05d8ef508",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "126.96000000",
+              "date": "2026-09-16",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T08:44:19.175668+00:00"
+            },
+            {
+              "id": "f07f4219-3bd8-4216-9eaa-b41b6b1195a8",
+              "connection_id": "331d5a51-ac52-41b7-ba9b-399e623ff629",
+              "account_id": "1028c00f-deb8-49db-9df8-0578baa23345",
+              "name": "SHOPMART.COM ORDER",
+              "merchant": "ShopMart",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "081bcf59-336b-41e6-a9d8-e39837e0bca0",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "126.96000000",
+              "date": "2026-09-16",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T08:44:19.178356+00:00"
+            }
+          ],
+          "limitations": "Two identical amounts can be two real purchases. Check receipts or order confirmations before asking for a refund."
+        },
+        "source_ids": [
+          "5f507fff-cf1f-41c3-acd9-9cc05d8ef508",
+          "081bcf59-336b-41e6-a9d8-e39837e0bca0"
+        ],
+        "version": 1,
+        "work_id": null,
+        "detector_version": "discovery-2026-10-16-v2",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "331d5a51-ac52-41b7-ba9b-399e623ff629",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-16T08:44:19.225065+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-16T08:44:19.552645+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      },
+      {
+        "id": "5fa62f38-4254-4a05-83f1-d4a7d1a0230c",
+        "account_id": "1028c00f-deb8-49db-9df8-0578baa23345",
+        "account_name": "Harbor Checking",
+        "kind": "price_increase",
+        "title": "Review a recurring charge increase: StreamFlix",
+        "assessment": "possible_price_increase",
+        "review_status": "new",
+        "data": {
+          "merchant": "StreamFlix",
+          "currency": "USD",
+          "baseline_amount": "13.99000000",
+          "latest_amount": "17.99000000",
+          "increase_per_observed_charge": "4.00000000",
+          "transactions": [
+            {
+              "id": "eb2d9929-5ce5-4dcd-be17-63122251b074",
+              "connection_id": "331d5a51-ac52-41b7-ba9b-399e623ff629",
+              "account_id": "1028c00f-deb8-49db-9df8-0578baa23345",
+              "name": "STREAMFLIX.COM",
+              "merchant": "StreamFlix",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "31df0734-679b-4da6-a91c-9fa3ac222187",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "13.99000000",
+              "date": "2026-05-12",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T08:44:19.012557+00:00"
+            },
+            {
+              "id": "57e5e5c0-7a22-4bc6-9bda-34f62bb7f498",
+              "connection_id": "331d5a51-ac52-41b7-ba9b-399e623ff629",
+              "account_id": "1028c00f-deb8-49db-9df8-0578baa23345",
+              "name": "STREAMFLIX.COM",
+              "merchant": "StreamFlix",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "37727287-1f75-4f7e-aa0a-819d7f540a8e",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "13.99000000",
+              "date": "2026-06-12",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T08:44:19.052899+00:00"
+            },
+            {
+              "id": "f31a7b18-eb28-4521-91e1-1e95447d6037",
+              "connection_id": "331d5a51-ac52-41b7-ba9b-399e623ff629",
+              "account_id": "1028c00f-deb8-49db-9df8-0578baa23345",
+              "name": "STREAMFLIX.COM",
+              "merchant": "StreamFlix",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "45cb7ddc-a18f-4935-bc8e-7ad4c334eacc",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "13.99000000",
+              "date": "2026-07-12",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T08:44:19.087490+00:00"
+            },
+            {
+              "id": "9df6238e-2594-457f-9815-14f1d2f815dd",
+              "connection_id": "331d5a51-ac52-41b7-ba9b-399e623ff629",
+              "account_id": "1028c00f-deb8-49db-9df8-0578baa23345",
+              "name": "STREAMFLIX.COM",
+              "merchant": "StreamFlix",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "b0fff3d1-90f9-46a3-84f0-02c1f72a475f",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "17.99000000",
+              "date": "2026-08-12",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T08:44:19.121312+00:00"
+            }
+          ],
+          "limitations": "Four monthly observations, not proof of a subscription or comparable service. Check quantity, taxes, promotions and plan changes. No annualized or realized savings asserted."
+        },
+        "source_ids": [
+          "31df0734-679b-4da6-a91c-9fa3ac222187",
+          "37727287-1f75-4f7e-aa0a-819d7f540a8e",
+          "45cb7ddc-a18f-4935-bc8e-7ad4c334eacc",
+          "b0fff3d1-90f9-46a3-84f0-02c1f72a475f"
+        ],
+        "version": 1,
+        "work_id": null,
+        "detector_version": "discovery-2026-10-16-v2",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "331d5a51-ac52-41b7-ba9b-399e623ff629",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-16T08:44:19.225065+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-16T08:44:19.546775+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      }
+    ]
+  },
+  "errors": []
+}

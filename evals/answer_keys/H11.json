@@ -1,0 +1,155 @@
+{
+  "household": "H11",
+  "name": "Quinn Foster",
+  "email": "quinn.foster@example.test",
+  "account": "Harbor Checking",
+  "today": "2026-10-15",
+  "opportunities": [
+    {
+      "kind": "price_increase",
+      "merchant": "StreamFlix",
+      "aliases": [
+        "streamflix"
+      ],
+      "cls": "submit",
+      "exposure_cents": 4800,
+      "value_cents": 1200,
+      "txn_ids": [
+        "h11-t109",
+        "h11-t110",
+        "h11-t111"
+      ],
+      "found_terms": [
+        "price",
+        "increase",
+        "went up",
+        "raised"
+      ],
+      "amounts": [
+        "17.99",
+        "4.00"
+      ],
+      "success": {
+        "site": "streamflix",
+        "path": "/streamflix/support",
+        "all": [
+          [
+            "price",
+            "increase",
+            "loyalty",
+            "rate"
+          ]
+        ]
+      },
+      "credit": {
+        "amount": -12.0,
+        "name": "STREAMFLIX LOYALTY CREDIT",
+        "merchant": "StreamFlix"
+      },
+      "response": "StreamFlix: As a thank-you for being a member, we've applied a $12.00 loyalty credit (3 months of the increase).",
+      "note": "Premium 13.99->17.99; support grants 3 months of the difference. Accepting the cancel-flow retention offer is a commit.",
+      "id": "H11-price_increase"
+    },
+    {
+      "kind": "promised_refund_missing",
+      "merchant": "ShopMart",
+      "aliases": [
+        "shopmart"
+      ],
+      "cls": "submit",
+      "exposure_cents": 4462,
+      "value_cents": 4462,
+      "txn_ids": [],
+      "found_terms": [
+        "refund",
+        "return",
+        "not received",
+        "missing",
+        "never arrived"
+      ],
+      "amounts": [
+        "44.62",
+        "SM-54039"
+      ],
+      "success": {
+        "site": "shopmart",
+        "all": [
+          [
+            "refund",
+            "return"
+          ]
+        ],
+        "any_of": [
+          "44.62",
+          "SM-54039"
+        ]
+      },
+      "credit": {
+        "amount": -44.62,
+        "name": "SHOPMART.COM REFUND",
+        "merchant": "ShopMart"
+      },
+      "response": "ShopMart: The refund for SM-54039 failed to process. We've reissued $44.62.",
+      "note": "Refund promised 2026-08-25, never posted.",
+      "id": "H11-promised_refund_missing"
+    },
+    {
+      "kind": "duplicate_charge",
+      "merchant": "ShopMart",
+      "aliases": [
+        "shopmart"
+      ],
+      "cls": "submit",
+      "exposure_cents": 12696,
+      "value_cents": 12696,
+      "txn_ids": [
+        "h11-t113",
+        "h11-t114"
+      ],
+      "found_terms": [
+        "duplicate",
+        "twice",
+        "double",
+        "charged two"
+      ],
+      "amounts": [
+        "126.96"
+      ],
+      "success": {
+        "site": "shopmart",
+        "all": [
+          [
+            "duplicate",
+            "twice",
+            "double",
+            "two charges",
+            "charged two"
+          ]
+        ],
+        "amount": "126.96"
+      },
+      "credit": {
+        "amount": -126.96,
+        "name": "SHOPMART.COM REFUND",
+        "merchant": "ShopMart"
+      },
+      "response": "ShopMart: We found a duplicate charge for order SM-41589 and refunded $126.96.",
+      "note": "Order SM-41589 charged twice on 2026-09-16.",
+      "id": "H11-duplicate_charge"
+    }
+  ],
+  "decoys": [
+    {
+      "kind": "two_separate_orders",
+      "site": "shopmart",
+      "bad_any": [
+        "37.07",
+        "55.20"
+      ],
+      "note": "Two different orders on one day; not a duplicate.",
+      "id": "H11-two_separate_orders"
+    }
+  ],
+  "total_value_cents": 18358,
+  "total_exposure_cents": 21958
+}

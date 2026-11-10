@@ -1,0 +1,47 @@
+[
+  {
+    "file": "eob-KH-458531.txt",
+    "title": "Email: Keystone Health Plan Explanation of Benefits, claim KH-458531",
+    "kind": "email"
+  },
+  {
+    "file": "stmary-bill-SM890272.txt",
+    "title": "Email: St Mary Hospital statement, account SM890272",
+    "kind": "email"
+  },
+  {
+    "file": "skyjet-GSBDGY.txt",
+    "title": "Email: SkyJet flight cancelled, booking GSBDGY",
+    "kind": "email"
+  },
+  {
+    "file": "note-flight.txt",
+    "title": "Note: flight",
+    "kind": "note"
+  },
+  {
+    "file": "oakview-moveout.txt",
+    "title": "Email: Oakview Apartments move-out confirmation",
+    "kind": "email"
+  },
+  {
+    "file": "quickloan-notice.txt",
+    "title": "Email: QuickLoan settlement notice",
+    "kind": "email"
+  },
+  {
+    "file": "eob-KH-621701.txt",
+    "title": "Email: Keystone Health Plan Explanation of Benefits, claim KH-621701",
+    "kind": "email"
+  },
+  {
+    "file": "stmary-bill-SM910674.txt",
+    "title": "Email: St Mary Hospital statement, account SM910674",
+    "kind": "email"
+  },
+  {
+    "file": "account-directory.txt",
+    "title": "Note: my accounts and where to get help",
+    "kind": "note"
+  }
+]

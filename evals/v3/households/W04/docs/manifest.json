@@ -1,0 +1,57 @@
+[
+  {
+    "file": "skyjet-SYUHXV.txt",
+    "title": "Email: SkyJet flight cancelled, booking SYUHXV",
+    "kind": "email"
+  },
+  {
+    "file": "note-flight.txt",
+    "title": "Note: flight",
+    "kind": "note"
+  },
+  {
+    "file": "eob-KH-508487.txt",
+    "title": "Email: Keystone Health Plan Explanation of Benefits, claim KH-508487",
+    "kind": "email"
+  },
+  {
+    "file": "stmary-er-SM720423.txt",
+    "title": "Email: St Mary Hospital statement, account SM720423",
+    "kind": "email"
+  },
+  {
+    "file": "note-job.txt",
+    "title": "Note: money is tight",
+    "kind": "note"
+  },
+  {
+    "file": "pinecrest-PH-22098.png",
+    "title": "Photo: Pinecrest Hardware return slip PH-22098",
+    "kind": "receipt"
+  },
+  {
+    "file": "quickloan-notice.txt",
+    "title": "Email: QuickLoan settlement notice",
+    "kind": "email"
+  },
+  {
+    "file": "northwind-NW-90729.txt",
+    "title": "Email: Northwind Outfitters order NW-90729",
+    "kind": "email"
+  },
+  {
+    "file": "note-beanie.txt",
+    "title": "Note: beanie",
+    "kind": "note"
+  },
+  {
+    "file": "refund-verification.txt",
+    "title": "Email: Action required - pending refunds",
+    "kind": "email"
+  },
+  {
+    "file": "account-directory.txt",
+    "title": "Note: my accounts and where to get help",
+    "kind": "note"
+  }
+]

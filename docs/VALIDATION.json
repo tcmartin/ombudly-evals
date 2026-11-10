@@ -1,0 +1,11 @@
+{
+  "validated_utc_date": "2026-11-10",
+  "python": "3.9.16",
+  "pillow": "10.4.0",
+  "font": "DejaVu Sans",
+  "font_sha256": "ae7b7855e115a5966d8b1b3f80f254ccc117ec86f9965e202ee2940453837280",
+  "generator_check": "All five generators succeeded in a temporary copy; every committed fixture/source byte unchanged",
+  "scorer_self_check": "python3 evals/test_score.py passed",
+  "sanitization_equivalence": "All 176 household aggregates unchanged; all published aggregates match stored historical fields",
+  "paid_inference_for_publication": false
+}

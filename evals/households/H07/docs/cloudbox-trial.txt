@@ -1,0 +1,10 @@
+Title: Email: CloudBox trial ending
+Kind: email
+
+From: billing@cloudbox.example
+To: taylor.kim@example.test
+Date: 2026-09-24
+Subject: Your CloudBox free trial ends September 30
+
+Your 30-day free trial ends soon. Unless you cancel, you'll be charged $59.99 for a year of CloudBox Plus.
+Annual plans can be refunded within 14 days of renewal on request.

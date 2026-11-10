@@ -1,0 +1,9 @@
+Title: Email: ShopMart return SM-75405
+Kind: email
+
+From: returns@shopmart.example
+To: theo.grant@example.test
+Date: 2026-09-12
+Subject: Return received for order SM-75405
+
+Your refund of $45.17 for order SM-75405 will post in 5-7 business days.

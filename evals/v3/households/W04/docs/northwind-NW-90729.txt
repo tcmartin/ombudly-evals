@@ -1,0 +1,9 @@
+Title: Email: Northwind Outfitters order NW-90729
+Kind: email
+
+From: orders@northwind.example
+To: dev.mehta@example.test
+Date: 2026-08-04
+Subject: Your Northwind order NW-90729 has shipped
+
+1 x Wool beanie, $77.47. Free returns within 30 days of purchase.

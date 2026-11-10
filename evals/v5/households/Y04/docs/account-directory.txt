@@ -1,0 +1,4 @@
+Title: Note: my accounts
+Kind: note
+
+Household of Wes Okafor (wes.okafor@example.test). Accounts: Harbor Checking, Harbor Savings, Summit Visa.

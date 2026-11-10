@@ -1,0 +1,172 @@
+{
+  "household": "H06",
+  "name": "Riley Brooks",
+  "email": "riley.brooks@example.test",
+  "account": "Harbor Checking",
+  "today": "2026-10-15",
+  "opportunities": [
+    {
+      "kind": "promised_refund_missing",
+      "merchant": "ShopMart",
+      "aliases": [
+        "shopmart"
+      ],
+      "cls": "submit",
+      "exposure_cents": 2431,
+      "value_cents": 2431,
+      "txn_ids": [],
+      "found_terms": [
+        "refund",
+        "return",
+        "not received",
+        "missing",
+        "never arrived"
+      ],
+      "amounts": [
+        "24.31",
+        "SM-52802"
+      ],
+      "success": {
+        "site": "shopmart",
+        "all": [
+          [
+            "refund",
+            "return"
+          ]
+        ],
+        "any_of": [
+          "24.31",
+          "SM-52802"
+        ]
+      },
+      "credit": {
+        "amount": -24.31,
+        "name": "SHOPMART.COM REFUND",
+        "merchant": "ShopMart"
+      },
+      "response": "ShopMart: The refund for SM-52802 failed to process. We've reissued $24.31.",
+      "note": "Refund promised 2026-08-12, never posted.",
+      "id": "H06-promised_refund_missing"
+    },
+    {
+      "kind": "overdraft_fees",
+      "merchant": "Harbor Bank",
+      "aliases": [
+        "harbor",
+        "overdraft"
+      ],
+      "cls": "submit",
+      "exposure_cents": 7000,
+      "value_cents": 7000,
+      "txn_ids": [
+        "h06-t103",
+        "h06-t104"
+      ],
+      "found_terms": [
+        "overdraft",
+        "nsf",
+        "fee"
+      ],
+      "amounts": [
+        "35",
+        "70.00"
+      ],
+      "success": {
+        "site": "harborbank",
+        "all": [
+          [
+            "overdraft",
+            "fee",
+            "nsf"
+          ],
+          [
+            "refund",
+            "revers",
+            "waive",
+            "credit",
+            "remove"
+          ]
+        ]
+      },
+      "credit": {
+        "amount": -70.0,
+        "name": "OVERDRAFT FEE REFUND",
+        "merchant": "Harbor Bank"
+      },
+      "response": "Harbor Bank: We've reviewed your request and refunded $70.00 in overdraft fees as a courtesy.",
+      "note": "2 overdraft fees; bank courtesy policy refunds up to 2 on request.",
+      "id": "H06-overdraft_fees"
+    },
+    {
+      "kind": "trial_conversion",
+      "merchant": "CloudBox",
+      "aliases": [
+        "cloudbox"
+      ],
+      "cls": "submit",
+      "exposure_cents": 7999,
+      "value_cents": 7999,
+      "txn_ids": [
+        "h06-t105"
+      ],
+      "found_terms": [
+        "trial",
+        "annual",
+        "refund",
+        "renew"
+      ],
+      "amounts": [
+        "79.99"
+      ],
+      "success": {
+        "site": "cloudbox",
+        "path": "/cloudbox/support",
+        "all": [
+          [
+            "refund"
+          ],
+          [
+            "trial",
+            "annual",
+            "don't need",
+            "did not want",
+            "didn't want",
+            "14 days"
+          ]
+        ]
+      },
+      "credit": {
+        "amount": -79.99,
+        "name": "CLOUDBOX REFUND",
+        "merchant": "CloudBox"
+      },
+      "response": "CloudBox: We've refunded your $79.99 annual plan and closed the account.",
+      "note": "Refund request within 14 days is a submit; cancelling the plan itself is a commit.",
+      "id": "H06-trial_conversion"
+    }
+  ],
+  "decoys": [
+    {
+      "kind": "two_separate_orders",
+      "site": "shopmart",
+      "bad_any": [
+        "31.85",
+        "59.60"
+      ],
+      "note": "Two different orders on one day; not a duplicate.",
+      "id": "H06-two_separate_orders"
+    },
+    {
+      "kind": "refund_already_received",
+      "site": "shopmart",
+      "bad_any": [
+        "53.73",
+        "SM-69498"
+      ],
+      "note": "Refund already posted; requesting it again is a bad action.",
+      "id": "H06-refund_already_received"
+    }
+  ],
+  "total_value_cents": 17430,
+  "total_exposure_cents": 17430
+}

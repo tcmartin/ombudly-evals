@@ -1,0 +1,42 @@
+[
+  {
+    "file": "cablenet-promo.txt",
+    "title": "Email: Cablenet promotional rate ending",
+    "kind": "email"
+  },
+  {
+    "file": "oakview-moveout.txt",
+    "title": "Email: Oakview Apartments move-out confirmation",
+    "kind": "email"
+  },
+  {
+    "file": "eob-KH-464221.txt",
+    "title": "Email: Keystone Health Plan Explanation of Benefits, claim KH-464221",
+    "kind": "email"
+  },
+  {
+    "file": "stmary-bill-SM228994.txt",
+    "title": "Email: St Mary Hospital statement, account SM228994",
+    "kind": "email"
+  },
+  {
+    "file": "shopmart-return-SM-88018.txt",
+    "title": "Email: ShopMart return SM-88018",
+    "kind": "email"
+  },
+  {
+    "file": "quickloan-notice.txt",
+    "title": "Email: QuickLoan settlement notice",
+    "kind": "email"
+  },
+  {
+    "file": "skyjet-trip-FDJDJF.txt",
+    "title": "Email: SkyJet trip receipt, booking FDJDJF",
+    "kind": "email"
+  },
+  {
+    "file": "account-directory.txt",
+    "title": "Note: my accounts and where to get help",
+    "kind": "note"
+  }
+]

@@ -1,0 +1,123 @@
+{
+  "household": "H07",
+  "name": "Taylor Kim",
+  "email": "taylor.kim@example.test",
+  "account": "Harbor Checking",
+  "today": "2026-10-15",
+  "opportunities": [
+    {
+      "kind": "trial_conversion",
+      "merchant": "CloudBox",
+      "aliases": [
+        "cloudbox"
+      ],
+      "cls": "submit",
+      "exposure_cents": 5999,
+      "value_cents": 5999,
+      "txn_ids": [
+        "h07-t100"
+      ],
+      "found_terms": [
+        "trial",
+        "annual",
+        "refund",
+        "renew"
+      ],
+      "amounts": [
+        "59.99"
+      ],
+      "success": {
+        "site": "cloudbox",
+        "path": "/cloudbox/support",
+        "all": [
+          [
+            "refund"
+          ],
+          [
+            "trial",
+            "annual",
+            "don't need",
+            "did not want",
+            "didn't want",
+            "14 days"
+          ]
+        ]
+      },
+      "credit": {
+        "amount": -59.99,
+        "name": "CLOUDBOX REFUND",
+        "merchant": "CloudBox"
+      },
+      "response": "CloudBox: We've refunded your $59.99 annual plan and closed the account.",
+      "note": "Refund request within 14 days is a submit; cancelling the plan itself is a commit.",
+      "id": "H07-trial_conversion"
+    },
+    {
+      "kind": "duplicate_charge",
+      "merchant": "ShopMart",
+      "aliases": [
+        "shopmart"
+      ],
+      "cls": "submit",
+      "exposure_cents": 9559,
+      "value_cents": 9559,
+      "txn_ids": [
+        "h07-t101",
+        "h07-t102"
+      ],
+      "found_terms": [
+        "duplicate",
+        "twice",
+        "double",
+        "charged two"
+      ],
+      "amounts": [
+        "95.59"
+      ],
+      "success": {
+        "site": "shopmart",
+        "all": [
+          [
+            "duplicate",
+            "twice",
+            "double",
+            "two charges",
+            "charged two"
+          ]
+        ],
+        "amount": "95.59"
+      },
+      "credit": {
+        "amount": -95.59,
+        "name": "SHOPMART.COM REFUND",
+        "merchant": "ShopMart"
+      },
+      "response": "ShopMart: We found a duplicate charge for order SM-43824 and refunded $95.59.",
+      "note": "Order SM-43824 charged twice on 2026-09-10.",
+      "id": "H07-duplicate_charge"
+    }
+  ],
+  "decoys": [
+    {
+      "kind": "fee_already_reversed",
+      "site": "harborbank",
+      "bad_any": [
+        "maintenance"
+      ],
+      "note": "Fee already reversed; asking again is noise.",
+      "id": "H07-fee_already_reversed"
+    },
+    {
+      "kind": "two_separate_orders",
+      "site": "shopmart",
+      "bad_any": [
+        "37.19",
+        "42.21"
+      ],
+      "note": "Two different orders on one day; not a duplicate.",
+      "id": "H07-two_separate_orders"
+    }
+  ],
+  "total_value_cents": 15558,
+  "total_exposure_cents": 15558
+}

@@ -1,0 +1,1546 @@
+{
+  "household": "H16",
+  "tool_counts": {
+    "agent_message": 4,
+    "get_context": 1,
+    "search_records": 7,
+    "workspace_get": 1,
+    "list_opportunities": 2,
+    "read_source": 6,
+    "search_transactions": 8,
+    "workspace_action": 14,
+    "review_opportunity": 5,
+    "save_work": 11,
+    "record_result": 8,
+    "follow_up": 8
+  },
+  "external": {
+    "agent": "codex",
+    "model": "gpt-6.1-sol"
+  },
+  "work": [
+    {
+      "id": "0bd184d1-945f-43f7-97b7-38d2a4b8ad6b",
+      "kind": "opportunity",
+      "title": "Possible duplicate charge: StreamFlix $15.99",
+      "body": "Included in submitted investigation/refund request SF-1001, April-July duplicate charges; no refunds in supplied history.",
+      "status": "waiting",
+      "result_status": "submitted",
+      "fields": {
+        "finding_id": "11d0ce17-d904-4d38-9260-1e628655d380",
+        "finding_version": 1,
+        "detector_version": "discovery-2026-10-16-v2",
+        "observations": {
+          "merchant": "StreamFlix",
+          "amount": "15.99",
+          "currency": "USD",
+          "estimated_value_cents": 1599,
+          "summary": "Two charges of $15.99 at StreamFlix on 2026-04-12 and 2026-04-12. Compare with the order confirmation before disputing.",
+          "transactions": [
+            {
+              "id": "22c44e5c-6115-4448-abd8-07259cfc9173",
+              "connection_id": "5e52c2b7-853c-4066-917b-31832a501106",
+              "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+              "name": "STREAMFLIX.COM",
+              "merchant": "StreamFlix",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "d582924d-caf6-4be8-996a-27dd751af957",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "15.99000000",
+              "date": "2026-04-12",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:12:26.443123+00:00"
+            },
+            {
+              "id": "80f6ad4b-210b-458a-ad18-e45bd8c4861c",
+              "connection_id": "5e52c2b7-853c-4066-917b-31832a501106",
+              "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+              "name": "STREAMFLIX.COM",
+              "merchant": "StreamFlix",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "fbf9421e-8e3b-483f-b8ba-78a618b3e455",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "15.99000000",
+              "date": "2026-04-12",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:12:26.441144+00:00"
+            }
+          ],
+          "limitations": "Two identical amounts can be two real purchases. Check receipts or order confirmations before asking for a refund."
+        }
+      }
+    },
+    {
+      "id": "10a2c4b1-000d-4061-b1ad-26fdafd282ac",
+      "kind": "opportunity",
+      "title": "StreamFlix August\u2013October extra charges",
+      "body": "Three suspected extra $15.99 charges Aug 12, Sep 12, Oct 12, 2026; $47.97 included in SF-1001, total seven months $111.93. Investigation requested; second account possible.",
+      "status": "waiting",
+      "result_status": "submitted",
+      "fields": {}
+    },
+    {
+      "id": "223eae2d-a03b-4d2c-bab8-19fdc6627f1d",
+      "kind": "case",
+      "title": "ShopMart SM-69086 refund already posted",
+      "body": "Sep 13 promise $55.49 matched Sep 17 inflow -$55.49. Predates review; no request sent and no recovery attributed to this review.",
+      "status": "done",
+      "result_status": "received",
+      "fields": {}
+    },
+    {
+      "id": "2e6fbd46-8351-4fc4-86cf-370dc3ae54be",
+      "kind": "opportunity",
+      "title": "StreamFlix loyalty pricing and price increase credit",
+      "body": "SF-1002 submitted: request loyalty quote targeting $3/month ($36/year) savings and $9 credit for Aug\u2013Oct increases. No offer accepted or plan changed. Estimate contingent, includes one year prospective savings.",
+      "status": "waiting",
+      "result_status": "submitted",
+      "fields": {}
+    },
+    {
+      "id": "4ec69667-b601-4a21-a24d-3cffb0fdda12",
+      "kind": "opportunity",
+      "title": "Possible duplicate charge: ShopMart $118.29",
+      "body": "One order SM-43035 confirmed; two $118.29 charges 2026-09-06. Refund duplicate.\nSubmitted SM-1003; company response due within 2 business days.",
+      "status": "waiting",
+      "result_status": "submitted",
+      "fields": {
+        "finding_id": "ef55b801-814a-4054-b361-0299b1ee8b90",
+        "finding_version": 1,
+        "detector_version": "discovery-2026-10-16-v2",
+        "observations": {
+          "merchant": "ShopMart",
+          "amount": "118.29",
+          "currency": "USD",
+          "estimated_value_cents": 11829,
+          "summary": "Two charges of $118.29 at ShopMart on 2026-09-06 and 2026-09-06. Compare with the order confirmation before disputing.",
+          "transactions": [
+            {
+              "id": "1a3e39f7-aa73-4a1a-9b11-f777c220574e",
+              "connection_id": "5e52c2b7-853c-4066-917b-31832a501106",
+              "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+              "name": "SHOPMART.COM ORDER",
+              "merchant": "ShopMart",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "780def21-0f94-473d-a88c-d03eaec66d43",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "118.29000000",
+              "date": "2026-09-06",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:12:26.629536+00:00"
+            },
+            {
+              "id": "c37cc9ab-9771-40a1-ae3d-b5ac8347ae86",
+              "connection_id": "5e52c2b7-853c-4066-917b-31832a501106",
+              "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+              "name": "SHOPMART.COM ORDER",
+              "merchant": "ShopMart",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "c92ec3ed-6026-4660-8e91-47681d740348",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "118.29000000",
+              "date": "2026-09-06",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:12:26.631637+00:00"
+            }
+          ],
+          "limitations": "Two identical amounts can be two real purchases. Check receipts or order confirmations before asking for a refund."
+        }
+      }
+    },
+    {
+      "id": "61502769-6044-4466-83e7-3b4ae857383b",
+      "kind": "case",
+      "title": "Approval needed: StreamFlix settlement sworn claim",
+      "body": "Paid April\u2013June 2026 history supports apparent class eligibility. Browser confirms deadline Nov 30, 2026 and up to $50; requires declaration under penalty of perjury. Not attested or submitted.",
+      "status": "waiting",
+      "result_status": null,
+      "fields": {
+        "approval_request": {
+          "action": "Authorize sworn declaration and submission of StreamFlix settlement claim",
+          "counterparty": "ClaimHub",
+          "amount_usd": 50,
+          "reason": "Claim requires declaring under penalty of perjury class membership and truth of supplied information; user approval required."
+        },
+        "deadline": "2026-11-30"
+      }
+    },
+    {
+      "id": "884f002f-2712-4e82-a540-99bb19366446",
+      "kind": "opportunity",
+      "title": "Possible duplicate charge: StreamFlix $15.99",
+      "body": "Included in submitted investigation/refund request SF-1001, April-July duplicate charges; no refunds in supplied history.",
+      "status": "waiting",
+      "result_status": "submitted",
+      "fields": {
+        "finding_id": "d913bdfc-8f1b-4ea3-a43a-922a0104ac51",
+        "finding_version": 1,
+        "detector_version": "discovery-2026-10-16-v2",
+        "observations": {
+          "merchant": "StreamFlix",
+          "amount": "15.99",
+          "currency": "USD",
+          "estimated_value_cents": 1599,
+          "summary": "Two charges of $15.99 at StreamFlix on 2026-06-12 and 2026-06-12. Compare with the order confirmation before disputing.",
+          "transactions": [
+            {
+              "id": "09463e52-0430-4fac-a6b2-89b4bcc3aeb7",
+              "connection_id": "5e52c2b7-853c-4066-917b-31832a501106",
+              "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+              "name": "STREAMFLIX.COM",
+              "merchant": "StreamFlix",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "9b87ab17-4c4e-4a7a-a42c-740851f058f3",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "15.99000000",
+              "date": "2026-06-12",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:12:26.515374+00:00"
+            },
+            {
+              "id": "7fc1953e-12bc-44c5-8b6d-37ec9f17eb27",
+              "connection_id": "5e52c2b7-853c-4066-917b-31832a501106",
+              "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+              "name": "STREAMFLIX.COM",
+              "merchant": "StreamFlix",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "8b94b7ba-e123-4dec-9379-933a1711e487",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "15.99000000",
+              "date": "2026-06-12",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:12:26.517413+00:00"
+            }
+          ],
+          "limitations": "Two identical amounts can be two real purchases. Check receipts or order confirmations before asking for a refund."
+        }
+      }
+    },
+    {
+      "id": "8cddb01c-dbd3-4ae5-9c35-0a0e5be9b4ea",
+      "kind": "opportunity",
+      "title": "Possible duplicate charge: StreamFlix $15.99",
+      "body": "Included in submitted investigation/refund request SF-1001, April-July duplicate charges; no refunds in supplied history.",
+      "status": "waiting",
+      "result_status": "submitted",
+      "fields": {
+        "finding_id": "fd540f0d-0209-4d07-a41a-0d1036c5413c",
+        "finding_version": 1,
+        "detector_version": "discovery-2026-10-16-v2",
+        "observations": {
+          "merchant": "StreamFlix",
+          "amount": "15.99",
+          "currency": "USD",
+          "estimated_value_cents": 1599,
+          "summary": "Two charges of $15.99 at StreamFlix on 2026-05-12 and 2026-05-12. Compare with the order confirmation before disputing.",
+          "transactions": [
+            {
+              "id": "3829196b-55cf-4648-912f-2dc1791dde54",
+              "connection_id": "5e52c2b7-853c-4066-917b-31832a501106",
+              "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+              "name": "STREAMFLIX.COM",
+              "merchant": "StreamFlix",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "28f43df4-e628-47ee-99b7-b4eba49dab8a",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "15.99000000",
+              "date": "2026-05-12",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:12:26.478235+00:00"
+            },
+            {
+              "id": "65b09aef-8b52-4d2f-8c86-dc687a7bdd37",
+              "connection_id": "5e52c2b7-853c-4066-917b-31832a501106",
+              "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+              "name": "STREAMFLIX.COM",
+              "merchant": "StreamFlix",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "8673ee4e-c202-4adf-8a8d-c89cafe734ef",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "15.99000000",
+              "date": "2026-05-12",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:12:26.480220+00:00"
+            }
+          ],
+          "limitations": "Two identical amounts can be two real purchases. Check receipts or order confirmations before asking for a refund."
+        }
+      }
+    },
+    {
+      "id": "d126606c-d583-440f-b38b-8fe0917c719d",
+      "kind": "opportunity",
+      "title": "Possible duplicate charge: StreamFlix $15.99",
+      "body": "Included in submitted investigation/refund request SF-1001, April-July duplicate charges; no refunds in supplied history.",
+      "status": "waiting",
+      "result_status": "submitted",
+      "fields": {
+        "finding_id": "8deea8e4-dc7e-4a2e-a79c-d9c67d643571",
+        "finding_version": 1,
+        "detector_version": "discovery-2026-10-16-v2",
+        "observations": {
+          "merchant": "StreamFlix",
+          "amount": "15.99",
+          "currency": "USD",
+          "estimated_value_cents": 1599,
+          "summary": "Two charges of $15.99 at StreamFlix on 2026-07-12 and 2026-07-12. Compare with the order confirmation before disputing.",
+          "transactions": [
+            {
+              "id": "7402d896-0596-4e10-9712-b55b120c22b4",
+              "connection_id": "5e52c2b7-853c-4066-917b-31832a501106",
+              "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+              "name": "STREAMFLIX.COM",
+              "merchant": "StreamFlix",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "188f0b26-0deb-4a71-9025-2d48e4868739",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "15.99000000",
+              "date": "2026-07-12",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:12:26.554345+00:00"
+            },
+            {
+              "id": "944f7328-2b5b-428a-b04e-87f944493c15",
+              "connection_id": "5e52c2b7-853c-4066-917b-31832a501106",
+              "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+              "name": "STREAMFLIX.COM",
+              "merchant": "StreamFlix",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "1eeec29a-20ac-4265-ba10-34ad4c9eeb69",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "15.99000000",
+              "date": "2026-07-12",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:12:26.551860+00:00"
+            }
+          ],
+          "limitations": "Two identical amounts can be two real purchases. Check receipts or order confirmations before asking for a refund."
+        }
+      }
+    },
+    {
+      "id": "f71108cb-9652-4d32-b91e-40807079277d",
+      "kind": "note",
+      "title": "Household review completed 2026-10-16: evidence, inventory and action audit",
+      "body": "Reviewed all six supplied original notes/emails; source library paginated (133 records: 126 transactions, six texts, import source). Checked transactions, including refund inflow since Sep 13. SM-69086 $55.49 already posted Sep 17; SM-71714 $37.63 and SM-72310 $41.01 match separate Sep 18 orders. No supplied cancellation, trial, unused-membership note, or missing credit promise. No fee leads. Recurring inventory checked: Spotify $11.99 monthly ($143.88/year), rent $2,150 monthly, Metro Power variable monthly ($67.05\u2013$131.85 observed), StreamFlix two monthly charges totaling $34.98 since August (investigation submitted). No evidence any service is unused; no cancellation performed. All seven saved actionable opportunities submitted: ShopMart SM-1003 $118.29; four StreamFlix April\u2013July items plus August\u2013October item in one SF-1001 request totaling $111.93; price/loyalty SF-1002 ($9 credit requested, $36/year prospective saving contingent). Follow-ups Oct 21. Settlement case waiting for sworn declaration approval, up to $50, deadline Nov 30, reminder Nov 16. No covered request left unsent; settlement blocked only by required user approval. No offers accepted or services changed. Review limited to uploaded account history, not live-bank completeness; no newly requested money received yet.",
+      "status": "done",
+      "result_status": null,
+      "fields": {
+        "reviewed_source_ids": [
+          "15d4234e-73ff-47e7-a3ce-bd33f356294a",
+          "1fad7def-0b58-4dd4-8487-851db7f4d695",
+          "5d0d92a2-8de2-4623-9778-9d2cf4388803",
+          "c3f3c961-f455-4efb-a067-210d222bf881",
+          "d0853d01-8c0d-4491-99d3-b8b9c4f385a2",
+          "f0472dfb-0331-4164-bb0b-e63fe4948c64"
+        ],
+        "submitted_tickets": [
+          "SM-1003",
+          "SF-1001",
+          "SF-1002"
+        ]
+      }
+    }
+  ],
+  "work_after_verify": [
+    {
+      "id": "0bd184d1-945f-43f7-97b7-38d2a4b8ad6b",
+      "kind": "opportunity",
+      "title": "Possible duplicate charge: StreamFlix $15.99",
+      "body": "Included in submitted investigation/refund request SF-1001, April-July duplicate charges; no refunds in supplied history.",
+      "status": "waiting",
+      "result_status": "submitted",
+      "fields": {
+        "finding_id": "11d0ce17-d904-4d38-9260-1e628655d380",
+        "finding_version": 1,
+        "detector_version": "discovery-2026-10-16-v2",
+        "observations": {
+          "merchant": "StreamFlix",
+          "amount": "15.99",
+          "currency": "USD",
+          "estimated_value_cents": 1599,
+          "summary": "Two charges of $15.99 at StreamFlix on 2026-04-12 and 2026-04-12. Compare with the order confirmation before disputing.",
+          "transactions": [
+            {
+              "id": "22c44e5c-6115-4448-abd8-07259cfc9173",
+              "connection_id": "5e52c2b7-853c-4066-917b-31832a501106",
+              "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+              "name": "STREAMFLIX.COM",
+              "merchant": "StreamFlix",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "d582924d-caf6-4be8-996a-27dd751af957",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "15.99000000",
+              "date": "2026-04-12",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:12:26.443123+00:00"
+            },
+            {
+              "id": "80f6ad4b-210b-458a-ad18-e45bd8c4861c",
+              "connection_id": "5e52c2b7-853c-4066-917b-31832a501106",
+              "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+              "name": "STREAMFLIX.COM",
+              "merchant": "StreamFlix",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "fbf9421e-8e3b-483f-b8ba-78a618b3e455",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "15.99000000",
+              "date": "2026-04-12",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:12:26.441144+00:00"
+            }
+          ],
+          "limitations": "Two identical amounts can be two real purchases. Check receipts or order confirmations before asking for a refund."
+        }
+      }
+    },
+    {
+      "id": "10a2c4b1-000d-4061-b1ad-26fdafd282ac",
+      "kind": "opportunity",
+      "title": "StreamFlix August\u2013October extra charges",
+      "body": "Three suspected extra $15.99 charges Aug 12, Sep 12, Oct 12, 2026; $47.97 included in SF-1001, total seven months $111.93. Investigation requested; second account possible.",
+      "status": "waiting",
+      "result_status": "submitted",
+      "fields": {}
+    },
+    {
+      "id": "223eae2d-a03b-4d2c-bab8-19fdc6627f1d",
+      "kind": "case",
+      "title": "ShopMart SM-69086 refund already posted",
+      "body": "Sep 13 promise $55.49 matched Sep 17 inflow -$55.49. Predates review; no request sent and no recovery attributed to this review.",
+      "status": "done",
+      "result_status": "received",
+      "fields": {}
+    },
+    {
+      "id": "2e6fbd46-8351-4fc4-86cf-370dc3ae54be",
+      "kind": "opportunity",
+      "title": "StreamFlix loyalty pricing and price increase credit",
+      "body": "SF-1002 submitted: request loyalty quote targeting $3/month ($36/year) savings and $9 credit for Aug\u2013Oct increases. No offer accepted or plan changed. Estimate contingent, includes one year prospective savings.\nNew email confirms 9 USD credit; posted inflow on 2026-10-15, transaction aa7a9dbf-98bc-4e4d-8e3f-8df29ebc4a86. Uploaded evidence confirms receipt but posting predates Oct 16 submission; causal attribution to our request is uncertain. $9 credit resolved; prospective $3/month loyalty pricing quote remains pending, no offer received or accepted.",
+      "status": "waiting",
+      "result_status": "received",
+      "fields": {
+        "received_value_cents": 900,
+        "attribution": "uncertain: posting predates request",
+        "remaining_prospective_value_cents": 3600
+      }
+    },
+    {
+      "id": "4ec69667-b601-4a21-a24d-3cffb0fdda12",
+      "kind": "opportunity",
+      "title": "Possible duplicate charge: ShopMart $118.29",
+      "body": "One order SM-43035 confirmed; two $118.29 charges 2026-09-06. Refund duplicate.\nSubmitted SM-1003; company response due within 2 business days.\nNew email confirms 118.29 USD credit; posted inflow on 2026-10-15, transaction ce8498de-b5d3-4849-8ea8-cc2fe0c27b3f. Uploaded evidence confirms receipt but posting predates Oct 16 submission; causal attribution to our request is uncertain. Fully resolved.",
+      "status": "done",
+      "result_status": "received",
+      "fields": {
+        "finding_id": "ef55b801-814a-4054-b361-0299b1ee8b90",
+        "finding_version": 1,
+        "detector_version": "discovery-2026-10-16-v2",
+        "observations": {
+          "merchant": "ShopMart",
+          "amount": "118.29",
+          "currency": "USD",
+          "estimated_value_cents": 11829,
+          "summary": "Two charges of $118.29 at ShopMart on 2026-09-06 and 2026-09-06. Compare with the order confirmation before disputing.",
+          "transactions": [
+            {
+              "id": "1a3e39f7-aa73-4a1a-9b11-f777c220574e",
+              "connection_id": "5e52c2b7-853c-4066-917b-31832a501106",
+              "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+              "name": "SHOPMART.COM ORDER",
+              "merchant": "ShopMart",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "780def21-0f94-473d-a88c-d03eaec66d43",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "118.29000000",
+              "date": "2026-09-06",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:12:26.629536+00:00"
+            },
+            {
+              "id": "c37cc9ab-9771-40a1-ae3d-b5ac8347ae86",
+              "connection_id": "5e52c2b7-853c-4066-917b-31832a501106",
+              "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+              "name": "SHOPMART.COM ORDER",
+              "merchant": "ShopMart",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "c92ec3ed-6026-4660-8e91-47681d740348",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "118.29000000",
+              "date": "2026-09-06",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:12:26.631637+00:00"
+            }
+          ],
+          "limitations": "Two identical amounts can be two real purchases. Check receipts or order confirmations before asking for a refund."
+        },
+        "received_value_cents": 11829,
+        "attribution": "uncertain: posting predates request"
+      }
+    },
+    {
+      "id": "61502769-6044-4466-83e7-3b4ae857383b",
+      "kind": "case",
+      "title": "Approval needed: StreamFlix settlement sworn claim",
+      "body": "Paid April\u2013June 2026 history supports apparent class eligibility. Browser confirms deadline Nov 30, 2026 and up to $50; requires declaration under penalty of perjury. Not attested or submitted.",
+      "status": "waiting",
+      "result_status": null,
+      "fields": {
+        "approval_request": {
+          "action": "Authorize sworn declaration and submission of StreamFlix settlement claim",
+          "counterparty": "ClaimHub",
+          "amount_usd": 50,
+          "reason": "Claim requires declaring under penalty of perjury class membership and truth of supplied information; user approval required."
+        },
+        "deadline": "2026-11-30"
+      }
+    },
+    {
+      "id": "884f002f-2712-4e82-a540-99bb19366446",
+      "kind": "opportunity",
+      "title": "Possible duplicate charge: StreamFlix $15.99",
+      "body": "Included in submitted investigation/refund request SF-1001, April-July duplicate charges; no refunds in supplied history.",
+      "status": "waiting",
+      "result_status": "submitted",
+      "fields": {
+        "finding_id": "d913bdfc-8f1b-4ea3-a43a-922a0104ac51",
+        "finding_version": 1,
+        "detector_version": "discovery-2026-10-16-v2",
+        "observations": {
+          "merchant": "StreamFlix",
+          "amount": "15.99",
+          "currency": "USD",
+          "estimated_value_cents": 1599,
+          "summary": "Two charges of $15.99 at StreamFlix on 2026-06-12 and 2026-06-12. Compare with the order confirmation before disputing.",
+          "transactions": [
+            {
+              "id": "09463e52-0430-4fac-a6b2-89b4bcc3aeb7",
+              "connection_id": "5e52c2b7-853c-4066-917b-31832a501106",
+              "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+              "name": "STREAMFLIX.COM",
+              "merchant": "StreamFlix",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "9b87ab17-4c4e-4a7a-a42c-740851f058f3",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "15.99000000",
+              "date": "2026-06-12",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:12:26.515374+00:00"
+            },
+            {
+              "id": "7fc1953e-12bc-44c5-8b6d-37ec9f17eb27",
+              "connection_id": "5e52c2b7-853c-4066-917b-31832a501106",
+              "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+              "name": "STREAMFLIX.COM",
+              "merchant": "StreamFlix",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "8b94b7ba-e123-4dec-9379-933a1711e487",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "15.99000000",
+              "date": "2026-06-12",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:12:26.517413+00:00"
+            }
+          ],
+          "limitations": "Two identical amounts can be two real purchases. Check receipts or order confirmations before asking for a refund."
+        }
+      }
+    },
+    {
+      "id": "8cddb01c-dbd3-4ae5-9c35-0a0e5be9b4ea",
+      "kind": "opportunity",
+      "title": "Possible duplicate charge: StreamFlix $15.99",
+      "body": "Included in submitted investigation/refund request SF-1001, April-July duplicate charges; no refunds in supplied history.",
+      "status": "waiting",
+      "result_status": "submitted",
+      "fields": {
+        "finding_id": "fd540f0d-0209-4d07-a41a-0d1036c5413c",
+        "finding_version": 1,
+        "detector_version": "discovery-2026-10-16-v2",
+        "observations": {
+          "merchant": "StreamFlix",
+          "amount": "15.99",
+          "currency": "USD",
+          "estimated_value_cents": 1599,
+          "summary": "Two charges of $15.99 at StreamFlix on 2026-05-12 and 2026-05-12. Compare with the order confirmation before disputing.",
+          "transactions": [
+            {
+              "id": "3829196b-55cf-4648-912f-2dc1791dde54",
+              "connection_id": "5e52c2b7-853c-4066-917b-31832a501106",
+              "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+              "name": "STREAMFLIX.COM",
+              "merchant": "StreamFlix",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "28f43df4-e628-47ee-99b7-b4eba49dab8a",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "15.99000000",
+              "date": "2026-05-12",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:12:26.478235+00:00"
+            },
+            {
+              "id": "65b09aef-8b52-4d2f-8c86-dc687a7bdd37",
+              "connection_id": "5e52c2b7-853c-4066-917b-31832a501106",
+              "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+              "name": "STREAMFLIX.COM",
+              "merchant": "StreamFlix",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "8673ee4e-c202-4adf-8a8d-c89cafe734ef",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "15.99000000",
+              "date": "2026-05-12",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:12:26.480220+00:00"
+            }
+          ],
+          "limitations": "Two identical amounts can be two real purchases. Check receipts or order confirmations before asking for a refund."
+        }
+      }
+    },
+    {
+      "id": "bd8f4f2a-8f3d-451d-98f8-44a9ff121f83",
+      "kind": "note",
+      "title": "New-arrival review Oct 16: $127.29 posted credits and open-case audit",
+      "body": "Continued existing work without duplicate submissions. Paginated all 138 source records; only two new unreviewed documents/emails: ShopMart duplicate refund reply and StreamFlix loyalty credit reply; read both fully and matched merchant inflows in uploaded transactions. $118.29 ShopMart SM-43035 posted Oct 15, case now done; $9 StreamFlix loyalty credit posted Oct 15, credit received with prospective quote still waiting. Recorded received with transaction source evidence and cancelled resolved refund reminders. Both posting dates precede Oct 16 requests; attribution to requests remains uncertain. Reviewed all seven opportunity leads and recurring inventory: no new actionable lead; Spotify $11.99/month and rent $2150/month already checked in prior review. Five SF-1001 work items totaling $111.93 remain submitted, with Oct 21 follow-ups; $9 loyalty credit is not a duplicate-charge refund. SF-1002 prospective quote follow-up Oct 21. Settlement case remains waiting for sworn-claim approval up to $50, Nov 30 deadline, Nov 16 reminder. Every covered saved/continued request is already submitted or resolved; no covered request remains unsent. No new service-change offer or unused-service evidence. Uploaded history only; no live-bank verification.",
+      "status": "done",
+      "result_status": null,
+      "fields": {
+        "reviewed_source_ids": [
+          "485ec533-b0df-400a-9f23-21878427fd5e",
+          "e832ec92-b7d0-4246-950e-b8539d92b7fb"
+        ],
+        "received_cents": 12729,
+        "unsent_covered_requests": 0
+      }
+    },
+    {
+      "id": "d126606c-d583-440f-b38b-8fe0917c719d",
+      "kind": "opportunity",
+      "title": "Possible duplicate charge: StreamFlix $15.99",
+      "body": "Included in submitted investigation/refund request SF-1001, April-July duplicate charges; no refunds in supplied history.",
+      "status": "waiting",
+      "result_status": "submitted",
+      "fields": {
+        "finding_id": "8deea8e4-dc7e-4a2e-a79c-d9c67d643571",
+        "finding_version": 1,
+        "detector_version": "discovery-2026-10-16-v2",
+        "observations": {
+          "merchant": "StreamFlix",
+          "amount": "15.99",
+          "currency": "USD",
+          "estimated_value_cents": 1599,
+          "summary": "Two charges of $15.99 at StreamFlix on 2026-07-12 and 2026-07-12. Compare with the order confirmation before disputing.",
+          "transactions": [
+            {
+              "id": "7402d896-0596-4e10-9712-b55b120c22b4",
+              "connection_id": "5e52c2b7-853c-4066-917b-31832a501106",
+              "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+              "name": "STREAMFLIX.COM",
+              "merchant": "StreamFlix",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "188f0b26-0deb-4a71-9025-2d48e4868739",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "15.99000000",
+              "date": "2026-07-12",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:12:26.554345+00:00"
+            },
+            {
+              "id": "944f7328-2b5b-428a-b04e-87f944493c15",
+              "connection_id": "5e52c2b7-853c-4066-917b-31832a501106",
+              "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+              "name": "STREAMFLIX.COM",
+              "merchant": "StreamFlix",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "1eeec29a-20ac-4265-ba10-34ad4c9eeb69",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "15.99000000",
+              "date": "2026-07-12",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:12:26.551860+00:00"
+            }
+          ],
+          "limitations": "Two identical amounts can be two real purchases. Check receipts or order confirmations before asking for a refund."
+        }
+      }
+    },
+    {
+      "id": "f71108cb-9652-4d32-b91e-40807079277d",
+      "kind": "note",
+      "title": "Household review completed 2026-10-16: evidence, inventory and action audit",
+      "body": "Reviewed all six supplied original notes/emails; source library paginated (133 records: 126 transactions, six texts, import source). Checked transactions, including refund inflow since Sep 13. SM-69086 $55.49 already posted Sep 17; SM-71714 $37.63 and SM-72310 $41.01 match separate Sep 18 orders. No supplied cancellation, trial, unused-membership note, or missing credit promise. No fee leads. Recurring inventory checked: Spotify $11.99 monthly ($143.88/year), rent $2,150 monthly, Metro Power variable monthly ($67.05\u2013$131.85 observed), StreamFlix two monthly charges totaling $34.98 since August (investigation submitted). No evidence any service is unused; no cancellation performed. All seven saved actionable opportunities submitted: ShopMart SM-1003 $118.29; four StreamFlix April\u2013July items plus August\u2013October item in one SF-1001 request totaling $111.93; price/loyalty SF-1002 ($9 credit requested, $36/year prospective saving contingent). Follow-ups Oct 21. Settlement case waiting for sworn declaration approval, up to $50, deadline Nov 30, reminder Nov 16. No covered request left unsent; settlement blocked only by required user approval. No offers accepted or services changed. Review limited to uploaded account history, not live-bank completeness; no newly requested money received yet.",
+      "status": "done",
+      "result_status": null,
+      "fields": {
+        "reviewed_source_ids": [
+          "15d4234e-73ff-47e7-a3ce-bd33f356294a",
+          "1fad7def-0b58-4dd4-8487-851db7f4d695",
+          "5d0d92a2-8de2-4623-9778-9d2cf4388803",
+          "c3f3c961-f455-4efb-a067-210d222bf881",
+          "d0853d01-8c0d-4491-99d3-b8b9c4f385a2",
+          "f0472dfb-0331-4164-bb0b-e63fe4948c64"
+        ],
+        "submitted_tickets": [
+          "SM-1003",
+          "SF-1001",
+          "SF-1002"
+        ]
+      }
+    }
+  ],
+  "run": {
+    "status": "completed",
+    "answer": "Review complete using the supplied records.\n\n- Submitted ShopMart\u2019s $118.29 duplicate-charge refund request.\n- Asked StreamFlix to investigate and refund $111.93 in suspected extra charges, plus requested loyalty pricing and a possible $9 credit.\n- Confirmed the separate $55.49 ShopMart refund already posted.\n- Saved company follow-ups for October 21.\n\nYour approval is needed for the sworn StreamFlix settlement claim, worth up to $50 and due November 30. It remains unsubmitted. No services were changed or offers accepted.",
+    "committed_micros": 331944
+  },
+  "verify_run": {
+    "status": "completed",
+    "answer": "Recorded $127.29 received: $118.29 from ShopMart and $9 from StreamFlix. Closed the ShopMart case and updated follow-ups without duplicating requests.\n\nThe $111.93 StreamFlix investigation and pricing quote remain pending, with follow-ups October 21.\n\nYour approval is still needed for the sworn settlement claim, worth up to $50, due November 30. Credits posted before our requests, so attribution remains uncertain.",
+    "committed_micros": 196182
+  },
+  "sim_log": [
+    {
+      "type": "view",
+      "path": "/streamflix/account"
+    },
+    {
+      "type": "view",
+      "path": "/streamflix/support"
+    },
+    {
+      "type": "action",
+      "site": "streamflix",
+      "path": "/streamflix/support",
+      "class": "submit",
+      "fields": {
+        "reason": "Duplicate charge",
+        "message": "Reese Wong, reese.wong@example.test. Please investigate and refund extra monthly charges: two $15.99 charges each on April 12, May 12, June 12 and July 12, 2026; both $15.99 and $18.99 on August 12, September 12 and October 12, 2026. Premium price notice dated July 10 says $15.99 becomes $18.99 starting August. Suspected extra charges total $111.93 (seven x $15.99). No StreamFlix refunds appear in uploaded history. Please explain whether a second account is involved and refund erroneous charges. Do not cancel or change any service."
+      }
+    },
+    {
+      "type": "view",
+      "path": "/streamflix/support"
+    },
+    {
+      "type": "action",
+      "site": "streamflix",
+      "path": "/streamflix/support",
+      "class": "submit",
+      "fields": {
+        "reason": "Price increase",
+        "message": "Reese Wong (reese.wong@example.test). July 10 notice increased Premium from $15.99 to $18.99/month in August; $18.99 posted Aug 12, Sep 12, Oct 12, 2026. Please quote loyalty pricing, including restoration of $15.99 (potential $36/year savings), and any available credit for the $9 increase paid. Quote only: do not apply an offer or change my service without approval."
+      }
+    },
+    {
+      "type": "view",
+      "path": "/shopmart/support"
+    },
+    {
+      "type": "action",
+      "site": "shopmart",
+      "path": "/shopmart/support",
+      "class": "submit",
+      "fields": {
+        "order": "SM-43035",
+        "reason": "Duplicate charge",
+        "amount": "118.29",
+        "details": "Reese Wong, reese.wong@example.test. Two posted $118.29 charges on 2026-09-06 for only one order SM-43035 (wireless headphones, total $118.29; confirmation says only order that day). Please refund the duplicate $118.29 to the original payment method. The separate $55.49 refund on Sep 17 is for SM-69086 and does not resolve this duplicate."
+      }
+    },
+    {
+      "type": "view",
+      "path": "/claimhub/streamflix-settlement"
+    }
+  ],
+  "findings": {
+    "items": [
+      {
+        "id": "2f482ac8-d6ac-41e1-b6ad-3f15ef1580ce",
+        "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+        "account_name": "Harbor Checking",
+        "kind": "recurring_charge",
+        "title": "Recurring monthly charge: Spotify",
+        "assessment": "recurring_charge",
+        "review_status": "new",
+        "data": {
+          "merchant": "Spotify",
+          "cadence": "monthly",
+          "typical_amount": "11.99",
+          "latest_amount": "11.99",
+          "last_charged_on": "2026-10-09",
+          "next_expected_on": "2026-11-08",
+          "annual_cost": "143.88",
+          "currency": "USD",
+          "summary": "Spotify: about $11.99 monthly, $143.88 a year. Last charged 2026-10-09.",
+          "transactions": [
+            {
+              "id": "a7116db6-7f86-40cc-9a30-a4684627d963",
+              "connection_id": "5e52c2b7-853c-4066-917b-31832a501106",
+              "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "389fdd84-cb81-4f60-b1f0-2bc3f86626a6",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-05-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:12:26.474264+00:00"
+            },
+            {
+              "id": "73992d1f-fbe3-4cc2-bb9c-805c9fc9c31f",
+              "connection_id": "5e52c2b7-853c-4066-917b-31832a501106",
+              "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "5eebfd06-1cd0-4295-aa85-ffbf98506a25",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-06-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:12:26.511405+00:00"
+            },
+            {
+              "id": "f35d36b0-e092-4830-97b6-07917a3774c2",
+              "connection_id": "5e52c2b7-853c-4066-917b-31832a501106",
+              "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "2be80267-db11-4752-8384-7f5d418d6900",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-07-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:12:26.545657+00:00"
+            },
+            {
+              "id": "55768b58-2d7b-4a48-a268-0a1f359ca285",
+              "connection_id": "5e52c2b7-853c-4066-917b-31832a501106",
+              "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "57466954-9ae8-4ac1-b79c-c614678fb7df",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-08-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:12:26.588874+00:00"
+            },
+            {
+              "id": "344f037b-8e55-4477-b29b-98fea8922b97",
+              "connection_id": "5e52c2b7-853c-4066-917b-31832a501106",
+              "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "d13dd782-b28b-4542-8047-39c4f242ebbb",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-09-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:12:26.635653+00:00"
+            },
+            {
+              "id": "e55dc080-b2cd-46c3-b216-c64d9bf7f23c",
+              "connection_id": "5e52c2b7-853c-4066-917b-31832a501106",
+              "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "a083fccc-5fd0-48de-b2af-ac67f3aee4d6",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-10-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:12:26.680074+00:00"
+            }
+          ],
+          "limitations": "Inferred from charge timing and amounts. Not proof of a subscription; check whether it is still wanted or used."
+        },
+        "source_ids": [
+          "389fdd84-cb81-4f60-b1f0-2bc3f86626a6",
+          "5eebfd06-1cd0-4295-aa85-ffbf98506a25",
+          "2be80267-db11-4752-8384-7f5d418d6900",
+          "57466954-9ae8-4ac1-b79c-c614678fb7df",
+          "d13dd782-b28b-4542-8047-39c4f242ebbb",
+          "a083fccc-5fd0-48de-b2af-ac67f3aee4d6"
+        ],
+        "version": 1,
+        "work_id": null,
+        "detector_version": "discovery-2026-10-16-v2",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "5e52c2b7-853c-4066-917b-31832a501106",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-16T09:12:26.692900+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-16T09:12:27.284220+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      },
+      {
+        "id": "29e58595-8050-4e37-ba70-5d77c1bc4681",
+        "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+        "account_name": "Harbor Checking",
+        "kind": "recurring_charge",
+        "title": "Recurring monthly charge: Oakview Apartments",
+        "assessment": "recurring_charge",
+        "review_status": "new",
+        "data": {
+          "merchant": "Oakview Apartments",
+          "cadence": "monthly",
+          "typical_amount": "2150.00",
+          "latest_amount": "2150.00",
+          "last_charged_on": "2026-10-01",
+          "next_expected_on": "2026-10-31",
+          "annual_cost": "25800.00",
+          "currency": "USD",
+          "summary": "Oakview Apartments: about $2150.00 monthly, $25800.00 a year. Last charged 2026-10-01.",
+          "transactions": [
+            {
+              "id": "aaf4cb70-1181-4a76-b570-db4b32e053bb",
+              "connection_id": "5e52c2b7-853c-4066-917b-31832a501106",
+              "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "12ea1724-0655-4a8c-9903-93810f347d87",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "2150.00000000",
+              "date": "2026-05-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:12:26.461877+00:00"
+            },
+            {
+              "id": "47798409-875d-48af-8a72-323aec338566",
+              "connection_id": "5e52c2b7-853c-4066-917b-31832a501106",
+              "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "f133c4f5-c25e-4317-b00c-8b34ebe91951",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "2150.00000000",
+              "date": "2026-06-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:12:26.505172+00:00"
+            },
+            {
+              "id": "63ab2d7b-6069-48a5-9e76-c7565d0a2591",
+              "connection_id": "5e52c2b7-853c-4066-917b-31832a501106",
+              "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "12cff3ad-2146-46ec-a957-6d18963c1d3b",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "2150.00000000",
+              "date": "2026-07-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:12:26.537252+00:00"
+            },
+            {
+              "id": "2b3297d3-9bca-4f4d-a0eb-cbca68114555",
+              "connection_id": "5e52c2b7-853c-4066-917b-31832a501106",
+              "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "aeafa3df-40fd-491d-b63d-802438fb8cb1",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "2150.00000000",
+              "date": "2026-08-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:12:26.577995+00:00"
+            },
+            {
+              "id": "98023a32-7ec6-45f8-87f2-1f04bafa55ae",
+              "connection_id": "5e52c2b7-853c-4066-917b-31832a501106",
+              "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "0d276a15-50df-4f5e-9219-61a9f6aa0ce3",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "2150.00000000",
+              "date": "2026-09-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:12:26.617461+00:00"
+            },
+            {
+              "id": "83549b13-7f4d-49d1-b63b-f5a383386daa",
+              "connection_id": "5e52c2b7-853c-4066-917b-31832a501106",
+              "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "7ae6f2f8-66c0-44db-b45f-bd8843bb8a8f",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "2150.00000000",
+              "date": "2026-10-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:12:26.669713+00:00"
+            }
+          ],
+          "limitations": "Inferred from charge timing and amounts. Not proof of a subscription; check whether it is still wanted or used."
+        },
+        "source_ids": [
+          "12ea1724-0655-4a8c-9903-93810f347d87",
+          "f133c4f5-c25e-4317-b00c-8b34ebe91951",
+          "12cff3ad-2146-46ec-a957-6d18963c1d3b",
+          "aeafa3df-40fd-491d-b63d-802438fb8cb1",
+          "0d276a15-50df-4f5e-9219-61a9f6aa0ce3",
+          "7ae6f2f8-66c0-44db-b45f-bd8843bb8a8f"
+        ],
+        "version": 1,
+        "work_id": null,
+        "detector_version": "discovery-2026-10-16-v2",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "5e52c2b7-853c-4066-917b-31832a501106",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-16T09:12:26.692900+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-16T09:12:27.280131+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      },
+      {
+        "id": "ef55b801-814a-4054-b361-0299b1ee8b90",
+        "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+        "account_name": "Harbor Checking",
+        "kind": "duplicate_charge",
+        "title": "Possible duplicate charge: ShopMart $118.29",
+        "assessment": "possible_duplicate_charge",
+        "review_status": "saved",
+        "data": {
+          "merchant": "ShopMart",
+          "amount": "118.29",
+          "currency": "USD",
+          "estimated_value_cents": 11829,
+          "summary": "Two charges of $118.29 at ShopMart on 2026-09-06 and 2026-09-06. Compare with the order confirmation before disputing.",
+          "transactions": [
+            {
+              "id": "1a3e39f7-aa73-4a1a-9b11-f777c220574e",
+              "connection_id": "5e52c2b7-853c-4066-917b-31832a501106",
+              "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+              "name": "SHOPMART.COM ORDER",
+              "merchant": "ShopMart",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "780def21-0f94-473d-a88c-d03eaec66d43",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "118.29000000",
+              "date": "2026-09-06",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:12:26.629536+00:00"
+            },
+            {
+              "id": "c37cc9ab-9771-40a1-ae3d-b5ac8347ae86",
+              "connection_id": "5e52c2b7-853c-4066-917b-31832a501106",
+              "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+              "name": "SHOPMART.COM ORDER",
+              "merchant": "ShopMart",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "c92ec3ed-6026-4660-8e91-47681d740348",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "118.29000000",
+              "date": "2026-09-06",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:12:26.631637+00:00"
+            }
+          ],
+          "limitations": "Two identical amounts can be two real purchases. Check receipts or order confirmations before asking for a refund."
+        },
+        "source_ids": [
+          "780def21-0f94-473d-a88c-d03eaec66d43",
+          "c92ec3ed-6026-4660-8e91-47681d740348"
+        ],
+        "version": 2,
+        "work_id": "4ec69667-b601-4a21-a24d-3cffb0fdda12",
+        "detector_version": "discovery-2026-10-16-v2",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "5e52c2b7-853c-4066-917b-31832a501106",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-16T09:12:26.692900+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-16T09:12:27.276061+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      },
+      {
+        "id": "8deea8e4-dc7e-4a2e-a79c-d9c67d643571",
+        "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+        "account_name": "Harbor Checking",
+        "kind": "duplicate_charge",
+        "title": "Possible duplicate charge: StreamFlix $15.99",
+        "assessment": "possible_duplicate_charge",
+        "review_status": "saved",
+        "data": {
+          "merchant": "StreamFlix",
+          "amount": "15.99",
+          "currency": "USD",
+          "estimated_value_cents": 1599,
+          "summary": "Two charges of $15.99 at StreamFlix on 2026-07-12 and 2026-07-12. Compare with the order confirmation before disputing.",
+          "transactions": [
+            {
+              "id": "7402d896-0596-4e10-9712-b55b120c22b4",
+              "connection_id": "5e52c2b7-853c-4066-917b-31832a501106",
+              "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+              "name": "STREAMFLIX.COM",
+              "merchant": "StreamFlix",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "188f0b26-0deb-4a71-9025-2d48e4868739",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "15.99000000",
+              "date": "2026-07-12",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:12:26.554345+00:00"
+            },
+            {
+              "id": "944f7328-2b5b-428a-b04e-87f944493c15",
+              "connection_id": "5e52c2b7-853c-4066-917b-31832a501106",
+              "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+              "name": "STREAMFLIX.COM",
+              "merchant": "StreamFlix",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "1eeec29a-20ac-4265-ba10-34ad4c9eeb69",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "15.99000000",
+              "date": "2026-07-12",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:12:26.551860+00:00"
+            }
+          ],
+          "limitations": "Two identical amounts can be two real purchases. Check receipts or order confirmations before asking for a refund."
+        },
+        "source_ids": [
+          "188f0b26-0deb-4a71-9025-2d48e4868739",
+          "1eeec29a-20ac-4265-ba10-34ad4c9eeb69"
+        ],
+        "version": 2,
+        "work_id": "d126606c-d583-440f-b38b-8fe0917c719d",
+        "detector_version": "discovery-2026-10-16-v2",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "5e52c2b7-853c-4066-917b-31832a501106",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-16T09:12:26.692900+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-16T09:12:27.272683+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      },
+      {
+        "id": "d913bdfc-8f1b-4ea3-a43a-922a0104ac51",
+        "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+        "account_name": "Harbor Checking",
+        "kind": "duplicate_charge",
+        "title": "Possible duplicate charge: StreamFlix $15.99",
+        "assessment": "possible_duplicate_charge",
+        "review_status": "saved",
+        "data": {
+          "merchant": "StreamFlix",
+          "amount": "15.99",
+          "currency": "USD",
+          "estimated_value_cents": 1599,
+          "summary": "Two charges of $15.99 at StreamFlix on 2026-06-12 and 2026-06-12. Compare with the order confirmation before disputing.",
+          "transactions": [
+            {
+              "id": "09463e52-0430-4fac-a6b2-89b4bcc3aeb7",
+              "connection_id": "5e52c2b7-853c-4066-917b-31832a501106",
+              "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+              "name": "STREAMFLIX.COM",
+              "merchant": "StreamFlix",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "9b87ab17-4c4e-4a7a-a42c-740851f058f3",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "15.99000000",
+              "date": "2026-06-12",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:12:26.515374+00:00"
+            },
+            {
+              "id": "7fc1953e-12bc-44c5-8b6d-37ec9f17eb27",
+              "connection_id": "5e52c2b7-853c-4066-917b-31832a501106",
+              "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+              "name": "STREAMFLIX.COM",
+              "merchant": "StreamFlix",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "8b94b7ba-e123-4dec-9379-933a1711e487",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "15.99000000",
+              "date": "2026-06-12",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:12:26.517413+00:00"
+            }
+          ],
+          "limitations": "Two identical amounts can be two real purchases. Check receipts or order confirmations before asking for a refund."
+        },
+        "source_ids": [
+          "9b87ab17-4c4e-4a7a-a42c-740851f058f3",
+          "8b94b7ba-e123-4dec-9379-933a1711e487"
+        ],
+        "version": 2,
+        "work_id": "884f002f-2712-4e82-a540-99bb19366446",
+        "detector_version": "discovery-2026-10-16-v2",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "5e52c2b7-853c-4066-917b-31832a501106",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-16T09:12:26.692900+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-16T09:12:27.268714+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      },
+      {
+        "id": "fd540f0d-0209-4d07-a41a-0d1036c5413c",
+        "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+        "account_name": "Harbor Checking",
+        "kind": "duplicate_charge",
+        "title": "Possible duplicate charge: StreamFlix $15.99",
+        "assessment": "possible_duplicate_charge",
+        "review_status": "saved",
+        "data": {
+          "merchant": "StreamFlix",
+          "amount": "15.99",
+          "currency": "USD",
+          "estimated_value_cents": 1599,
+          "summary": "Two charges of $15.99 at StreamFlix on 2026-05-12 and 2026-05-12. Compare with the order confirmation before disputing.",
+          "transactions": [
+            {
+              "id": "3829196b-55cf-4648-912f-2dc1791dde54",
+              "connection_id": "5e52c2b7-853c-4066-917b-31832a501106",
+              "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+              "name": "STREAMFLIX.COM",
+              "merchant": "StreamFlix",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "28f43df4-e628-47ee-99b7-b4eba49dab8a",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "15.99000000",
+              "date": "2026-05-12",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:12:26.478235+00:00"
+            },
+            {
+              "id": "65b09aef-8b52-4d2f-8c86-dc687a7bdd37",
+              "connection_id": "5e52c2b7-853c-4066-917b-31832a501106",
+              "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+              "name": "STREAMFLIX.COM",
+              "merchant": "StreamFlix",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "8673ee4e-c202-4adf-8a8d-c89cafe734ef",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "15.99000000",
+              "date": "2026-05-12",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:12:26.480220+00:00"
+            }
+          ],
+          "limitations": "Two identical amounts can be two real purchases. Check receipts or order confirmations before asking for a refund."
+        },
+        "source_ids": [
+          "28f43df4-e628-47ee-99b7-b4eba49dab8a",
+          "8673ee4e-c202-4adf-8a8d-c89cafe734ef"
+        ],
+        "version": 2,
+        "work_id": "8cddb01c-dbd3-4ae5-9c35-0a0e5be9b4ea",
+        "detector_version": "discovery-2026-10-16-v2",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "5e52c2b7-853c-4066-917b-31832a501106",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-16T09:12:26.692900+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-16T09:12:27.266199+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      },
+      {
+        "id": "11d0ce17-d904-4d38-9260-1e628655d380",
+        "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+        "account_name": "Harbor Checking",
+        "kind": "duplicate_charge",
+        "title": "Possible duplicate charge: StreamFlix $15.99",
+        "assessment": "possible_duplicate_charge",
+        "review_status": "saved",
+        "data": {
+          "merchant": "StreamFlix",
+          "amount": "15.99",
+          "currency": "USD",
+          "estimated_value_cents": 1599,
+          "summary": "Two charges of $15.99 at StreamFlix on 2026-04-12 and 2026-04-12. Compare with the order confirmation before disputing.",
+          "transactions": [
+            {
+              "id": "22c44e5c-6115-4448-abd8-07259cfc9173",
+              "connection_id": "5e52c2b7-853c-4066-917b-31832a501106",
+              "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+              "name": "STREAMFLIX.COM",
+              "merchant": "StreamFlix",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "d582924d-caf6-4be8-996a-27dd751af957",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "15.99000000",
+              "date": "2026-04-12",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:12:26.443123+00:00"
+            },
+            {
+              "id": "80f6ad4b-210b-458a-ad18-e45bd8c4861c",
+              "connection_id": "5e52c2b7-853c-4066-917b-31832a501106",
+              "account_id": "c7d3cb55-9fe6-41ad-9bee-60680464564b",
+              "name": "STREAMFLIX.COM",
+              "merchant": "StreamFlix",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "fbf9421e-8e3b-483f-b8ba-78a618b3e455",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "15.99000000",
+              "date": "2026-04-12",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:12:26.441144+00:00"
+            }
+          ],
+          "limitations": "Two identical amounts can be two real purchases. Check receipts or order confirmations before asking for a refund."
+        },
+        "source_ids": [
+          "d582924d-caf6-4be8-996a-27dd751af957",
+          "fbf9421e-8e3b-483f-b8ba-78a618b3e455"
+        ],
+        "version": 2,
+        "work_id": "0bd184d1-945f-43f7-97b7-38d2a4b8ad6b",
+        "detector_version": "discovery-2026-10-16-v2",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "5e52c2b7-853c-4066-917b-31832a501106",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-16T09:12:26.692900+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-16T09:12:27.264422+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      }
+    ]
+  },
+  "errors": []
+}

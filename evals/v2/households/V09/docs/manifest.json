@@ -1,0 +1,47 @@
+[
+  {
+    "file": "shopmart-return-SM-85913.txt",
+    "title": "Email: ShopMart return SM-85913",
+    "kind": "email"
+  },
+  {
+    "file": "shopmart-order-SM-91781.txt",
+    "title": "Email: ShopMart order SM-91781",
+    "kind": "email"
+  },
+  {
+    "file": "shopmart-adjustment-SM-91781.txt",
+    "title": "Email: ShopMart billing adjustment SM-91781",
+    "kind": "email"
+  },
+  {
+    "file": "fithub-miss-you.txt",
+    "title": "Email: FitHub - we miss you",
+    "kind": "email"
+  },
+  {
+    "file": "note-gym.txt",
+    "title": "Note: my own reminder",
+    "kind": "note"
+  },
+  {
+    "file": "legal-notice.txt",
+    "title": "Email: Legal notice - StreamFlix settlement",
+    "kind": "email"
+  },
+  {
+    "file": "shopmart-two-orders.txt",
+    "title": "Email: ShopMart - 2 orders confirmed",
+    "kind": "email"
+  },
+  {
+    "file": "refund-verification.txt",
+    "title": "Email: Action required - pending refunds",
+    "kind": "email"
+  },
+  {
+    "file": "account-directory.txt",
+    "title": "Note: my accounts and where to get help",
+    "kind": "note"
+  }
+]

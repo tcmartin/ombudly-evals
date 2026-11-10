@@ -1,0 +1,9 @@
+Title: Email: Northwind Outfitters order NW-59004
+Kind: email
+
+From: orders@northwind.example
+To: ben.okafor@example.test
+Date: 2026-10-02
+Subject: Your Northwind order NW-59004 has shipped
+
+1 x Trailhead insulated jacket, $180.77. Free returns within 30 days of purchase for a full refund.

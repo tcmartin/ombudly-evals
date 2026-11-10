@@ -1,0 +1,10 @@
+{
+  "household": "H18",
+  "external": {
+    "agent": "codex",
+    "model": "gpt-6-luna"
+  },
+  "errors": [
+    "Diagnostic details omitted from public record"
+  ]
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "file": "pinecrest-PH-26173.png",
+    "title": "Photo: Pinecrest Hardware return slip PH-26173",
+    "kind": "receipt"
+  },
+  {
+    "file": "summit-benefits.txt",
+    "title": "Email: Summit Visa card benefits",
+    "kind": "email"
+  },
+  {
+    "file": "shopmart-return-SM-59221.txt",
+    "title": "Email: ShopMart return SM-59221",
+    "kind": "email"
+  },
+  {
+    "file": "legal-notice.txt",
+    "title": "Email: Legal notice - StreamFlix settlement",
+    "kind": "email"
+  },
+  {
+    "file": "shopmart-return-SM-75534.txt",
+    "title": "Email: ShopMart return SM-75534",
+    "kind": "email"
+  },
+  {
+    "file": "cloudbox-renewal.txt",
+    "title": "Email: CloudBox renewal notice",
+    "kind": "email"
+  },
+  {
+    "file": "note-cloudbox-v2.txt",
+    "title": "Note: CloudBox",
+    "kind": "note"
+  },
+  {
+    "file": "account-directory.txt",
+    "title": "Note: my accounts and where to get help",
+    "kind": "note"
+  }
+]

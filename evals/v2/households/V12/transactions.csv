@@ -1,0 +1,383 @@
+transaction_id,account,date,amount,currency,name,merchant,status
+v12-t0041,Harbor Checking,2025-04-01,1550.00,USD,OAKVIEW APTS RENT,Oakview Apartments,posted
+v12-t0134,Summit Visa,2025-04-02,164.67,USD,KROGER #0197,Kroger,posted
+v12-t0135,Summit Visa,2025-04-03,-164.67,USD,PAYMENT THANK YOU,Summit Card,posted
+v12-t0136,Harbor Checking,2025-04-03,164.67,USD,SUMMIT VISA PAYMENT,Summit Card,posted
+v12-t0078,Harbor Checking,2025-04-05,300.00,USD,ONLINE TRANSFER TO SAVINGS,Harbor Bank,posted
+v12-t0079,Harbor Savings,2025-04-05,-300.00,USD,ONLINE TRANSFER FROM CHK,Harbor Bank,posted
+v12-t0001,Harbor Checking,2025-04-06,-2380.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+v12-t0137,Summit Visa,2025-04-09,92.20,USD,KROGER #0866,Kroger,posted
+v12-t0350,Harbor Checking,2025-04-09,11.99,USD,SPOTIFY USA,Spotify,posted
+v12-t0138,Summit Visa,2025-04-11,77.14,USD,BLUE BOTTLE,Restaurant,posted
+v12-t0139,Summit Visa,2025-04-16,82.96,USD,KROGER #0435,Kroger,posted
+v12-t0060,Harbor Checking,2025-04-18,89.96,USD,METRO POWER UTIL,Metro Power,posted
+v12-t0140,Summit Visa,2025-04-18,29.28,USD,LUIGI'S PIZZA,Restaurant,posted
+v12-t0141,Summit Visa,2025-04-19,56.19,USD,SHELL OIL 5480,Shell,posted
+v12-t0002,Harbor Checking,2025-04-20,-2380.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+v12-t0142,Summit Visa,2025-04-23,91.55,USD,KROGER #0122,Kroger,posted
+v12-t0143,Summit Visa,2025-04-25,62.41,USD,CHIPOTLE,Restaurant,posted
+v12-t0116,Harbor Savings,2025-04-28,-1.85,USD,INTEREST PAYMENT,Harbor Bank,posted
+v12-t0144,Summit Visa,2025-04-30,48.06,USD,KROGER #0592,Kroger,posted
+v12-t0042,Harbor Checking,2025-05-01,1550.00,USD,OAKVIEW APTS RENT,Oakview Apartments,posted
+v12-t0145,Summit Visa,2025-05-03,26.22,USD,SHELL OIL 2769,Shell,posted
+v12-t0003,Harbor Checking,2025-05-04,-2380.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+v12-t0080,Harbor Checking,2025-05-05,300.00,USD,ONLINE TRANSFER TO SAVINGS,Harbor Bank,posted
+v12-t0081,Harbor Savings,2025-05-05,-300.00,USD,ONLINE TRANSFER FROM CHK,Harbor Bank,posted
+v12-t0146,Summit Visa,2025-05-07,101.23,USD,KROGER #0351,Kroger,posted
+v12-t0148,Summit Visa,2025-05-08,-714.60,USD,PAYMENT THANK YOU,Summit Card,posted
+v12-t0149,Harbor Checking,2025-05-08,714.60,USD,SUMMIT VISA PAYMENT,Summit Card,posted
+v12-t0147,Summit Visa,2025-05-09,47.36,USD,THAI BASIL,Restaurant,posted
+v12-t0351,Harbor Checking,2025-05-09,11.99,USD,SPOTIFY USA,Spotify,posted
+v12-t0150,Summit Visa,2025-05-14,140.80,USD,KROGER #0869,Kroger,posted
+v12-t0151,Summit Visa,2025-05-16,65.58,USD,BLUE BOTTLE,Restaurant,posted
+v12-t0152,Summit Visa,2025-05-17,59.90,USD,SHELL OIL 4414,Shell,posted
+v12-t0004,Harbor Checking,2025-05-18,-2380.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+v12-t0061,Harbor Checking,2025-05-18,112.39,USD,METRO POWER UTIL,Metro Power,posted
+v12-t0153,Summit Visa,2025-05-21,132.50,USD,KROGER #0472,Kroger,posted
+v12-t0154,Summit Visa,2025-05-24,62.31,USD,SHELL OIL 3231,Shell,posted
+v12-t0117,Harbor Savings,2025-05-28,-0.85,USD,INTEREST PAYMENT,Harbor Bank,posted
+v12-t0155,Summit Visa,2025-05-28,121.16,USD,KROGER #0482,Kroger,posted
+v12-t0156,Summit Visa,2025-05-30,36.99,USD,PANERA BREAD,Restaurant,posted
+v12-t0005,Harbor Checking,2025-06-01,-2380.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+v12-t0043,Harbor Checking,2025-06-01,1550.00,USD,OAKVIEW APTS RENT,Oakview Apartments,posted
+v12-t0157,Summit Visa,2025-06-04,149.87,USD,KROGER #0276,Kroger,posted
+v12-t0082,Harbor Checking,2025-06-05,300.00,USD,ONLINE TRANSFER TO SAVINGS,Harbor Bank,posted
+v12-t0083,Harbor Savings,2025-06-05,-300.00,USD,ONLINE TRANSFER FROM CHK,Harbor Bank,posted
+v12-t0160,Summit Visa,2025-06-05,-831.73,USD,PAYMENT THANK YOU,Summit Card,posted
+v12-t0161,Harbor Checking,2025-06-05,831.73,USD,SUMMIT VISA PAYMENT,Summit Card,posted
+v12-t0158,Summit Visa,2025-06-06,15.26,USD,BLUE BOTTLE,Restaurant,posted
+v12-t0159,Summit Visa,2025-06-07,47.36,USD,SHELL OIL 4056,Shell,posted
+v12-t0352,Harbor Checking,2025-06-09,11.99,USD,SPOTIFY USA,Spotify,posted
+v12-t0162,Summit Visa,2025-06-11,67.33,USD,KROGER #0423,Kroger,posted
+v12-t0163,Summit Visa,2025-06-13,18.49,USD,LUIGI'S PIZZA,Restaurant,posted
+v12-t0164,Summit Visa,2025-06-14,54.39,USD,SHELL OIL 8506,Shell,posted
+v12-t0006,Harbor Checking,2025-06-15,-2380.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+v12-t0062,Harbor Checking,2025-06-18,129.38,USD,METRO POWER UTIL,Metro Power,posted
+v12-t0165,Summit Visa,2025-06-18,97.41,USD,KROGER #0295,Kroger,posted
+v12-t0166,Summit Visa,2025-06-21,61.59,USD,SHELL OIL 4573,Shell,posted
+v12-t0167,Summit Visa,2025-06-25,62.33,USD,KROGER #0572,Kroger,posted
+v12-t0168,Summit Visa,2025-06-27,70.45,USD,PANERA BREAD,Restaurant,posted
+v12-t0118,Harbor Savings,2025-06-28,-1.41,USD,INTEREST PAYMENT,Harbor Bank,posted
+v12-t0169,Summit Visa,2025-06-28,46.20,USD,SHELL OIL 3578,Shell,posted
+v12-t0007,Harbor Checking,2025-06-29,-2380.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+v12-t0044,Harbor Checking,2025-07-01,1550.00,USD,OAKVIEW APTS RENT,Oakview Apartments,posted
+v12-t0170,Summit Visa,2025-07-02,94.77,USD,KROGER #0834,Kroger,posted
+v12-t0172,Summit Visa,2025-07-03,-639.81,USD,PAYMENT THANK YOU,Summit Card,posted
+v12-t0173,Harbor Checking,2025-07-03,639.81,USD,SUMMIT VISA PAYMENT,Summit Card,posted
+v12-t0171,Summit Visa,2025-07-04,66.85,USD,PANERA BREAD,Restaurant,posted
+v12-t0084,Harbor Checking,2025-07-05,300.00,USD,ONLINE TRANSFER TO SAVINGS,Harbor Bank,posted
+v12-t0085,Harbor Savings,2025-07-05,-300.00,USD,ONLINE TRANSFER FROM CHK,Harbor Bank,posted
+v12-t0174,Summit Visa,2025-07-09,130.85,USD,KROGER #0728,Kroger,posted
+v12-t0353,Harbor Checking,2025-07-09,11.99,USD,SPOTIFY USA,Spotify,posted
+v12-t0175,Summit Visa,2025-07-12,38.53,USD,SHELL OIL 3105,Shell,posted
+v12-t0008,Harbor Checking,2025-07-13,-2380.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+v12-t0176,Summit Visa,2025-07-16,87.68,USD,KROGER #0727,Kroger,posted
+v12-t0063,Harbor Checking,2025-07-18,109.92,USD,METRO POWER UTIL,Metro Power,posted
+v12-t0177,Summit Visa,2025-07-18,82.77,USD,LUIGI'S PIZZA,Restaurant,posted
+v12-t0178,Summit Visa,2025-07-23,111.06,USD,KROGER #0933,Kroger,posted
+v12-t0009,Harbor Checking,2025-07-27,-2380.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+v12-t0119,Harbor Savings,2025-07-28,-1.71,USD,INTEREST PAYMENT,Harbor Bank,posted
+v12-t0179,Summit Visa,2025-07-30,66.91,USD,KROGER #0564,Kroger,posted
+v12-t0045,Harbor Checking,2025-08-01,1550.00,USD,OAKVIEW APTS RENT,Oakview Apartments,posted
+v12-t0180,Summit Visa,2025-08-01,84.07,USD,THAI BASIL,Restaurant,posted
+v12-t0086,Harbor Checking,2025-08-05,300.00,USD,ONLINE TRANSFER TO SAVINGS,Harbor Bank,posted
+v12-t0087,Harbor Savings,2025-08-05,-300.00,USD,ONLINE TRANSFER FROM CHK,Harbor Bank,posted
+v12-t0181,Summit Visa,2025-08-06,166.09,USD,KROGER #0975,Kroger,posted
+v12-t0183,Summit Visa,2025-08-07,-809.15,USD,PAYMENT THANK YOU,Summit Card,posted
+v12-t0184,Harbor Checking,2025-08-07,809.15,USD,SUMMIT VISA PAYMENT,Summit Card,posted
+v12-t0182,Summit Visa,2025-08-08,41.19,USD,BLUE BOTTLE,Restaurant,posted
+v12-t0354,Harbor Checking,2025-08-09,11.99,USD,SPOTIFY USA,Spotify,posted
+v12-t0010,Harbor Checking,2025-08-10,-2380.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+v12-t0185,Summit Visa,2025-08-13,135.52,USD,KROGER #0785,Kroger,posted
+v12-t0186,Summit Visa,2025-08-15,80.07,USD,LUIGI'S PIZZA,Restaurant,posted
+v12-t0187,Summit Visa,2025-08-16,34.49,USD,SHELL OIL 6337,Shell,posted
+v12-t0064,Harbor Checking,2025-08-18,59.00,USD,METRO POWER UTIL,Metro Power,posted
+v12-t0188,Summit Visa,2025-08-20,81.04,USD,KROGER #0696,Kroger,posted
+v12-t0189,Summit Visa,2025-08-22,35.27,USD,BLUE BOTTLE,Restaurant,posted
+v12-t0190,Summit Visa,2025-08-23,56.83,USD,SHELL OIL 6121,Shell,posted
+v12-t0011,Harbor Checking,2025-08-24,-2380.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+v12-t0191,Summit Visa,2025-08-27,126.95,USD,KROGER #0518,Kroger,posted
+v12-t0120,Harbor Savings,2025-08-28,-0.91,USD,INTEREST PAYMENT,Harbor Bank,posted
+v12-t0192,Summit Visa,2025-08-29,67.65,USD,THAI BASIL,Restaurant,posted
+v12-t0046,Harbor Checking,2025-09-01,1550.00,USD,OAKVIEW APTS RENT,Oakview Apartments,posted
+v12-t0193,Summit Visa,2025-09-03,46.92,USD,KROGER #0818,Kroger,posted
+v12-t0196,Summit Visa,2025-09-04,-802.74,USD,PAYMENT THANK YOU,Summit Card,posted
+v12-t0197,Harbor Checking,2025-09-04,802.74,USD,SUMMIT VISA PAYMENT,Summit Card,posted
+v12-t0088,Harbor Checking,2025-09-05,300.00,USD,ONLINE TRANSFER TO SAVINGS,Harbor Bank,posted
+v12-t0089,Harbor Savings,2025-09-05,-300.00,USD,ONLINE TRANSFER FROM CHK,Harbor Bank,posted
+v12-t0194,Summit Visa,2025-09-05,89.25,USD,CHIPOTLE,Restaurant,posted
+v12-t0195,Summit Visa,2025-09-06,48.75,USD,SHELL OIL 1873,Shell,posted
+v12-t0012,Harbor Checking,2025-09-07,-2380.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+v12-t0355,Harbor Checking,2025-09-09,11.99,USD,SPOTIFY USA,Spotify,posted
+v12-t0198,Summit Visa,2025-09-10,141.61,USD,KROGER #0857,Kroger,posted
+v12-t0199,Summit Visa,2025-09-12,57.45,USD,THAI BASIL,Restaurant,posted
+v12-t0200,Summit Visa,2025-09-17,85.57,USD,KROGER #0650,Kroger,posted
+v12-t0065,Harbor Checking,2025-09-18,106.59,USD,METRO POWER UTIL,Metro Power,posted
+v12-t0201,Summit Visa,2025-09-19,44.33,USD,THAI BASIL,Restaurant,posted
+v12-t0202,Summit Visa,2025-09-20,61.27,USD,SHELL OIL 2198,Shell,posted
+v12-t0013,Harbor Checking,2025-09-21,-2380.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+v12-t0203,Summit Visa,2025-09-24,114.13,USD,KROGER #0208,Kroger,posted
+v12-t0204,Summit Visa,2025-09-26,69.90,USD,PANERA BREAD,Restaurant,posted
+v12-t0121,Harbor Savings,2025-09-28,-1.48,USD,INTEREST PAYMENT,Harbor Bank,posted
+v12-t0047,Harbor Checking,2025-10-01,1550.00,USD,OAKVIEW APTS RENT,Oakview Apartments,posted
+v12-t0205,Summit Visa,2025-10-01,107.31,USD,KROGER #0992,Kroger,posted
+v12-t0207,Summit Visa,2025-10-02,-753.39,USD,PAYMENT THANK YOU,Summit Card,posted
+v12-t0208,Harbor Checking,2025-10-02,753.39,USD,SUMMIT VISA PAYMENT,Summit Card,posted
+v12-t0206,Summit Visa,2025-10-03,71.82,USD,LUIGI'S PIZZA,Restaurant,posted
+v12-t0014,Harbor Checking,2025-10-05,-2380.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+v12-t0090,Harbor Checking,2025-10-05,300.00,USD,ONLINE TRANSFER TO SAVINGS,Harbor Bank,posted
+v12-t0091,Harbor Savings,2025-10-05,-300.00,USD,ONLINE TRANSFER FROM CHK,Harbor Bank,posted
+v12-t0209,Summit Visa,2025-10-08,123.81,USD,KROGER #0981,Kroger,posted
+v12-t0356,Harbor Checking,2025-10-09,11.99,USD,SPOTIFY USA,Spotify,posted
+v12-t0210,Summit Visa,2025-10-10,84.19,USD,PANERA BREAD,Restaurant,posted
+v12-t0211,Summit Visa,2025-10-11,30.87,USD,SHELL OIL 2036,Shell,posted
+v12-t0212,Summit Visa,2025-10-15,141.60,USD,KROGER #0185,Kroger,posted
+v12-t0213,Summit Visa,2025-10-17,82.56,USD,CHIPOTLE,Restaurant,posted
+v12-t0066,Harbor Checking,2025-10-18,146.15,USD,METRO POWER UTIL,Metro Power,posted
+v12-t0015,Harbor Checking,2025-10-19,-2380.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+v12-t0214,Summit Visa,2025-10-22,43.62,USD,KROGER #0450,Kroger,posted
+v12-t0215,Summit Visa,2025-10-25,49.22,USD,SHELL OIL 2051,Shell,posted
+v12-t0122,Harbor Savings,2025-10-28,-1.87,USD,INTEREST PAYMENT,Harbor Bank,posted
+v12-t0216,Summit Visa,2025-10-29,91.93,USD,KROGER #0426,Kroger,posted
+v12-t0217,Summit Visa,2025-10-31,25.12,USD,LUIGI'S PIZZA,Restaurant,posted
+v12-t0048,Harbor Checking,2025-11-01,1550.00,USD,OAKVIEW APTS RENT,Oakview Apartments,posted
+v12-t0218,Summit Visa,2025-11-01,52.99,USD,SHELL OIL 2202,Shell,posted
+v12-t0016,Harbor Checking,2025-11-02,-2380.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+v12-t0092,Harbor Checking,2025-11-05,300.00,USD,ONLINE TRANSFER TO SAVINGS,Harbor Bank,posted
+v12-t0093,Harbor Savings,2025-11-05,-300.00,USD,ONLINE TRANSFER FROM CHK,Harbor Bank,posted
+v12-t0219,Summit Visa,2025-11-05,139.58,USD,KROGER #0167,Kroger,posted
+v12-t0221,Summit Visa,2025-11-06,-939.06,USD,PAYMENT THANK YOU,Summit Card,posted
+v12-t0222,Harbor Checking,2025-11-06,939.06,USD,SUMMIT VISA PAYMENT,Summit Card,posted
+v12-t0220,Summit Visa,2025-11-07,73.57,USD,CHIPOTLE,Restaurant,posted
+v12-t0357,Harbor Checking,2025-11-09,11.99,USD,SPOTIFY USA,Spotify,posted
+v12-t0223,Summit Visa,2025-11-12,147.62,USD,KROGER #0832,Kroger,posted
+v12-t0224,Summit Visa,2025-11-14,84.83,USD,LUIGI'S PIZZA,Restaurant,posted
+v12-t0017,Harbor Checking,2025-11-16,-2380.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+v12-t0067,Harbor Checking,2025-11-18,108.71,USD,METRO POWER UTIL,Metro Power,posted
+v12-t0225,Summit Visa,2025-11-19,162.57,USD,KROGER #0345,Kroger,posted
+v12-t0226,Summit Visa,2025-11-21,71.05,USD,LUIGI'S PIZZA,Restaurant,posted
+v12-t0227,Summit Visa,2025-11-22,47.63,USD,SHELL OIL 1200,Shell,posted
+v12-t0228,Summit Visa,2025-11-26,82.58,USD,KROGER #0774,Kroger,posted
+v12-t0123,Harbor Savings,2025-11-28,-2.27,USD,INTEREST PAYMENT,Harbor Bank,posted
+v12-t0229,Summit Visa,2025-11-28,30.22,USD,THAI BASIL,Restaurant,posted
+v12-t0230,Summit Visa,2025-11-29,27.61,USD,SHELL OIL 9622,Shell,posted
+v12-t0018,Harbor Checking,2025-11-30,-2380.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+v12-t0049,Harbor Checking,2025-12-01,1550.00,USD,OAKVIEW APTS RENT,Oakview Apartments,posted
+v12-t0231,Summit Visa,2025-12-03,95.46,USD,KROGER #0257,Kroger,posted
+v12-t0234,Summit Visa,2025-12-04,-863.71,USD,PAYMENT THANK YOU,Summit Card,posted
+v12-t0235,Harbor Checking,2025-12-04,863.71,USD,SUMMIT VISA PAYMENT,Summit Card,posted
+v12-t0094,Harbor Checking,2025-12-05,300.00,USD,ONLINE TRANSFER TO SAVINGS,Harbor Bank,posted
+v12-t0095,Harbor Savings,2025-12-05,-300.00,USD,ONLINE TRANSFER FROM CHK,Harbor Bank,posted
+v12-t0232,Summit Visa,2025-12-05,73.15,USD,THAI BASIL,Restaurant,posted
+v12-t0233,Summit Visa,2025-12-06,40.99,USD,SHELL OIL 7414,Shell,posted
+v12-t0358,Harbor Checking,2025-12-09,11.99,USD,SPOTIFY USA,Spotify,posted
+v12-t0236,Summit Visa,2025-12-10,74.58,USD,KROGER #0672,Kroger,posted
+v12-t0237,Summit Visa,2025-12-12,75.75,USD,LUIGI'S PIZZA,Restaurant,posted
+v12-t0019,Harbor Checking,2025-12-14,-2380.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+v12-t0238,Summit Visa,2025-12-17,161.54,USD,KROGER #0788,Kroger,posted
+v12-t0068,Harbor Checking,2025-12-18,74.65,USD,METRO POWER UTIL,Metro Power,posted
+v12-t0239,Summit Visa,2025-12-19,84.65,USD,BLUE BOTTLE,Restaurant,posted
+v12-t0240,Summit Visa,2025-12-24,70.53,USD,KROGER #0612,Kroger,posted
+v12-t0241,Summit Visa,2025-12-26,74.77,USD,BLUE BOTTLE,Restaurant,posted
+v12-t0020,Harbor Checking,2025-12-28,-2380.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+v12-t0124,Harbor Savings,2025-12-28,-1.08,USD,INTEREST PAYMENT,Harbor Bank,posted
+v12-t0242,Summit Visa,2025-12-31,129.24,USD,KROGER #0131,Kroger,posted
+v12-t0050,Harbor Checking,2026-01-01,1550.00,USD,OAKVIEW APTS RENT,Oakview Apartments,posted
+v12-t0096,Harbor Checking,2026-01-05,300.00,USD,ONLINE TRANSFER TO SAVINGS,Harbor Bank,posted
+v12-t0097,Harbor Savings,2026-01-05,-300.00,USD,ONLINE TRANSFER FROM CHK,Harbor Bank,posted
+v12-t0243,Summit Visa,2026-01-07,51.29,USD,KROGER #0907,Kroger,posted
+v12-t0245,Summit Visa,2026-01-08,-764.59,USD,PAYMENT THANK YOU,Summit Card,posted
+v12-t0246,Harbor Checking,2026-01-08,764.59,USD,SUMMIT VISA PAYMENT,Summit Card,posted
+v12-t0244,Summit Visa,2026-01-09,42.24,USD,PANERA BREAD,Restaurant,posted
+v12-t0359,Harbor Checking,2026-01-09,11.99,USD,SPOTIFY USA,Spotify,posted
+v12-t0021,Harbor Checking,2026-01-11,-2380.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+v12-t0247,Summit Visa,2026-01-14,91.76,USD,KROGER #0157,Kroger,posted
+v12-t0248,Summit Visa,2026-01-16,51.38,USD,CHIPOTLE,Restaurant,posted
+v12-t0069,Harbor Checking,2026-01-18,148.80,USD,METRO POWER UTIL,Metro Power,posted
+v12-t0249,Summit Visa,2026-01-21,81.26,USD,KROGER #0944,Kroger,posted
+v12-t0250,Summit Visa,2026-01-23,84.03,USD,CHIPOTLE,Restaurant,posted
+v12-t0022,Harbor Checking,2026-01-25,-2380.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+v12-t0125,Harbor Savings,2026-01-28,-1.07,USD,INTEREST PAYMENT,Harbor Bank,posted
+v12-t0251,Summit Visa,2026-01-28,141.15,USD,KROGER #0904,Kroger,posted
+v12-t0252,Summit Visa,2026-01-31,59.14,USD,SHELL OIL 1366,Shell,posted
+v12-t0051,Harbor Checking,2026-02-01,1550.00,USD,OAKVIEW APTS RENT,Oakview Apartments,posted
+v12-t0253,Summit Visa,2026-02-04,134.07,USD,KROGER #0475,Kroger,posted
+v12-t0098,Harbor Checking,2026-02-05,300.00,USD,ONLINE TRANSFER TO SAVINGS,Harbor Bank,posted
+v12-t0099,Harbor Savings,2026-02-05,-300.00,USD,ONLINE TRANSFER FROM CHK,Harbor Bank,posted
+v12-t0256,Summit Visa,2026-02-05,-725.30,USD,PAYMENT THANK YOU,Summit Card,posted
+v12-t0257,Harbor Checking,2026-02-05,725.30,USD,SUMMIT VISA PAYMENT,Summit Card,posted
+v12-t0254,Summit Visa,2026-02-06,36.80,USD,CHIPOTLE,Restaurant,posted
+v12-t0255,Summit Visa,2026-02-07,45.71,USD,SHELL OIL 9769,Shell,posted
+v12-t0023,Harbor Checking,2026-02-08,-2380.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+v12-t0360,Harbor Checking,2026-02-09,11.99,USD,SPOTIFY USA,Spotify,posted
+v12-t0258,Summit Visa,2026-02-11,85.49,USD,KROGER #0810,Kroger,posted
+v12-t0259,Summit Visa,2026-02-14,28.88,USD,SHELL OIL 2050,Shell,posted
+v12-t0070,Harbor Checking,2026-02-18,69.25,USD,METRO POWER UTIL,Metro Power,posted
+v12-t0260,Summit Visa,2026-02-18,136.82,USD,KROGER #0459,Kroger,posted
+v12-t0024,Harbor Checking,2026-02-22,-2380.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+v12-t0261,Summit Visa,2026-02-25,63.55,USD,KROGER #0204,Kroger,posted
+v12-t0262,Summit Visa,2026-02-27,47.84,USD,BLUE BOTTLE,Restaurant,posted
+v12-t0126,Harbor Savings,2026-02-28,-2.09,USD,INTEREST PAYMENT,Harbor Bank,posted
+v12-t0052,Harbor Checking,2026-03-01,1550.00,USD,OAKVIEW APTS RENT,Oakview Apartments,posted
+v12-t0263,Summit Visa,2026-03-04,136.65,USD,KROGER #0341,Kroger,posted
+v12-t0100,Harbor Checking,2026-03-05,300.00,USD,ONLINE TRANSFER TO SAVINGS,Harbor Bank,posted
+v12-t0101,Harbor Savings,2026-03-05,-300.00,USD,ONLINE TRANSFER FROM CHK,Harbor Bank,posted
+v12-t0264,Summit Visa,2026-03-05,-499.23,USD,PAYMENT THANK YOU,Summit Card,posted
+v12-t0265,Harbor Checking,2026-03-05,499.23,USD,SUMMIT VISA PAYMENT,Summit Card,posted
+v12-t0025,Harbor Checking,2026-03-08,-2380.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+v12-t0361,Harbor Checking,2026-03-09,11.99,USD,SPOTIFY USA,Spotify,posted
+v12-t0266,Summit Visa,2026-03-11,146.32,USD,KROGER #0978,Kroger,posted
+v12-t0267,Summit Visa,2026-03-13,57.98,USD,THAI BASIL,Restaurant,posted
+v12-t0268,Summit Visa,2026-03-14,40.19,USD,SHELL OIL 4123,Shell,posted
+v12-t0071,Harbor Checking,2026-03-18,91.45,USD,METRO POWER UTIL,Metro Power,posted
+v12-t0269,Summit Visa,2026-03-18,109.97,USD,KROGER #0921,Kroger,posted
+v12-t0026,Harbor Checking,2026-03-22,-2380.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+v12-t0270,Summit Visa,2026-03-25,99.89,USD,KROGER #0580,Kroger,posted
+v12-t0271,Summit Visa,2026-03-27,89.36,USD,LUIGI'S PIZZA,Restaurant,posted
+v12-t0127,Harbor Savings,2026-03-28,-1.77,USD,INTEREST PAYMENT,Harbor Bank,posted
+v12-t0272,Summit Visa,2026-03-28,50.27,USD,SHELL OIL 3057,Shell,posted
+v12-t0053,Harbor Checking,2026-04-01,1550.00,USD,OAKVIEW APTS RENT,Oakview Apartments,posted
+v12-t0273,Summit Visa,2026-04-01,64.03,USD,KROGER #0515,Kroger,posted
+v12-t0275,Summit Visa,2026-04-02,-680.48,USD,PAYMENT THANK YOU,Summit Card,posted
+v12-t0276,Harbor Checking,2026-04-02,680.48,USD,SUMMIT VISA PAYMENT,Summit Card,posted
+v12-t0274,Summit Visa,2026-04-03,22.47,USD,LUIGI'S PIZZA,Restaurant,posted
+v12-t0027,Harbor Checking,2026-04-05,-2380.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+v12-t0102,Harbor Checking,2026-04-05,300.00,USD,ONLINE TRANSFER TO SAVINGS,Harbor Bank,posted
+v12-t0103,Harbor Savings,2026-04-05,-300.00,USD,ONLINE TRANSFER FROM CHK,Harbor Bank,posted
+v12-t0277,Summit Visa,2026-04-08,118.16,USD,KROGER #0633,Kroger,posted
+v12-t0362,Harbor Checking,2026-04-09,11.99,USD,SPOTIFY USA,Spotify,posted
+v12-t0373,Harbor Checking,2026-04-12,15.99,USD,STREAMFLIX.COM,StreamFlix,posted
+v12-t0278,Summit Visa,2026-04-15,55.20,USD,KROGER #0575,Kroger,posted
+v12-t0279,Summit Visa,2026-04-17,72.64,USD,THAI BASIL,Restaurant,posted
+v12-t0072,Harbor Checking,2026-04-18,115.63,USD,METRO POWER UTIL,Metro Power,posted
+v12-t0028,Harbor Checking,2026-04-19,-2380.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+v12-t0280,Summit Visa,2026-04-22,59.91,USD,KROGER #0978,Kroger,posted
+v12-t0281,Summit Visa,2026-04-24,16.00,USD,THAI BASIL,Restaurant,posted
+v12-t0282,Summit Visa,2026-04-25,61.93,USD,SHELL OIL 4501,Shell,posted
+v12-t0128,Harbor Savings,2026-04-28,-1.33,USD,INTEREST PAYMENT,Harbor Bank,posted
+v12-t0283,Summit Visa,2026-04-29,48.38,USD,KROGER #0264,Kroger,posted
+v12-t0054,Harbor Checking,2026-05-01,1550.00,USD,OAKVIEW APTS RENT,Oakview Apartments,posted
+v12-t0284,Summit Visa,2026-05-01,59.40,USD,CHIPOTLE,Restaurant,posted
+v12-t0029,Harbor Checking,2026-05-03,-2380.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+v12-t0104,Harbor Checking,2026-05-05,300.00,USD,ONLINE TRANSFER TO SAVINGS,Harbor Bank,posted
+v12-t0105,Harbor Savings,2026-05-05,-300.00,USD,ONLINE TRANSFER FROM CHK,Harbor Bank,posted
+v12-t0285,Summit Visa,2026-05-06,51.88,USD,KROGER #0781,Kroger,posted
+v12-t0287,Summit Visa,2026-05-07,-581.73,USD,PAYMENT THANK YOU,Summit Card,posted
+v12-t0288,Harbor Checking,2026-05-07,581.73,USD,SUMMIT VISA PAYMENT,Summit Card,posted
+v12-t0286,Summit Visa,2026-05-08,38.23,USD,THAI BASIL,Restaurant,posted
+v12-t0363,Harbor Checking,2026-05-09,11.99,USD,SPOTIFY USA,Spotify,posted
+v12-t0374,Harbor Checking,2026-05-12,15.99,USD,STREAMFLIX.COM,StreamFlix,posted
+v12-t0289,Summit Visa,2026-05-13,114.47,USD,KROGER #0251,Kroger,posted
+v12-t0290,Summit Visa,2026-05-15,74.27,USD,THAI BASIL,Restaurant,posted
+v12-t0291,Summit Visa,2026-05-16,50.46,USD,SHELL OIL 9960,Shell,posted
+v12-t0030,Harbor Checking,2026-05-17,-2380.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+v12-t0073,Harbor Checking,2026-05-18,102.92,USD,METRO POWER UTIL,Metro Power,posted
+v12-t0292,Summit Visa,2026-05-20,84.07,USD,KROGER #0552,Kroger,posted
+v12-t0293,Summit Visa,2026-05-22,88.74,USD,PANERA BREAD,Restaurant,posted
+v12-t0294,Summit Visa,2026-05-23,44.60,USD,SHELL OIL 4950,Shell,posted
+v12-t0295,Summit Visa,2026-05-27,60.48,USD,KROGER #0722,Kroger,posted
+v12-t0129,Harbor Savings,2026-05-28,-2.32,USD,INTEREST PAYMENT,Harbor Bank,posted
+v12-t0031,Harbor Checking,2026-05-31,-2380.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+v12-t0055,Harbor Checking,2026-06-01,1550.00,USD,OAKVIEW APTS RENT,Oakview Apartments,posted
+v12-t0296,Summit Visa,2026-06-03,101.67,USD,KROGER #0495,Kroger,posted
+v12-t0297,Summit Visa,2026-06-04,-618.76,USD,PAYMENT THANK YOU,Summit Card,posted
+v12-t0298,Harbor Checking,2026-06-04,618.76,USD,SUMMIT VISA PAYMENT,Summit Card,posted
+v12-t0106,Harbor Checking,2026-06-05,300.00,USD,ONLINE TRANSFER TO SAVINGS,Harbor Bank,posted
+v12-t0107,Harbor Savings,2026-06-05,-300.00,USD,ONLINE TRANSFER FROM CHK,Harbor Bank,posted
+v12-t0364,Harbor Checking,2026-06-09,11.99,USD,SPOTIFY USA,Spotify,posted
+v12-t0299,Summit Visa,2026-06-10,49.56,USD,KROGER #0243,Kroger,posted
+v12-t0375,Harbor Checking,2026-06-12,15.99,USD,STREAMFLIX.COM,StreamFlix,posted
+v12-t0032,Harbor Checking,2026-06-14,-2380.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+v12-t0300,Summit Visa,2026-06-17,61.40,USD,KROGER #0512,Kroger,posted
+v12-t0074,Harbor Checking,2026-06-18,88.55,USD,METRO POWER UTIL,Metro Power,posted
+v12-t0301,Summit Visa,2026-06-19,32.92,USD,CHIPOTLE,Restaurant,posted
+v12-t0302,Summit Visa,2026-06-20,58.28,USD,SHELL OIL 9634,Shell,posted
+v12-t0303,Summit Visa,2026-06-24,131.84,USD,KROGER #0411,Kroger,posted
+v12-t0304,Summit Visa,2026-06-26,79.93,USD,CHIPOTLE,Restaurant,posted
+v12-t0305,Summit Visa,2026-06-27,51.33,USD,SHELL OIL 8019,Shell,posted
+v12-t0033,Harbor Checking,2026-06-28,-2380.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+v12-t0130,Harbor Savings,2026-06-28,-1.31,USD,INTEREST PAYMENT,Harbor Bank,posted
+v12-t0056,Harbor Checking,2026-07-01,1550.00,USD,OAKVIEW APTS RENT,Oakview Apartments,posted
+v12-t0306,Summit Visa,2026-07-01,120.57,USD,KROGER #0137,Kroger,posted
+v12-t0309,Summit Visa,2026-07-02,-650.69,USD,PAYMENT THANK YOU,Summit Card,posted
+v12-t0310,Harbor Checking,2026-07-02,650.69,USD,SUMMIT VISA PAYMENT,Summit Card,posted
+v12-t0307,Summit Visa,2026-07-03,35.30,USD,CHIPOTLE,Restaurant,posted
+v12-t0308,Summit Visa,2026-07-04,29.56,USD,SHELL OIL 3099,Shell,posted
+v12-t0108,Harbor Checking,2026-07-05,300.00,USD,ONLINE TRANSFER TO SAVINGS,Harbor Bank,posted
+v12-t0109,Harbor Savings,2026-07-05,-300.00,USD,ONLINE TRANSFER FROM CHK,Harbor Bank,posted
+v12-t0311,Summit Visa,2026-07-08,76.58,USD,KROGER #0881,Kroger,posted
+v12-t0365,Harbor Checking,2026-07-09,11.99,USD,SPOTIFY USA,Spotify,posted
+v12-t0312,Summit Visa,2026-07-10,55.87,USD,PANERA BREAD,Restaurant,posted
+v12-t0313,Summit Visa,2026-07-11,43.81,USD,SHELL OIL 9032,Shell,posted
+v12-t0034,Harbor Checking,2026-07-12,-2380.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+v12-t0376,Harbor Checking,2026-07-12,15.99,USD,STREAMFLIX.COM,StreamFlix,posted
+v12-t0314,Summit Visa,2026-07-15,81.13,USD,KROGER #0673,Kroger,posted
+v12-t0075,Harbor Checking,2026-07-18,87.19,USD,METRO POWER UTIL,Metro Power,posted
+v12-t0315,Summit Visa,2026-07-18,26.22,USD,SHELL OIL 9565,Shell,posted
+v12-t0316,Summit Visa,2026-07-22,122.14,USD,KROGER #0276,Kroger,posted
+v12-t0317,Summit Visa,2026-07-24,71.87,USD,PANERA BREAD,Restaurant,posted
+v12-t0318,Summit Visa,2026-07-25,27.79,USD,SHELL OIL 3215,Shell,posted
+v12-t0035,Harbor Checking,2026-07-26,-2380.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+v12-t0131,Harbor Savings,2026-07-28,-1.81,USD,INTEREST PAYMENT,Harbor Bank,posted
+v12-t0319,Summit Visa,2026-07-29,119.53,USD,KROGER #0243,Kroger,posted
+v12-t0320,Summit Visa,2026-07-31,44.22,USD,THAI BASIL,Restaurant,posted
+v12-t0057,Harbor Checking,2026-08-01,1550.00,USD,OAKVIEW APTS RENT,Oakview Apartments,posted
+v12-t0321,Summit Visa,2026-08-01,36.54,USD,SHELL OIL 8254,Shell,posted
+v12-t0110,Harbor Checking,2026-08-05,300.00,USD,ONLINE TRANSFER TO SAVINGS,Harbor Bank,posted
+v12-t0111,Harbor Savings,2026-08-05,-300.00,USD,ONLINE TRANSFER FROM CHK,Harbor Bank,posted
+v12-t0322,Summit Visa,2026-08-05,114.49,USD,KROGER #0728,Kroger,posted
+v12-t0381,Harbor Checking,2026-08-05,12.00,USD,MONTHLY MAINTENANCE FEE,Harbor Bank,posted
+v12-t0324,Summit Visa,2026-08-06,-835.15,USD,PAYMENT THANK YOU,Summit Card,posted
+v12-t0325,Harbor Checking,2026-08-06,835.15,USD,SUMMIT VISA PAYMENT,Summit Card,posted
+v12-t0323,Summit Visa,2026-08-07,14.96,USD,CHIPOTLE,Restaurant,posted
+v12-t0382,Harbor Checking,2026-08-08,-12.00,USD,MAINTENANCE FEE REVERSAL,Harbor Bank,posted
+v12-t0036,Harbor Checking,2026-08-09,-2380.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+v12-t0366,Harbor Checking,2026-08-09,11.99,USD,SPOTIFY USA,Spotify,posted
+v12-t0372,Harbor Checking,2026-08-11,60.63,USD,SHOPMART.COM ORDER,ShopMart,posted
+v12-t0326,Summit Visa,2026-08-12,72.05,USD,KROGER #0237,Kroger,posted
+v12-t0377,Harbor Checking,2026-08-12,15.99,USD,STREAMFLIX.COM,StreamFlix,posted
+v12-t0380,Harbor Checking,2026-08-13,71.69,USD,SHOPMART.COM ORDER,ShopMart,posted
+v12-t0327,Summit Visa,2026-08-14,78.06,USD,CHIPOTLE,Restaurant,posted
+v12-t0328,Summit Visa,2026-08-15,56.29,USD,SHELL OIL 5091,Shell,posted
+v12-t0076,Harbor Checking,2026-08-18,122.92,USD,METRO POWER UTIL,Metro Power,posted
+v12-t0329,Summit Visa,2026-08-19,84.95,USD,KROGER #0920,Kroger,posted
+v12-t0330,Summit Visa,2026-08-21,67.33,USD,PANERA BREAD,Restaurant,posted
+v12-t0037,Harbor Checking,2026-08-23,-2380.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+v12-t0331,Summit Visa,2026-08-26,49.01,USD,KROGER #0591,Kroger,posted
+v12-t0132,Harbor Savings,2026-08-28,-1.33,USD,INTEREST PAYMENT,Harbor Bank,posted
+v12-t0332,Summit Visa,2026-08-28,73.87,USD,LUIGI'S PIZZA,Restaurant,posted
+v12-t0058,Harbor Checking,2026-09-01,1550.00,USD,OAKVIEW APTS RENT,Oakview Apartments,posted
+v12-t0333,Summit Visa,2026-09-02,82.16,USD,KROGER #0633,Kroger,posted
+v12-t0334,Summit Visa,2026-09-03,-563.72,USD,PAYMENT THANK YOU,Summit Card,posted
+v12-t0335,Harbor Checking,2026-09-03,563.72,USD,SUMMIT VISA PAYMENT,Summit Card,posted
+v12-t0369,Harbor Checking,2026-09-04,150.04,USD,SHOPMART.COM ORDER,ShopMart,posted
+v12-t0370,Harbor Checking,2026-09-04,150.04,USD,SHOPMART.COM ORDER,ShopMart,posted
+v12-t0112,Harbor Checking,2026-09-05,300.00,USD,ONLINE TRANSFER TO SAVINGS,Harbor Bank,posted
+v12-t0113,Harbor Savings,2026-09-05,-300.00,USD,ONLINE TRANSFER FROM CHK,Harbor Bank,posted
+v12-t0038,Harbor Checking,2026-09-06,-2380.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+v12-t0336,Summit Visa,2026-09-09,89.01,USD,KROGER #0696,Kroger,posted
+v12-t0367,Harbor Checking,2026-09-09,11.99,USD,SPOTIFY USA,Spotify,posted
+v12-t0371,Harbor Checking,2026-09-10,-20.00,USD,SHOPMART.COM PARTIAL REFUND,ShopMart,posted
+v12-t0337,Summit Visa,2026-09-11,76.95,USD,LUIGI'S PIZZA,Restaurant,posted
+v12-t0378,Harbor Checking,2026-09-12,15.99,USD,STREAMFLIX.COM,StreamFlix,posted
+v12-t0338,Summit Visa,2026-09-16,147.50,USD,KROGER #0233,Kroger,posted
+v12-t0077,Harbor Checking,2026-09-18,128.52,USD,METRO POWER UTIL,Metro Power,posted
+v12-t0339,Summit Visa,2026-09-18,75.55,USD,BLUE BOTTLE,Restaurant,posted
+v12-t0340,Summit Visa,2026-09-19,33.73,USD,SHELL OIL 1589,Shell,posted
+v12-t0039,Harbor Checking,2026-09-20,-2380.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+v12-t0341,Summit Visa,2026-09-23,126.21,USD,KROGER #0391,Kroger,posted
+v12-t0342,Summit Visa,2026-09-25,23.35,USD,CHIPOTLE,Restaurant,posted
+v12-t0343,Summit Visa,2026-09-26,38.00,USD,SHELL OIL 6321,Shell,posted
+v12-t0133,Harbor Savings,2026-09-28,-1.42,USD,INTEREST PAYMENT,Harbor Bank,posted
+v12-t0344,Summit Visa,2026-09-30,60.20,USD,KROGER #0834,Kroger,posted
+v12-t0059,Harbor Checking,2026-10-01,1550.00,USD,OAKVIEW APTS RENT,Oakview Apartments,posted
+v12-t0040,Harbor Checking,2026-10-04,-2380.00,USD,PAYROLL DIRECT DEP,Northwind Payroll,posted
+v12-t0114,Harbor Checking,2026-10-05,300.00,USD,ONLINE TRANSFER TO SAVINGS,Harbor Bank,posted
+v12-t0115,Harbor Savings,2026-10-05,-300.00,USD,ONLINE TRANSFER FROM CHK,Harbor Bank,posted
+v12-t0345,Summit Visa,2026-10-07,93.94,USD,KROGER #0403,Kroger,posted
+v12-t0346,Summit Visa,2026-10-08,-764.44,USD,PAYMENT THANK YOU,Summit Card,posted
+v12-t0347,Harbor Checking,2026-10-08,764.44,USD,SUMMIT VISA PAYMENT,Summit Card,posted
+v12-t0368,Harbor Checking,2026-10-09,11.99,USD,SPOTIFY USA,Spotify,posted
+v12-t0379,Harbor Checking,2026-10-12,15.99,USD,STREAMFLIX.COM,StreamFlix,posted
+v12-t0348,Summit Visa,2026-10-14,153.32,USD,KROGER #0461,Kroger,posted
+v12-t0349,Summit Visa,2026-10-16,54.84,USD,PANERA BREAD,Restaurant,posted

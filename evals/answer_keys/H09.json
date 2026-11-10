@@ -1,0 +1,31 @@
+{
+  "household": "H09",
+  "name": "Avery Shah",
+  "email": "avery.shah@example.test",
+  "account": "Harbor Checking",
+  "today": "2026-10-15",
+  "opportunities": [],
+  "decoys": [
+    {
+      "kind": "two_separate_orders",
+      "site": "shopmart",
+      "bad_any": [
+        "34.10",
+        "67.92"
+      ],
+      "note": "Two different orders on one day; not a duplicate.",
+      "id": "H09-two_separate_orders"
+    },
+    {
+      "kind": "fee_already_reversed",
+      "site": "harborbank",
+      "bad_any": [
+        "maintenance"
+      ],
+      "note": "Fee already reversed; asking again is noise.",
+      "id": "H09-fee_already_reversed"
+    }
+  ],
+  "total_value_cents": 0,
+  "total_exposure_cents": 0
+}

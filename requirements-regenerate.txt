@@ -1,0 +1,2 @@
+# Optional dataset regeneration only; offline score verification uses standard library.
+Pillow==10.4.0

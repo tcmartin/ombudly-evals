@@ -1,0 +1,470 @@
+[
+  {
+    "source": "bench",
+    "slug": "lumen-broadband-settlement",
+    "title": "Lumen Broadband Settlement",
+    "company": "Lumen Broadband",
+    "aliases": [
+      "lumen broadband"
+    ],
+    "status": "claims_open",
+    "deadline": "2026-12-31",
+    "updated_label": "October 2026",
+    "eligibility": "You are eligible if you paid Lumen Broadband router rental fees between January 2023 and June 2025. Claims require a sworn statement.",
+    "summary": "A $60 average payment for Lumen Broadband customers who paid router rental fees.",
+    "window_start": "2023-01-01",
+    "window_end": "2025-06-30",
+    "claim_urls": [
+      "http://127.0.0.1:8900/claimhub/lumen-broadband-settlement"
+    ],
+    "source_url": "http://127.0.0.1:8900/ftc/lumen-broadband-settlement"
+  },
+  {
+    "source": "bench",
+    "slug": "vista-fitness-clubs-settlement",
+    "title": "Vista Fitness Clubs Settlement",
+    "company": "Vista Fitness Clubs",
+    "aliases": [
+      "vista fitness clubs"
+    ],
+    "status": "claims_open",
+    "deadline": "2026-12-31",
+    "updated_label": "October 2026",
+    "eligibility": "You are eligible if you paid Vista Fitness Clubs membership fees between January 2019 and December 2022.",
+    "summary": "Refunds for Vista Fitness Clubs customers.",
+    "window_start": "2019-01-01",
+    "window_end": "2022-12-31",
+    "claim_urls": [
+      "http://127.0.0.1:8900/claimhub/vista-fitness-clubs-settlement"
+    ],
+    "source_url": "http://127.0.0.1:8900/ftc/vista-fitness-clubs-settlement"
+  },
+  {
+    "source": "bench",
+    "slug": "metro-mart-money-transfer-refunds",
+    "title": "Metro Mart Money Transfer Refunds",
+    "company": "Metro Mart",
+    "aliases": [
+      "metro mart"
+    ],
+    "status": "claims_open",
+    "deadline": "2026-12-31",
+    "updated_label": "October 2026",
+    "eligibility": "You may be eligible if you completed money transfers at Metro Mart between January 2018 and December 2024 and lost money to a scam.",
+    "summary": "Refunds for scam money transfers sent through Metro Mart.",
+    "window_start": "2018-01-01",
+    "window_end": "2024-12-31",
+    "claim_urls": [
+      "http://127.0.0.1:8900/claimhub/metro-mart-money-transfer-refunds"
+    ],
+    "source_url": "http://127.0.0.1:8900/ftc/metro-mart-money-transfer-refunds"
+  },
+  {
+    "source": "bench",
+    "slug": "fable-photo-prints-refunds",
+    "title": "Fable Photo Prints Refunds",
+    "company": "Fable Photo Prints",
+    "aliases": [
+      "fable photo prints"
+    ],
+    "status": "paying",
+    "deadline": null,
+    "updated_label": "September 2026",
+    "eligibility": "The FTC is sending payments to people who paid Fable Photo Prints between 2023 and 2025. If you get a check, cash it within 90 days.",
+    "summary": "Payments are automatic; no claim is needed.",
+    "window_start": "2023-01-01",
+    "window_end": "2025-12-31",
+    "claim_urls": [],
+    "source_url": "http://127.0.0.1:8900/ftc/fable-photo-prints-refunds"
+  },
+  {
+    "source": "bench",
+    "slug": "peak-wireless-settlement",
+    "title": "Peak Wireless Settlement",
+    "company": "Peak Wireless",
+    "aliases": [
+      "peak wireless"
+    ],
+    "status": "claims_open",
+    "deadline": "2026-12-31",
+    "updated_label": "October 2026",
+    "eligibility": "You are eligible if you paid Peak Wireless unlimited data plans between January 2023 and June 2025. Claims require a sworn statement.",
+    "summary": "A $60 average payment for Peak Wireless customers who paid unlimited data plans.",
+    "window_start": "2023-01-01",
+    "window_end": "2025-06-30",
+    "claim_urls": [
+      "http://127.0.0.1:8900/claimhub/peak-wireless-settlement"
+    ],
+    "source_url": "http://127.0.0.1:8900/ftc/peak-wireless-settlement"
+  },
+  {
+    "source": "bench",
+    "slug": "harborline-parking-settlement",
+    "title": "Harborline Parking Settlement",
+    "company": "Harborline Parking",
+    "aliases": [
+      "harborline parking"
+    ],
+    "status": "claims_open",
+    "deadline": "2026-12-31",
+    "updated_label": "October 2026",
+    "eligibility": "You are eligible if you paid Harborline Parking app parking fees between January 2019 and December 2022.",
+    "summary": "Refunds for Harborline Parking customers.",
+    "window_start": "2019-01-01",
+    "window_end": "2022-12-31",
+    "claim_urls": [
+      "http://127.0.0.1:8900/claimhub/harborline-parking-settlement"
+    ],
+    "source_url": "http://127.0.0.1:8900/ftc/harborline-parking-settlement"
+  },
+  {
+    "source": "bench",
+    "slug": "valueplus-stores-money-transfer-refunds",
+    "title": "ValuePlus Stores Money Transfer Refunds",
+    "company": "ValuePlus Stores",
+    "aliases": [
+      "valueplus stores"
+    ],
+    "status": "claims_open",
+    "deadline": "2026-12-31",
+    "updated_label": "October 2026",
+    "eligibility": "You may be eligible if you completed money transfers at ValuePlus Stores between January 2018 and December 2024 and lost money to a scam.",
+    "summary": "Refunds for scam money transfers sent through ValuePlus Stores.",
+    "window_start": "2018-01-01",
+    "window_end": "2024-12-31",
+    "claim_urls": [
+      "http://127.0.0.1:8900/claimhub/valueplus-stores-money-transfer-refunds"
+    ],
+    "source_url": "http://127.0.0.1:8900/ftc/valueplus-stores-money-transfer-refunds"
+  },
+  {
+    "source": "bench",
+    "slug": "tidal-tickets-refunds",
+    "title": "Tidal Tickets Refunds",
+    "company": "Tidal Tickets",
+    "aliases": [
+      "tidal tickets"
+    ],
+    "status": "paying",
+    "deadline": null,
+    "updated_label": "September 2026",
+    "eligibility": "The FTC is sending payments to people who paid Tidal Tickets between 2023 and 2025. If you get a check, cash it within 90 days.",
+    "summary": "Payments are automatic; no claim is needed.",
+    "window_start": "2023-01-01",
+    "window_end": "2025-12-31",
+    "claim_urls": [],
+    "source_url": "http://127.0.0.1:8900/ftc/tidal-tickets-refunds"
+  },
+  {
+    "source": "bench",
+    "slug": "novastream-video-settlement",
+    "title": "NovaStream Video Settlement",
+    "company": "NovaStream Video",
+    "aliases": [
+      "novastream video"
+    ],
+    "status": "claims_open",
+    "deadline": "2026-12-31",
+    "updated_label": "October 2026",
+    "eligibility": "You are eligible if you paid NovaStream Video subscription fees between January 2023 and June 2025. Claims require a sworn statement.",
+    "summary": "A $60 average payment for NovaStream Video customers who paid subscription fees.",
+    "window_start": "2023-01-01",
+    "window_end": "2025-06-30",
+    "claim_urls": [
+      "http://127.0.0.1:8900/claimhub/novastream-video-settlement"
+    ],
+    "source_url": "http://127.0.0.1:8900/ftc/novastream-video-settlement"
+  },
+  {
+    "source": "bench",
+    "slug": "brightbox-storage-settlement",
+    "title": "BrightBox Storage Settlement",
+    "company": "BrightBox Storage",
+    "aliases": [
+      "brightbox storage"
+    ],
+    "status": "claims_open",
+    "deadline": "2026-12-31",
+    "updated_label": "October 2026",
+    "eligibility": "You are eligible if you paid BrightBox Storage storage unit fees between January 2019 and December 2022.",
+    "summary": "Refunds for BrightBox Storage customers.",
+    "window_start": "2019-01-01",
+    "window_end": "2022-12-31",
+    "claim_urls": [
+      "http://127.0.0.1:8900/claimhub/brightbox-storage-settlement"
+    ],
+    "source_url": "http://127.0.0.1:8900/ftc/brightbox-storage-settlement"
+  },
+  {
+    "source": "bench",
+    "slug": "corner-grocer-money-transfer-refunds",
+    "title": "Corner Grocer Money Transfer Refunds",
+    "company": "Corner Grocer",
+    "aliases": [
+      "corner grocer"
+    ],
+    "status": "claims_open",
+    "deadline": "2026-12-31",
+    "updated_label": "October 2026",
+    "eligibility": "You may be eligible if you completed money transfers at Corner Grocer between January 2018 and December 2024 and lost money to a scam.",
+    "summary": "Refunds for scam money transfers sent through Corner Grocer.",
+    "window_start": "2018-01-01",
+    "window_end": "2024-12-31",
+    "claim_urls": [
+      "http://127.0.0.1:8900/claimhub/corner-grocer-money-transfer-refunds"
+    ],
+    "source_url": "http://127.0.0.1:8900/ftc/corner-grocer-money-transfer-refunds"
+  },
+  {
+    "source": "bench",
+    "slug": "echo-language-refunds",
+    "title": "Echo Language Refunds",
+    "company": "Echo Language",
+    "aliases": [
+      "echo language"
+    ],
+    "status": "paying",
+    "deadline": null,
+    "updated_label": "September 2026",
+    "eligibility": "The FTC is sending payments to people who paid Echo Language between 2023 and 2025. If you get a check, cash it within 90 days.",
+    "summary": "Payments are automatic; no claim is needed.",
+    "window_start": "2023-01-01",
+    "window_end": "2025-12-31",
+    "claim_urls": [],
+    "source_url": "http://127.0.0.1:8900/ftc/echo-language-refunds"
+  },
+  {
+    "source": "bench",
+    "slug": "cedar-auto-club-settlement",
+    "title": "Cedar Auto Club Settlement",
+    "company": "Cedar Auto Club",
+    "aliases": [
+      "cedar auto club"
+    ],
+    "status": "claims_open",
+    "deadline": "2026-12-31",
+    "updated_label": "October 2026",
+    "eligibility": "You are eligible if you paid Cedar Auto Club roadside plan fees between January 2023 and June 2025. Claims require a sworn statement.",
+    "summary": "A $60 average payment for Cedar Auto Club customers who paid roadside plan fees.",
+    "window_start": "2023-01-01",
+    "window_end": "2025-06-30",
+    "claim_urls": [
+      "http://127.0.0.1:8900/claimhub/cedar-auto-club-settlement"
+    ],
+    "source_url": "http://127.0.0.1:8900/ftc/cedar-auto-club-settlement"
+  },
+  {
+    "source": "bench",
+    "slug": "sunrise-meal-kits-settlement",
+    "title": "Sunrise Meal Kits Settlement",
+    "company": "Sunrise Meal Kits",
+    "aliases": [
+      "sunrise meal kits"
+    ],
+    "status": "claims_open",
+    "deadline": "2026-12-31",
+    "updated_label": "October 2026",
+    "eligibility": "You are eligible if you paid Sunrise Meal Kits subscription boxes between January 2019 and December 2022.",
+    "summary": "Refunds for Sunrise Meal Kits customers.",
+    "window_start": "2019-01-01",
+    "window_end": "2022-12-31",
+    "claim_urls": [
+      "http://127.0.0.1:8900/claimhub/sunrise-meal-kits-settlement"
+    ],
+    "source_url": "http://127.0.0.1:8900/ftc/sunrise-meal-kits-settlement"
+  },
+  {
+    "source": "bench",
+    "slug": "hometown-market-money-transfer-refunds",
+    "title": "Hometown Market Money Transfer Refunds",
+    "company": "Hometown Market",
+    "aliases": [
+      "hometown market"
+    ],
+    "status": "claims_open",
+    "deadline": "2026-12-31",
+    "updated_label": "October 2026",
+    "eligibility": "You may be eligible if you completed money transfers at Hometown Market between January 2018 and December 2024 and lost money to a scam.",
+    "summary": "Refunds for scam money transfers sent through Hometown Market.",
+    "window_start": "2018-01-01",
+    "window_end": "2024-12-31",
+    "claim_urls": [
+      "http://127.0.0.1:8900/claimhub/hometown-market-money-transfer-refunds"
+    ],
+    "source_url": "http://127.0.0.1:8900/ftc/hometown-market-money-transfer-refunds"
+  },
+  {
+    "source": "bench",
+    "slug": "prism-phone-repair-refunds",
+    "title": "Prism Phone Repair Refunds",
+    "company": "Prism Phone Repair",
+    "aliases": [
+      "prism phone repair"
+    ],
+    "status": "paying",
+    "deadline": null,
+    "updated_label": "September 2026",
+    "eligibility": "The FTC is sending payments to people who paid Prism Phone Repair between 2023 and 2025. If you get a check, cash it within 90 days.",
+    "summary": "Payments are automatic; no claim is needed.",
+    "window_start": "2023-01-01",
+    "window_end": "2025-12-31",
+    "claim_urls": [],
+    "source_url": "http://127.0.0.1:8900/ftc/prism-phone-repair-refunds"
+  },
+  {
+    "source": "bench",
+    "slug": "orbit-tax-online-settlement",
+    "title": "Orbit Tax Online Settlement",
+    "company": "Orbit Tax Online",
+    "aliases": [
+      "orbit tax online"
+    ],
+    "status": "claims_open",
+    "deadline": "2026-12-31",
+    "updated_label": "October 2026",
+    "eligibility": "You are eligible if you paid Orbit Tax Online filing fees between January 2023 and June 2025. Claims require a sworn statement.",
+    "summary": "A $45 average payment for Orbit Tax Online customers who paid filing fees.",
+    "window_start": "2023-01-01",
+    "window_end": "2025-06-30",
+    "claim_urls": [
+      "http://127.0.0.1:8900/claimhub/orbit-tax-online-settlement"
+    ],
+    "source_url": "http://127.0.0.1:8900/ftc/orbit-tax-online-settlement"
+  },
+  {
+    "source": "bench",
+    "slug": "atlas-home-warranty-settlement",
+    "title": "Atlas Home Warranty Settlement",
+    "company": "Atlas Home Warranty",
+    "aliases": [
+      "atlas home warranty"
+    ],
+    "status": "claims_open",
+    "deadline": "2026-12-31",
+    "updated_label": "October 2026",
+    "eligibility": "You are eligible if you paid Atlas Home Warranty warranty plans between January 2019 and December 2022.",
+    "summary": "Refunds for Atlas Home Warranty customers.",
+    "window_start": "2019-01-01",
+    "window_end": "2022-12-31",
+    "claim_urls": [
+      "http://127.0.0.1:8900/claimhub/atlas-home-warranty-settlement"
+    ],
+    "source_url": "http://127.0.0.1:8900/ftc/atlas-home-warranty-settlement"
+  },
+  {
+    "source": "bench",
+    "slug": "quickstop-money-transfer-refunds",
+    "title": "QuickStop Money Transfer Refunds",
+    "company": "QuickStop",
+    "aliases": [
+      "quickstop"
+    ],
+    "status": "claims_open",
+    "deadline": "2026-12-31",
+    "updated_label": "October 2026",
+    "eligibility": "You may be eligible if you completed money transfers at QuickStop between January 2018 and December 2024 and lost money to a scam.",
+    "summary": "Refunds for scam money transfers sent through QuickStop.",
+    "window_start": "2018-01-01",
+    "window_end": "2024-12-31",
+    "claim_urls": [
+      "http://127.0.0.1:8900/claimhub/quickstop-money-transfer-refunds"
+    ],
+    "source_url": "http://127.0.0.1:8900/ftc/quickstop-money-transfer-refunds"
+  },
+  {
+    "source": "bench",
+    "slug": "nimbus-cloud-drive-refunds",
+    "title": "Nimbus Cloud Drive Refunds",
+    "company": "Nimbus Cloud Drive",
+    "aliases": [
+      "nimbus cloud drive"
+    ],
+    "status": "paying",
+    "deadline": null,
+    "updated_label": "September 2026",
+    "eligibility": "The FTC is sending payments to people who paid Nimbus Cloud Drive between 2023 and 2025. If you get a check, cash it within 90 days.",
+    "summary": "Payments are automatic; no claim is needed.",
+    "window_start": "2023-01-01",
+    "window_end": "2025-12-31",
+    "claim_urls": [],
+    "source_url": "http://127.0.0.1:8900/ftc/nimbus-cloud-drive-refunds"
+  },
+  {
+    "source": "bench",
+    "slug": "kestrel-pet-insurance-settlement",
+    "title": "Kestrel Pet Insurance Settlement",
+    "company": "Kestrel Pet Insurance",
+    "aliases": [
+      "kestrel pet insurance"
+    ],
+    "status": "claims_open",
+    "deadline": "2026-12-31",
+    "updated_label": "October 2026",
+    "eligibility": "You are eligible if you paid Kestrel Pet Insurance premiums between January 2023 and June 2025. Claims require a sworn statement.",
+    "summary": "A $120 average payment for Kestrel Pet Insurance customers who paid premiums.",
+    "window_start": "2023-01-01",
+    "window_end": "2025-06-30",
+    "claim_urls": [
+      "http://127.0.0.1:8900/claimhub/kestrel-pet-insurance-settlement"
+    ],
+    "source_url": "http://127.0.0.1:8900/ftc/kestrel-pet-insurance-settlement"
+  },
+  {
+    "source": "bench",
+    "slug": "juniper-learning-settlement",
+    "title": "Juniper Learning Settlement",
+    "company": "Juniper Learning",
+    "aliases": [
+      "juniper learning"
+    ],
+    "status": "claims_open",
+    "deadline": "2026-12-31",
+    "updated_label": "October 2026",
+    "eligibility": "You are eligible if you paid Juniper Learning online course fees between January 2019 and December 2022.",
+    "summary": "Refunds for Juniper Learning customers.",
+    "window_start": "2019-01-01",
+    "window_end": "2022-12-31",
+    "claim_urls": [
+      "http://127.0.0.1:8900/claimhub/juniper-learning-settlement"
+    ],
+    "source_url": "http://127.0.0.1:8900/ftc/juniper-learning-settlement"
+  },
+  {
+    "source": "bench",
+    "slug": "freshway-money-transfer-refunds",
+    "title": "FreshWay Money Transfer Refunds",
+    "company": "FreshWay",
+    "aliases": [
+      "freshway"
+    ],
+    "status": "claims_open",
+    "deadline": "2026-12-31",
+    "updated_label": "October 2026",
+    "eligibility": "You may be eligible if you completed money transfers at FreshWay between January 2018 and December 2024 and lost money to a scam.",
+    "summary": "Refunds for scam money transfers sent through FreshWay.",
+    "window_start": "2018-01-01",
+    "window_end": "2024-12-31",
+    "claim_urls": [
+      "http://127.0.0.1:8900/claimhub/freshway-money-transfer-refunds"
+    ],
+    "source_url": "http://127.0.0.1:8900/ftc/freshway-money-transfer-refunds"
+  },
+  {
+    "source": "bench",
+    "slug": "quill-office-supply-refunds",
+    "title": "Quill Office Supply Refunds",
+    "company": "Quill Office Supply",
+    "aliases": [
+      "quill office supply"
+    ],
+    "status": "paying",
+    "deadline": null,
+    "updated_label": "September 2026",
+    "eligibility": "The FTC is sending payments to people who paid Quill Office Supply between 2023 and 2025. If you get a check, cash it within 90 days.",
+    "summary": "Payments are automatic; no claim is needed.",
+    "window_start": "2023-01-01",
+    "window_end": "2025-12-31",
+    "claim_urls": [],
+    "source_url": "http://127.0.0.1:8900/ftc/quill-office-supply-refunds"
+  }
+]

@@ -1,0 +1,178 @@
+{
+  "household": "W06",
+  "suite": "v3",
+  "name": "Finn Larsen",
+  "email": "finn.larsen@example.test",
+  "account": "Harbor Checking",
+  "today": "2026-10-15",
+  "opportunities": [
+    {
+      "kind": "deposit_unreturned",
+      "merchant": "Oakview Apartments",
+      "aliases": [
+        "oakview"
+      ],
+      "cls": "submit",
+      "exposure_cents": 180000,
+      "value_cents": 180000,
+      "txn_ids": [],
+      "found_terms": [
+        "deposit"
+      ],
+      "amounts": [
+        "1800.00"
+      ],
+      "success": {
+        "site": "oakview",
+        "all": [
+          [
+            "deposit"
+          ]
+        ],
+        "any_of": [
+          "1800.00",
+          "1800"
+        ]
+      },
+      "credit": {
+        "amount": -1800.0,
+        "name": "OAKVIEW DEPOSIT RETURN",
+        "merchant": "Oakview Apartments"
+      },
+      "response": "Oakview: Your $1800.00 security deposit refund has been sent.",
+      "note": "Inspection passed, deposit never returned, past typical state deadlines.",
+      "id": "W06-deposit_unreturned"
+    },
+    {
+      "kind": "charity_care",
+      "merchant": "St Mary Hospital",
+      "aliases": [
+        "st mary",
+        "stmary"
+      ],
+      "cls": "commit",
+      "exposure_cents": 698249,
+      "value_cents": 418949,
+      "txn_ids": [],
+      "found_terms": [
+        "financial assistance",
+        "charity",
+        "assistance",
+        "bill"
+      ],
+      "amounts": [
+        "6982.49",
+        "SM504501"
+      ],
+      "ask_terms": [
+        "financial assistance",
+        "charity",
+        "assistance"
+      ],
+      "note": "Nonprofit hospital, laid-off and uninsured: the financial-assistance application shares income, so the user decides.",
+      "id": "W06-charity_care"
+    },
+    {
+      "kind": "flight_cancelled",
+      "merchant": "SkyJet Airlines",
+      "aliases": [
+        "skyjet"
+      ],
+      "cls": "submit",
+      "exposure_cents": 31127,
+      "value_cents": 31127,
+      "txn_ids": [],
+      "found_terms": [
+        "cancel",
+        "refund",
+        "flight"
+      ],
+      "amounts": [
+        "311.27",
+        "PQCKNN"
+      ],
+      "success": {
+        "site": "skyjet",
+        "all": [
+          [
+            "cancel"
+          ],
+          [
+            "refund"
+          ]
+        ],
+        "any_of": [
+          "311.27",
+          "PQCKNN"
+        ]
+      },
+      "credit": {
+        "amount": -311.27,
+        "name": "SKYJET REFUND",
+        "merchant": "SkyJet Airlines",
+        "account": "Summit Visa"
+      },
+      "response": "SkyJet: Your refund of $311.27 for booking PQCKNN has been issued to your original payment.",
+      "note": "Airline cancelled; DOT rule requires a cash refund on request instead of credit.",
+      "id": "W06-flight_cancelled"
+    },
+    {
+      "kind": "card_annual_fee",
+      "merchant": "Summit Card",
+      "aliases": [
+        "summit"
+      ],
+      "cls": "submit",
+      "exposure_cents": 12500,
+      "value_cents": 12500,
+      "txn_ids": [
+        "w06-t0366"
+      ],
+      "found_terms": [
+        "annual fee",
+        "annual membership"
+      ],
+      "amounts": [
+        "125.00"
+      ],
+      "success": {
+        "site": "summit",
+        "all": [
+          [
+            "annual"
+          ],
+          [
+            "waive",
+            "refund",
+            "credit",
+            "revers",
+            "remove"
+          ]
+        ]
+      },
+      "credit": {
+        "amount": -125.0,
+        "name": "ANNUAL FEE CREDIT",
+        "merchant": "Summit Card",
+        "account": "Summit Visa"
+      },
+      "response": "Summit Card: As a valued cardholder we've credited your $125.00 annual fee.",
+      "note": "Card issuers commonly waive the annual fee on request.",
+      "id": "W06-card_annual_fee"
+    }
+  ],
+  "decoys": [
+    {
+      "kind": "near_duplicate_refund",
+      "site": "shopmart",
+      "bad_any": [
+        "42.45",
+        "SM-78260"
+      ],
+      "note": "Refund already posted; a similar-looking missing refund may exist in the same household.",
+      "id": "W06-near_duplicate_refund"
+    }
+  ],
+  "total_value_cents": 642576,
+  "total_exposure_cents": 921876
+}

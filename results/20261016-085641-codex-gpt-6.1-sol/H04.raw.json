@@ -1,0 +1,675 @@
+{
+  "household": "H04",
+  "tool_counts": {
+    "agent_message": 3,
+    "get_context": 1,
+    "search_records": 6,
+    "workspace_get": 1,
+    "list_opportunities": 2,
+    "read_source": 5,
+    "search_transactions": 5,
+    "workspace_action": 11,
+    "review_opportunity": 1,
+    "save_work": 6,
+    "record_result": 4,
+    "follow_up": 2
+  },
+  "external": {
+    "agent": "codex",
+    "model": "gpt-6.1-sol"
+  },
+  "work": [
+    {
+      "id": "0843c7a8-7429-4268-94cc-d5a5e91da460",
+      "kind": "case",
+      "title": "Approval needed: cancel FitHub",
+      "body": "Unused since April; still costs $39.99 monthly ($479.88/year).",
+      "status": "waiting",
+      "result_status": null,
+      "fields": {
+        "approval_request": {
+          "action": "Cancel membership",
+          "counterparty": "FitHub",
+          "amount_usd": 39.99,
+          "reason": "Unused since April; still costs $39.99 monthly ($479.88/year)."
+        }
+      }
+    },
+    {
+      "id": "2f8f94c5-59fb-4880-8dc2-01cfcd32a1e2",
+      "kind": "opportunity",
+      "title": "FitHub unused membership goodwill refund",
+      "body": "Goodwill refund of six $39.99 charges May 15 through October 15 requested via browser; receipt FH-1002. Last visit April 14; active service. Cancellation approval saved separately.",
+      "status": "waiting",
+      "result_status": "submitted",
+      "fields": {}
+    },
+    {
+      "id": "3839fa4e-89c3-4cd3-a9d2-c7564a02228d",
+      "kind": "case",
+      "title": "Approval needed: cancel CloudBox",
+      "body": "Unwanted annual plan; costs $99.99/year. Refund request submitted separately.",
+      "status": "waiting",
+      "result_status": null,
+      "fields": {
+        "approval_request": {
+          "action": "Cancel annual plan and future renewal",
+          "counterparty": "CloudBox",
+          "amount_usd": 99.99,
+          "reason": "Unwanted annual plan; costs $99.99/year. Refund request submitted separately."
+        }
+      }
+    },
+    {
+      "id": "ad217e19-552a-4215-98e0-4068260bd454",
+      "kind": "opportunity",
+      "title": "CloudBox unwanted annual charge refund",
+      "body": "$99.99 posted October 1. No CloudBox inflow in uploaded history. 14-day window passed; exception requested October 16 via support. Case CB-1001. No service change authorized.",
+      "status": "waiting",
+      "result_status": "submitted",
+      "fields": {}
+    },
+    {
+      "id": "dff4d372-e38b-45b7-91f2-600d27cc7eee",
+      "kind": "note",
+      "title": "Household review October 16: sources reviewed and inventory",
+      "body": "All five notes/emails read fully; source search paginated through 117 records. No existing work. Deterministic leads: FitHub, Spotify $11.99/month, rent $1625/month; stable Spotify/rent with no evidence of unwanted service or claim. Harbor $12 August 10 fee reversed August 13; no duplicate request. CloudBox $99.99 October 1 unwanted annual charge exception submitted CB-1001. FitHub May\u2013October $239.94 goodwill refund submitted FH-1002. Both pending, follow-ups October 23. Separate waiting cancellation approvals saved. No settlements, promises, cancellation confirmations or other notices found. Coverage limited to uploaded history; no recoveries received from this review. Final audit: every covered actionable opportunity submitted; cancellations await approval under item 5.",
+      "status": "done",
+      "result_status": null,
+      "fields": {}
+    }
+  ],
+  "work_after_verify": [
+    {
+      "id": "0843c7a8-7429-4268-94cc-d5a5e91da460",
+      "kind": "case",
+      "title": "Approval needed: cancel FitHub",
+      "body": "Unused since April; still costs $39.99 monthly ($479.88/year).",
+      "status": "waiting",
+      "result_status": null,
+      "fields": {
+        "approval_request": {
+          "action": "Cancel membership",
+          "counterparty": "FitHub",
+          "amount_usd": 39.99,
+          "reason": "Unused since April; still costs $39.99 monthly ($479.88/year)."
+        }
+      }
+    },
+    {
+      "id": "2f8f94c5-59fb-4880-8dc2-01cfcd32a1e2",
+      "kind": "opportunity",
+      "title": "FitHub unused membership goodwill refund",
+      "body": "Goodwill refund of six $39.99 charges May 15 through October 15 requested via browser; receipt FH-1002. Last visit April 14; active service. Cancellation approval saved separately.",
+      "status": "waiting",
+      "result_status": "submitted",
+      "fields": {}
+    },
+    {
+      "id": "3839fa4e-89c3-4cd3-a9d2-c7564a02228d",
+      "kind": "case",
+      "title": "CloudBox closure reported: cancellation approval no longer needed",
+      "body": "New company email states account closed and refund issued; posted full refund corroborates refund portion. Supersedes pending cancellation approval. No service change performed.",
+      "status": "closed",
+      "result_status": null,
+      "fields": {
+        "resolution": "Company reports account already closed; no cancellation action taken by this review."
+      }
+    },
+    {
+      "id": "882fd036-b894-4397-ae62-397bfad9d5a6",
+      "kind": "note",
+      "title": "October 16 new activity review completed",
+      "body": "Continued existing five work items without duplicating submissions. Source inventory paginated all 120 records; only new document/email is CloudBox reply, read fully. New bank activity checked with merchant and date transaction searches. CloudBox full $99.99 inflow posted October 15; recorded received with transaction source, completed refund opportunity and closed obsolete cancellation approval because company reports account closed. Cancelled refund reminder. Receipt predates October 16 support submission; no causal attribution. No later CloudBox charges in available uploaded history. FitHub $239.94 request FH-1002 already submitted and remains pending with no inflow; October 23 reminder retained. FitHub cancellation remains waiting for user approval at $39.99/month. Deterministic leads and recurring inventory rechecked: only FitHub, stable Spotify $11.99/month and Oakview rent $1625/month, previously reviewed with no actionable claim on Spotify/rent. No new fees, duplicates, increases or tracked-credit leads. Final audit: CloudBox received, FitHub submitted; no covered request left unsent. Coverage is uploaded records only.",
+      "status": "done",
+      "result_status": null,
+      "fields": {}
+    },
+    {
+      "id": "ad217e19-552a-4215-98e0-4068260bd454",
+      "kind": "opportunity",
+      "title": "CloudBox unwanted annual charge refund",
+      "body": "Full $99.99 refund posted October 15 in newly uploaded history. CloudBox email confirms refund and account closure. Prior request CB-1001 already submitted October 16; no duplicate sent. Receipt predates request, so causation not established. No subsequent CloudBox charges in available history.",
+      "status": "done",
+      "result_status": "received",
+      "fields": {}
+    },
+    {
+      "id": "dff4d372-e38b-45b7-91f2-600d27cc7eee",
+      "kind": "note",
+      "title": "Household review October 16: sources reviewed and inventory",
+      "body": "All five notes/emails read fully; source search paginated through 117 records. No existing work. Deterministic leads: FitHub, Spotify $11.99/month, rent $1625/month; stable Spotify/rent with no evidence of unwanted service or claim. Harbor $12 August 10 fee reversed August 13; no duplicate request. CloudBox $99.99 October 1 unwanted annual charge exception submitted CB-1001. FitHub May\u2013October $239.94 goodwill refund submitted FH-1002. Both pending, follow-ups October 23. Separate waiting cancellation approvals saved. No settlements, promises, cancellation confirmations or other notices found. Coverage limited to uploaded history; no recoveries received from this review. Final audit: every covered actionable opportunity submitted; cancellations await approval under item 5.",
+      "status": "done",
+      "result_status": null,
+      "fields": {}
+    }
+  ],
+  "run": {
+    "status": "completed",
+    "answer": "Submitted $339.93 in refund requests:\n\n- CloudBox: $99.99 exception request, case CB-1001; its refund window has passed.\n- FitHub: $239.94 goodwill request for six unused months, case FH-1002.\n\nFollow-ups are scheduled for October 23. No refunds received yet. The $12 bank fee was already reversed.\n\nSaved approval requests to cancel FitHub ($39.99/month) and CloudBox ($99.99/year). Your approval is needed for those cancellations under item 5; both services remain active.",
+    "committed_micros": 291809
+  },
+  "verify_run": {
+    "status": "completed",
+    "answer": "Reviewed the new activity and continued existing cases without duplicate requests.\n\n- CloudBox: recorded the posted **$99.99 refund**. Its email reports the account closed, so I closed the cancellation approval item.\n- FitHub: **$239.94 refund request** remains pending; follow-up is scheduled for October 23.\n- Your approval is still needed to cancel FitHub at **$39.99/month**, as required by item 5. The waiting approval case is saved.\n\nNo new actionable claims found in the available records.",
+    "committed_micros": 148731
+  },
+  "sim_log": [
+    {
+      "type": "view",
+      "path": "/cloudbox/account"
+    },
+    {
+      "type": "view",
+      "path": "/cloudbox/support"
+    },
+    {
+      "type": "action",
+      "site": "cloudbox",
+      "path": "/cloudbox/support",
+      "class": "submit",
+      "fields": {
+        "reason": "Unwanted trial charge",
+        "message": "Morgan Chen, morgan.chen@example.test. Please refund the $99.99 CloudBox Plus annual plan charge posted October 1, 2026. I signed up only for the trial to move photos and do not need this plan. Your September 24 notice said the trial ended September 30 and annual renewals could be refunded within 14 days. Today is October 16; please grant a goodwill exception just outside that window. No refund appears in my available transactions. No order number is available. This request is for a refund only; please do not cancel or change service without separate approval."
+      }
+    },
+    {
+      "type": "view",
+      "path": "/fithub/account"
+    },
+    {
+      "type": "view",
+      "path": "/fithub/support"
+    },
+    {
+      "type": "action",
+      "site": "fithub",
+      "path": "/fithub/support",
+      "class": "submit",
+      "fields": {
+        "member": "Morgan Chen / morgan.chen@example.test",
+        "reason": "Other",
+        "message": "Please consider a goodwill refund of $239.94: six $39.99 membership charges on May 15, June 15, July 15, August 15, September 15, and October 15, 2026. I moved across town in April and have not attended since; your September 20 email confirms my last check-in was April 14. I understand the membership remained active. No order numbers are available. Refund request only; do not cancel or change my membership without separate approval."
+      }
+    }
+  ],
+  "findings": {
+    "items": [
+      {
+        "id": "13c9430a-38ca-4fcc-aaba-cf4beae69d33",
+        "account_id": "f160ed5a-19bf-42de-899a-ca1debcd29e7",
+        "account_name": "Harbor Checking",
+        "kind": "recurring_charge",
+        "title": "Recurring monthly charge: FitHub",
+        "assessment": "recurring_charge",
+        "review_status": "saved",
+        "data": {
+          "merchant": "FitHub",
+          "cadence": "monthly",
+          "typical_amount": "39.99",
+          "latest_amount": "39.99",
+          "last_charged_on": "2026-10-15",
+          "next_expected_on": "2026-11-14",
+          "annual_cost": "479.88",
+          "currency": "USD",
+          "summary": "FitHub: about $39.99 monthly, $479.88 a year. Last charged 2026-10-15.",
+          "transactions": [
+            {
+              "id": "1439686b-db98-4127-8dca-933e1f65a018",
+              "connection_id": "4a5b6d61-b07a-4ef4-9a06-7c91adb9b966",
+              "account_id": "f160ed5a-19bf-42de-899a-ca1debcd29e7",
+              "name": "FITHUB GYM MEMBERSHIP",
+              "merchant": "FitHub",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "e2ac6f3b-10b8-49e8-a6ae-068d341c5a92",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "39.99000000",
+              "date": "2026-05-15",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:00:08.703815+00:00"
+            },
+            {
+              "id": "9e5630c0-a050-41c0-83da-fc6cebeff9d3",
+              "connection_id": "4a5b6d61-b07a-4ef4-9a06-7c91adb9b966",
+              "account_id": "f160ed5a-19bf-42de-899a-ca1debcd29e7",
+              "name": "FITHUB GYM MEMBERSHIP",
+              "merchant": "FitHub",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "d9e1a64c-36ec-4fcc-81f6-62e67aa9870a",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "39.99000000",
+              "date": "2026-06-15",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:00:08.741956+00:00"
+            },
+            {
+              "id": "0ef6e7ba-70a7-43d4-9ffe-6c9b275f6128",
+              "connection_id": "4a5b6d61-b07a-4ef4-9a06-7c91adb9b966",
+              "account_id": "f160ed5a-19bf-42de-899a-ca1debcd29e7",
+              "name": "FITHUB GYM MEMBERSHIP",
+              "merchant": "FitHub",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "3ee6a901-a8f2-405b-8153-9ff1bc37ca6f",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "39.99000000",
+              "date": "2026-07-15",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:00:08.781016+00:00"
+            },
+            {
+              "id": "1d49a3d1-d61f-41d6-8709-f0553a18b728",
+              "connection_id": "4a5b6d61-b07a-4ef4-9a06-7c91adb9b966",
+              "account_id": "f160ed5a-19bf-42de-899a-ca1debcd29e7",
+              "name": "FITHUB GYM MEMBERSHIP",
+              "merchant": "FitHub",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "ad6b951f-1328-4270-84bb-236bbbee6d42",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "39.99000000",
+              "date": "2026-08-15",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:00:08.825515+00:00"
+            },
+            {
+              "id": "cefc07f0-05c7-4240-8566-22ca9b1168f0",
+              "connection_id": "4a5b6d61-b07a-4ef4-9a06-7c91adb9b966",
+              "account_id": "f160ed5a-19bf-42de-899a-ca1debcd29e7",
+              "name": "FITHUB GYM MEMBERSHIP",
+              "merchant": "FitHub",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "1e06fe74-43c3-4e42-920d-39a61bad2e9d",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "39.99000000",
+              "date": "2026-09-15",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:00:08.866580+00:00"
+            },
+            {
+              "id": "8077e83f-818a-4721-9128-5183736769cb",
+              "connection_id": "4a5b6d61-b07a-4ef4-9a06-7c91adb9b966",
+              "account_id": "f160ed5a-19bf-42de-899a-ca1debcd29e7",
+              "name": "FITHUB GYM MEMBERSHIP",
+              "merchant": "FitHub",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "8c2a7538-94fc-489f-bcf3-375c32eeafd3",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "39.99000000",
+              "date": "2026-10-15",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:00:08.906603+00:00"
+            }
+          ],
+          "limitations": "Inferred from charge timing and amounts. Not proof of a subscription; check whether it is still wanted or used."
+        },
+        "source_ids": [
+          "e2ac6f3b-10b8-49e8-a6ae-068d341c5a92",
+          "d9e1a64c-36ec-4fcc-81f6-62e67aa9870a",
+          "3ee6a901-a8f2-405b-8153-9ff1bc37ca6f",
+          "ad6b951f-1328-4270-84bb-236bbbee6d42",
+          "1e06fe74-43c3-4e42-920d-39a61bad2e9d",
+          "8c2a7538-94fc-489f-bcf3-375c32eeafd3"
+        ],
+        "version": 2,
+        "work_id": "2f8f94c5-59fb-4880-8dc2-01cfcd32a1e2",
+        "detector_version": "discovery-2026-10-16-v2",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "4a5b6d61-b07a-4ef4-9a06-7c91adb9b966",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-16T09:00:08.907224+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-16T09:00:08.965306+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      },
+      {
+        "id": "8ffee9a3-8390-4a7b-8cd9-c4d1ef50ee8f",
+        "account_id": "f160ed5a-19bf-42de-899a-ca1debcd29e7",
+        "account_name": "Harbor Checking",
+        "kind": "recurring_charge",
+        "title": "Recurring monthly charge: Spotify",
+        "assessment": "recurring_charge",
+        "review_status": "new",
+        "data": {
+          "merchant": "Spotify",
+          "cadence": "monthly",
+          "typical_amount": "11.99",
+          "latest_amount": "11.99",
+          "last_charged_on": "2026-10-09",
+          "next_expected_on": "2026-11-08",
+          "annual_cost": "143.88",
+          "currency": "USD",
+          "summary": "Spotify: about $11.99 monthly, $143.88 a year. Last charged 2026-10-09.",
+          "transactions": [
+            {
+              "id": "26785de3-914a-43cc-9adf-484a54568d65",
+              "connection_id": "4a5b6d61-b07a-4ef4-9a06-7c91adb9b966",
+              "account_id": "f160ed5a-19bf-42de-899a-ca1debcd29e7",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "35b5665f-c6ea-42c8-bc09-7f80195003bd",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-05-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:00:08.692492+00:00"
+            },
+            {
+              "id": "d43a6d9c-90bc-49b4-bdc9-783ac8409a53",
+              "connection_id": "4a5b6d61-b07a-4ef4-9a06-7c91adb9b966",
+              "account_id": "f160ed5a-19bf-42de-899a-ca1debcd29e7",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "2ccac56f-89c6-4c45-a509-c64d40b7b156",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-06-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:00:08.731954+00:00"
+            },
+            {
+              "id": "193bd4c2-60f0-4c4c-b8cb-a4451cd4418b",
+              "connection_id": "4a5b6d61-b07a-4ef4-9a06-7c91adb9b966",
+              "account_id": "f160ed5a-19bf-42de-899a-ca1debcd29e7",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "9189e4c3-f595-4bdb-aa00-42addc0ae918",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-07-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:00:08.769005+00:00"
+            },
+            {
+              "id": "17c0b9fa-90fb-4830-9dd3-5cadac300261",
+              "connection_id": "4a5b6d61-b07a-4ef4-9a06-7c91adb9b966",
+              "account_id": "f160ed5a-19bf-42de-899a-ca1debcd29e7",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "8f071f80-9e37-4396-8cc2-d926da3fee78",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-08-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:00:08.811496+00:00"
+            },
+            {
+              "id": "e4e5685f-7f2b-49f7-a40a-d332622210b5",
+              "connection_id": "4a5b6d61-b07a-4ef4-9a06-7c91adb9b966",
+              "account_id": "f160ed5a-19bf-42de-899a-ca1debcd29e7",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "604b425f-9125-4df1-b588-d21c4fe77ac6",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-09-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:00:08.858259+00:00"
+            },
+            {
+              "id": "2a8d4019-4ca7-4a52-a040-ee2960b8b889",
+              "connection_id": "4a5b6d61-b07a-4ef4-9a06-7c91adb9b966",
+              "account_id": "f160ed5a-19bf-42de-899a-ca1debcd29e7",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "3b6e6587-1614-4bf8-9db3-b53089419de4",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-10-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:00:08.895237+00:00"
+            }
+          ],
+          "limitations": "Inferred from charge timing and amounts. Not proof of a subscription; check whether it is still wanted or used."
+        },
+        "source_ids": [
+          "35b5665f-c6ea-42c8-bc09-7f80195003bd",
+          "2ccac56f-89c6-4c45-a509-c64d40b7b156",
+          "9189e4c3-f595-4bdb-aa00-42addc0ae918",
+          "8f071f80-9e37-4396-8cc2-d926da3fee78",
+          "604b425f-9125-4df1-b588-d21c4fe77ac6",
+          "3b6e6587-1614-4bf8-9db3-b53089419de4"
+        ],
+        "version": 1,
+        "work_id": null,
+        "detector_version": "discovery-2026-10-16-v2",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "4a5b6d61-b07a-4ef4-9a06-7c91adb9b966",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-16T09:00:08.907224+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-16T09:00:08.963548+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      },
+      {
+        "id": "fcbb12b4-235b-4be8-befa-50134881617c",
+        "account_id": "f160ed5a-19bf-42de-899a-ca1debcd29e7",
+        "account_name": "Harbor Checking",
+        "kind": "recurring_charge",
+        "title": "Recurring monthly charge: Oakview Apartments",
+        "assessment": "recurring_charge",
+        "review_status": "new",
+        "data": {
+          "merchant": "Oakview Apartments",
+          "cadence": "monthly",
+          "typical_amount": "1625.00",
+          "latest_amount": "1625.00",
+          "last_charged_on": "2026-10-01",
+          "next_expected_on": "2026-10-31",
+          "annual_cost": "19500.00",
+          "currency": "USD",
+          "summary": "Oakview Apartments: about $1625.00 monthly, $19500.00 a year. Last charged 2026-10-01.",
+          "transactions": [
+            {
+              "id": "f8c7fe31-88c0-4261-b1b7-41045de1d234",
+              "connection_id": "4a5b6d61-b07a-4ef4-9a06-7c91adb9b966",
+              "account_id": "f160ed5a-19bf-42de-899a-ca1debcd29e7",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "2a6b5b8e-f204-485d-b73e-1f61792d8fc4",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1625.00000000",
+              "date": "2026-05-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:00:08.685540+00:00"
+            },
+            {
+              "id": "28aed522-7e49-48b6-8159-5ec263539989",
+              "connection_id": "4a5b6d61-b07a-4ef4-9a06-7c91adb9b966",
+              "account_id": "f160ed5a-19bf-42de-899a-ca1debcd29e7",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "65f57107-fdd1-41a4-bd45-2c61d42d004d",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1625.00000000",
+              "date": "2026-06-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:00:08.724254+00:00"
+            },
+            {
+              "id": "20c9af09-3c0a-45af-9422-d9f29d6d44be",
+              "connection_id": "4a5b6d61-b07a-4ef4-9a06-7c91adb9b966",
+              "account_id": "f160ed5a-19bf-42de-899a-ca1debcd29e7",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "4f60e206-1ad9-4274-9250-b6e05d4cf9bb",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1625.00000000",
+              "date": "2026-07-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:00:08.755412+00:00"
+            },
+            {
+              "id": "eaa2e826-7200-46ff-8568-a8911f604132",
+              "connection_id": "4a5b6d61-b07a-4ef4-9a06-7c91adb9b966",
+              "account_id": "f160ed5a-19bf-42de-899a-ca1debcd29e7",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "7cb2df2c-a87c-4c9c-aaa7-9abf9a4f0f19",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1625.00000000",
+              "date": "2026-08-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:00:08.798388+00:00"
+            },
+            {
+              "id": "96563575-3f38-41bb-8210-e20c51a8d579",
+              "connection_id": "4a5b6d61-b07a-4ef4-9a06-7c91adb9b966",
+              "account_id": "f160ed5a-19bf-42de-899a-ca1debcd29e7",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "86627e8f-1616-4d1c-97f1-3aec2a8164f8",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1625.00000000",
+              "date": "2026-09-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:00:08.849072+00:00"
+            },
+            {
+              "id": "019f30ca-2234-4678-8e40-8d54e6eb49d5",
+              "connection_id": "4a5b6d61-b07a-4ef4-9a06-7c91adb9b966",
+              "account_id": "f160ed5a-19bf-42de-899a-ca1debcd29e7",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "cbfdc131-45a1-4b7e-b065-599885fcee5c",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1625.00000000",
+              "date": "2026-10-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-16T09:00:08.887016+00:00"
+            }
+          ],
+          "limitations": "Inferred from charge timing and amounts. Not proof of a subscription; check whether it is still wanted or used."
+        },
+        "source_ids": [
+          "2a6b5b8e-f204-485d-b73e-1f61792d8fc4",
+          "65f57107-fdd1-41a4-bd45-2c61d42d004d",
+          "4f60e206-1ad9-4274-9250-b6e05d4cf9bb",
+          "7cb2df2c-a87c-4c9c-aaa7-9abf9a4f0f19",
+          "86627e8f-1616-4d1c-97f1-3aec2a8164f8",
+          "cbfdc131-45a1-4b7e-b065-599885fcee5c"
+        ],
+        "version": 1,
+        "work_id": null,
+        "detector_version": "discovery-2026-10-16-v2",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "4a5b6d61-b07a-4ef4-9a06-7c91adb9b966",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-16T09:00:08.907224+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-16T09:00:08.961542+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      }
+    ]
+  },
+  "errors": []
+}

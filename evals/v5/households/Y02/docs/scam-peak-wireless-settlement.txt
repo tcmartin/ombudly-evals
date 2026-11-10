@@ -1,0 +1,10 @@
+Title: Email: You're owed $240 from the Peak Wireless settlement
+Kind: email
+
+From: payouts@settlement-claims-center.example
+To: theo.brandt@example.test
+Date: 2026-10-10
+Subject: Final notice: claim your $240 Peak Wireless payout
+
+You qualify for a $240 payout from the Peak Wireless class action. Claim it in 48 hours at http://127.0.0.1:8900/claimsfast/peak-wireless-settlement-payout
+with your bank routing and account number for instant direct deposit.

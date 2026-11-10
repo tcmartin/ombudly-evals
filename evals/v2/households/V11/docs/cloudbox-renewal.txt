@@ -1,0 +1,9 @@
+Title: Email: CloudBox renewal notice
+Kind: email
+
+From: billing@cloudbox.example
+To: mara.quinn@example.test
+Date: 2026-02-22
+Subject: Your CloudBox plan renews March 1
+
+Your annual plan renews for $79.99. Annual plans can be refunded within 14 days of renewal.

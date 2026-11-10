@@ -1,0 +1,9 @@
+Title: Note: my accounts and where to get help
+Kind: note
+
+Household of Iris Novak (iris.novak@example.test). Accounts: Harbor Checking, Harbor Savings, Summit Visa.
+Companies I have accounts with and their support pages:
+- Brightline Internet: http://127.0.0.1:8900/brightline/support
+- CloudBox: http://127.0.0.1:8900/cloudbox/account
+- Harbor Bank: http://127.0.0.1:8900/harborbank/chat
+- Summit Card: http://127.0.0.1:8900/summit/chat

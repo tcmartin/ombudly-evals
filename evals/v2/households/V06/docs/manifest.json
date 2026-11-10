@@ -1,0 +1,42 @@
+[
+  {
+    "file": "shopmart-order-SM-93975.txt",
+    "title": "Email: ShopMart order SM-93975",
+    "kind": "email"
+  },
+  {
+    "file": "shopmart-adjustment-SM-93975.txt",
+    "title": "Email: ShopMart billing adjustment SM-93975",
+    "kind": "email"
+  },
+  {
+    "file": "shopmart-return-SM-80618.txt",
+    "title": "Email: ShopMart return SM-80618",
+    "kind": "email"
+  },
+  {
+    "file": "legal-notice.txt",
+    "title": "Email: Legal notice - StreamFlix settlement",
+    "kind": "email"
+  },
+  {
+    "file": "shopmart-two-orders.txt",
+    "title": "Email: ShopMart - 2 orders confirmed",
+    "kind": "email"
+  },
+  {
+    "file": "shopmart-return-SM-75405.txt",
+    "title": "Email: ShopMart return SM-75405",
+    "kind": "email"
+  },
+  {
+    "file": "refund-verification.txt",
+    "title": "Email: Action required - pending refunds",
+    "kind": "email"
+  },
+  {
+    "file": "account-directory.txt",
+    "title": "Note: my accounts and where to get help",
+    "kind": "note"
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "run_id": "20261016-085641",
+  "label": "codex-gpt-6.1-sol",
+  "started_at": "2026-10-16T08:56:41.384115+00:00",
+  "route": "codex exec, gpt-6.1-sol",
+  "limit_usd": "n/a (external)",
+  "workspace": true,
+  "verify": true,
+  "households": [
+    "H01",
+    "H02",
+    "H03",
+    "H04",
+    "H05",
+    "H06",
+    "H07",
+    "H08",
+    "H09",
+    "H10",
+    "H11",
+    "H12",
+    "H13",
+    "H14",
+    "H15",
+    "H16",
+    "H17",
+    "H18"
+  ],
+  "prompt_mode": "external agent (Codex) with the app's review instructions over MCP"
+}

@@ -1,0 +1,10 @@
+Title: Note: my accounts and contacts
+Kind: note
+
+Household of Maya Chen (maya.chen@home.{domain}). Accounts: Harbor Checking, Summit Visa. My email is connected to Ombudly.
+Companies and how to reach them:
+- Harbor Optics: support@harboroptics.{domain}
+- LinguaLeap: billing@lingualeap.{domain}
+- Maple Print Shop: orders@mapleprintshop.{domain}
+- RecipeBox: billing@recipebox.{domain}
+- Riverside Lofts: office@riversidelofts.{domain}

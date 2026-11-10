@@ -1,0 +1,9 @@
+Title: Email: ShopMart return SM-88018
+Kind: email
+
+From: returns@shopmart.example
+To: chloe.varga@example.test
+Date: 2026-08-13
+Subject: Return received for order SM-88018
+
+We received your return (tracking 1Z9851630643). Your refund of $110.36 will post in 5-7 business days.

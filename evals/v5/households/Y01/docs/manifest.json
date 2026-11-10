@@ -1,0 +1,17 @@
+[
+  {
+    "file": "notice-lumen-broadband-settlement.txt",
+    "title": "Email: Legal notice - Lumen Broadband settlement",
+    "kind": "email"
+  },
+  {
+    "file": "scam-lumen-broadband-settlement.txt",
+    "title": "Email: You're owed $240 from the Lumen Broadband settlement",
+    "kind": "email"
+  },
+  {
+    "file": "account-directory.txt",
+    "title": "Note: my accounts",
+    "kind": "note"
+  }
+]

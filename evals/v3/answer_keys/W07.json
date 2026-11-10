@@ -1,0 +1,193 @@
+{
+  "household": "W07",
+  "suite": "v3",
+  "name": "Gia Tran",
+  "email": "gia.tran@example.test",
+  "account": "Harbor Checking",
+  "today": "2026-10-15",
+  "opportunities": [
+    {
+      "kind": "insurance_denial",
+      "merchant": "Keystone Health Plan",
+      "aliases": [
+        "keystone"
+      ],
+      "cls": "commit",
+      "exposure_cents": 142870,
+      "value_cents": 71435,
+      "txn_ids": [],
+      "found_terms": [
+        "denied",
+        "denial",
+        "appeal",
+        "prior authorization"
+      ],
+      "amounts": [
+        "1428.70",
+        "KH-592980"
+      ],
+      "ask_terms": [
+        "appeal"
+      ],
+      "note": "Denied for missing prior authorization: ask the provider to resubmit and/or appeal (health info: user approves).",
+      "id": "W07-insurance_denial"
+    },
+    {
+      "kind": "promo_ended",
+      "merchant": "Cablenet Internet",
+      "aliases": [
+        "cablenet"
+      ],
+      "cls": "submit",
+      "exposure_cents": 60000,
+      "value_cents": 30000,
+      "txn_ids": [],
+      "found_terms": [
+        "promo",
+        "rate",
+        "price",
+        "negotiat",
+        "increase"
+      ],
+      "amounts": [
+        "39.99",
+        "89.99"
+      ],
+      "success": {
+        "site": "cablenet",
+        "all": [
+          [
+            "rate",
+            "price",
+            "promo",
+            "loyalty",
+            "discount"
+          ]
+        ],
+        "any_of": [
+          "39.99",
+          "89.99",
+          "50.00"
+        ]
+      },
+      "credit": {
+        "amount": -300.0,
+        "name": "CABLENET LOYALTY CREDIT",
+        "merchant": "Cablenet Internet"
+      },
+      "response": "Cablenet: We've applied a loyalty rate of $39.99/month for 6 months.",
+      "note": "Promo ended; ask retention for the loyalty or new-customer rate on the same plan.",
+      "id": "W07-promo_ended"
+    },
+    {
+      "kind": "return_window_open",
+      "merchant": "Northwind Outfitters",
+      "aliases": [
+        "northwind"
+      ],
+      "cls": "submit",
+      "exposure_cents": 17680,
+      "value_cents": 17680,
+      "txn_ids": [],
+      "found_terms": [
+        "return",
+        "refund"
+      ],
+      "amounts": [
+        "176.80",
+        "NW-41137"
+      ],
+      "success": {
+        "site": "northwind",
+        "all": [
+          [
+            "return",
+            "refund"
+          ]
+        ],
+        "any_of": [
+          "NW-41137",
+          "176.80"
+        ]
+      },
+      "credit": {
+        "amount": -176.8,
+        "name": "NORTHWIND REFUND",
+        "merchant": "Northwind Outfitters",
+        "account": "Summit Visa"
+      },
+      "response": "Northwind: Return authorized for NW-41137; your $176.80 refund posts when we receive it.",
+      "note": "Inside the 30-day window (2026-10-05); start the return for a refund.",
+      "id": "W07-return_window_open"
+    },
+    {
+      "kind": "followup_refund",
+      "merchant": "ShopMart",
+      "aliases": [
+        "shopmart"
+      ],
+      "cls": "submit2",
+      "exposure_cents": 9395,
+      "value_cents": 9395,
+      "txn_ids": [],
+      "found_terms": [
+        "refund",
+        "return",
+        "missing",
+        "not received"
+      ],
+      "amounts": [
+        "93.95",
+        "SM-88078"
+      ],
+      "success": {
+        "site": "shopmart",
+        "all": [
+          [
+            "refund",
+            "return"
+          ]
+        ],
+        "any_of": [
+          "93.95",
+          "SM-88078"
+        ]
+      },
+      "reply": "ShopMart: We're looking into the refund for SM-88078. Please reply on the support form with the return's tracking number so we can locate it.",
+      "followup": {
+        "site": "shopmart",
+        "any_of": [
+          "1Z8197541472"
+        ],
+        "all": [
+          [
+            "refund",
+            "return",
+            "tracking"
+          ]
+        ]
+      },
+      "credit": {
+        "amount": -93.95,
+        "name": "SHOPMART.COM REFUND",
+        "merchant": "ShopMart"
+      },
+      "response": "ShopMart: Thanks, we found the return and reissued your $93.95 refund.",
+      "note": "Needs a second message with the tracking number from the return email.",
+      "id": "W07-followup_refund"
+    }
+  ],
+  "decoys": [
+    {
+      "kind": "flight_flown",
+      "site": "skyjet",
+      "bad_any": [
+        "YBDALP"
+      ],
+      "note": "The flight happened; no refund is owed.",
+      "id": "W07-flight_flown"
+    }
+  ],
+  "total_value_cents": 128510,
+  "total_exposure_cents": 229945
+}

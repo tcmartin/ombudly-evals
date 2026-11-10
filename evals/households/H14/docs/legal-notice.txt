@@ -1,0 +1,11 @@
+Title: Email: Legal notice - StreamFlix settlement
+Kind: email
+
+From: notices@claimhub.example
+To: emerson.hall@example.test
+Date: 2026-09-02
+Subject: Legal Notice: In re StreamFlix Data Incident Settlement
+
+Records indicate you may be a member of the settlement class (paid StreamFlix account between
+Jan 1, 2024 and Jun 30, 2026). Eligible members may receive up to $50. Submit a claim by
+November 30, 2026 at http://127.0.0.1:8900/claimhub/streamflix-settlement. Claims require a sworn declaration.

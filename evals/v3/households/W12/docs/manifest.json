@@ -1,0 +1,57 @@
+[
+  {
+    "file": "northwind-NW-53175.txt",
+    "title": "Email: Northwind Outfitters order NW-53175",
+    "kind": "email"
+  },
+  {
+    "file": "note-jacket.txt",
+    "title": "Note: jacket",
+    "kind": "note"
+  },
+  {
+    "file": "eob-KH-416931.txt",
+    "title": "Email: Keystone Health Plan Explanation of Benefits, claim KH-416931",
+    "kind": "email"
+  },
+  {
+    "file": "stmary-bill-SM326961.txt",
+    "title": "Email: St Mary Hospital statement, account SM326961",
+    "kind": "email"
+  },
+  {
+    "file": "cablenet-promo.txt",
+    "title": "Email: Cablenet promotional rate ending",
+    "kind": "email"
+  },
+  {
+    "file": "pinecrest-PH-29717.png",
+    "title": "Photo: Pinecrest Hardware return slip PH-29717",
+    "kind": "receipt"
+  },
+  {
+    "file": "quickloan-notice.txt",
+    "title": "Email: QuickLoan settlement notice",
+    "kind": "email"
+  },
+  {
+    "file": "eob-KH-628284.txt",
+    "title": "Email: Keystone Health Plan Explanation of Benefits, claim KH-628284",
+    "kind": "email"
+  },
+  {
+    "file": "stmary-bill-SM861299.txt",
+    "title": "Email: St Mary Hospital statement, account SM861299",
+    "kind": "email"
+  },
+  {
+    "file": "refund-verification.txt",
+    "title": "Email: Action required - pending refunds",
+    "kind": "email"
+  },
+  {
+    "file": "account-directory.txt",
+    "title": "Note: my accounts and where to get help",
+    "kind": "note"
+  }
+]

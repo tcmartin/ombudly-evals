@@ -1,0 +1,12 @@
+Title: Note: my accounts and where to get help
+Kind: note
+
+Household of Leo Haddad (leo.haddad@example.test). Accounts: Harbor Checking, Harbor Savings, Summit Visa.
+Companies I have accounts with and their support pages:
+- Cablenet Internet: http://127.0.0.1:8900/cablenet/support
+- Harbor Bank: http://127.0.0.1:8900/harborbank/chat
+- Keystone Health Plan: http://127.0.0.1:8900/keystone/members
+- Northwind Outfitters: http://127.0.0.1:8900/northwind/returns
+- Pinecrest Hardware: http://127.0.0.1:8900/pinecrest/support
+- St Mary Hospital: http://127.0.0.1:8900/stmary/billing
+- Summit Card: http://127.0.0.1:8900/summit/chat

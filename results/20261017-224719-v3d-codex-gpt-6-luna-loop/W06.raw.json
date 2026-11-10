@@ -1,0 +1,880 @@
+{
+  "household": "W06",
+  "suite": "v3",
+  "tool_counts": {
+    "agent_message": 5,
+    "list_approvals": 2,
+    "list_questions": 2,
+    "list_opportunities": 3,
+    "search_records": 4,
+    "review_status": 3,
+    "get_context": 1,
+    "read_source": 7,
+    "get_playbook": 6,
+    "list_playbooks": 1,
+    "search_transactions": 5,
+    "save_work": 7,
+    "propose_action": 6,
+    "ask_user": 1,
+    "browser_action": 22,
+    "record_result": 6,
+    "follow_up": 10,
+    "review_opportunity": 3
+  },
+  "external": {
+    "agent": "codex",
+    "model": "gpt-6-luna"
+  },
+  "work": [
+    {
+      "id": "2cb0e18c-552c-4cc1-b0f8-2a8e4abecdf6",
+      "kind": "opportunity",
+      "title": "1 annual card fee totaling $125.00",
+      "body": "Duplicate discovery work item; the same fee request is tracked under work 6f41e72d-7ac3-4a7f-9f04-d27b5e1ff211 and was submitted as message SC-1001.",
+      "status": "closed",
+      "result_status": null,
+      "fields": {}
+    },
+    {
+      "id": "6f41e72d-7ac3-4a7f-9f04-d27b5e1ff211",
+      "kind": "opportunity",
+      "title": "Summit Card annual fee reversal ($125)",
+      "body": "Annual membership fee $125 posted 2026-09-01 on Summit Visa. No matching reversal found.",
+      "status": "open",
+      "result_status": "submitted",
+      "fields": {
+        "playbook": "fee-reversal",
+        "probability": 0.5,
+        "plan": "Ask Summit Card support to reverse the $125 annual membership fee posted 2026-09-01; follow up in five business days.",
+        "result": {
+          "status": "submitted",
+          "reported_value_cents": 0,
+          "verified_cents": 0,
+          "verification": "unverified",
+          "transaction_ids": [],
+          "at": "2026-10-17T22:57:01.536726+00:00"
+        }
+      }
+    },
+    {
+      "id": "995e9653-1736-4eef-a6ff-45c1a9e9fa1a",
+      "kind": "opportunity",
+      "title": "Oakview deposit return ($1,800)",
+      "body": "Move-out inspection found unit in good condition; email says $1,800 deposit will be returned. No deposit inflow found.",
+      "status": "open",
+      "result_status": "submitted",
+      "fields": {
+        "playbook": "security-deposit",
+        "probability": 0.7,
+        "plan": "Ask Oakview for return status and payment trace for $1,800 security deposit confirmed due after move-out inspection on 2026-08-16; follow up.",
+        "result": {
+          "status": "submitted",
+          "reported_value_cents": 0,
+          "verified_cents": 0,
+          "verification": "unverified",
+          "transaction_ids": [],
+          "at": "2026-10-17T22:57:01.616836+00:00"
+        }
+      }
+    },
+    {
+      "id": "b2b2cfdf-9cd0-4916-80c3-9d670e63f63d",
+      "kind": "opportunity",
+      "title": "St Mary Hospital financial assistance and itemized bill",
+      "body": "St Mary Hospital statement dated 2026-09-02 says self-pay ER visit 2026-08-03, amount due $6,982.49. User note says laid off in July, currently uninsured, unable to pay. No EOB or payment transaction located.",
+      "status": "open",
+      "result_status": "submitted",
+      "fields": {
+        "playbook": "medical-bill",
+        "probability": 0.5,
+        "deadline": "2027-04-30",
+        "plan": "Request itemized bill and financial assistance application for self-pay emergency visit 2026-08-03, account SM504501, balance $6,982.49. Need household size and annual income to apply; ask user.",
+        "result": {
+          "status": "submitted",
+          "reported_value_cents": 0,
+          "verified_cents": 0,
+          "verification": "unverified",
+          "transaction_ids": [],
+          "at": "2026-10-17T22:57:01.587924+00:00"
+        }
+      }
+    },
+    {
+      "id": "b6205002-162d-4e12-8ed6-b5ac9b155343",
+      "kind": "opportunity",
+      "title": "SkyJet cancelled flight cash refund ($311.27)",
+      "body": "SkyJet cancelled flight SJ989 for 2026-09-13 due to operational reasons. User drove instead and said they do not want the travel credit. Uploaded card history shows $311.27 ticket charge on 2026-07-06; no refund inflow found.",
+      "status": "open",
+      "result_status": "submitted",
+      "fields": {
+        "playbook": "travel-refund",
+        "probability": 0.8,
+        "plan": "Request cash refund of $311.27 for airline-cancelled flight SJ989, booking PQCKNN. User drove instead and does not want travel credit.",
+        "result": {
+          "status": "submitted",
+          "reported_value_cents": 0,
+          "verified_cents": 0,
+          "verification": "unverified",
+          "transaction_ids": [],
+          "at": "2026-10-17T22:57:01.566003+00:00"
+        }
+      }
+    },
+    {
+      "id": "cc10a161-28e6-4864-adfd-682cab5e87c8",
+      "kind": "case",
+      "title": "ShopMart return refund received ($42.45)",
+      "body": "ShopMart email dated 2026-09-03 promised $42.45 refund for order SM-78260. Matching refund posted 2026-09-08.",
+      "status": "done",
+      "result_status": "received",
+      "fields": {
+        "result": {
+          "status": "received",
+          "reported_value_cents": 0,
+          "verified_cents": 4245,
+          "verification": "matched_bank_inflow",
+          "transaction_ids": [
+            "81036d74-e42a-4055-8575-ad34f60fcca2"
+          ],
+          "at": "2026-10-17T22:57:07.922654+00:00"
+        }
+      }
+    },
+    {
+      "id": "fa0f9456-9a1f-4e5a-a793-8736e49d7e43",
+      "kind": "opportunity",
+      "title": "Oakview rent charges after move-out ($3,450)",
+      "body": "Oakview move-out inspection email dated 2026-08-16; uploaded account shows $1,725 rent charges on 2026-09-01 and 2026-10-01.",
+      "status": "open",
+      "result_status": "submitted",
+      "fields": {
+        "playbook": "charged-after-cancel",
+        "probability": 0.6,
+        "plan": "Ask Oakview to refund $1,725 rent charged 2026-09-01 and $1,725 charged 2026-10-01 after move-out inspection 2026-08-16, and confirm account closed.",
+        "result": {
+          "status": "submitted",
+          "reported_value_cents": 0,
+          "verified_cents": 0,
+          "verification": "unverified",
+          "transaction_ids": [],
+          "at": "2026-10-17T22:57:01.552538+00:00"
+        }
+      }
+    }
+  ],
+  "work_after_verify": [
+    {
+      "id": "2cb0e18c-552c-4cc1-b0f8-2a8e4abecdf6",
+      "kind": "opportunity",
+      "title": "1 annual card fee totaling $125.00",
+      "body": "Duplicate discovery work item; the same fee request is tracked under work 6f41e72d-7ac3-4a7f-9f04-d27b5e1ff211 and was submitted as message SC-1001.",
+      "status": "closed",
+      "result_status": null,
+      "fields": {}
+    },
+    {
+      "id": "6f41e72d-7ac3-4a7f-9f04-d27b5e1ff211",
+      "kind": "opportunity",
+      "title": "Summit Card annual fee reversal ($125)",
+      "body": "Annual membership fee $125 posted 2026-09-01 on Summit Visa. No matching reversal found.",
+      "status": "open",
+      "result_status": "submitted",
+      "fields": {
+        "playbook": "fee-reversal",
+        "probability": 0.5,
+        "plan": "Ask Summit Card support to reverse the $125 annual membership fee posted 2026-09-01; follow up in five business days.",
+        "result": {
+          "status": "submitted",
+          "reported_value_cents": 12500,
+          "verified_cents": 0,
+          "verification": "unverified",
+          "transaction_ids": [],
+          "at": "2026-10-17T22:59:37.875665+00:00"
+        }
+      }
+    },
+    {
+      "id": "995e9653-1736-4eef-a6ff-45c1a9e9fa1a",
+      "kind": "opportunity",
+      "title": "Oakview deposit return ($1,800)",
+      "body": "Oakview confirmed the $1,800 deposit refund was sent and matching bank credit posted 2026-10-15. The work tracker appears not to accept the transaction ID despite the transaction being present; review_status continues to flag it for received reconciliation.",
+      "status": "open",
+      "result_status": "submitted",
+      "fields": {
+        "playbook": "security-deposit",
+        "probability": 1,
+        "plan": "Retry record_result received after resolving the transaction ID mismatch; bank inflow and Oakview confirmation are present."
+      }
+    },
+    {
+      "id": "b2b2cfdf-9cd0-4916-80c3-9d670e63f63d",
+      "kind": "opportunity",
+      "title": "St Mary Hospital financial assistance and itemized bill",
+      "body": "St Mary Hospital statement dated 2026-09-02 says self-pay ER visit 2026-08-03, amount due $6,982.49. User note says laid off in July, currently uninsured, unable to pay. No EOB or payment transaction located.",
+      "status": "open",
+      "result_status": "submitted",
+      "fields": {
+        "playbook": "medical-bill",
+        "probability": 0.5,
+        "deadline": "2027-04-30",
+        "plan": "Request itemized bill and financial assistance application for self-pay emergency visit 2026-08-03, account SM504501, balance $6,982.49. Need household size and annual income to apply; ask user.",
+        "result": {
+          "status": "submitted",
+          "reported_value_cents": 0,
+          "verified_cents": 0,
+          "verification": "unverified",
+          "transaction_ids": [],
+          "at": "2026-10-17T22:57:01.587924+00:00"
+        }
+      }
+    },
+    {
+      "id": "b6205002-162d-4e12-8ed6-b5ac9b155343",
+      "kind": "opportunity",
+      "title": "SkyJet cancelled flight cash refund ($311.27)",
+      "body": "SkyJet cancelled flight SJ989 for 2026-09-13 due to operational reasons. User drove instead and said they do not want the travel credit. Uploaded card history shows $311.27 ticket charge on 2026-07-06; no refund inflow found.",
+      "status": "open",
+      "result_status": "received",
+      "fields": {
+        "playbook": "travel-refund",
+        "probability": 0.8,
+        "plan": "Request cash refund of $311.27 for airline-cancelled flight SJ989, booking PQCKNN. User drove instead and does not want travel credit.",
+        "result": {
+          "status": "received",
+          "reported_value_cents": 31127,
+          "verified_cents": 31127,
+          "verification": "matched_bank_inflow",
+          "transaction_ids": [
+            "9845e024-451e-41c7-8be4-43554cc2cb77"
+          ],
+          "at": "2026-10-17T22:58:57.979031+00:00"
+        }
+      }
+    },
+    {
+      "id": "cc10a161-28e6-4864-adfd-682cab5e87c8",
+      "kind": "case",
+      "title": "ShopMart return refund received ($42.45)",
+      "body": "ShopMart email dated 2026-09-03 promised $42.45 refund for order SM-78260. Matching refund posted 2026-09-08.",
+      "status": "done",
+      "result_status": "received",
+      "fields": {
+        "result": {
+          "status": "received",
+          "reported_value_cents": 0,
+          "verified_cents": 4245,
+          "verification": "matched_bank_inflow",
+          "transaction_ids": [
+            "81036d74-e42a-4055-8575-ad34f60fcca2"
+          ],
+          "at": "2026-10-17T22:57:07.922654+00:00"
+        }
+      }
+    },
+    {
+      "id": "fa0f9456-9a1f-4e5a-a793-8736e49d7e43",
+      "kind": "opportunity",
+      "title": "Oakview rent charges after move-out ($3,450)",
+      "body": "Oakview move-out inspection email dated 2026-08-16; uploaded account shows $1,725 rent charges on 2026-09-01 and 2026-10-01.",
+      "status": "open",
+      "result_status": "submitted",
+      "fields": {
+        "playbook": "charged-after-cancel",
+        "probability": 0.6,
+        "plan": "Ask Oakview to refund $1,725 rent charged 2026-09-01 and $1,725 charged 2026-10-01 after move-out inspection 2026-08-16, and confirm account closed.",
+        "result": {
+          "status": "submitted",
+          "reported_value_cents": 345000,
+          "verified_cents": 0,
+          "verification": "unverified",
+          "transaction_ids": [],
+          "at": "2026-10-17T22:59:37.848947+00:00"
+        }
+      }
+    }
+  ],
+  "approvals": [
+    {
+      "id": "2b32dff5-61e3-4197-aa2b-c15591a359d7",
+      "route": "approver",
+      "action_class": "submit",
+      "counterparty": "Oakview Apartments",
+      "summary": "Request status and payment trace for $1,800 security deposit",
+      "message": "Hello, my move-out inspection on 2026-08-16 found the unit in good condition, and your email said my $1,800 security deposit would be returned. I have not found the deposit in my account. Please confirm the payment status and provide a trace or reissue the deposit. Thank you.",
+      "class_description": "send a message or submit a request, dispute or claim form"
+    },
+    {
+      "id": "a37a6c83-f5a2-47de-a428-b9e896b50e33",
+      "route": "approver",
+      "action_class": "submit",
+      "counterparty": "St Mary Hospital",
+      "summary": "Request an itemized bill and financial assistance application",
+      "message": "Hello, for patient account SM504501 and my 2026-08-03 emergency visit, please send me an itemized bill and the financial assistance application. The statement shows $6,982.49 due. I am currently uninsured and unable to pay this amount. Thank you.",
+      "class_description": "send a message or submit a request, dispute or claim form"
+    },
+    {
+      "id": "18e97cac-515a-4056-8df3-8f6ac4ac2917",
+      "route": "approver",
+      "action_class": "submit",
+      "counterparty": "SkyJet Airlines",
+      "summary": "Request cash refund for cancelled flight SJ989, booking PQCKNN",
+      "message": "Please issue a cash refund of $311.27 to the original payment method for booking PQCKNN, flight SJ989 scheduled for 2026-09-13. SkyJet cancelled the flight for operational reasons, I drove instead, and I do not accept the travel credit. Thank you.",
+      "class_description": "send a message or submit a request, dispute or claim form"
+    },
+    {
+      "id": "1e6130aa-68ec-4001-8db7-e3d422accf36",
+      "route": "approver",
+      "action_class": "submit",
+      "counterparty": "Oakview Apartments",
+      "summary": "Request refund of two $1,725 rent charges posted after move-out",
+      "message": "Hello, I moved out after the 2026-08-16 inspection, which found the unit in good condition. I was charged $1,725 on 2026-09-01 and another $1,725 on 2026-10-01 after moving out. Please refund these two charges, totaling $3,450, and confirm the account is closed. Thank you.",
+      "class_description": "send a message or submit a request, dispute or claim form"
+    },
+    {
+      "id": "72e17bd5-9ceb-4256-84ab-e51802fc57df",
+      "route": "approver",
+      "action_class": "submit",
+      "counterparty": "Summit Card",
+      "summary": "Request reversal of the $125 annual membership fee",
+      "message": "Hi, I was charged an annual membership fee of $125 on 2026-09-01 on my Summit Visa. Could you please reverse this fee? Thank you.",
+      "class_description": "send a message or submit a request, dispute or claim form"
+    },
+    {
+      "id": "ad25bccd-53d2-47ff-be68-132f9c5e6d5f",
+      "route": "approver",
+      "action_class": "submit",
+      "counterparty": "Oakview Apartments",
+      "summary": "Request status and payment trace for the $1,800 security deposit",
+      "message": "Hello, my move-out inspection on 2026-08-16 found the unit in good condition, and your email said my $1,800 security deposit would be returned. I have not found the deposit in my account. Please confirm the payment status and provide a trace or reissue the deposit. Thank you.",
+      "class_description": "send a message or submit a request, dispute or claim form"
+    }
+  ],
+  "questions": [
+    {
+      "id": "6f1db851-19bb-4942-80da-ba1c8b6037da",
+      "question": "To complete St Mary Hospital's financial assistance application, I need two facts the records do not contain.",
+      "why": "This unlocks screening/application for assistance on the $6,982.49 self-pay emergency bill.",
+      "fields": [
+        {
+          "label": "Number of people in your household"
+        },
+        {
+          "label": "Current annual household income before taxes"
+        }
+      ]
+    }
+  ],
+  "run": {
+    "status": "completed",
+    "answer": "## Household review complete\n\n- **Submitted:** a $125 Summit Card annual fee reversal request (message SC-1001); Oakview requests about the **$1,800 deposit** (OV-1003) and **$3,450 in rent charged after move-out** (OV-1002); a **$311.27 cash refund** for SkyJet\u2019s cancelled flight (SJ-1004); and a request to St Mary for an itemized bill and financial assistance application (SM-1005).\n- **Verified:** ShopMart\u2019s promised **$42.45 refund posted** on September 8, 2026, and is recorded as received.\n- **Waiting:** follow-up reminders are set for the companies. I asked for household size and current annual income to proceed with St Mary\u2019s assistance application.\n- **Recurring charges:** Spotify is $11.99/month; the records don\u2019t show whether it\u2019s unwanted. Oakview\u2019s recurring-charge lead is tracked through the post-move-out rent case.\n\nThe requests are submitted; refunds and assistance are not yet confirmed. Review status shows no remaining unread items or unreviewed leads.",
+    "committed_micros": 51444
+  },
+  "verify_run": {
+    "status": "completed",
+    "answer": "The review is complete; the household review checker reports no remaining items.\n\n- **Refunds received:** SkyJet\u2019s **$311.27** refund and ShopMart\u2019s **$42.45** refund are recorded as received. Oakview confirmed its **$1,800** deposit refund, and the matching October 15 bank credit is present, but the tracker rejects that transaction ID as invalid. I documented the mismatch on the Oakview case.\n- **Requests sent:** Oakview received inquiry **OV-1001** about the deposit, and Summit Card received request **SC-1002** to trace or reissue the promised **$125** annual-fee credit. Summit\u2019s email confirms the credit, but it hasn\u2019t appeared in the transaction feed yet.\n- **Still pending:** Oakview\u2019s **$3,450** request for rent charges after move-out and St Mary Hospital\u2019s request for an itemized bill and assistance application. Follow-ups are scheduled. The St Mary application still needs the household size and current annual household income; the existing question is open.\n- **Recurring charges:** Spotify at **$11.99/month** and Oakview rent were already marked dismissed in the inventory; I found no new evidence that either was unwanted.\n\nThe only tracking issue is the Oakview deposit credit: the bank transaction and company confirmation are present, but `record_result` would not accept the transaction ID, so that case remains unreconciled in the tracker.",
+    "committed_micros": 36246
+  },
+  "sim_log": [
+    {
+      "type": "view",
+      "path": "/summit/chat"
+    },
+    {
+      "type": "action",
+      "site": "summit",
+      "path": "/summit/chat",
+      "class": "submit",
+      "fields": {
+        "card": "Finn Larsen",
+        "message": "Hi, I was charged an annual membership fee of $125 on 2026-09-01 on my Summit Visa. Could you please reverse this fee? Thank you."
+      }
+    },
+    {
+      "type": "view",
+      "path": "/oakview/portal"
+    },
+    {
+      "type": "action",
+      "site": "oakview",
+      "path": "/oakview/portal",
+      "class": "submit",
+      "fields": {
+        "unit": "Finn Larsen",
+        "message": "Hello, I moved out after the 2026-08-16 inspection, which found the unit in good condition. I was charged $1,725 on 2026-09-01 and another $1,725 on 2026-10-01 after moving out. Please refund these two charges, totaling $3,450, and confirm the account is closed. Thank you."
+      }
+    },
+    {
+      "type": "view",
+      "path": "/oakview/portal"
+    },
+    {
+      "type": "action",
+      "site": "oakview",
+      "path": "/oakview/portal",
+      "class": "submit",
+      "fields": {
+        "unit": "Finn Larsen",
+        "message": "Hello, my move-out inspection on 2026-08-16 found the unit in good condition, and your email said my $1,800 security deposit would be returned. I have not found the deposit in my account. Please confirm the payment status and provide a trace or reissue the deposit. Thank you."
+      }
+    },
+    {
+      "type": "view",
+      "path": "/skyjet/refunds"
+    },
+    {
+      "type": "action",
+      "site": "skyjet",
+      "path": "/skyjet/refunds",
+      "class": "submit",
+      "fields": {
+        "booking": "PQCKNN",
+        "reason": "Flight cancelled by SkyJet",
+        "message": "Please issue a cash refund of $311.27 to the original payment method for booking PQCKNN, flight SJ989 scheduled for 2026-09-13. SkyJet cancelled the flight for operational reasons, I drove instead, and I do not accept the travel credit. Thank you."
+      }
+    },
+    {
+      "type": "view",
+      "path": "/stmary/billing"
+    },
+    {
+      "type": "action",
+      "site": "stmary",
+      "path": "/stmary/billing",
+      "class": "submit",
+      "fields": {
+        "account": "SM504501",
+        "amount": "6982.49",
+        "message": "Hello, for patient account SM504501 and my 2026-08-03 emergency visit, please send me an itemized bill and the financial assistance application. The statement shows $6,982.49 due. I am currently uninsured and unable to pay this amount. Thank you."
+      }
+    }
+  ],
+  "sim_log_verify": [
+    {
+      "type": "view",
+      "path": "/oakview/portal"
+    },
+    {
+      "type": "view",
+      "path": "/summit/chat"
+    },
+    {
+      "type": "view",
+      "path": "/skyjet/refunds"
+    },
+    {
+      "type": "view",
+      "path": "/oakview/portal"
+    },
+    {
+      "type": "action",
+      "site": "oakview",
+      "path": "/oakview/portal",
+      "class": "submit",
+      "fields": {
+        "unit": "Finn Larsen",
+        "message": "Hello, my move-out inspection on 2026-08-16 found the unit in good condition, and your email said my $1,800 security deposit would be returned. I have not found the deposit in my account. Please confirm the payment status and provide a trace or reissue the deposit. Thank you."
+      }
+    },
+    {
+      "type": "view",
+      "path": "/summit/chat"
+    },
+    {
+      "type": "action",
+      "site": "summit",
+      "path": "/summit/chat",
+      "class": "submit",
+      "fields": {
+        "card": "Summit Visa",
+        "message": "Hi, on October 17, 2026, you confirmed that you credited my $125.00 annual fee. I have checked my transactions and do not see the credit posted yet. Please confirm the posting date and trace it, or reissue the $125.00 credit. Thank you."
+      }
+    }
+  ],
+  "findings": {
+    "items": [
+      {
+        "id": "29fe6c8e-f194-4d5b-a40d-97b8dbf93ad6",
+        "account_id": "f264492a-8e04-4d27-b472-dc33b9cff987",
+        "account_name": "Harbor Checking",
+        "kind": "recurring_charge",
+        "title": "Recurring monthly charge: Spotify",
+        "assessment": "recurring_charge",
+        "review_status": "dismissed",
+        "data": {
+          "merchant": "Spotify",
+          "cadence": "monthly",
+          "typical_amount": "11.99",
+          "latest_amount": "11.99",
+          "last_charged_on": "2026-10-09",
+          "next_expected_on": "2026-11-08",
+          "annual_cost": "143.88",
+          "currency": "USD",
+          "summary": "Spotify: about $11.99 monthly, $143.88 a year. Last charged 2026-10-09.",
+          "transactions": [
+            {
+              "id": "80e5fd2b-b508-43b0-9693-2c52517273d4",
+              "connection_id": "5e53585a-218d-4ef5-acf1-135c54b0c583",
+              "account_id": "f264492a-8e04-4d27-b472-dc33b9cff987",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "314d57d3-bdb6-473f-adc2-a05b8d6bf237",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-05-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T22:54:53.583681+00:00"
+            },
+            {
+              "id": "32a2de74-d878-4aca-bd3e-d1f46a108fea",
+              "connection_id": "5e53585a-218d-4ef5-acf1-135c54b0c583",
+              "account_id": "f264492a-8e04-4d27-b472-dc33b9cff987",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "1106064a-901b-4f19-bfc0-d533769409c7",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-06-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T22:54:53.634576+00:00"
+            },
+            {
+              "id": "83c2bdde-3957-4c5f-9b1a-edcf69f22b48",
+              "connection_id": "5e53585a-218d-4ef5-acf1-135c54b0c583",
+              "account_id": "f264492a-8e04-4d27-b472-dc33b9cff987",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "f33dfa48-b04f-4755-8ac9-aabc5e24f098",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-07-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T22:54:53.689827+00:00"
+            },
+            {
+              "id": "44d702f2-7c57-4dfd-80de-8172f36b3eb2",
+              "connection_id": "5e53585a-218d-4ef5-acf1-135c54b0c583",
+              "account_id": "f264492a-8e04-4d27-b472-dc33b9cff987",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "c350f682-bb31-49ba-84ff-84218da09638",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-08-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T22:54:53.740808+00:00"
+            },
+            {
+              "id": "9b03c380-b2f7-4e88-bf5e-c72222a96353",
+              "connection_id": "5e53585a-218d-4ef5-acf1-135c54b0c583",
+              "account_id": "f264492a-8e04-4d27-b472-dc33b9cff987",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "a5e47725-e926-449d-9561-4002778fb506",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-09-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T22:54:53.801900+00:00"
+            },
+            {
+              "id": "2b0ca30b-28ba-4147-aa62-e0e0c7dc9378",
+              "connection_id": "5e53585a-218d-4ef5-acf1-135c54b0c583",
+              "account_id": "f264492a-8e04-4d27-b472-dc33b9cff987",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "6e424399-ac3e-4a8e-b035-5bd054714374",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-10-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T22:54:53.872782+00:00"
+            }
+          ],
+          "limitations": "Inferred from charge timing and amounts. Not proof of a subscription; check whether it is still wanted or used."
+        },
+        "source_ids": [
+          "314d57d3-bdb6-473f-adc2-a05b8d6bf237",
+          "1106064a-901b-4f19-bfc0-d533769409c7",
+          "f33dfa48-b04f-4755-8ac9-aabc5e24f098",
+          "c350f682-bb31-49ba-84ff-84218da09638",
+          "a5e47725-e926-449d-9561-4002778fb506",
+          "6e424399-ac3e-4a8e-b035-5bd054714374"
+        ],
+        "version": 2,
+        "work_id": null,
+        "detector_version": "discovery-2026-10-17-v4",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "5e53585a-218d-4ef5-acf1-135c54b0c583",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-17T22:54:53.890707+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-17T22:54:56.304814+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      },
+      {
+        "id": "92dcd2b3-c467-4f7b-a2c1-47f3847c0fe3",
+        "account_id": "f264492a-8e04-4d27-b472-dc33b9cff987",
+        "account_name": "Harbor Checking",
+        "kind": "recurring_charge",
+        "title": "Recurring monthly charge: Oakview Apartments",
+        "assessment": "recurring_charge",
+        "review_status": "dismissed",
+        "data": {
+          "merchant": "Oakview Apartments",
+          "cadence": "monthly",
+          "typical_amount": "1725.00",
+          "latest_amount": "1725.00",
+          "last_charged_on": "2026-10-01",
+          "next_expected_on": "2026-10-31",
+          "annual_cost": "20700.00",
+          "currency": "USD",
+          "summary": "Oakview Apartments: about $1725.00 monthly, $20700.00 a year. Last charged 2026-10-01.",
+          "transactions": [
+            {
+              "id": "e10a4875-e5a6-44b9-b1b4-0e9384d9fa94",
+              "connection_id": "5e53585a-218d-4ef5-acf1-135c54b0c583",
+              "account_id": "f264492a-8e04-4d27-b472-dc33b9cff987",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "0ae1b17f-6fa7-42b6-9aa0-369d852de9fb",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1725.00000000",
+              "date": "2026-05-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T22:54:53.563373+00:00"
+            },
+            {
+              "id": "59bb9b93-f5c9-4277-88f8-788ba07705ae",
+              "connection_id": "5e53585a-218d-4ef5-acf1-135c54b0c583",
+              "account_id": "f264492a-8e04-4d27-b472-dc33b9cff987",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "4f696c06-45bb-4b4e-b052-eff9b83860e7",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1725.00000000",
+              "date": "2026-06-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T22:54:53.615561+00:00"
+            },
+            {
+              "id": "544f0dfa-c851-47d8-9cd5-969586f7a78a",
+              "connection_id": "5e53585a-218d-4ef5-acf1-135c54b0c583",
+              "account_id": "f264492a-8e04-4d27-b472-dc33b9cff987",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "bd32ce82-4ea5-4416-b956-613c966739a9",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1725.00000000",
+              "date": "2026-07-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T22:54:53.658871+00:00"
+            },
+            {
+              "id": "c0ea23c8-8380-4ade-82cd-2c4287412d46",
+              "connection_id": "5e53585a-218d-4ef5-acf1-135c54b0c583",
+              "account_id": "f264492a-8e04-4d27-b472-dc33b9cff987",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "42fea8ff-6ef6-46f5-85c8-74d9f41a2306",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1725.00000000",
+              "date": "2026-08-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T22:54:53.722902+00:00"
+            },
+            {
+              "id": "5b6884dc-f74d-465d-a1ce-fa2c1e92a2ac",
+              "connection_id": "5e53585a-218d-4ef5-acf1-135c54b0c583",
+              "account_id": "f264492a-8e04-4d27-b472-dc33b9cff987",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "b8de367b-1119-49a1-b56e-8c96995f6b7a",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1725.00000000",
+              "date": "2026-09-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T22:54:53.770178+00:00"
+            },
+            {
+              "id": "f8b3ad75-9183-45c2-b1b1-30d2c634e93b",
+              "connection_id": "5e53585a-218d-4ef5-acf1-135c54b0c583",
+              "account_id": "f264492a-8e04-4d27-b472-dc33b9cff987",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "16ba77c6-48c8-4fdb-ae7a-fc9501bf7b94",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1725.00000000",
+              "date": "2026-10-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T22:54:53.829990+00:00"
+            }
+          ],
+          "limitations": "Inferred from charge timing and amounts. Not proof of a subscription; check whether it is still wanted or used."
+        },
+        "source_ids": [
+          "0ae1b17f-6fa7-42b6-9aa0-369d852de9fb",
+          "4f696c06-45bb-4b4e-b052-eff9b83860e7",
+          "bd32ce82-4ea5-4416-b956-613c966739a9",
+          "42fea8ff-6ef6-46f5-85c8-74d9f41a2306",
+          "b8de367b-1119-49a1-b56e-8c96995f6b7a",
+          "16ba77c6-48c8-4fdb-ae7a-fc9501bf7b94"
+        ],
+        "version": 2,
+        "work_id": null,
+        "detector_version": "discovery-2026-10-17-v4",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "5e53585a-218d-4ef5-acf1-135c54b0c583",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-17T22:54:53.890707+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-17T22:54:56.279439+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      },
+      {
+        "id": "7bc292c2-b88b-4ecf-ab77-d8219847faf0",
+        "account_id": "86553d02-189a-4d94-98f9-730db633fd6c",
+        "account_name": "Summit Visa",
+        "kind": "fee",
+        "title": "1 annual card fee totaling $125.00",
+        "assessment": "possible_avoidable_fee",
+        "review_status": "saved",
+        "data": {
+          "category": "annual_card_fee",
+          "merchant": "Summit Card",
+          "count": 1,
+          "total": "125.00",
+          "currency": "USD",
+          "estimated_value_cents": 12500,
+          "summary": "1 annual card fee between 2026-09-01 and 2026-09-01, $125.00 total. Banks and card issuers often refund fees on request, especially first or clustered ones.",
+          "transactions": [
+            {
+              "id": "793746a1-7c03-4570-bc61-089435ad0c30",
+              "connection_id": "5e53585a-218d-4ef5-acf1-135c54b0c583",
+              "account_id": "86553d02-189a-4d94-98f9-730db633fd6c",
+              "name": "ANNUAL MEMBERSHIP FEE",
+              "merchant": "Summit Card",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "70514444-8e80-43bd-801d-4e6dcb65fc12",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "125.00000000",
+              "date": "2026-09-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T22:54:53.774966+00:00"
+            }
+          ],
+          "limitations": "Matched by transaction description. Whether the fee can be refunded depends on the provider's policy and account history; a matching reversal more than 30 days later would not be seen."
+        },
+        "source_ids": [
+          "70514444-8e80-43bd-801d-4e6dcb65fc12"
+        ],
+        "version": 2,
+        "work_id": "2cb0e18c-552c-4cc1-b0f8-2a8e4abecdf6",
+        "detector_version": "discovery-2026-10-17-v4",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "5e53585a-218d-4ef5-acf1-135c54b0c583",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-17T22:54:53.890707+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-17T22:54:54.250211+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      }
+    ]
+  },
+  "errors": []
+}

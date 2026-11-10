@@ -1,0 +1,10 @@
+Title: Email: St Mary Hospital statement, account SM504501
+Kind: email
+
+From: billing@stmaryhospital.example
+To: finn.larsen@example.test
+Date: 2026-09-02
+Subject: Your St Mary Hospital statement is ready
+
+Patient account SM504501, emergency visit 2026-08-03 (self-pay). Amount due: $6982.49.
+St Mary Hospital is a nonprofit hospital. Ask us about financial assistance.

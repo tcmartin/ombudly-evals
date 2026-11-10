@@ -1,0 +1,11 @@
+Title: Note: my accounts and where to get help
+Kind: note
+
+Household of Caleb Wu (caleb.wu@example.test). Accounts: Harbor Checking, Harbor Savings, Summit Visa.
+Companies I have accounts with and their support pages:
+- CloudBox: http://127.0.0.1:8900/cloudbox/account
+- Harbor Bank: http://127.0.0.1:8900/harborbank/chat
+- Pinecrest Hardware: http://127.0.0.1:8900/pinecrest/support
+- ShopMart: http://127.0.0.1:8900/shopmart/support
+- StreamFlix: http://127.0.0.1:8900/streamflix/account
+- Summit Card: http://127.0.0.1:8900/summit/chat

@@ -1,0 +1,223 @@
+{
+  "household": "W03",
+  "suite": "v3",
+  "name": "Chloe Varga",
+  "email": "chloe.varga@example.test",
+  "account": "Harbor Checking",
+  "today": "2026-10-15",
+  "opportunities": [
+    {
+      "kind": "promo_ended",
+      "merchant": "Cablenet Internet",
+      "aliases": [
+        "cablenet"
+      ],
+      "cls": "submit",
+      "exposure_cents": 42000,
+      "value_cents": 21000,
+      "txn_ids": [],
+      "found_terms": [
+        "promo",
+        "rate",
+        "price",
+        "negotiat",
+        "increase"
+      ],
+      "amounts": [
+        "49.99",
+        "84.99"
+      ],
+      "success": {
+        "site": "cablenet",
+        "all": [
+          [
+            "rate",
+            "price",
+            "promo",
+            "loyalty",
+            "discount"
+          ]
+        ],
+        "any_of": [
+          "49.99",
+          "84.99",
+          "35.00"
+        ]
+      },
+      "credit": {
+        "amount": -210.0,
+        "name": "CABLENET LOYALTY CREDIT",
+        "merchant": "Cablenet Internet"
+      },
+      "response": "Cablenet: We've applied a loyalty rate of $49.99/month for 6 months.",
+      "note": "Promo ended; ask retention for the loyalty or new-customer rate on the same plan.",
+      "id": "W03-promo_ended"
+    },
+    {
+      "kind": "deposit_unreturned",
+      "merchant": "Oakview Apartments",
+      "aliases": [
+        "oakview"
+      ],
+      "cls": "submit",
+      "exposure_cents": 180000,
+      "value_cents": 180000,
+      "txn_ids": [],
+      "found_terms": [
+        "deposit"
+      ],
+      "amounts": [
+        "1800.00"
+      ],
+      "success": {
+        "site": "oakview",
+        "all": [
+          [
+            "deposit"
+          ]
+        ],
+        "any_of": [
+          "1800.00",
+          "1800"
+        ]
+      },
+      "credit": {
+        "amount": -1800.0,
+        "name": "OAKVIEW DEPOSIT RETURN",
+        "merchant": "Oakview Apartments"
+      },
+      "response": "Oakview: Your $1800.00 security deposit refund has been sent.",
+      "note": "Inspection passed, deposit never returned, past typical state deadlines.",
+      "id": "W03-deposit_unreturned"
+    },
+    {
+      "kind": "medical_bill_mismatch",
+      "merchant": "St Mary Hospital",
+      "aliases": [
+        "st mary",
+        "stmary"
+      ],
+      "cls": "submit",
+      "exposure_cents": 38158,
+      "value_cents": 38158,
+      "txn_ids": [],
+      "found_terms": [
+        "eob",
+        "explanation of benefits",
+        "bill",
+        "responsibility",
+        "overbill"
+      ],
+      "amounts": [
+        "367.94",
+        "749.52",
+        "381.58",
+        "SM228994"
+      ],
+      "success": {
+        "site": "stmary",
+        "all": [
+          [
+            "eob",
+            "explanation of benefits",
+            "insurance",
+            "insurer"
+          ],
+          [
+            "correct",
+            "adjust",
+            "balance",
+            "update",
+            "reduce"
+          ]
+        ],
+        "any_of": [
+          "367.94",
+          "381.58",
+          "SM228994"
+        ]
+      },
+      "response": "St Mary Hospital: We've corrected account SM228994 to your EOB responsibility of $367.94.",
+      "note": "Bill $749.52 vs EOB patient responsibility $367.94; ask billing to correct to the EOB.",
+      "id": "W03-medical_bill_mismatch"
+    },
+    {
+      "kind": "followup_refund",
+      "merchant": "ShopMart",
+      "aliases": [
+        "shopmart"
+      ],
+      "cls": "submit2",
+      "exposure_cents": 11036,
+      "value_cents": 11036,
+      "txn_ids": [],
+      "found_terms": [
+        "refund",
+        "return",
+        "missing",
+        "not received"
+      ],
+      "amounts": [
+        "110.36",
+        "SM-88018"
+      ],
+      "success": {
+        "site": "shopmart",
+        "all": [
+          [
+            "refund",
+            "return"
+          ]
+        ],
+        "any_of": [
+          "110.36",
+          "SM-88018"
+        ]
+      },
+      "reply": "ShopMart: We're looking into the refund for SM-88018. Please reply on the support form with the return's tracking number so we can locate it.",
+      "followup": {
+        "site": "shopmart",
+        "any_of": [
+          "1Z9851630643"
+        ],
+        "all": [
+          [
+            "refund",
+            "return",
+            "tracking"
+          ]
+        ]
+      },
+      "credit": {
+        "amount": -110.36,
+        "name": "SHOPMART.COM REFUND",
+        "merchant": "ShopMart"
+      },
+      "response": "ShopMart: Thanks, we found the return and reissued your $110.36 refund.",
+      "note": "Needs a second message with the tracking number from the return email.",
+      "id": "W03-followup_refund"
+    }
+  ],
+  "decoys": [
+    {
+      "kind": "expired_settlement",
+      "site": "claimhub",
+      "bad_any": [
+        "quickloan"
+      ],
+      "note": "Deadline passed; filing is wrong.",
+      "id": "W03-expired_settlement"
+    },
+    {
+      "kind": "flight_flown",
+      "site": "skyjet",
+      "bad_any": [
+        "FDJDJF"
+      ],
+      "note": "The flight happened; no refund is owed.",
+      "id": "W03-flight_flown"
+    }
+  ],
+  "total_value_cents": 250194,
+  "total_exposure_cents": 271194
+}

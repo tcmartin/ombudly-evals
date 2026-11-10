@@ -1,0 +1,8 @@
+Title: Note: my accounts and where to get help
+Kind: note
+
+Household of Morgan Chen (morgan.chen@example.test). Checking account: Harbor Checking.
+Companies I have accounts with and their support pages:
+- CloudBox: http://127.0.0.1:8900/cloudbox/account
+- FitHub: http://127.0.0.1:8900/fithub/account
+- Harbor Bank: http://127.0.0.1:8900/harborbank/chat

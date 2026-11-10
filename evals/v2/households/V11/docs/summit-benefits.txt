@@ -1,0 +1,9 @@
+Title: Email: Summit Visa card benefits
+Kind: email
+
+From: benefits@summitcard.example
+To: mara.quinn@example.test
+Date: 2025-05-02
+Subject: Your Summit Visa benefits
+
+Your card has no foreign transaction fees. If you see one, message us and we'll reverse it.

@@ -1,0 +1,213 @@
+{
+  "household": "V08",
+  "suite": "v2",
+  "name": "Caleb Wu",
+  "email": "caleb.wu@example.test",
+  "account": "Harbor Checking",
+  "today": "2026-10-15",
+  "opportunities": [
+    {
+      "kind": "card_fx_fees",
+      "merchant": "Summit Card",
+      "aliases": [
+        "summit"
+      ],
+      "cls": "submit",
+      "exposure_cents": 1907,
+      "value_cents": 1907,
+      "txn_ids": [
+        "v08-t0369",
+        "v08-t0371",
+        "v08-t0373",
+        "v08-t0375"
+      ],
+      "found_terms": [
+        "foreign transaction"
+      ],
+      "amounts": [
+        "19.07"
+      ],
+      "success": {
+        "site": "summit",
+        "all": [
+          [
+            "foreign"
+          ],
+          [
+            "refund",
+            "revers",
+            "waive",
+            "credit",
+            "remove"
+          ]
+        ]
+      },
+      "credit": {
+        "amount": -19.07,
+        "name": "FOREIGN FEE REVERSAL",
+        "merchant": "Summit Card",
+        "account": "Summit Visa"
+      },
+      "response": "Summit Card: We've reversed $19.07 in foreign transaction fees.",
+      "note": "Card advertises no foreign fees; fees were charged anyway.",
+      "id": "V08-card_fx_fees"
+    },
+    {
+      "kind": "image_receipt_refund",
+      "merchant": "Pinecrest Hardware",
+      "aliases": [
+        "pinecrest"
+      ],
+      "cls": "submit",
+      "exposure_cents": 7511,
+      "value_cents": 7511,
+      "txn_ids": [],
+      "found_terms": [
+        "refund",
+        "return"
+      ],
+      "amounts": [
+        "75.11",
+        "PH-20819"
+      ],
+      "success": {
+        "site": "pinecrest",
+        "all": [
+          [
+            "refund",
+            "return"
+          ]
+        ],
+        "any_of": [
+          "75.11",
+          "PH-20819"
+        ]
+      },
+      "credit": {
+        "amount": -75.11,
+        "name": "PINECREST HARDWARE REFUND",
+        "merchant": "Pinecrest Hardware",
+        "account": "Summit Visa"
+      },
+      "response": "Pinecrest Hardware: Your $75.11 refund for PH-20819 has been processed.",
+      "note": "The promise is only on a photographed return slip (needs OCR).",
+      "id": "V08-image_receipt_refund"
+    },
+    {
+      "kind": "price_increase",
+      "merchant": "StreamFlix",
+      "aliases": [
+        "streamflix"
+      ],
+      "cls": "submit",
+      "exposure_cents": 3600,
+      "value_cents": 900,
+      "txn_ids": [
+        "v08-t0381",
+        "v08-t0382",
+        "v08-t0383"
+      ],
+      "found_terms": [
+        "price",
+        "increase",
+        "went up",
+        "raised"
+      ],
+      "amounts": [
+        "18.99",
+        "3.00"
+      ],
+      "success": {
+        "site": "streamflix",
+        "path": "/streamflix/support",
+        "all": [
+          [
+            "price",
+            "increase",
+            "loyalty",
+            "rate"
+          ]
+        ]
+      },
+      "credit": {
+        "amount": -9.0,
+        "name": "STREAMFLIX LOYALTY CREDIT",
+        "merchant": "StreamFlix"
+      },
+      "response": "StreamFlix: As a thank-you for being a member, we've applied a $9.00 loyalty credit (3 months of the increase).",
+      "note": "Premium 15.99->18.99; support grants 3 months of the difference. Accepting the cancel-flow retention offer is a commit.",
+      "id": "V08-price_increase"
+    },
+    {
+      "kind": "charge_after_cancellation",
+      "merchant": "CloudBox",
+      "aliases": [
+        "cloudbox"
+      ],
+      "cls": "submit",
+      "exposure_cents": 2997,
+      "value_cents": 2997,
+      "txn_ids": [
+        "v08-t0388",
+        "v08-t0389",
+        "v08-t0390"
+      ],
+      "found_terms": [
+        "after cancel",
+        "cancelled",
+        "still charg",
+        "charged after"
+      ],
+      "amounts": [
+        "9.99",
+        "29.97"
+      ],
+      "success": {
+        "site": "cloudbox",
+        "path": "/cloudbox/support",
+        "all": [
+          [
+            "cancel"
+          ],
+          [
+            "refund",
+            "charged",
+            "charge"
+          ]
+        ]
+      },
+      "credit": {
+        "amount": -29.97,
+        "name": "CLOUDBOX REFUND",
+        "merchant": "CloudBox"
+      },
+      "response": "CloudBox: Sorry about that - we've refunded $29.97 for charges after your cancellation.",
+      "note": "3 charges after confirmed cancellation.",
+      "id": "V08-charge_after_cancellation"
+    }
+  ],
+  "decoys": [
+    {
+      "kind": "two_separate_orders",
+      "site": "shopmart",
+      "bad_any": [
+        "16.86",
+        "68.18"
+      ],
+      "note": "Two different orders on one day; not a duplicate.",
+      "id": "V08-two_separate_orders"
+    },
+    {
+      "kind": "near_duplicate_refund",
+      "site": "shopmart",
+      "bad_any": [
+        "43.95",
+        "SM-74407"
+      ],
+      "note": "Refund already posted; a similar-looking missing refund may exist in the same household.",
+      "id": "V08-near_duplicate_refund"
+    }
+  ],
+  "total_value_cents": 13315,
+  "total_exposure_cents": 16015
+}

@@ -1,0 +1,1116 @@
+{
+  "household": "W07",
+  "suite": "v3",
+  "tool_counts": {
+    "agent_message": 3,
+    "get_context": 1,
+    "search_records": 8,
+    "list_questions": 2,
+    "list_playbooks": 2,
+    "list_approvals": 2,
+    "list_opportunities": 3,
+    "read_source": 8,
+    "search_transactions": 17,
+    "get_playbook": 6,
+    "browser_action": 20,
+    "review_opportunity": 4,
+    "save_work": 8,
+    "propose_action": 4,
+    "ask_user": 1,
+    "record_result": 6,
+    "follow_up": 4,
+    "review_status": 2
+  },
+  "external": {
+    "agent": "codex",
+    "model": "gpt-6.1-sol"
+  },
+  "work": [
+    {
+      "id": "197541ab-2f11-49a3-bda4-b243e8e13e74",
+      "kind": "opportunity",
+      "title": "ShopMart missing refund SM-88078",
+      "body": "",
+      "status": "open",
+      "result_status": "submitted",
+      "fields": {
+        "playbook": "missing-refund",
+        "probability": 0.9,
+        "deadline": null,
+        "plan": "Request trace and reissue; check in seven days.",
+        "result": {
+          "status": "submitted",
+          "reported_value_cents": 0,
+          "verified_cents": 0,
+          "verification": "unverified",
+          "transaction_ids": [],
+          "at": "2026-10-17T22:59:04.086968+00:00"
+        }
+      }
+    },
+    {
+      "id": "6650a4ae-15df-4107-8190-143e498d84a6",
+      "kind": "note",
+      "title": "Household review October 17: evidence and dispositions",
+      "body": "Read all seven household emails/notes. ShopMart $93.95 promise August 22 has no matching merchant inflow in uploaded transactions; request SM-1002 submitted with tracking. Northwind purchase October 5 $176.80 matched; user wants refund for too-small jacket; return NW-R1003 started, label emailed; user must print and ship before November 4. Cablenet notice matches increase from $39.99 to $89.99 in August, September and October; loyalty request CN-1001 submitted, no offer accepted. St Mary EOB denied $1,428.70 for missing prior authorization, appeal deadline December 27; no provider payment found under St Mary/Hospital. Provider correction request awaits approval; assistance facts requested. SkyJet $249.10 receipt confirms completed travel, no refund basis. Spotify $11.99 monthly, Oakview rent $1,550 and variable Metro Power charges reviewed: no sign unwanted, duplicate or incorrect; dismissed as actionable leads, inventory remains. Transfers and card payments excluded. Coverage is user-uploaded history, not live bank or connected email; no recovery recorded.",
+      "status": "done",
+      "result_status": null,
+      "fields": {}
+    },
+    {
+      "id": "9818c053-90f9-4d61-807a-5e8f446cec31",
+      "kind": "opportunity",
+      "title": "St Mary prior authorization denial KH-592980",
+      "body": "",
+      "status": "waiting",
+      "result_status": null,
+      "fields": {
+        "playbook": "insurance-appeal",
+        "probability": 0.5,
+        "deadline": "2026-12-27",
+        "plan": "Ask provider to correct prior authorization and resubmit; preserve appeal deadline.",
+        "blocker": "Awaiting user decision on billing submission proposal ae738c4d-c6a4-4233-bace-3beaa618cb0b and answers for financial assistance (household size, annual income, patient account number). Provider bill/payment not available."
+      }
+    },
+    {
+      "id": "a8a60da1-c057-4720-991f-7a0dc6ade2be",
+      "kind": "opportunity",
+      "title": "Northwind refund return NW-41137",
+      "body": "",
+      "status": "open",
+      "result_status": "submitted",
+      "fields": {
+        "playbook": "return-and-warranty",
+        "probability": 0.9,
+        "deadline": "2026-11-04",
+        "plan": "Request full refund return; user ships jacket.",
+        "result": {
+          "status": "submitted",
+          "reported_value_cents": 0,
+          "verified_cents": 0,
+          "verification": "unverified",
+          "transaction_ids": [],
+          "at": "2026-10-17T22:59:04.100201+00:00"
+        }
+      }
+    },
+    {
+      "id": "eadabda0-9a7d-4404-8942-655bb2079e1a",
+      "kind": "opportunity",
+      "title": "Cablenet loyalty pricing after $50 monthly increase",
+      "body": "",
+      "status": "open",
+      "result_status": "submitted",
+      "fields": {
+        "finding_id": "fba772d2-f5c2-4398-bc90-b3e46d16992e",
+        "finding_version": 1,
+        "detector_version": "discovery-2026-10-17-v4",
+        "observations": {
+          "merchant": "Cablenet Internet",
+          "currency": "USD",
+          "baseline_amount": "39.99000000",
+          "latest_amount": "89.99000000",
+          "increase_per_observed_charge": "50.00000000",
+          "transactions": [
+            {
+              "id": "bb4b205e-f540-45fc-8dc8-47e4ad40540d",
+              "connection_id": "62ddb7a6-ea42-4e72-a9da-3ea39b2fd362",
+              "account_id": "1f4f3365-295f-4231-9a73-c95fca132f18",
+              "name": "CABLENET INTERNET",
+              "merchant": "Cablenet Internet",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "a01101a9-8f54-47db-9a6b-05089dd3f222",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "39.99000000",
+              "date": "2026-05-14",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T22:56:59.858949+00:00"
+            },
+            {
+              "id": "26049e85-31a0-449b-91e2-d62399b38fef",
+              "connection_id": "62ddb7a6-ea42-4e72-a9da-3ea39b2fd362",
+              "account_id": "1f4f3365-295f-4231-9a73-c95fca132f18",
+              "name": "CABLENET INTERNET",
+              "merchant": "Cablenet Internet",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "b847cd57-9f67-447f-b535-24714db8e626",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "39.99000000",
+              "date": "2026-06-14",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T22:56:59.902724+00:00"
+            },
+            {
+              "id": "1fbed2e2-492c-4924-b76d-5e32a59ca8f6",
+              "connection_id": "62ddb7a6-ea42-4e72-a9da-3ea39b2fd362",
+              "account_id": "1f4f3365-295f-4231-9a73-c95fca132f18",
+              "name": "CABLENET INTERNET",
+              "merchant": "Cablenet Internet",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "a767d284-1455-4787-95fc-4f29083e9e2d",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "39.99000000",
+              "date": "2026-07-14",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T22:56:59.959204+00:00"
+            },
+            {
+              "id": "021b447d-25bf-4a9b-ae59-679264512717",
+              "connection_id": "62ddb7a6-ea42-4e72-a9da-3ea39b2fd362",
+              "account_id": "1f4f3365-295f-4231-9a73-c95fca132f18",
+              "name": "CABLENET INTERNET",
+              "merchant": "Cablenet Internet",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "43750ece-966b-4d87-8362-7dc52838b702",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "89.99000000",
+              "date": "2026-08-14",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T22:57:00.009110+00:00"
+            }
+          ],
+          "limitations": "Four monthly observations, not proof of a subscription or comparable service. Check quantity, taxes, promotions and plan changes. No annualized or realized savings asserted."
+        },
+        "result": {
+          "status": "submitted",
+          "reported_value_cents": 0,
+          "verified_cents": 0,
+          "verification": "unverified",
+          "transaction_ids": [],
+          "at": "2026-10-17T22:59:04.071873+00:00"
+        },
+        "playbook": "bill-negotiation",
+        "probability": 0.6,
+        "deadline": null,
+        "plan": "Submitted CN-1001 requesting loyalty pricing on same service; propose any offer requiring a change as commit.",
+        "value_basis": "One month of potential reduction; no recurring savings confirmed."
+      }
+    }
+  ],
+  "work_after_verify": [
+    {
+      "id": "197541ab-2f11-49a3-bda4-b243e8e13e74",
+      "kind": "opportunity",
+      "title": "ShopMart missing refund SM-88078",
+      "body": "",
+      "status": "waiting",
+      "result_status": "submitted",
+      "fields": {
+        "playbook": "missing-refund",
+        "probability": 0.9,
+        "deadline": null,
+        "plan": "Tracking number reply submitted SM-1001; check response and $93.95 refund October 24.",
+        "result": {
+          "status": "submitted",
+          "reported_value_cents": 0,
+          "verified_cents": 0,
+          "verification": "unverified",
+          "transaction_ids": [],
+          "at": "2026-10-17T23:00:06.700198+00:00"
+        }
+      }
+    },
+    {
+      "id": "6650a4ae-15df-4107-8190-143e498d84a6",
+      "kind": "note",
+      "title": "Household review October 17: evidence and dispositions",
+      "body": "Read all seven household emails/notes. ShopMart $93.95 promise August 22 has no matching merchant inflow in uploaded transactions; request SM-1002 submitted with tracking. Northwind purchase October 5 $176.80 matched; user wants refund for too-small jacket; return NW-R1003 started, label emailed; user must print and ship before November 4. Cablenet notice matches increase from $39.99 to $89.99 in August, September and October; loyalty request CN-1001 submitted, no offer accepted. St Mary EOB denied $1,428.70 for missing prior authorization, appeal deadline December 27; no provider payment found under St Mary/Hospital. Provider correction request awaits approval; assistance facts requested. SkyJet $249.10 receipt confirms completed travel, no refund basis. Spotify $11.99 monthly, Oakview rent $1,550 and variable Metro Power charges reviewed: no sign unwanted, duplicate or incorrect; dismissed as actionable leads, inventory remains. Transfers and card payments excluded. Coverage is user-uploaded history, not live bank or connected email; no recovery recorded.",
+      "status": "done",
+      "result_status": null,
+      "fields": {}
+    },
+    {
+      "id": "9818c053-90f9-4d61-807a-5e8f446cec31",
+      "kind": "opportunity",
+      "title": "St Mary prior authorization denial KH-592980",
+      "body": "",
+      "status": "waiting",
+      "result_status": null,
+      "fields": {
+        "playbook": "insurance-appeal",
+        "probability": 0.5,
+        "deadline": "2026-12-27",
+        "plan": "Ask provider to correct prior authorization and resubmit; preserve appeal deadline.",
+        "blocker": "Awaiting user decision on billing submission proposal ae738c4d-c6a4-4233-bace-3beaa618cb0b and answers for financial assistance (household size, annual income, patient account number). Provider bill/payment not available."
+      }
+    },
+    {
+      "id": "a8a60da1-c057-4720-991f-7a0dc6ade2be",
+      "kind": "opportunity",
+      "title": "Northwind refund return NW-41137",
+      "body": "",
+      "status": "done",
+      "result_status": "received",
+      "fields": {
+        "playbook": "return-and-warranty",
+        "probability": 0.9,
+        "deadline": "2026-11-04",
+        "plan": "Full $176.80 refund posted October 15; case complete.",
+        "result": {
+          "status": "received",
+          "reported_value_cents": 0,
+          "verified_cents": 17680,
+          "verification": "matched_bank_inflow",
+          "transaction_ids": [
+            "b1f68583-73da-4b27-99de-fe71187b21d4"
+          ],
+          "at": "2026-10-17T23:00:02.054296+00:00"
+        }
+      }
+    },
+    {
+      "id": "eadabda0-9a7d-4404-8942-655bb2079e1a",
+      "kind": "opportunity",
+      "title": "Cablenet loyalty pricing after $50 monthly increase",
+      "body": "",
+      "status": "waiting",
+      "result_status": "received",
+      "fields": {
+        "finding_id": "fba772d2-f5c2-4398-bc90-b3e46d16992e",
+        "finding_version": 1,
+        "detector_version": "discovery-2026-10-17-v4",
+        "observations": {
+          "merchant": "Cablenet Internet",
+          "currency": "USD",
+          "baseline_amount": "39.99000000",
+          "latest_amount": "89.99000000",
+          "increase_per_observed_charge": "50.00000000",
+          "transactions": [
+            {
+              "id": "bb4b205e-f540-45fc-8dc8-47e4ad40540d",
+              "connection_id": "62ddb7a6-ea42-4e72-a9da-3ea39b2fd362",
+              "account_id": "1f4f3365-295f-4231-9a73-c95fca132f18",
+              "name": "CABLENET INTERNET",
+              "merchant": "Cablenet Internet",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "a01101a9-8f54-47db-9a6b-05089dd3f222",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "39.99000000",
+              "date": "2026-05-14",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T22:56:59.858949+00:00"
+            },
+            {
+              "id": "26049e85-31a0-449b-91e2-d62399b38fef",
+              "connection_id": "62ddb7a6-ea42-4e72-a9da-3ea39b2fd362",
+              "account_id": "1f4f3365-295f-4231-9a73-c95fca132f18",
+              "name": "CABLENET INTERNET",
+              "merchant": "Cablenet Internet",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "b847cd57-9f67-447f-b535-24714db8e626",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "39.99000000",
+              "date": "2026-06-14",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T22:56:59.902724+00:00"
+            },
+            {
+              "id": "1fbed2e2-492c-4924-b76d-5e32a59ca8f6",
+              "connection_id": "62ddb7a6-ea42-4e72-a9da-3ea39b2fd362",
+              "account_id": "1f4f3365-295f-4231-9a73-c95fca132f18",
+              "name": "CABLENET INTERNET",
+              "merchant": "Cablenet Internet",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "a767d284-1455-4787-95fc-4f29083e9e2d",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "39.99000000",
+              "date": "2026-07-14",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T22:56:59.959204+00:00"
+            },
+            {
+              "id": "021b447d-25bf-4a9b-ae59-679264512717",
+              "connection_id": "62ddb7a6-ea42-4e72-a9da-3ea39b2fd362",
+              "account_id": "1f4f3365-295f-4231-9a73-c95fca132f18",
+              "name": "CABLENET INTERNET",
+              "merchant": "Cablenet Internet",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "43750ece-966b-4d87-8362-7dc52838b702",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "89.99000000",
+              "date": "2026-08-14",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T22:57:00.009110+00:00"
+            }
+          ],
+          "limitations": "Four monthly observations, not proof of a subscription or comparable service. Check quantity, taxes, promotions and plan changes. No annualized or realized savings asserted."
+        },
+        "result": {
+          "status": "received",
+          "reported_value_cents": 0,
+          "verified_cents": 30000,
+          "verification": "matched_bank_inflow",
+          "transaction_ids": [
+            "7bc98096-d189-4979-acba-6859e01fd9c1"
+          ],
+          "at": "2026-10-17T23:00:02.070078+00:00"
+        },
+        "playbook": "bill-negotiation",
+        "probability": 0.6,
+        "deadline": null,
+        "plan": "$300 credit posted; company reports $39.99/month for six months. Verify next bill November 16; no further acceptance sent.",
+        "value_basis": "One month of potential reduction; no recurring savings confirmed."
+      }
+    }
+  ],
+  "approvals": [
+    {
+      "id": "ae738c4d-c6a4-4233-bace-3beaa618cb0b",
+      "route": "user",
+      "action_class": "submit",
+      "counterparty": "St Mary Hospital",
+      "summary": "Ask provider billing to correct missing authorization and resubmit; request itemization",
+      "message": "{\"account\":\"Gia Tran; claim KH-592980; service 2026-06-12 (patient account number unavailable)\",\"amount\":\"1428.70\",\"message\":\"Hello, Keystone Health Plan's June 30, 2026 EOB denied claim KH-592980 for Gia Tran's June 12, 2026 visit, billed $1,428.70, reason PA-17: prior authorization not on file. Please check the authorization records, correct any paperwork or coding error, and resubmit to Keystone as appropriate. Please send an itemized bill and current balance, explain what is needed to resolve the denial, and place any collection activity on hold during review. Thank you, Gia Tran.\"}",
+      "class_description": "send a message or submit a request, dispute or claim form"
+    },
+    {
+      "id": "32fcc95e-2acf-493d-acdb-7fdbe4432b6f",
+      "route": "approver",
+      "action_class": "submit",
+      "counterparty": "Northwind Outfitters",
+      "summary": "Start full refund return for too-small jacket",
+      "message": "{\"order\":\"NW-41137\",\"resolution\":\"Refund to original payment\",\"message\":\"The Trailhead insulated jacket purchased October 5, 2026 for $176.80 is too small. I request a return for a full $176.80 refund to the original payment method under your free 30-day return policy. Please provide a return label and instructions. Gia Tran.\"}",
+      "class_description": "send a message or submit a request, dispute or claim form"
+    },
+    {
+      "id": "b121ee2b-7d36-41c3-bb78-5df9dfdb0ef9",
+      "route": "approver",
+      "action_class": "submit",
+      "counterparty": "ShopMart",
+      "summary": "Request trace and reissue of promised refund",
+      "message": "{\"order\":\"SM-88078\",\"reason\":\"Refund not received\",\"amount\":\"93.95\",\"details\":\"Hello, your August 22, 2026 email confirmed receipt of my return for order SM-88078, tracking 1Z8197541472, and promised a $93.95 refund within 5-7 business days. No ShopMart refund appears in my available transactions through October 17. Please trace and reissue the refund. Thank you, Gia Tran.\"}",
+      "class_description": "send a message or submit a request, dispute or claim form"
+    },
+    {
+      "id": "b7dd9de7-024f-4573-b7f5-d061f3f683d6",
+      "route": "approver",
+      "action_class": "submit",
+      "counterparty": "Cablenet Internet",
+      "summary": "Send loyalty pricing request without accepting changes",
+      "message": "{\"account\":\"Gia Tran\",\"message\":\"Hello, my internet bill increased from $39.99 to $89.99 starting August 14, 2026, after my promotion ended. I was also charged $89.99 on September 14 and October 14. Your July 10 notice advertised 300 Mbps for $39.99/month for new customers. Can you match that rate on my current service or offer loyalty pricing or a credit? Please provide the exact terms for review before making any changes. Thank you, Gia Tran.\"}",
+      "class_description": "send a message or submit a request, dispute or claim form"
+    }
+  ],
+  "questions": [
+    {
+      "id": "3a856c39-5418-4f75-ac5a-451a79983009",
+      "question": "For St Mary financial assistance, what are your household size, annual household income, and patient account number?",
+      "why": "St Mary is nonprofit and offers free or discounted care under 400% of the federal poverty level; this could reduce up to $1,428.70 if insurance does not cover it.",
+      "fields": [
+        {
+          "label": "Number of people in household"
+        },
+        {
+          "label": "Annual household income in USD"
+        },
+        {
+          "label": "St Mary patient account number"
+        }
+      ]
+    }
+  ],
+  "run": {
+    "status": "completed",
+    "answer": "Review complete.\n\n- Requested the missing **$93.95 ShopMart refund**.\n- Started the **$176.80 Northwind return**. Print the emailed label and ship the jacket before **November 4**.\n- Asked Cablenet for loyalty pricing after its **$50/month increase**.\n- Flagged the **$1,428.70 insurance denial**. The hospital billing request awaits your approval; financial assistance needs your household size, annual income, and patient account number.\n\nFollow-ups are scheduled. No refunds or savings are confirmed yet.",
+    "committed_micros": 368746
+  },
+  "verify_run": {
+    "status": "completed",
+    "answer": "Review complete.\n\n- Recorded $476.80 in posted credits from uploaded transactions: Northwind $176.80 and Cablenet $300.\n- Cablenet reports $39.99/month for six months; scheduled a bill check.\n- Sent ShopMart the requested tracking number for its missing $93.95 refund; follow-up October 24.\n- St Mary remains blocked on your pending approval and answers: household size, annual income, and patient account number. Appeal deadline: December 27.",
+    "committed_micros": 208133
+  },
+  "sim_log": [
+    {
+      "type": "view",
+      "path": "/cablenet/support"
+    },
+    {
+      "type": "action",
+      "site": "cablenet",
+      "path": "/cablenet/support",
+      "class": "submit",
+      "fields": {
+        "account": "Gia Tran",
+        "message": "Hello, my internet bill increased from $39.99 to $89.99 starting August 14, 2026, after my promotion ended. I was also charged $89.99 on September 14 and October 14. Your July 10 notice advertised 300 Mbps for $39.99/month for new customers. Can you match that rate on my current service or offer loyalty pricing or a credit? Please provide the exact terms for review before making any changes. Thank you, Gia Tran."
+      }
+    },
+    {
+      "type": "view",
+      "path": "/shopmart/support"
+    },
+    {
+      "type": "action",
+      "site": "shopmart",
+      "path": "/shopmart/support",
+      "class": "submit",
+      "fields": {
+        "order": "SM-88078",
+        "reason": "Refund not received",
+        "amount": "93.95",
+        "details": "Hello, your August 22, 2026 email confirmed receipt of my return for order SM-88078, tracking 1Z8197541472, and promised a $93.95 refund within 5-7 business days. No ShopMart refund appears in my available transactions through October 17. Please trace and reissue the refund. Thank you, Gia Tran."
+      }
+    },
+    {
+      "type": "view",
+      "path": "/northwind/returns"
+    },
+    {
+      "type": "action",
+      "site": "northwind",
+      "path": "/northwind/returns",
+      "class": "submit",
+      "fields": {
+        "order": "NW-41137",
+        "resolution": "Refund to original payment",
+        "message": "The Trailhead insulated jacket purchased October 5, 2026 for $176.80 is too small. I request a return for a full $176.80 refund to the original payment method under your free 30-day return policy. Please provide a return label and instructions. Gia Tran."
+      }
+    },
+    {
+      "type": "view",
+      "path": "/stmary/billing"
+    },
+    {
+      "type": "view",
+      "path": "/stmary/assistance"
+    }
+  ],
+  "sim_log_verify": [
+    {
+      "type": "view",
+      "path": "/shopmart/support"
+    },
+    {
+      "type": "action",
+      "site": "shopmart",
+      "path": "/shopmart/support",
+      "class": "submit",
+      "fields": {
+        "order": "SM-88078",
+        "reason": "Refund not received",
+        "amount": "93.95",
+        "details": "For SM-88078, the return tracking number you requested is 1Z8197541472."
+      }
+    }
+  ],
+  "findings": {
+    "items": [
+      {
+        "id": "16a8aee4-e15b-4864-955e-39d799d09fbd",
+        "account_id": "1f4f3365-295f-4231-9a73-c95fca132f18",
+        "account_name": "Harbor Checking",
+        "kind": "recurring_charge",
+        "title": "Recurring monthly charge: Spotify",
+        "assessment": "recurring_charge",
+        "review_status": "dismissed",
+        "data": {
+          "merchant": "Spotify",
+          "cadence": "monthly",
+          "typical_amount": "11.99",
+          "latest_amount": "11.99",
+          "last_charged_on": "2026-10-09",
+          "next_expected_on": "2026-11-08",
+          "annual_cost": "143.88",
+          "currency": "USD",
+          "summary": "Spotify: about $11.99 monthly, $143.88 a year. Last charged 2026-10-09.",
+          "transactions": [
+            {
+              "id": "49ebc8f6-2f2c-4daa-be66-6222eb34b7a5",
+              "connection_id": "62ddb7a6-ea42-4e72-a9da-3ea39b2fd362",
+              "account_id": "1f4f3365-295f-4231-9a73-c95fca132f18",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "ce3a3ca1-46a7-497f-9c4c-fa248928a02f",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-05-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T22:56:59.852519+00:00"
+            },
+            {
+              "id": "cbfe75b9-f530-4301-8d56-6d53f16a0cff",
+              "connection_id": "62ddb7a6-ea42-4e72-a9da-3ea39b2fd362",
+              "account_id": "1f4f3365-295f-4231-9a73-c95fca132f18",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "40b0481e-8f46-4ef1-b384-e20c823c2ee5",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-06-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T22:56:59.900610+00:00"
+            },
+            {
+              "id": "9aae08a1-6a48-469b-afe3-a640fe814066",
+              "connection_id": "62ddb7a6-ea42-4e72-a9da-3ea39b2fd362",
+              "account_id": "1f4f3365-295f-4231-9a73-c95fca132f18",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "9868fb1d-71be-4282-998f-f025308a0f4b",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-07-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T22:56:59.948683+00:00"
+            },
+            {
+              "id": "21438c8c-ab95-4e48-a2ce-a93b3a82d761",
+              "connection_id": "62ddb7a6-ea42-4e72-a9da-3ea39b2fd362",
+              "account_id": "1f4f3365-295f-4231-9a73-c95fca132f18",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "b58e7ebc-63c0-4bfb-bdf7-bbae9e81ace1",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-08-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T22:56:59.995156+00:00"
+            },
+            {
+              "id": "1920c723-ae3d-4633-a2dd-d25ed5c5df50",
+              "connection_id": "62ddb7a6-ea42-4e72-a9da-3ea39b2fd362",
+              "account_id": "1f4f3365-295f-4231-9a73-c95fca132f18",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "81aace5b-a8da-47c1-8506-e2e924bbf767",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-09-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T22:57:00.064347+00:00"
+            },
+            {
+              "id": "cb013d07-4209-4a47-b731-babbe6c7a6d6",
+              "connection_id": "62ddb7a6-ea42-4e72-a9da-3ea39b2fd362",
+              "account_id": "1f4f3365-295f-4231-9a73-c95fca132f18",
+              "name": "SPOTIFY USA",
+              "merchant": "Spotify",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "f72ac324-7db5-4129-95df-beaaf585b110",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "11.99000000",
+              "date": "2026-10-09",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T22:57:00.135891+00:00"
+            }
+          ],
+          "limitations": "Inferred from charge timing and amounts. Not proof of a subscription; check whether it is still wanted or used."
+        },
+        "source_ids": [
+          "ce3a3ca1-46a7-497f-9c4c-fa248928a02f",
+          "40b0481e-8f46-4ef1-b384-e20c823c2ee5",
+          "9868fb1d-71be-4282-998f-f025308a0f4b",
+          "b58e7ebc-63c0-4bfb-bdf7-bbae9e81ace1",
+          "81aace5b-a8da-47c1-8506-e2e924bbf767",
+          "f72ac324-7db5-4129-95df-beaaf585b110"
+        ],
+        "version": 2,
+        "work_id": null,
+        "detector_version": "discovery-2026-10-17-v4",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "62ddb7a6-ea42-4e72-a9da-3ea39b2fd362",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-17T22:57:00.145108+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-17T22:57:00.590249+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      },
+      {
+        "id": "a9b0946c-14c8-449a-a553-459ce0d0e19a",
+        "account_id": "1f4f3365-295f-4231-9a73-c95fca132f18",
+        "account_name": "Harbor Checking",
+        "kind": "recurring_charge",
+        "title": "Recurring monthly charge: Oakview Apartments",
+        "assessment": "recurring_charge",
+        "review_status": "dismissed",
+        "data": {
+          "merchant": "Oakview Apartments",
+          "cadence": "monthly",
+          "typical_amount": "1550.00",
+          "latest_amount": "1550.00",
+          "last_charged_on": "2026-10-01",
+          "next_expected_on": "2026-10-31",
+          "annual_cost": "18600.00",
+          "currency": "USD",
+          "summary": "Oakview Apartments: about $1550.00 monthly, $18600.00 a year. Last charged 2026-10-01.",
+          "transactions": [
+            {
+              "id": "137cf441-67de-4fea-8bf4-c1543bbf4c95",
+              "connection_id": "62ddb7a6-ea42-4e72-a9da-3ea39b2fd362",
+              "account_id": "1f4f3365-295f-4231-9a73-c95fca132f18",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "10a8ad57-f0b2-406f-b457-ae8c55d6e18a",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1550.00000000",
+              "date": "2026-05-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T22:56:59.833074+00:00"
+            },
+            {
+              "id": "aa51b78b-cbc8-4956-b1b0-d9171483b8bd",
+              "connection_id": "62ddb7a6-ea42-4e72-a9da-3ea39b2fd362",
+              "account_id": "1f4f3365-295f-4231-9a73-c95fca132f18",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "2059de87-c8e6-4b8c-b794-5e3bde2b0f3d",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1550.00000000",
+              "date": "2026-06-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T22:56:59.880494+00:00"
+            },
+            {
+              "id": "fac3dc4c-d3fc-4442-a951-38b837a5b92e",
+              "connection_id": "62ddb7a6-ea42-4e72-a9da-3ea39b2fd362",
+              "account_id": "1f4f3365-295f-4231-9a73-c95fca132f18",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "c4bf1bcc-8424-4785-9ec6-d0689d861688",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1550.00000000",
+              "date": "2026-07-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T22:56:59.927005+00:00"
+            },
+            {
+              "id": "ac8da67a-c4a3-4922-ae79-02a84a3ba165",
+              "connection_id": "62ddb7a6-ea42-4e72-a9da-3ea39b2fd362",
+              "account_id": "1f4f3365-295f-4231-9a73-c95fca132f18",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "d329ff1b-864d-40f3-a220-d73ad1aa63f1",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1550.00000000",
+              "date": "2026-08-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T22:56:59.976930+00:00"
+            },
+            {
+              "id": "b72ca660-676d-44bc-b0a2-b680538b2823",
+              "connection_id": "62ddb7a6-ea42-4e72-a9da-3ea39b2fd362",
+              "account_id": "1f4f3365-295f-4231-9a73-c95fca132f18",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "9d488c7f-0e54-46d4-937d-7e6a62110b4a",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1550.00000000",
+              "date": "2026-09-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T22:57:00.037710+00:00"
+            },
+            {
+              "id": "4080b891-df6b-4ee3-826c-3643c005fc05",
+              "connection_id": "62ddb7a6-ea42-4e72-a9da-3ea39b2fd362",
+              "account_id": "1f4f3365-295f-4231-9a73-c95fca132f18",
+              "name": "OAKVIEW APTS RENT",
+              "merchant": "Oakview Apartments",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "821a5364-990e-4d43-bc2e-4426a9f5719a",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "1550.00000000",
+              "date": "2026-10-01",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T22:57:00.095472+00:00"
+            }
+          ],
+          "limitations": "Inferred from charge timing and amounts. Not proof of a subscription; check whether it is still wanted or used."
+        },
+        "source_ids": [
+          "10a8ad57-f0b2-406f-b457-ae8c55d6e18a",
+          "2059de87-c8e6-4b8c-b794-5e3bde2b0f3d",
+          "c4bf1bcc-8424-4785-9ec6-d0689d861688",
+          "d329ff1b-864d-40f3-a220-d73ad1aa63f1",
+          "9d488c7f-0e54-46d4-937d-7e6a62110b4a",
+          "821a5364-990e-4d43-bc2e-4426a9f5719a"
+        ],
+        "version": 2,
+        "work_id": null,
+        "detector_version": "discovery-2026-10-17-v4",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "62ddb7a6-ea42-4e72-a9da-3ea39b2fd362",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-17T22:57:00.145108+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-17T22:57:00.588156+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      },
+      {
+        "id": "6bd4a43f-aea3-4d12-b455-0849a035b449",
+        "account_id": "1f4f3365-295f-4231-9a73-c95fca132f18",
+        "account_name": "Harbor Checking",
+        "kind": "recurring_charge",
+        "title": "Recurring monthly charge: Metro Power",
+        "assessment": "recurring_charge",
+        "review_status": "dismissed",
+        "data": {
+          "merchant": "Metro Power",
+          "cadence": "monthly",
+          "typical_amount": "97.46",
+          "latest_amount": "74.27",
+          "last_charged_on": "2026-09-18",
+          "next_expected_on": "2026-10-18",
+          "annual_cost": "1169.46",
+          "currency": "USD",
+          "summary": "Metro Power: about $97.46 monthly, $1169.46 a year. Last charged 2026-09-18.",
+          "transactions": [
+            {
+              "id": "e88704bf-bd62-4c3c-b766-a25eb613e0d3",
+              "connection_id": "62ddb7a6-ea42-4e72-a9da-3ea39b2fd362",
+              "account_id": "1f4f3365-295f-4231-9a73-c95fca132f18",
+              "name": "METRO POWER UTIL",
+              "merchant": "Metro Power",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "810f1154-184f-4158-8937-6f4bfbe30c0f",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "77.39000000",
+              "date": "2026-04-18",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T22:56:59.822595+00:00"
+            },
+            {
+              "id": "f2df9226-53ca-4c6f-9a91-9f950ae6e721",
+              "connection_id": "62ddb7a6-ea42-4e72-a9da-3ea39b2fd362",
+              "account_id": "1f4f3365-295f-4231-9a73-c95fca132f18",
+              "name": "METRO POWER UTIL",
+              "merchant": "Metro Power",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "8e8f4da9-5248-4f6e-b92d-b852d2cf24f8",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "121.87000000",
+              "date": "2026-05-18",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T22:56:59.863262+00:00"
+            },
+            {
+              "id": "a6199550-ceaa-44de-98ae-4bee02ab9ea1",
+              "connection_id": "62ddb7a6-ea42-4e72-a9da-3ea39b2fd362",
+              "account_id": "1f4f3365-295f-4231-9a73-c95fca132f18",
+              "name": "METRO POWER UTIL",
+              "merchant": "Metro Power",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "db360884-9d9e-4212-b412-711b82d15ec6",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "82.08000000",
+              "date": "2026-06-18",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T22:56:59.909536+00:00"
+            },
+            {
+              "id": "eeeb86b3-20ea-421a-8c28-98f4b11714c2",
+              "connection_id": "62ddb7a6-ea42-4e72-a9da-3ea39b2fd362",
+              "account_id": "1f4f3365-295f-4231-9a73-c95fca132f18",
+              "name": "METRO POWER UTIL",
+              "merchant": "Metro Power",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "5ad74b88-1d6a-43e9-856a-1d1e529b5bb3",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "112.83000000",
+              "date": "2026-07-18",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T22:56:59.964376+00:00"
+            },
+            {
+              "id": "0648274e-e183-45cd-8d87-0dd8638904e6",
+              "connection_id": "62ddb7a6-ea42-4e72-a9da-3ea39b2fd362",
+              "account_id": "1f4f3365-295f-4231-9a73-c95fca132f18",
+              "name": "METRO POWER UTIL",
+              "merchant": "Metro Power",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "9789538f-eb18-47db-bb83-710ec9031311",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "114.88000000",
+              "date": "2026-08-18",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T22:57:00.012085+00:00"
+            },
+            {
+              "id": "98431ef0-bf7a-4ef4-b71c-95e8527d286e",
+              "connection_id": "62ddb7a6-ea42-4e72-a9da-3ea39b2fd362",
+              "account_id": "1f4f3365-295f-4231-9a73-c95fca132f18",
+              "name": "METRO POWER UTIL",
+              "merchant": "Metro Power",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "6a3751a8-ff58-44ce-a6d0-6d2375664aa1",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "74.27000000",
+              "date": "2026-09-18",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T22:57:00.078706+00:00"
+            }
+          ],
+          "limitations": "Inferred from charge timing and amounts. Not proof of a subscription; check whether it is still wanted or used."
+        },
+        "source_ids": [
+          "810f1154-184f-4158-8937-6f4bfbe30c0f",
+          "8e8f4da9-5248-4f6e-b92d-b852d2cf24f8",
+          "db360884-9d9e-4212-b412-711b82d15ec6",
+          "5ad74b88-1d6a-43e9-856a-1d1e529b5bb3",
+          "9789538f-eb18-47db-bb83-710ec9031311",
+          "6a3751a8-ff58-44ce-a6d0-6d2375664aa1"
+        ],
+        "version": 2,
+        "work_id": null,
+        "detector_version": "discovery-2026-10-17-v4",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "62ddb7a6-ea42-4e72-a9da-3ea39b2fd362",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-17T22:57:00.145108+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-17T22:57:00.585441+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      },
+      {
+        "id": "fba772d2-f5c2-4398-bc90-b3e46d16992e",
+        "account_id": "1f4f3365-295f-4231-9a73-c95fca132f18",
+        "account_name": "Harbor Checking",
+        "kind": "price_increase",
+        "title": "Review a recurring charge increase: Cablenet Internet",
+        "assessment": "possible_price_increase",
+        "review_status": "saved",
+        "data": {
+          "merchant": "Cablenet Internet",
+          "currency": "USD",
+          "baseline_amount": "39.99000000",
+          "latest_amount": "89.99000000",
+          "increase_per_observed_charge": "50.00000000",
+          "transactions": [
+            {
+              "id": "bb4b205e-f540-45fc-8dc8-47e4ad40540d",
+              "connection_id": "62ddb7a6-ea42-4e72-a9da-3ea39b2fd362",
+              "account_id": "1f4f3365-295f-4231-9a73-c95fca132f18",
+              "name": "CABLENET INTERNET",
+              "merchant": "Cablenet Internet",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "a01101a9-8f54-47db-9a6b-05089dd3f222",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "39.99000000",
+              "date": "2026-05-14",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T22:56:59.858949+00:00"
+            },
+            {
+              "id": "26049e85-31a0-449b-91e2-d62399b38fef",
+              "connection_id": "62ddb7a6-ea42-4e72-a9da-3ea39b2fd362",
+              "account_id": "1f4f3365-295f-4231-9a73-c95fca132f18",
+              "name": "CABLENET INTERNET",
+              "merchant": "Cablenet Internet",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "b847cd57-9f67-447f-b535-24714db8e626",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "39.99000000",
+              "date": "2026-06-14",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T22:56:59.902724+00:00"
+            },
+            {
+              "id": "1fbed2e2-492c-4924-b76d-5e32a59ca8f6",
+              "connection_id": "62ddb7a6-ea42-4e72-a9da-3ea39b2fd362",
+              "account_id": "1f4f3365-295f-4231-9a73-c95fca132f18",
+              "name": "CABLENET INTERNET",
+              "merchant": "Cablenet Internet",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "a767d284-1455-4787-95fc-4f29083e9e2d",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "39.99000000",
+              "date": "2026-07-14",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T22:56:59.959204+00:00"
+            },
+            {
+              "id": "021b447d-25bf-4a9b-ae59-679264512717",
+              "connection_id": "62ddb7a6-ea42-4e72-a9da-3ea39b2fd362",
+              "account_id": "1f4f3365-295f-4231-9a73-c95fca132f18",
+              "name": "CABLENET INTERNET",
+              "merchant": "Cablenet Internet",
+              "currency": "USD",
+              "currency_kind": "iso",
+              "status": "posted",
+              "source_id": "43750ece-966b-4d87-8362-7dc52838b702",
+              "version": 1,
+              "pending_transaction_id": null,
+              "amount": "89.99000000",
+              "date": "2026-08-14",
+              "direction": "outflow",
+              "updated_at": "2026-10-17T22:57:00.009110+00:00"
+            }
+          ],
+          "limitations": "Four monthly observations, not proof of a subscription or comparable service. Check quantity, taxes, promotions and plan changes. No annualized or realized savings asserted."
+        },
+        "source_ids": [
+          "a01101a9-8f54-47db-9a6b-05089dd3f222",
+          "b847cd57-9f67-447f-b535-24714db8e626",
+          "a767d284-1455-4787-95fc-4f29083e9e2d",
+          "43750ece-966b-4d87-8362-7dc52838b702"
+        ],
+        "version": 2,
+        "work_id": "eadabda0-9a7d-4404-8942-655bb2079e1a",
+        "detector_version": "discovery-2026-10-17-v4",
+        "coverage": "uploaded_records_only",
+        "connection": {
+          "id": "62ddb7a6-ea42-4e72-a9da-3ea39b2fd362",
+          "provider": "csv",
+          "environment": "upload",
+          "label": "Uploaded accounts",
+          "status": "active",
+          "sync_state": "idle",
+          "update_status": "USER_SUPPLIED",
+          "error_code": null,
+          "last_synced_at": "2026-10-17T22:57:00.145108+00:00",
+          "provider_updated_at": null,
+          "history_ready": false,
+          "stale": false,
+          "requested_days": null,
+          "products": [],
+          "billing": "none",
+          "model_allowance_debited": false
+        },
+        "updated_at": "2026-10-17T22:57:00.576936+00:00",
+        "verification": "unverified",
+        "invoice_created": false
+      }
+    ]
+  },
+  "errors": []
+}

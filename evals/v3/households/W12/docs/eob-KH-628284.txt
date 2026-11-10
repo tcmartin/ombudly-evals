@@ -1,0 +1,15 @@
+Title: Email: Keystone Health Plan Explanation of Benefits, claim KH-628284
+Kind: email
+
+From: eob@keystonehealth.example
+To: leo.haddad@example.test
+Date: 2026-07-09
+Subject: Your Explanation of Benefits for claim KH-628284
+
+THIS IS NOT A BILL.
+Patient: Leo Haddad   Provider: St Mary Hospital   Date of service: 2026-06-21
+Claim KH-628284 status: Processed
+Amount billed: $1200.00
+Plan allowed amount: $640.00
+Plan paid: $434.43
+Your responsibility (deductible/coinsurance): $205.57

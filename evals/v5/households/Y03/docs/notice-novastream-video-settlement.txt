@@ -1,0 +1,10 @@
+Title: Email: Legal notice - NovaStream Video settlement
+Kind: email
+
+From: administrator@novastream-video-settlement.example
+To: uma.kapoor@example.test
+Date: 2026-10-01
+Subject: Notice of class action settlement - NovaStream Video
+
+Our records show you may be a member of the settlement class: customers who paid NovaStream Video subscription fees between January 2023 and June 2025.
+To receive a payment you must file a claim by December 31, 2026 at http://127.0.0.1:8900/claimhub/novastream-video-settlement. The claim form requires a sworn declaration.

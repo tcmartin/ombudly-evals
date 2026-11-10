@@ -1,0 +1,4 @@
+Title: Note: my accounts
+Kind: note
+
+Household of Theo Brandt (theo.brandt@example.test). Accounts: Harbor Checking, Harbor Savings, Summit Visa.
