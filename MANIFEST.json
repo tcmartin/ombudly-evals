@@ -2,7 +2,7 @@
   "files_sha256": {
     ".gitignore": "182242cdb993e1891cac72fbeb79e5882a7e46b1bea2a1409a5e159da682ea2e",
     "LICENSE-STATUS.md": "23056f35bf078ae1568844d4100f4dd156ce4dce4eab50d905ccd2cae0da89e8",
-    "README.md": "17a0b676db61e7814dc7a45d5b750bcc606662e3e81ce01a6b77a24376517833",
+    "README.md": "f24986bf97da076bb20d09cd3b150c81faa77e84cfb4522b8ca2e587f078a770",
     "docs/DATASET_CARD.md": "0d0f39105f514d06ddd4666e0a79a6e43782d57de2d52d46c8f1c638b9b63ea4",
     "docs/METHODOLOGY.md": "026a6188106ef0d3cb2619a93e7d2d3b67ac0fc1b7f7f95fc3183540de49ae33",
     "docs/VALIDATION.json": "10bbda609588bf5522c6dfe4f042eeaa1a1c3b7f20e340adbc041ca4f6a01acc",
@@ -702,6 +702,7 @@
     "results/summary.csv": "86108a5b5df98fb6ae73052ca60f6618db40e454c41a379138e742163f8eb51d",
     "scripts/verify_release.py": "e37a0806063a3b976adc9ef00e2a5157b6075ff70f82ed560bb9e8f06fdeede2",
     "RESULTS.md": "98658721711da60675fc1aa62edc43b7a9f46d644c682d6270f2da943024b007",
-    ".gitattributes": "78e182c1786bc84ac435e2fe8ac30086b5c25f6a4f71348a663506a84b3917a6"
+    ".gitattributes": "78e182c1786bc84ac435e2fe8ac30086b5c25f6a4f71348a663506a84b3917a6",
+    "docs/RESEARCH-WRITEUP.md": "139447e7deb93729e47a481c6463932d3c2c4134e6f53055bcc84e6867d4b070"
   }
 }

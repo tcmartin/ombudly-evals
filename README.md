@@ -8,6 +8,8 @@ A public research preview of five synthetic household evaluation suites original
 
 This release publishes the dataset, generators, simulator, deterministic scorer, and sanitized scoring evidence. It does **not** publish the private Ombudly application or offer a fully standalone live agent benchmark.
 
+Read the [research writeup](docs/RESEARCH-WRITEUP.md) for the motivation, findings and limitations.
+
 ## Results at a glance
 
 These are **historical October 16–23, 2026 runs**, rescored offline for this release on November 10, 2026. They are the latest saved comparisons located in the source project, not fresh November model tests. Model names are the requested labels recorded by the harness, not independently verified immutable provider snapshots.
