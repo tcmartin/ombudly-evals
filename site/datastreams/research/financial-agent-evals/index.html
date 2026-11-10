@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Finding money is not enough: evaluating financial advocacy agents | DataStreams Solutions</title><meta content="54 synthetic households, five financial advocacy suites and reproducible historical agent results, with clear permissions, outcome metrics and limitations." name="description"/><link href="https://datastreamssolutions.com/research/financial-agent-evals/" rel="canonical"/><meta content="Finding money is not enough: evaluating financial advocacy agents" property="og:title"/><meta content="54 synthetic households, five financial advocacy suites and reproducible historical agent results, with clear permissions, outcome metrics and limitations." property="og:description"/><meta content="article" property="og:type"/><meta content="https://datastreamssolutions.com/og.png" property="og:image"/><meta content="summary_large_image" name="twitter:card"/><link href="/favicon.png" rel="icon"/><link href="/styles.css" rel="stylesheet"/><link href="/logo.css" rel="stylesheet"/><link href="/research/research.css" rel="stylesheet"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Finding money is not enough: evaluating financial advocacy agents", "description": "54 synthetic households, five financial advocacy suites and reproducible historical agent results, with clear permissions, outcome metrics and limitations.", "url": "https://datastreamssolutions.com/research/financial-agent-evals/", "author": {"@type": "Organization", "name": "DataStreams Solutions"}, "datePublished": "2026-11-10", "about": "Synthetic financial advocacy agent evaluation"}</script><meta content="https://datastreamssolutions.com/research/financial-agent-evals/" property="og:url"/><style>.research{overflow-wrap:anywhere}.table-wrap{overflow-x:auto;max-width:100%}.table-wrap table{min-width:700px}.research th{white-space:normal}.research .meta{line-height:1.7}</style></head><body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><a class="brand" href="/"><span class="brand-mark"><img alt="" src="/assets/datastreams-mark.png"/></span><span>Datastreams</span></a><nav aria-label="Primary" class="desktop-nav"><a href="/research/">Research</a><a href="/blog/">Blog</a><a href="/#capabilities">Our work</a></nav></header><main class="research" id="main"><p class="kicker">DataStreams Research / Financial advocacy</p><h1>Finding money is not enough: evaluating financial advocacy agents</h1><p class="lead">An evaluation should follow the task past a plausible answer and into actions, permissions and evidence of the outcome.</p><p class="meta">10 November 2026 · Historical runs: 16–23 October 2026<br/>DataStreams Solutions · AI-assisted research writeup · Public research preview, not peer reviewed</p><div class="actions"><a class="button button-primary" href="https://github.com/tcmartin/ombudly-evals">Code, data and results ↗</a><a class="button button-light" href="https://github.com/tcmartin/ombudly-evals/releases/tag/v0.1.0-preview">Versioned release ↗</a></div><p>A financial assistant can notice a duplicate charge and still fail the person using it. It might never contact the company. It might ask for a refund that already arrived. It might cancel something the user wanted to keep. Or it might announce that money was recovered when it has only sent a request.</p>
+<p>We built the Ombudly financial advocacy evals to measure more of that chain: finding a problem, taking the appropriate next step within the user's permissions, and checking what happened afterward.</p>
+<p>We are publishing a research preview with <strong>54 synthetic households, 172 planted opportunities, five suites, and scoring evidence from 16 historical run groups</strong>. The code, datasets, simulated counterparties, deterministic scorer and sanitized evidence are available in the <a href="https://github.com/tcmartin/ombudly-evals">Ombudly eval repository</a>. The <a href="https://github.com/tcmartin/ombudly-evals/releases/tag/v0.1.0-preview">versioned release</a> makes it possible to inspect and rescore the same records.</p>
+<h2>What a household contains</h2>
+<p>Each household has a transaction history and supporting evidence: receipts, cancellation notices, account information, bills, emails or notes. The evaluator has a separate answer key describing the planted opportunities and decoys. The agent is not supposed to see that key.</p>
+<p>The suites expand the task in stages:</p>
+<ul>
+<li><strong>v1:</strong> overdraft fees, duplicate charges, subscriptions, missing refunds and settlement claims.</li>
+<li><strong>v2:</strong> multiple accounts, partially refunded charges, receipt images, login handoffs and counterparties that ask follow-up questions.</li>
+<li><strong>v3:</strong> medical and insurance cases, security deposits, cancelled flights and returns.</li>
+<li><strong>v4:</strong> companies reached only by email, including replies that the agent must answer.</li>
+<li><strong>v5:</strong> settlement eligibility, official-looking notices and deceptive claims sites.</li>
+</ul>
+<p>Decoys matter. A refund that already arrived is not another recovery opportunity. Two similar orders are not automatically a duplicate charge. A message offering money in exchange for bank details is not a legitimate shortcut.</p>
+<p>All household data and financial outcomes are synthetic. These are not customer bank records, real medical cases or measured savings for actual users. Real brand names sometimes appear as background descriptors, without implying endorsement or a real customer relationship.</p>
+<h2>Measuring the right outcome</h2>
+<p>The headline metric is <strong>handled value</strong>. It adds simulated value recovered through a correct request to the value correctly referred to the user when the next step needs their approval.</p>
+<p>That distinction is essential. An agent should not get extra credit for bypassing a required approval. But a correctly escalated claim is also not the same as money arriving in a bank account. The published results therefore separate simulated realized value, pending-approval value, verification, unauthorized actions, decoy mistakes and false completions.</p>
+<p>The scorer is deterministic and heuristic. It matches aliases, keywords, amounts, saved work, approval requests and simulated action logs. It is not an independent human judgment of whether a real institution would pay. Its rules and limitations are visible in the <a href="https://github.com/tcmartin/ombudly-evals/blob/v0.1.0-preview/docs/METHODOLOGY.md">methodology</a>.</p>
+<h2>What the archived runs show</h2>
+<p>These runs were recorded in October, not rerun against today's model endpoints for this publication. Model names below are the requested labels recorded by the harness. The original records do not independently attest immutable provider model snapshots.</p>
+<div aria-label="Historical benchmark results table" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">Configuration</th>
+<th scope="col" style="text-align: right;">Households</th>
+<th scope="col">Recorded model</th>
+<th scope="col" style="text-align: right;">Handled value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>v1, single pass</td>
+<td style="text-align: right;">18</td>
+<td>gpt-6-astra</td>
+<td style="text-align: right;">100.0%</td>
+</tr>
+<tr>
+<td>v1, single pass</td>
+<td style="text-align: right;">18</td>
+<td>gpt-6.1-sol</td>
+<td style="text-align: right;">100.0%</td>
+</tr>
+<tr>
+<td>v1, single pass</td>
+<td style="text-align: right;">18</td>
+<td>gpt-6-luna</td>
+<td style="text-align: right;">83.7%</td>
+</tr>
+<tr>
+<td>v1, Luna continuation loop, repeats 1 / 2</td>
+<td style="text-align: right;">18 each</td>
+<td>gpt-6-luna</td>
+<td style="text-align: right;">100.0% / 96.5%</td>
+</tr>
+<tr>
+<td>v2, permission gate</td>
+<td style="text-align: right;">12</td>
+<td>gpt-6.1-sol / gpt-6-luna</td>
+<td style="text-align: right;">100.0% / 93.5%</td>
+</tr>
+<tr>
+<td>v3d, broader advocacy cases</td>
+<td style="text-align: right;">12</td>
+<td>gpt-6.1-sol / gpt-6-luna</td>
+<td style="text-align: right;">93.9% / 92.4%</td>
+</tr>
+<tr>
+<td>v4, email-only counterparties</td>
+<td style="text-align: right;">6</td>
+<td>gpt-6.1-sol / gpt-6-luna</td>
+<td style="text-align: right;">86.5% / 72.9%</td>
+</tr>
+<tr>
+<td>v5b, settlement eligibility, Jev off</td>
+<td style="text-align: right;">6</td>
+<td>gpt-6.1-sol / gpt-6-luna</td>
+<td style="text-align: right;">100.0% / 85.2%</td>
+</tr>
+<tr>
+<td>v5c, settlement eligibility, Jev on</td>
+<td style="text-align: right;">6</td>
+<td>gpt-6.1-sol / gpt-6-luna</td>
+<td style="text-align: right;">100.0% / 70.4%</td>
+</tr>
+</tbody>
+</table></div>
+<p>The <a href="https://github.com/tcmartin/ombudly-evals/blob/v0.1.0-preview/RESULTS.md">complete results</a> include adverse-event counts and the later two-household isolation check. That small check is not presented as a full-suite model comparison.</p>
+<p>Three observations stand out.</p>
+<p><strong>First, a simple suite can stop being useful for separating systems.</strong> Both recorded frontier configurations handled all of v1's planted value. That does not establish general financial competence. It tells us that harder cases were needed.</p>
+<p><strong>Second, the surrounding application matters.</strong> Luna's v1 single-pass result was 83.7%; the later continuation-loop configuration scored 100.0% and 96.5% across two repeats. This is evidence about a particular model-plus-harness setup. It is not a controlled claim that a loop always produces a particular gain. The application and harness evolved during development.</p>
+<p><strong>Third, headline percentages can hide meaningful differences.</strong> The v5b and v5c Luna runs both brought 5 of 6 claims to the user, yet their value-weighted scores were 85.2% and 70.4% because the missed claims had different values. In v3d, the handled-value scores were close, while correct approval requests differed: Sol had 8 of 10 and Luna 6 of 10. A single number is not enough to understand the behavior.</p>
+<h2>What we can reproduce today</h2>
+<p>The published package supports an offline rescore of all <strong>176 household records</strong> in the selected runs. Each sanitized input was checked against its original score, and the published aggregates reproduce the stored historical values. All five dataset generators also reproduced the committed fixture bytes in an isolated copy on the release host.</p>
+<p>Running the scorer self-check and release verifier requires only Python's standard library. Optional dataset regeneration requires Pillow and the receipt font. No new paid model or provider call was made to prepare this release.</p>
+<p>There is an important boundary: <strong>the original end-to-end system is not yet self-contained in the public package</strong>. The private Ombudly application, MCP tool surface and live adapters are not released. The dataset, simulator and scorer can support another isolated adapter, but that should be described as its own specified system until equivalence is demonstrated.</p>
+<h2>What this release does not establish</h2>
+<p>The suites are small, manually designed, US-oriented development cases. Most configurations have one run. Different suites and app versions are not directly comparable. The results are not a current global model leaderboard, a safety certification, a real-world recovery rate or financial, legal or medical advice.</p>
+<p>Public answer keys also create contamination risk. Future generalization claims should use independently authored held-out cases, repeated runs and stronger recorded provenance, including the exact app revision, model configuration and sampling settings.</p>
+<p>This is a <strong>public, rights-reserved research preview</strong>, not an open-source licensing announcement. The source project had no applicable license file, and a reuse license remains an owner decision.</p>
+<p>The useful next step is scrutiny: inspect the cases, check the scoring rules, reproduce the numbers, and identify failure modes the suite is missing. Financial advocacy needs evaluation that follows the task past a plausible answer and into the actions, permissions and evidence of the outcome.</p></main><footer class="research-footer">DataStreams Solutions · <a href="/research/">Research</a> · <a href="/blog/">Blog</a> · <a href="/privacy-policy-2/">Privacy</a></footer></body></html>

@@ -703,6 +703,8 @@
     "scripts/verify_release.py": "e37a0806063a3b976adc9ef00e2a5157b6075ff70f82ed560bb9e8f06fdeede2",
     "RESULTS.md": "98658721711da60675fc1aa62edc43b7a9f46d644c682d6270f2da943024b007",
     ".gitattributes": "78e182c1786bc84ac435e2fe8ac30086b5c25f6a4f71348a663506a84b3917a6",
-    "docs/RESEARCH-WRITEUP.md": "139447e7deb93729e47a481c6463932d3c2c4134e6f53055bcc84e6867d4b070"
+    "docs/RESEARCH-WRITEUP.md": "139447e7deb93729e47a481c6463932d3c2c4134e6f53055bcc84e6867d4b070",
+    "site/datastreams/research/financial-agent-evals/index.html": "772de151e6e003957b6724802955ab9d5589173d8d10fb5fb79764daf837d1d2",
+    "site/datastreams/research/index.html": "dbc1342bd099073e1c113215a86c7888d3a82a9bdf8bfd3fdd75d2bcc54ac1bd"
   }
 }
